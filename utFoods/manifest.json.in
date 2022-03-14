@@ -1,0 +1,15 @@
+{
+    "name": "utfoods.ivofernandes",
+    "description": "utFoods is an app that counts your calories ingestion",
+    "architecture": "@CLICK_ARCH@",
+    "title": "utFoods",
+    "hooks": {
+        "utFoods": {
+            "apparmor": "utFoods.apparmor",
+            "desktop":  "utFoods.desktop"
+        }
+    },
+    "version": "0.0.0",
+    "maintainer": "Ivo Fernandes <pg27165@alunos.uminho.pt>",
+    "framework" : "@CLICK_FRAMEWORK@"
+}

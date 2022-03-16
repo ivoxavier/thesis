@@ -60,6 +60,8 @@ install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION ${CMAKE_INSTALL_PREFIX})
 #set directories 
 install(DIRECTORY "assets" DESTINATION .)
 install(DIRECTORY "qml" DESTINATION .)
+install(DIRECTORY "qml/components" DESTINATION /qml)
+install(DIRECTORY "js" DESTINATION .)
 
 
 # Translations

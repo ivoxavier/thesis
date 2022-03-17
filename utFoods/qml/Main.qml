@@ -23,7 +23,7 @@ MainView {
     id: root
     objectName: 'mainView'
     applicationName: 'utfoods.ivofernandes'
-    property string app_version : "0.1.0"
+    property string app_version : "0.1.1"
     automaticOrientation: true
     anchorToKeyboard: true
     width: units.gu(45)

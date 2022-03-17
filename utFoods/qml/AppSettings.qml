@@ -14,29 +14,8 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-
 import QtQuick 2.9
 import Ubuntu.Components 1.3
 import Qt.labs.settings 1.0
 
-MainView {
-    id: root
-    objectName: 'mainView'
-    applicationName: 'utfoods.ivofernandes'
-    property string app_version : "0.1.0"
-    automaticOrientation: true
-    anchorToKeyboard: true
-    width: units.gu(45)
-    height: units.gu(75)
-
-    //creates a config file under /home/phablet/.config/utfoods.ivofernandes
-    AppSettings{id: app_settings}
-
-    //handles the push and pop of stacks in MainView. Plus, logs the currentPage
-    PageStack{
-        id: page_stack
-        onCurrentPageChanged: {
-            console.log("Current Stack: " + currentPage.objectName)
-        }   
-    }
-}
+Settings {}

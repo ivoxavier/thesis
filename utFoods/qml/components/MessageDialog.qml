@@ -16,11 +16,29 @@
 
 import QtQuick 2.9
 import Ubuntu.Components 1.3
-import Qt.labs.settings 1.0
+import Ubuntu.Components.Popups 1.3
+import QtQuick.Layouts 1.3
 
-Settings {
-    property int id_login
 
-    //stores the app configuration, necessary to not run config everytime
-    property bool is_clean_install : true
+Dialog {
+    id: msg_dialog
+
+    //public API
+    property alias msg : label_msg.text
+
+    Text{
+        id: label_msg
+        Layout.alignment: Qt.AlignCenter
+        font.pixelSize: units.gu(2)
+        width: parent.width
+        wrapMode: Text.Wrap;
+        horizontalAlignment: Text.AlignJustify    
+    }
+    
+    Button {
+        text: i18n.tr("Back")
+        onClicked:{
+            PopupUtils.close(msg_dialog)
+        } 
+    }
 }

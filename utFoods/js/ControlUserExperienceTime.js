@@ -14,13 +14,26 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import QtQuick 2.9
-import Ubuntu.Components 1.3
-import Qt.labs.settings 1.0
+function isValid(){
+  //set the date where the experiment must end
+  var end_date = new Date("2022-06-12")
 
-Settings {
-    property int id_login
+  //test if current date is superior than endate
+  if(root.currentDate > end_date){
+    //push export stack
+    page_stack.push(export_data_page)
+  } else{
+    
+    //still in experiment time
+    if(app_settings.is_clean_install){
 
-    //stores the app configuration, necessary to not run config everytime
-    property bool is_clean_install : true
+      //new install || not configured
+      page_stack.push(login_page)
+    }
+    else{
+
+      //during experiment time and app configured
+      page_stack.push(home_page)
+    }
+  }
 }

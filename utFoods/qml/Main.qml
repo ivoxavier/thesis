@@ -18,16 +18,24 @@
 import QtQuick 2.9
 import Ubuntu.Components 1.3
 import Qt.labs.settings 1.0
+import "../js/ControlUserExperienceTime.js" as ControlUserExperienceTime
 
 MainView {
     id: root
     objectName: 'mainView'
     applicationName: 'utfoods.ivofernandes'
-    property string app_version : "0.1.1"
+    property string app_version : "0.2.0"
     automaticOrientation: true
     anchorToKeyboard: true
     width: units.gu(45)
     height: units.gu(75)
+
+    //provides locale specific properties
+    property var locale: Qt.locale()
+
+    //provides current datetime
+    property date currentDate: new Date()
+    
 
     //creates a config file under /home/phablet/.config/utfoods.ivofernandes
     AppSettings{id: app_settings}
@@ -38,5 +46,21 @@ MainView {
         onCurrentPageChanged: {
             console.log("Current Stack: " + currentPage.objectName)
         }   
+    }
+
+    //LogInPage, where users enter their id and credential
+    Component{
+        id: login_page
+        LogInPage{}
+    }
+
+    //LogInPage, where users enter their id and credential
+    Component{
+        id: export_data_page
+        ExportDataPage{}
+    }
+
+    Component.onCompleted:{
+        ControlUserExperienceTime.isValid()
     }
 }

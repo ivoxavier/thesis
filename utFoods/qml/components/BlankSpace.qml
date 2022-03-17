@@ -16,11 +16,9 @@
 
 import QtQuick 2.9
 import Ubuntu.Components 1.3
+//import QtQuick.Controls 2.2
+import QtQuick.Layouts 1.3
 import Qt.labs.settings 1.0
 
-Settings {
-    property int id_login
-
-    //stores the app configuration, necessary to not run config everytime
-    property bool is_clean_install : true
-}
+//creates a empty object.This allows to add blankspaces in layout
+Item { width: 1; height: units.gu(1) }

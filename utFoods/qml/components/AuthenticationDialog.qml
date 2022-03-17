@@ -14,13 +14,25 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+
 import QtQuick 2.9
 import Ubuntu.Components 1.3
-import Qt.labs.settings 1.0
+import Ubuntu.Components.Popups 1.3
+import "../../js/ControlLogIn.js" as LogIn
+import "../../js/LogInJsonURL.js" as Json
 
-Settings {
-    property int id_login
 
-    //stores the app configuration, necessary to not run config everytime
-    property bool is_clean_install : true
+Dialog {
+    id: auth_dialog
+    title: i18n.tr("Verifying credentials")
+
+    JSONListModel {
+        id: login_json
+        source: Json.url()
+        query: "$[*]"
+        onJsonChanged: {
+            LogIn.validate()
+        }
+    }  
+    ActivityIndicator{id: auth_indicator;running: true}        
 }

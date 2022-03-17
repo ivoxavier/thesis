@@ -18,4 +18,7 @@ import QtQuick 2.9
 import Ubuntu.Components 1.3
 import Qt.labs.settings 1.0
 
-Settings {}
+Settings {
+    category: "installation"
+    property bool is_clean_install : true
+}

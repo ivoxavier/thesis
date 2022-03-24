@@ -39,7 +39,7 @@ function validate(){
       if(login_page.user_passcode == _json.passcode){
           PopupUtils.close(auth_dialog)
           page_stack.pop()
-          //TODO: add here next stack 
+          page_stack.push(set_plan_page)
       } 
       else{
          //if passcode is not equal validate dialog is closed and popUp appears on the screen

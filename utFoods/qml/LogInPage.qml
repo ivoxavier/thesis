@@ -117,8 +117,7 @@ Page{
                 }
             }
 
-            BlankSpace{}
-            BlankSpace{}
+            BlankSpace{height:units.gu(2)}
 
             SlotUserCredentials{
                 Layout.alignment: Qt.AlignCenter
@@ -160,10 +159,7 @@ Page{
                 }
             }
 
-            BlankSpace{}
-            BlankSpace{}
-            BlankSpace{}
-            BlankSpace{}
+           BlankSpace{height:units.gu(8)}
 
             Button{
                 id: next_button

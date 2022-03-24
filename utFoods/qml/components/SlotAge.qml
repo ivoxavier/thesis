@@ -31,14 +31,12 @@ UbuntuShape{
     property alias color : slot_shape.backgroundColor
     property alias placeholderText: field_text.placeholderText
     
-
     width: units.gu(29)
     height: units.gu(7)
     radius: "large"
     aspect: UbuntuShape.DropShadow
     
     ListItem{
-        //height: slot_layout.height
         divider.visible: false
 
         ListItemLayout{

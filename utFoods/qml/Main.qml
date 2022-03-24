@@ -24,7 +24,7 @@ MainView {
     id: root
     objectName: 'mainView'
     applicationName: 'utfoods.ivofernandes'
-    property string app_version : "0.2.0"
+    property string app_version : "0.3.0"
     automaticOrientation: true
     anchorToKeyboard: true
     width: units.gu(45)
@@ -35,6 +35,32 @@ MainView {
 
     //provides current datetime
     property date currentDate: new Date()
+
+    /*properties for calculating calories target --start--*/
+
+    //setPlanPage
+    property int user_goal
+    property string type_goal
+
+    //setActivityPage
+    property int user_activity_level
+
+    //setUserSexAtBirthPage
+    property int user_sex_at_birth //0 for Male. 1 for Female
+
+    //setUserAgePage
+    property int user_age
+
+    //setWeightPage
+    property double user_weight
+
+    //setHeightPage
+    property int user_height
+
+    //recommended calories for user
+    property int equation_recommended_calories
+
+    /*properties for calculating calories target --end--*/
     
 
     //creates a config file under /home/phablet/.config/utfoods.ivofernandes
@@ -54,7 +80,44 @@ MainView {
         LogInPage{}
     }
 
-    //LogInPage, where users enter their id and credential
+    //SetPlanPage, where users can set their objective
+    Component{
+        id: set_plan_page
+        SetPlanPage{}
+    }
+
+    //SetActivityPage, where users can set their activity level
+    Component{
+        id: set_activity_page
+        SetActivityPage{}
+    }
+
+    //SetSexAtBirth, where volunteers set their sex at birth
+    Component{
+        id: set_sex_at_birth_page
+        SetSexAtBirthPage{}
+    }
+
+    //SetAgePage, where volunteers set their age
+    Component{
+        id: set_age_page
+        SetAgePage{}
+    }
+
+    //SetWeightPage, where volunteers set their weight
+    Component{
+        id: set_weight_page
+        SetWeightPage{}
+    }
+
+    //SetAgePage, where volunteers set their age
+    Component{
+        id: set_height_page
+        SetHeightPage{}
+    }
+
+
+    //ExportDataPage, where users can export the data produced
     Component{
         id: export_data_page
         ExportDataPage{}

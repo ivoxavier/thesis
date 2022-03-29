@@ -116,6 +116,12 @@ MainView {
         SetHeightPage{}
     }
 
+    //CreatePage, process for creating the db
+    Component{
+        id: create_storage_page
+        CreateStoragePage{}
+    }
+
 
     //ExportDataPage, where users can export the data produced
     Component{

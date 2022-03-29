@@ -45,8 +45,6 @@ Dialog {
 
     Button{
         text: i18n.tr("Confirm")
-        //temporary fix for JIRA-122. Should be removed once next Milestone is completed
-        enabled: false
         color: UbuntuColors.green
         onClicked: ControlRecommendedCalories.confrim()
     }

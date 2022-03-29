@@ -1,0 +1,1003 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data>
+  <row>
+    <index>0</index>
+    <product_name>2 no chicken kievs</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy-kcal_100g>221</energy-kcal_100g>
+    <fat_100g>13.5</fat_100g>
+    <carbohydrates_100g>14</carbohydrates_100g>
+    <proteins_100g>8.3</proteins_100g>
+  </row>
+  <row>
+    <index>1</index>
+    <product_name>Chicken kievs</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>e</nutriscore_grade>
+    <energy-kcal_100g>840</energy-kcal_100g>
+    <fat_100g>17.1</fat_100g>
+    <carbohydrates_100g>7.8</carbohydrates_100g>
+    <proteins_100g>16.4</proteins_100g>
+  </row>
+  <row>
+    <index>2</index>
+    <product_name>British medium eggs</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy-kcal_100g>131</energy-kcal_100g>
+    <fat_100g>9</fat_100g>
+    <carbohydrates_100g>0.1</carbohydrates_100g>
+    <proteins_100g>12.6</proteins_100g>
+  </row>
+  <row>
+    <index>3</index>
+    <product_name>Sliced white bread</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>b</nutriscore_grade>
+    <energy-kcal_100g>239</energy-kcal_100g>
+    <fat_100g>22</fat_100g>
+    <carbohydrates_100g>45.6</carbohydrates_100g>
+    <proteins_100g>8.1</proteins_100g>
+  </row>
+  <row>
+    <index>4</index>
+    <product_name>Spiruline powder</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy-kcal_100g>393</energy-kcal_100g>
+    <fat_100g>6</fat_100g>
+    <carbohydrates_100g>20</carbohydrates_100g>
+    <proteins_100g>63</proteins_100g>
+  </row>
+  <row>
+    <index>5</index>
+    <product_name>Free range mixed size eggs</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy-kcal_100g>131</energy-kcal_100g>
+    <fat_100g>9</fat_100g>
+    <carbohydrates_100g>0.01</carbohydrates_100g>
+    <proteins_100g>12.6</proteins_100g>
+  </row>
+  <row>
+    <index>6</index>
+    <product_name>Honey roast ham</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy-kcal_100g>135</energy-kcal_100g>
+    <fat_100g>2</fat_100g>
+    <carbohydrates_100g>4.3</carbohydrates_100g>
+    <proteins_100g>24.5</proteins_100g>
+  </row>
+  <row>
+    <index>7</index>
+    <product_name>Scottish All Butter Toffee &amp; Pecan Shortbread Rounds</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>d</nutriscore_grade>
+    <energy-kcal_100g>553</energy-kcal_100g>
+    <fat_100g>34.9</fat_100g>
+    <carbohydrates_100g>54</carbohydrates_100g>
+    <proteins_100g>4.7</proteins_100g>
+  </row>
+  <row>
+    <index>8</index>
+    <product_name>Lemonade</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>d</nutriscore_grade>
+    <energy-kcal_100g>15</energy-kcal_100g>
+    <fat_100g>0.5</fat_100g>
+    <carbohydrates_100g>3.5</carbohydrates_100g>
+    <proteins_100g>0.5</proteins_100g>
+  </row>
+  <row>
+    <index>9</index>
+    <product_name>blackcurrant conserve</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy-kcal_100g>517</energy-kcal_100g>
+    <fat_100g>30.200000762939</fat_100g>
+    <carbohydrates_100g>52.799999237061</carbohydrates_100g>
+    <proteins_100g>6.0999999046326</proteins_100g>
+  </row>
+  <row>
+    <index>10</index>
+    <product_name>Mexican style Rice &amp; Avocado</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>b</nutriscore_grade>
+    <energy-kcal_100g>140</energy-kcal_100g>
+    <fat_100g>5.2</fat_100g>
+    <carbohydrates_100g>18.8</carbohydrates_100g>
+    <proteins_100g>3.1</proteins_100g>
+  </row>
+  <row>
+    <index>11</index>
+    <product_name>Sussex Halloumi</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>d</nutriscore_grade>
+    <energy-kcal_100g>284</energy-kcal_100g>
+    <fat_100g>22.7</fat_100g>
+    <carbohydrates_100g>1.8</carbohydrates_100g>
+    <proteins_100g>18.2</proteins_100g>
+  </row>
+  <row>
+    <index>12</index>
+    <product_name>Apricot jam</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>d</nutriscore_grade>
+    <energy-kcal_100g>256</energy-kcal_100g>
+    <fat_100g>0.5</fat_100g>
+    <carbohydrates_100g>62.9</carbohydrates_100g>
+    <proteins_100g>0.5</proteins_100g>
+  </row>
+  <row>
+    <index>13</index>
+    <product_name>Rapberry Jam</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy-kcal_100g>257</energy-kcal_100g>
+    <fat_100g>0.5</fat_100g>
+    <carbohydrates_100g>61.4</carbohydrates_100g>
+    <proteins_100g>0.5</proteins_100g>
+  </row>
+  <row>
+    <index>14</index>
+    <product_name>Authentic Greek yogurt</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy-kcal_100g>160</energy-kcal_100g>
+    <fat_100g>12</fat_100g>
+    <carbohydrates_100g>5</carbohydrates_100g>
+    <proteins_100g>8</proteins_100g>
+  </row>
+  <row>
+    <index>15</index>
+    <product_name>Ready to Bake Pains au Chocolat</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>e</nutriscore_grade>
+    <energy-kcal_100g>423</energy-kcal_100g>
+    <fat_100g>25</fat_100g>
+    <carbohydrates_100g>39.6</carbohydrates_100g>
+    <proteins_100g>8.5</proteins_100g>
+  </row>
+  <row>
+    <index>16</index>
+    <product_name>Lightly salted giant corn</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy-kcal_100g>449</energy-kcal_100g>
+    <fat_100g>13.8</fat_100g>
+    <carbohydrates_100g>73.9</carbohydrates_100g>
+    <proteins_100g>5.5</proteins_100g>
+  </row>
+  <row>
+    <index>17</index>
+    <product_name>0% fat greek style yogurt</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy-kcal_100g>56</energy-kcal_100g>
+    <fat_100g>0.4</fat_100g>
+    <carbohydrates_100g>4.9</carbohydrates_100g>
+    <proteins_100g>8.3</proteins_100g>
+  </row>
+  <row>
+    <index>18</index>
+    <product_name>Basmati Rice</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>b</nutriscore_grade>
+    <energy-kcal_100g>117</energy-kcal_100g>
+    <fat_100g>0.5</fat_100g>
+    <carbohydrates_100g>25.4</carbohydrates_100g>
+    <proteins_100g>2.7</proteins_100g>
+  </row>
+  <row>
+    <index>19</index>
+    <product_name>Wood fired pizza italian salami and spicy roquito pepper</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy-kcal_100g>225</energy-kcal_100g>
+    <fat_100g>10.2</fat_100g>
+    <carbohydrates_100g>21.7</carbohydrates_100g>
+    <proteins_100g>10.8</proteins_100g>
+  </row>
+  <row>
+    <index>20</index>
+    <product_name>Pineapple slices in juice</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy-kcal_100g>85</energy-kcal_100g>
+    <fat_100g>0.5</fat_100g>
+    <carbohydrates_100g>13.9</carbohydrates_100g>
+    <proteins_100g>0.5</proteins_100g>
+  </row>
+  <row>
+    <index>21</index>
+    <product_name>Bramly Apple &amp; Blackberry Crumble</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy-kcal_100g>285</energy-kcal_100g>
+    <fat_100g>11.8</fat_100g>
+    <carbohydrates_100g>41.1</carbohydrates_100g>
+    <proteins_100g>2.8</proteins_100g>
+  </row>
+  <row>
+    <index>22</index>
+    <product_name>Roasting potatoes</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy-kcal_100g>83.1</energy-kcal_100g>
+    <fat_100g>2.62</fat_100g>
+    <carbohydrates_100g>12.7</carbohydrates_100g>
+    <proteins_100g>1.51</proteins_100g>
+  </row>
+  <row>
+    <index>23</index>
+    <product_name>White chocolate bar</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>e</nutriscore_grade>
+    <energy-kcal_100g>560</energy-kcal_100g>
+    <fat_100g>33.799999237061</fat_100g>
+    <carbohydrates_100g>58</carbohydrates_100g>
+    <proteins_100g>6</proteins_100g>
+  </row>
+  <row>
+    <index>24</index>
+    <product_name>Bircher style summer muesli Greek style yogurt</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy-kcal_100g>57.9</energy-kcal_100g>
+    <fat_100g>1.08</fat_100g>
+    <carbohydrates_100g>9.13</carbohydrates_100g>
+    <proteins_100g>2.41</proteins_100g>
+  </row>
+  <row>
+    <index>25</index>
+    <product_name>Sunflower Oil</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>d</nutriscore_grade>
+    <energy-kcal_100g>828</energy-kcal_100g>
+    <fat_100g>92</fat_100g>
+    <carbohydrates_100g>0.5</carbohydrates_100g>
+    <proteins_100g>0.5</proteins_100g>
+  </row>
+  <row>
+    <index>26</index>
+    <product_name>Sweet &amp; Smoky BBQ</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy-kcal_100g>462</energy-kcal_100g>
+    <fat_100g>19.6</fat_100g>
+    <carbohydrates_100g>61.8</carbohydrates_100g>
+    <proteins_100g>7.2</proteins_100g>
+  </row>
+  <row>
+    <index>27</index>
+    <product_name>Taste the Difference Raspberry Conserve</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy-kcal_100g>240</energy-kcal_100g>
+    <fat_100g>1</fat_100g>
+    <carbohydrates_100g>56</carbohydrates_100g>
+    <proteins_100g>1</proteins_100g>
+  </row>
+  <row>
+    <index>28</index>
+    <product_name>Corned beef crispbakes</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>b</nutriscore_grade>
+    <energy-kcal_100g>201</energy-kcal_100g>
+    <fat_100g>9.5</fat_100g>
+    <carbohydrates_100g>18.4</carbohydrates_100g>
+    <proteins_100g>9.8</proteins_100g>
+  </row>
+  <row>
+    <index>29</index>
+    <product_name>Strawberry Conserve</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy-kcal_100g>252</energy-kcal_100g>
+    <fat_100g>0.6</fat_100g>
+    <carbohydrates_100g>60.9</carbohydrates_100g>
+    <proteins_100g>0.5</proteins_100g>
+  </row>
+  <row>
+    <index>30</index>
+    <product_name>Roasted pistachio nuts</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>d</nutriscore_grade>
+    <energy-kcal_100g>615</energy-kcal_100g>
+    <fat_100g>52</fat_100g>
+    <carbohydrates_100g>10.1</carbohydrates_100g>
+    <proteins_100g>22.5</proteins_100g>
+  </row>
+  <row>
+    <index>31</index>
+    <product_name>Mackerel filets in tomato sauce</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>b</nutriscore_grade>
+    <energy-kcal_100g>155</energy-kcal_100g>
+    <fat_100g>12.8</fat_100g>
+    <carbohydrates_100g>4</carbohydrates_100g>
+    <proteins_100g>15.9</proteins_100g>
+  </row>
+  <row>
+    <index>32</index>
+    <product_name>Mackerel fillets in sunflower oil</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy-kcal_100g>279</energy-kcal_100g>
+    <fat_100g>21.700000762939</fat_100g>
+    <carbohydrates_100g>0.5</carbohydrates_100g>
+    <proteins_100g>20.700000762939</proteins_100g>
+  </row>
+  <row>
+    <index>33</index>
+    <product_name>Assam fine tea</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy-kcal_100g>1</energy-kcal_100g>
+    <fat_100g>0</fat_100g>
+    <carbohydrates_100g>0</carbohydrates_100g>
+    <proteins_100g>0.1</proteins_100g>
+  </row>
+  <row>
+    <index>34</index>
+    <product_name>Macaroni</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy-kcal_100g>160</energy-kcal_100g>
+    <fat_100g>0.7</fat_100g>
+    <carbohydrates_100g>32.5</carbohydrates_100g>
+    <proteins_100g>5.1</proteins_100g>
+  </row>
+  <row>
+    <index>35</index>
+    <product_name>Rich Tea Biscuits</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>e</nutriscore_grade>
+    <energy-kcal_100g>448</energy-kcal_100g>
+    <fat_100g>13.4</fat_100g>
+    <carbohydrates_100g>73.1</carbohydrates_100g>
+    <proteins_100g>7.2</proteins_100g>
+  </row>
+  <row>
+    <index>36</index>
+    <product_name>Peas &amp; carrots</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy-kcal_100g>74</energy-kcal_100g>
+    <fat_100g>3.1</fat_100g>
+    <carbohydrates_100g>6.1</carbohydrates_100g>
+    <proteins_100g>3.3</proteins_100g>
+  </row>
+  <row>
+    <index>37</index>
+    <product_name>British garden peas</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy-kcal_100g>93</energy-kcal_100g>
+    <fat_100g>1.5</fat_100g>
+    <carbohydrates_100g>10.4</carbohydrates_100g>
+    <proteins_100g>6.9</proteins_100g>
+  </row>
+  <row>
+    <index>38</index>
+    <product_name>Pains aux raisins</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>e</nutriscore_grade>
+    <energy-kcal_100g>298</energy-kcal_100g>
+    <fat_100g>13.4</fat_100g>
+    <carbohydrates_100g>37.3</carbohydrates_100g>
+    <proteins_100g>5.6</proteins_100g>
+  </row>
+  <row>
+    <index>39</index>
+    <product_name>Ginger snaps</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>e</nutriscore_grade>
+    <energy-kcal_100g>1920</energy-kcal_100g>
+    <fat_100g>14.6</fat_100g>
+    <carbohydrates_100g>74.6</carbohydrates_100g>
+    <proteins_100g>5.7</proteins_100g>
+  </row>
+  <row>
+    <index>40</index>
+    <product_name>Profiterole</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>e</nutriscore_grade>
+    <energy-kcal_100g>365</energy-kcal_100g>
+    <fat_100g>25.9</fat_100g>
+    <carbohydrates_100g>27.3</carbohydrates_100g>
+    <proteins_100g>4.7</proteins_100g>
+  </row>
+  <row>
+    <index>41</index>
+    <product_name>Pineapple juice</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy-kcal_100g>50</energy-kcal_100g>
+    <fat_100g>0.5</fat_100g>
+    <carbohydrates_100g>11.4</carbohydrates_100g>
+    <proteins_100g>0.5</proteins_100g>
+  </row>
+  <row>
+    <index>42</index>
+    <product_name>Sausage rolls</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy-kcal_100g>193</energy-kcal_100g>
+    <fat_100g>10.3</fat_100g>
+    <carbohydrates_100g>18.8</carbohydrates_100g>
+    <proteins_100g>5.7</proteins_100g>
+  </row>
+  <row>
+    <index>43</index>
+    <product_name>Watermelon</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy-kcal_100g>33</energy-kcal_100g>
+    <fat_100g>0.3</fat_100g>
+    <carbohydrates_100g>6.9</carbohydrates_100g>
+    <proteins_100g>0.4</proteins_100g>
+  </row>
+  <row>
+    <index>44</index>
+    <product_name>Indian style poppadoms</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>d</nutriscore_grade>
+    <energy-kcal_100g>423</energy-kcal_100g>
+    <fat_100g>16.5</fat_100g>
+    <carbohydrates_100g>40.799999237061</carbohydrates_100g>
+    <proteins_100g>25</proteins_100g>
+  </row>
+  <row>
+    <index>45</index>
+    <product_name>Broccoli &amp; Cauliflower</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy-kcal_100g>32</energy-kcal_100g>
+    <fat_100g>0.9</fat_100g>
+    <carbohydrates_100g>1.6</carbohydrates_100g>
+    <proteins_100g>3</proteins_100g>
+  </row>
+  <row>
+    <index>46</index>
+    <product_name>Tex Mex Dips</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy-kcal_100g>14</energy-kcal_100g>
+    <fat_100g>0.5</fat_100g>
+    <carbohydrates_100g>1.3</carbohydrates_100g>
+    <proteins_100g>1.3</proteins_100g>
+  </row>
+  <row>
+    <index>47</index>
+    <product_name>Apple, watermelon and raspberry juice</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy-kcal_100g>40</energy-kcal_100g>
+    <fat_100g>0.5</fat_100g>
+    <carbohydrates_100g>9.1</carbohydrates_100g>
+    <proteins_100g>0.5</proteins_100g>
+  </row>
+  <row>
+    <index>48</index>
+    <product_name>Ratatouille provençale</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>b</nutriscore_grade>
+    <energy-kcal_100g>52</energy-kcal_100g>
+    <fat_100g>2.5</fat_100g>
+    <carbohydrates_100g>5</carbohydrates_100g>
+    <proteins_100g>1</proteins_100g>
+  </row>
+  <row>
+    <index>49</index>
+    <product_name>Olive Oil</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy-kcal_100g>823</energy-kcal_100g>
+    <fat_100g>91.5</fat_100g>
+    <carbohydrates_100g>0.5</carbohydrates_100g>
+    <proteins_100g>0.5</proteins_100g>
+  </row>
+  <row>
+    <index>50</index>
+    <product_name>Wholegrain Raisin Wheats</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>b</nutriscore_grade>
+    <energy-kcal_100g>82</energy-kcal_100g>
+    <fat_100g>0.5</fat_100g>
+    <carbohydrates_100g>16.3</carbohydrates_100g>
+    <proteins_100g>2.3</proteins_100g>
+  </row>
+  <row>
+    <index>51</index>
+    <product_name>Perfectly Matured Christmas Pudding</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy-kcal_100g>286</energy-kcal_100g>
+    <fat_100g>5.3</fat_100g>
+    <carbohydrates_100g>54</carbohydrates_100g>
+    <proteins_100g>3.2</proteins_100g>
+  </row>
+  <row>
+    <index>52</index>
+    <product_name>Red Onions</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy-kcal_100g>38</energy-kcal_100g>
+    <fat_100g>0.5</fat_100g>
+    <carbohydrates_100g>7.6</carbohydrates_100g>
+    <proteins_100g>1</proteins_100g>
+  </row>
+  <row>
+    <index>53</index>
+    <product_name>Gluten free sourdough loaf</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy-kcal_100g>223</energy-kcal_100g>
+    <fat_100g>4.9</fat_100g>
+    <carbohydrates_100g>36.8</carbohydrates_100g>
+    <proteins_100g>4.7</proteins_100g>
+  </row>
+  <row>
+    <index>54</index>
+    <product_name>Taste the Difference Swiss White Chocolate</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>e</nutriscore_grade>
+    <energy-kcal_100g>588</energy-kcal_100g>
+    <fat_100g>39.6</fat_100g>
+    <carbohydrates_100g>51.9</carbohydrates_100g>
+    <proteins_100g>6.1</proteins_100g>
+  </row>
+  <row>
+    <index>55</index>
+    <product_name>Red cabbage</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy-kcal_100g>84</energy-kcal_100g>
+    <fat_100g>2</fat_100g>
+    <carbohydrates_100g>14</carbohydrates_100g>
+    <proteins_100g>1</proteins_100g>
+  </row>
+  <row>
+    <index>56</index>
+    <product_name>dry cured outdoor bred British pancetta rashers</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>e</nutriscore_grade>
+    <energy-kcal_100g>425</energy-kcal_100g>
+    <fat_100g>32.9</fat_100g>
+    <carbohydrates_100g>1</carbohydrates_100g>
+    <proteins_100g>31</proteins_100g>
+  </row>
+  <row>
+    <index>57</index>
+    <product_name>Brown rice</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>b</nutriscore_grade>
+    <energy-kcal_100g>171</energy-kcal_100g>
+    <fat_100g>2</fat_100g>
+    <carbohydrates_100g>32.2</carbohydrates_100g>
+    <proteins_100g>3.3</proteins_100g>
+  </row>
+  <row>
+    <index>58</index>
+    <product_name>Thai jasmine rice</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>b</nutriscore_grade>
+    <energy-kcal_100g>162</energy-kcal_100g>
+    <fat_100g>0.5</fat_100g>
+    <carbohydrates_100g>36.3</carbohydrates_100g>
+    <proteins_100g>3.2</proteins_100g>
+  </row>
+  <row>
+    <index>59</index>
+    <product_name>Petit pois in water</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy-kcal_100g>56</energy-kcal_100g>
+    <fat_100g>0.6</fat_100g>
+    <carbohydrates_100g>5.2</carbohydrates_100g>
+    <proteins_100g>4.8</proteins_100g>
+  </row>
+  <row>
+    <index>60</index>
+    <product_name>Italian tomato puree</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy-kcal_100g>13</energy-kcal_100g>
+    <fat_100g>1.9</fat_100g>
+    <carbohydrates_100g>2.1</carbohydrates_100g>
+    <proteins_100g>5.1</proteins_100g>
+  </row>
+  <row>
+    <index>61</index>
+    <product_name>Italian carnaroli risotto rice</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>b</nutriscore_grade>
+    <energy-kcal_100g>119</energy-kcal_100g>
+    <fat_100g>0.5</fat_100g>
+    <carbohydrates_100g>25.7</carbohydrates_100g>
+    <proteins_100g>2.3</proteins_100g>
+  </row>
+  <row>
+    <index>62</index>
+    <product_name>Thai sticky rice</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>b</nutriscore_grade>
+    <energy-kcal_100g>141</energy-kcal_100g>
+    <fat_100g>0.5</fat_100g>
+    <carbohydrates_100g>31</carbohydrates_100g>
+    <proteins_100g>3</proteins_100g>
+  </row>
+  <row>
+    <index>63</index>
+    <product_name>British ham</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy-kcal_100g>118</energy-kcal_100g>
+    <fat_100g>2.8</fat_100g>
+    <carbohydrates_100g>0.9</carbohydrates_100g>
+    <proteins_100g>22.3</proteins_100g>
+  </row>
+  <row>
+    <index>64</index>
+    <product_name>Beef ravioli</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>b</nutriscore_grade>
+    <energy-kcal_100g>84</energy-kcal_100g>
+    <fat_100g>1.2</fat_100g>
+    <carbohydrates_100g>14.1</carbohydrates_100g>
+    <proteins_100g>3.4</proteins_100g>
+  </row>
+  <row>
+    <index>65</index>
+    <product_name>Unsmoked bacon</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>d</nutriscore_grade>
+    <energy-kcal_100g>203</energy-kcal_100g>
+    <fat_100g>14.4</fat_100g>
+    <carbohydrates_100g>0.7</carbohydrates_100g>
+    <proteins_100g>17.6</proteins_100g>
+  </row>
+  <row>
+    <index>66</index>
+    <product_name>No Chic'n chunks</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy-kcal_100g>95</energy-kcal_100g>
+    <fat_100g>0.7</fat_100g>
+    <carbohydrates_100g>1</carbohydrates_100g>
+    <proteins_100g>18.9</proteins_100g>
+  </row>
+  <row>
+    <index>67</index>
+    <product_name>Mashed Potato</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy-kcal_100g>485</energy-kcal_100g>
+    <fat_100g>20.2</fat_100g>
+    <carbohydrates_100g>68.3</carbohydrates_100g>
+    <proteins_100g>6.5</proteins_100g>
+  </row>
+  <row>
+    <index>68</index>
+    <product_name>Anchovy Fillets in Olive Oil</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>d</nutriscore_grade>
+    <energy-kcal_100g>186</energy-kcal_100g>
+    <fat_100g>8.5</fat_100g>
+    <carbohydrates_100g>0.4</carbohydrates_100g>
+    <proteins_100g>27.1</proteins_100g>
+  </row>
+  <row>
+    <index>69</index>
+    <product_name>Honey wheat pretzel sticks</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>d</nutriscore_grade>
+    <energy-kcal_100g>366.66666666667</energy-kcal_100g>
+    <fat_100g>3.3333333333333</fat_100g>
+    <carbohydrates_100g>76.666666666667</carbohydrates_100g>
+    <proteins_100g>6.6666666666667</proteins_100g>
+  </row>
+  <row>
+    <index>70</index>
+    <product_name>Orzo by Sainsbury's</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy-kcal_100g>362</energy-kcal_100g>
+    <fat_100g>1.7</fat_100g>
+    <carbohydrates_100g>73.1</carbohydrates_100g>
+    <proteins_100g>12.3</proteins_100g>
+  </row>
+  <row>
+    <index>71</index>
+    <product_name>Macaroni added fibre</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy-kcal_100g>153</energy-kcal_100g>
+    <fat_100g>0.5</fat_100g>
+    <carbohydrates_100g>29.5</carbohydrates_100g>
+    <proteins_100g>5.5</proteins_100g>
+  </row>
+  <row>
+    <index>72</index>
+    <product_name>Wholewheat tagliatelle</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy-kcal_100g>29.4</energy-kcal_100g>
+    <fat_100g>1.6</fat_100g>
+    <carbohydrates_100g>27.8</carbohydrates_100g>
+    <proteins_100g>0.01</proteins_100g>
+  </row>
+  <row>
+    <index>73</index>
+    <product_name>Quick Cook Fusilli</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy-kcal_100g>159</energy-kcal_100g>
+    <fat_100g>0.69999998807907</fat_100g>
+    <carbohydrates_100g>32.299999237061</carbohydrates_100g>
+    <proteins_100g>5.1999998092651</proteins_100g>
+  </row>
+  <row>
+    <index>74</index>
+    <product_name>Wholewheat fusilli</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy-kcal_100g>157</energy-kcal_100g>
+    <fat_100g>0.9</fat_100g>
+    <carbohydrates_100g>30.2</carbohydrates_100g>
+    <proteins_100g>5.2</proteins_100g>
+  </row>
+  <row>
+    <index>75</index>
+    <product_name>Raspberry Sorbet</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy-kcal_100g>93</energy-kcal_100g>
+    <fat_100g>0.4</fat_100g>
+    <carbohydrates_100g>22</carbohydrates_100g>
+    <proteins_100g>0.2</proteins_100g>
+  </row>
+  <row>
+    <index>76</index>
+    <product_name>Cheddar and bacon quiche</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>d</nutriscore_grade>
+    <energy-kcal_100g>311</energy-kcal_100g>
+    <fat_100g>22.2</fat_100g>
+    <carbohydrates_100g>18</carbohydrates_100g>
+    <proteins_100g>9.4</proteins_100g>
+  </row>
+  <row>
+    <index>77</index>
+    <product_name>Petit pois &amp; baby carrots</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy-kcal_100g>34</energy-kcal_100g>
+    <fat_100g>0.5</fat_100g>
+    <carbohydrates_100g>4.5</carbohydrates_100g>
+    <proteins_100g>2.2</proteins_100g>
+  </row>
+  <row>
+    <index>78</index>
+    <product_name>Wholewheat biscuits</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>b</nutriscore_grade>
+    <energy-kcal_100g>358</energy-kcal_100g>
+    <fat_100g>2</fat_100g>
+    <carbohydrates_100g>68.1</carbohydrates_100g>
+    <proteins_100g>12</proteins_100g>
+  </row>
+  <row>
+    <index>79</index>
+    <product_name>Easy fries golden fries french fried potatoes extra crispy</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy-kcal_100g>141.66666666667</energy-kcal_100g>
+    <fat_100g>8.3333333333333</fat_100g>
+    <carbohydrates_100g>15.833333333333</carbohydrates_100g>
+    <proteins_100g>1.6666666666667</proteins_100g>
+  </row>
+  <row>
+    <index>80</index>
+    <product_name>Large onions</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy-kcal_100g>38</energy-kcal_100g>
+    <fat_100g>0.5</fat_100g>
+    <carbohydrates_100g>7.6</carbohydrates_100g>
+    <proteins_100g>1</proteins_100g>
+  </row>
+  <row>
+    <index>81</index>
+    <product_name>British herb garden - dressing</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy-kcal_100g>251</energy-kcal_100g>
+    <fat_100g>21.5</fat_100g>
+    <carbohydrates_100g>12.7</carbohydrates_100g>
+    <proteins_100g>0.9</proteins_100g>
+  </row>
+  <row>
+    <index>82</index>
+    <product_name>Percy pig</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>d</nutriscore_grade>
+    <energy-kcal_100g>346</energy-kcal_100g>
+    <fat_100g>0.2</fat_100g>
+    <carbohydrates_100g>84</carbohydrates_100g>
+    <proteins_100g>1.1</proteins_100g>
+  </row>
+  <row>
+    <index>83</index>
+    <product_name>Liz Earle Hand Repair</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>d</nutriscore_grade>
+    <energy-kcal_100g>158</energy-kcal_100g>
+    <fat_100g>7.8</fat_100g>
+    <carbohydrates_100g>0.6</carbohydrates_100g>
+    <proteins_100g>21.2</proteins_100g>
+  </row>
+  <row>
+    <index>84</index>
+    <product_name>Mortadella</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>e</nutriscore_grade>
+    <energy-kcal_100g>288</energy-kcal_100g>
+    <fat_100g>25</fat_100g>
+    <carbohydrates_100g>0.5</carbohydrates_100g>
+    <proteins_100g>16</proteins_100g>
+  </row>
+  <row>
+    <index>85</index>
+    <product_name>Roast Potatoes</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy-kcal_100g>163</energy-kcal_100g>
+    <fat_100g>7.15</fat_100g>
+    <carbohydrates_100g>21.7</carbohydrates_100g>
+    <proteins_100g>2.09</proteins_100g>
+  </row>
+  <row>
+    <index>86</index>
+    <product_name>Best of British Apples</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy-kcal_100g>47</energy-kcal_100g>
+    <fat_100g>0.5</fat_100g>
+    <carbohydrates_100g>12</carbohydrates_100g>
+    <proteins_100g>0.5</proteins_100g>
+  </row>
+  <row>
+    <index>87</index>
+    <product_name>Peanut Cookies</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>e</nutriscore_grade>
+    <energy-kcal_100g>528</energy-kcal_100g>
+    <fat_100g>28.2</fat_100g>
+    <carbohydrates_100g>57.3</carbohydrates_100g>
+    <proteins_100g>10.2</proteins_100g>
+  </row>
+  <row>
+    <index>88</index>
+    <product_name>Butter Spread</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy-kcal_100g>102</energy-kcal_100g>
+    <fat_100g>0.5</fat_100g>
+    <carbohydrates_100g>23.3</carbohydrates_100g>
+    <proteins_100g>1.1</proteins_100g>
+  </row>
+  <row>
+    <index>89</index>
+    <product_name>Brown Sauce</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy-kcal_100g>75</energy-kcal_100g>
+    <fat_100g>0.5</fat_100g>
+    <carbohydrates_100g>17.4</carbohydrates_100g>
+    <proteins_100g>1.5</proteins_100g>
+  </row>
+  <row>
+    <index>90</index>
+    <product_name>Natural yogurt</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>b</nutriscore_grade>
+    <energy-kcal_100g>81</energy-kcal_100g>
+    <fat_100g>3.8</fat_100g>
+    <carbohydrates_100g>6.6</carbohydrates_100g>
+    <proteins_100g>5.1</proteins_100g>
+  </row>
+  <row>
+    <index>91</index>
+    <product_name>Wholemeal seeded pitta</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy-kcal_100g>241</energy-kcal_100g>
+    <fat_100g>3.3</fat_100g>
+    <carbohydrates_100g>41.3</carbohydrates_100g>
+    <proteins_100g>8.2</proteins_100g>
+  </row>
+  <row>
+    <index>92</index>
+    <product_name>Spencer &amp; Fleetwood Penis Pasta</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy-kcal_100g>350</energy-kcal_100g>
+    <fat_100g>2</fat_100g>
+    <carbohydrates_100g>70</carbohydrates_100g>
+    <proteins_100g>12</proteins_100g>
+  </row>
+  <row>
+    <index>93</index>
+    <product_name>Banana Ketchup</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy-kcal_100g>171</energy-kcal_100g>
+    <fat_100g>0</fat_100g>
+    <carbohydrates_100g>40</carbohydrates_100g>
+    <proteins_100g>1</proteins_100g>
+  </row>
+  <row>
+    <index>94</index>
+    <product_name>Greek style yogurt with fresh banana-granola</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy-kcal_100g>129</energy-kcal_100g>
+    <fat_100g>4.2</fat_100g>
+    <carbohydrates_100g>16.8</carbohydrates_100g>
+    <proteins_100g>5.5</proteins_100g>
+  </row>
+  <row>
+    <index>95</index>
+    <product_name>Drinking chocolate</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>b</nutriscore_grade>
+    <energy-kcal_100g>76</energy-kcal_100g>
+    <fat_100g>2</fat_100g>
+    <carbohydrates_100g>10.6</carbohydrates_100g>
+    <proteins_100g>3.6</proteins_100g>
+  </row>
+  <row>
+    <index>96</index>
+    <product_name>creamy caesar dressing</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>e</nutriscore_grade>
+    <energy-kcal_100g>2900</energy-kcal_100g>
+    <fat_100g>287</fat_100g>
+    <carbohydrates_100g>60.7</carbohydrates_100g>
+    <proteins_100g>17.3</proteins_100g>
+  </row>
+  <row>
+    <index>97</index>
+    <product_name>Sweetcure Smoked salmon</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>e</nutriscore_grade>
+    <energy-kcal_100g>809</energy-kcal_100g>
+    <fat_100g>9</fat_100g>
+    <carbohydrates_100g>2.7</carbohydrates_100g>
+    <proteins_100g>24.7</proteins_100g>
+  </row>
+  <row>
+    <index>98</index>
+    <product_name>Salmon</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy-kcal_100g>170</energy-kcal_100g>
+    <fat_100g>6.3</fat_100g>
+    <carbohydrates_100g>5.6</carbohydrates_100g>
+    <proteins_100g>22.7</proteins_100g>
+  </row>
+  <row>
+    <index>99</index>
+    <product_name>Coconut Milk</product_name>
+    <countries_en>United Kingdom</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy-kcal_100g>191</energy-kcal_100g>
+    <fat_100g>18.2</fat_100g>
+    <carbohydrates_100g>5.7</carbohydrates_100g>
+    <proteins_100g>0.9</proteins_100g>
+  </row>
+</data>

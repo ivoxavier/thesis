@@ -62,7 +62,7 @@ Page{
 
             Text{
                 text: i18n.tr("Your weight?")
-                font.pixelSize: units.gu(3)
+                font.pixelSize: units.gu(4)
                 Layout.alignment: Qt.AlignCenter    
             }
 

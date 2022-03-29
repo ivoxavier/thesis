@@ -14,20 +14,27 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-function confrim(){
-  page_stack.pop(set_height_page)
-  page_stack.pop(set_weight_page)
-  page_stack.pop(set_age_page)
-  page_stack.pop(set_sex_at_birth_page)
-  page_stack.pop(set_activity_page)
-  page_stack.pop(set_plan_page)
-  page_stack.push(create_storage_page)
+
+function connectDB() {
+  return LocalStorage.openDatabaseSync("utFoods_db", "0.1", "utFoods_data", 2000000);
 }
 
-function calcCal(){
-  var goal_calc = root.type_goal == "loose" ?
-  (-root.user_goal) : root.type_goal == "gain" ?
-  root.user_goal : 0
-  root.equation_recommended_calories = (RecommendedCalories.equation(root.user_age,
-  root.user_weight,root.user_height,root.user_sex_at_birth,root.user_activity_level)) + goal_calc  
+  var new_weight_tracking = 'INSERT INTO weight_tracker (\
+    id_user, weight, date)\
+    VALUES (?,?,?)';
+  
+  function newWeight(weight){          
+    var db = connectDB();
+    
+    db.transaction(function(tx) {
+      var results = tx.executeSql(new_weight_tracking, [1,
+      weight,
+      root.stringDate]);
+      if (results.rowsAffected > 0) {
+        console.log("Data Stored")
+      } else {
+        console.log("error");
+      }
+    }
+  )
 }

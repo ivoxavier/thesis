@@ -23,6 +23,7 @@ import Ubuntu.Components.ListItems 1.3
 import Ubuntu.Components.Popups 1.3
 import QtQuick.LocalStorage 2.12
 import "components"
+import "../js/ControlIconUpAnimation.js" as ControlIconUpAnimation
 
 
 Page{
@@ -30,6 +31,12 @@ Page{
     objectName: 'HomePage'
     header: PageHeader {visible:false}
     
+    //popus a datepicker
+    Component{
+        id: date_popUP
+        DateNavigation{}
+    }
+
     Flickable {
         anchors{
             top: parent.top
@@ -43,6 +50,33 @@ Page{
         ColumnLayout{
             id: main_column
             width: root.width
+
+            Row{
+                Layout.alignment: Qt.AlignCenter
+                spacing: units.gu(1)
+                Icon{id:calendar_icon;name:"calendar";height: units.gu(2.5)}
+
+                Label {
+                    id: dateLabel
+                    text: root.stringDate
+                    font.pixelSize: units.gu(2)
+                }
+
+                Icon{
+                    id: icon_down
+                    property bool is_clicked : false
+                    name: "go-up"
+                    height: units.gu(2.5)
+                    rotation: icon_down.is_clicked ? 180 : 0
+                    Behavior on rotation {
+                        UbuntuNumberAnimation {}
+                    }
+                    MouseArea{
+                        anchors.fill: parent
+                        onClicked: ControlIconUpAnimation.animate()
+                    }
+                }
+            }
         }  
     }
 

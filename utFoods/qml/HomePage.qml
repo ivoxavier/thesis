@@ -28,14 +28,14 @@ import "components"
 Page{
     id: home_page
     objectName: 'HomePage'
-    header: PageHeader {title: i18n.tr("HomePage")}
+    header: PageHeader {visible:false}
     
     Flickable {
         anchors{
             top: parent.top
             left: parent.left
             right: parent.right
-            bottom: parent.bottom
+            bottom: footer_shape.top
         }
         contentWidth: parent.width
         contentHeight: main_column.height
@@ -45,6 +45,8 @@ Page{
             width: root.width
         }  
     }
+
+    FooterBar{id: footer_shape}
         
     Component.onCompleted:{}        
 }

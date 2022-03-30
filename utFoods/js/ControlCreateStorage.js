@@ -22,9 +22,7 @@ function dBbuild(){
     root.user_weight, root.user_height, root.user_activity_level, root.equation_recommended_calories)
     WeightTrackerTable.newWeight(root.user_weight)
     loading_circle.running = !loading_circle.running
-    PopupUtils.open(dummy_dialog)
-    //uncomment for v0.5.0 
-    //app_settings.is_clean_install = !app_settings.is_clean_install
+    app_settings.is_clean_install = !app_settings.is_clean_install
 }catch (err){} 
 }
 

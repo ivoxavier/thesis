@@ -122,6 +122,11 @@ MainView {
         CreateStoragePage{}
     }
 
+    //HomePage, its home
+    Component{
+        id: home_page
+        HomePage{}
+    }
 
     //ExportDataPage, where users can export the data produced
     Component{

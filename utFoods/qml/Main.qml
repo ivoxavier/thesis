@@ -36,6 +36,9 @@ MainView {
     //provides current datetime
     property date currentDate: new Date()
 
+    //provides date in string format masked for sqlite db
+    property var stringDate: currentDate.toLocaleDateString(locale, 'yyyy-MM-dd')
+    
     /*properties for calculating calories target --start--*/
 
     //setPlanPage

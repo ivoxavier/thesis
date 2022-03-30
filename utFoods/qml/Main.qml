@@ -24,7 +24,7 @@ MainView {
     id: root
     objectName: 'mainView'
     applicationName: 'utfoods.ivofernandes'
-    property string app_version : "0.3.0"
+    property string app_version : "0.5.0"
     automaticOrientation: true
     anchorToKeyboard: true
     width: units.gu(45)
@@ -122,6 +122,11 @@ MainView {
         CreateStoragePage{}
     }
 
+    //HomePage, its home
+    Component{
+        id: home_page
+        HomePage{}
+    }
 
     //ExportDataPage, where users can export the data produced
     Component{

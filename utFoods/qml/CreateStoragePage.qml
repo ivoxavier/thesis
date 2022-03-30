@@ -82,8 +82,8 @@ Page{
             running: false
             onRunningChanged: {
                 ControlCreateStorage.animationState(4000, function () {
-                    //page_stack.pop(create_storage_page)
-                    //page_stack.push()
+                    page_stack.pop(create_storage_page)
+                    page_stack.push(home_page)
                 })
             }
         }

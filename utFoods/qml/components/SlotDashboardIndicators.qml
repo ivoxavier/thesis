@@ -16,21 +16,36 @@
 
 import QtQuick 2.9
 import Ubuntu.Components 1.3
+//import QtQuick.Controls 2.2
+import QtQuick.Layouts 1.3
 import Qt.labs.settings 1.0
+import Ubuntu.Components.ListItems 1.3 
+import Ubuntu.Components.Popups 1.3
 
-Settings {
-    //stores the login for in db
-    property int id_login
 
-    //stores the app configuration, necessary to not run config everytime
-    property bool is_clean_install : true
+UbuntuShape{
+    id: slot_shape
 
-    //stores the user starts using date
-    property string using_app_date
+    // make public API's
+    property alias slot_indicatior : slot_indicatior.text
+    property alias slot_icon_label : slot_icon_label.text
 
-    //stores plan type
-    property string plan_type
-    
-    //stores recommended calories
-    property int rec_cal
-}
+    aspect: UbuntuShape.Flat
+
+    ColumnLayout{
+        id: slot_layout
+        width: parent.width
+        spacing: units.gu(0.5)
+
+        Text{
+            id: slot_indicatior
+            Layout.alignment: Qt.AlignCenter
+            font.bold: true
+        }
+
+        Text{
+            id: slot_icon_label
+            Layout.alignment: Qt.AlignCenter
+        }
+    }
+}  

@@ -22,6 +22,8 @@ function dBbuild(){
     root.user_weight, root.user_height, root.user_activity_level, root.equation_recommended_calories)
     WeightTrackerTable.newWeight(root.user_weight)
     loading_circle.running = !loading_circle.running
+    app_settings.rec_cal = root.equation_recommended_calories
+    app_settings.using_app_date = root.stringDate
     app_settings.is_clean_install = !app_settings.is_clean_install
 }catch (err){} 
 }

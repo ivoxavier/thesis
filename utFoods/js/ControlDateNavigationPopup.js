@@ -17,4 +17,5 @@
 function newDate(){
   root.stringDate = Qt.formatDate(day_month_picker.date,"yyyy-MM-dd")
   icon_down.is_clicked = !icon_down.is_clicked
+  root.initDB()
 }

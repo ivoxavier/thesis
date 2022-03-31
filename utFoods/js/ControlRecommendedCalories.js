@@ -15,6 +15,9 @@
  */
 
 function confrim(){
+  ////stores plan type
+  app_settings.plan_type = root.type_goal
+  
   page_stack.pop(set_height_page)
   page_stack.pop(set_weight_page)
   page_stack.pop(set_age_page)

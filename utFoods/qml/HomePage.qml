@@ -24,13 +24,31 @@ import Ubuntu.Components.Popups 1.3
 import QtQuick.LocalStorage 2.12
 import "components"
 import "../js/ControlIconUpAnimation.js" as ControlIconUpAnimation
-
+import "../js/GetData.js" as GetData
+import "../js/ControlSlotDashboardPlan.js" as ControlSlotDashboardPlan
 
 Page{
     id: home_page
     objectName: 'HomePage'
     header: PageHeader {visible:false}
     
+    // stores the query output
+    property int query_total_consumed 
+    property int query_total_remaining
+    property int query_total_foods
+    
+    //this component is need to initializate the db. It's linked to main view so it runs everytime the iniDB signal is emitted
+    //without it the dashboard will not update untill a close and opening the app again
+    Connections{
+        target: root
+        onInitDB:{
+            GetData.getTotalCalConsumed()
+            GetData.getTotalCalRemaining()
+            GetData.getTotalFoodsConsumed()
+        }
+    }
+
+
     //popus a datepicker
     Component{
         id: date_popUP
@@ -51,19 +69,74 @@ Page{
             id: main_column
             width: root.width
 
-            Row{
+            RowLayout{
+                Layout.alignment: Qt.AlignCenter
+                width: parent.width
+                spacing: units.gu(2)
+
+                SlotDashboardPlan{
+                    id: male_slot
+                    Layout.alignment: Qt.AlignCenter
+                    Layout.preferredWidth: units.gu(22)
+                    Layout.preferredHeight: units.gu(7)
+                    text: ControlSlotDashboardPlan.planType(app_settings.plan_type)
+                    img_path:"../assets/logo.svg"
+                }
+            }
+
+            BlankSpace{}
+
+            CaloriesCircleChart{Layout.alignment: Qt.AlignCenter}
+
+            BlankSpace{}
+
+            RowLayout{
+                Layout.alignment: Qt.AlignCenter
+                width: parent.width
+                spacing: units.gu(1.5)
+
+                SlotDashboardIndicators{
+                    Layout.preferredWidth: units.gu(13)
+                    Layout.preferredHeight: units.gu(5)
+                    slot_indicatior: query_total_foods
+                    slot_icon_label: i18n.tr("FOODS")
+                }
+
+
+                SlotDashboardIcons{
+                    Layout.preferredWidth: units.gu(13)
+                    Layout.preferredHeight: units.gu(5)
+                    slot_icon : "attachment"
+                }
+
+                SlotDashboardIndicators{
+                    Layout.preferredWidth: units.gu(13)
+                    Layout.preferredHeight: units.gu(5)
+                    slot_indicatior: query_total_consumed
+                    slot_icon_label: i18n.tr("CONSUMED")
+                }
+                
+            }
+            
+           
+
+            BlankSpace{height:units.gu(2)}
+
+            RowLayout{
                 Layout.alignment: Qt.AlignCenter
                 spacing: units.gu(1)
-                Icon{id:calendar_icon;name:"calendar";height: units.gu(2.5)}
+                Icon{id:calendar_icon;Layout.alignment: Qt.AlignVCenter;name:"calendar";height: units.gu(2.5)}
 
                 Label {
                     id: dateLabel
+                    Layout.alignment: Qt.AlignVCenter
                     text: root.stringDate
                     font.pixelSize: units.gu(2)
                 }
 
                 Icon{
                     id: icon_down
+                    Layout.alignment: Qt.AlignVCenter
                     property bool is_clicked : false
                     name: "go-up"
                     height: units.gu(2.5)
@@ -82,5 +155,9 @@ Page{
 
     FooterBar{id: footer_shape}
         
-    Component.onCompleted:{}        
+    Component.onCompleted:{
+        GetData.getTotalCalConsumed()
+        GetData.getTotalCalRemaining()
+        GetData.getTotalFoodsConsumed()
+    }        
 }

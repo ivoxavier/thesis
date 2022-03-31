@@ -66,6 +66,11 @@ MainView {
     /*properties for calculating calories target --end--*/
     
 
+    /* custom signals --start--*/
+    signal initDB()
+    /* custom signals --end--*/
+
+
     //creates a config file under /home/phablet/.config/utfoods.ivofernandes
     AppSettings{id: app_settings}
 

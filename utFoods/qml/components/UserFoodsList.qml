@@ -14,25 +14,26 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+
 import QtQuick 2.9
 import Ubuntu.Components 1.3
+import Ubuntu.Components.Popups 1.3
+import Ubuntu.Components.Pickers 1.0
+import Ubuntu.Components.ListItems 1.3
+import QtQuick.Layouts 1.3
 import Qt.labs.settings 1.0
+import QtQuick.LocalStorage 2.0
+import QtQuick.XmlListModel 2.7
+import "../../js/UserFoodsListTable.js" as UserFoodsListTable
 
-Settings {
-    //stores the login for in db
-    property int id_login
 
-    //stores the app configuration
-    property bool is_clean_install : true
-    property bool is_page_headers_enabled : false
-    property bool is_xml_openfoodsfacts_enabled: true
+ListModel {
+        id: user_foods_list_model
     
-    //stores the user starts using date
-    property string using_app_date
+        dynamicRoles: true
 
-    //stores plan type
-    property string plan_type
-    
-    //stores recommended calories
-    property int rec_cal
+        Component.onCompleted: UserFoodsListTable.getFoods()
+        
 }
+    
+    

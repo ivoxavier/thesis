@@ -16,23 +16,26 @@
 
 import QtQuick 2.9
 import Ubuntu.Components 1.3
+//import QtQuick.Controls 2.2 as QC
+import QtQuick.Layouts 1.3
 import Qt.labs.settings 1.0
+import Ubuntu.Components.ListItems 1.3 
+import Ubuntu.Components.Popups 1.3
+import QtQuick.Controls.Suru 2.2
+import Ubuntu.Components.Pickers 1.3
 
-Settings {
-    //stores the login for in db
-    property int id_login
 
-    //stores the app configuration
-    property bool is_clean_install : true
-    property bool is_page_headers_enabled : false
-    property bool is_xml_openfoodsfacts_enabled: true
-    
-    //stores the user starts using date
-    property string using_app_date
+Row{
+	width: root.width
+    layoutDirection: Qt.RightToLeft 
+    rightPadding: units.gu(2)
+    bottomPadding: units.gu(2)
 
-    //stores plan type
-    property string plan_type
-    
-    //stores recommended calories
-    property int rec_cal
+    IconButton{
+        icon_name: "find"
+        MouseArea{
+            anchors.fill: parent
+            onClicked: PopupUtils.open(search_popover)
+        }
+    }
 }

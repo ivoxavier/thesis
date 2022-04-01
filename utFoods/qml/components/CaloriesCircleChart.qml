@@ -41,7 +41,7 @@ Canvas {
 
     property real minimumValue: 0
     property real maximumValue: 100
-    property real currentValue: (home_page.query_total_consumed / app_settings.rec_cal) * 100
+    property real currentValue: (home_page.query_total_cal_consumed / app_settings.rec_cal) * 100
 
     // this is the angle that splits the circle in two arcs
     // first arc is drawn from 0 radians to angle radians
@@ -98,12 +98,12 @@ Canvas {
         width: parent.width / 2
         Text{
             anchors.horizontalCenter: parent.horizontalCenter
-            text: home_page.query_total_remaining
+            text: home_page.query_total_cal_remaining
             font.pointSize: units.gu(1.7)
         }
         Text{
             anchors.horizontalCenter: parent.horizontalCenter
-            text: i18n.tr("REMAINING")
+            text: home_page.query_total_cal_remaining < 0 ? i18n.tr("EXCEED") : i18n.tr("REMAINING")
             font.pointSize: units.gu(1.3)
         }
     }

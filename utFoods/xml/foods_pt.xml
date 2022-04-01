@@ -2,262 +2,792 @@
 <data>
   <row>
     <index>0</index>
-    <product_name>Almôndegas Powered By Plants - Continente</product_name>
+    <product_name>Jugo de Hierba de Trigo en Polvo</product_name>
     <countries_en>Portugal</countries_en>
-    <nutriscore_grade>b</nutriscore_grade>
-    <energy_kcal_100g>212</energy_kcal_100g>
-    <fat_100g>1.3</fat_100g>
-    <carbohydrates_100g>15.8</carbohydrates_100g>
-    <proteins_100g>9.3</proteins_100g>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy_kcal_100g>317</energy_kcal_100g>
+    <fat_100g>2.96</fat_100g>
+    <carbohydrates_100g>45.6</carbohydrates_100g>
+    <proteins_100g>19.58</proteins_100g>
   </row>
   <row>
     <index>1</index>
-    <product_name>Açai</product_name>
+    <product_name>Queijo fresco cabra</product_name>
     <countries_en>Portugal</countries_en>
-    <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>534</energy-kcal_100g>
-    <fat_100g>44.5</fat_100g>
-    <carbohydrates_100g>8.5</carbohydrates_100g>
-    <proteins_100g>8.6</proteins_100g>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy_kcal_100g>214</energy_kcal_100g>
+    <fat_100g>17</fat_100g>
+    <carbohydrates_100g>3</carbohydrates_100g>
+    <proteins_100g>12</proteins_100g>
   </row>
   <row>
     <index>2</index>
-    <product_name>Sementes de césamo</product_name>
+    <product_name>Original</product_name>
     <countries_en>Portugal</countries_en>
     <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>578</energy-kcal_100g>
-    <fat_100g>47.7</fat_100g>
-    <carbohydrates_100g>5.7</carbohydrates_100g>
-    <proteins_100g>25.4</proteins_100g>
+    <energy_kcal_100g>557</energy_kcal_100g>
+    <fat_100g>38</fat_100g>
+    <carbohydrates_100g>48</carbohydrates_100g>
+    <proteins_100g>4.5</proteins_100g>
   </row>
   <row>
     <index>3</index>
-    <product_name>Pure whey protein</product_name>
-    <countries_en>Portugal</countries_en>
-    <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>417</energy-kcal_100g>
-    <fat_100g>7.5</fat_100g>
-    <carbohydrates_100g>10</carbohydrates_100g>
-    <proteins_100g>75</proteins_100g>
-  </row>
-  <row>
-    <index>4</index>
-    <product_name>Bollycao</product_name>
-    <countries_en>Portugal</countries_en>
-    <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>604</energy-kcal_100g>
-    <fat_100g>50.3</fat_100g>
-    <carbohydrates_100g>18.2</carbohydrates_100g>
-    <proteins_100g>13</proteins_100g>
-  </row>
-  <row>
-    <index>5</index>
-    <product_name>Atum em posta em óleo vegetal - Bom Petisco</product_name>
+    <product_name>Extra crunchy peanut butter</product_name>
     <countries_en>Portugal</countries_en>
     <nutriscore_grade>b</nutriscore_grade>
-    <energy-kcal_100g>190</energy-kcal_100g>
-    <fat_100g>38.34</fat_100g>
-    <carbohydrates_100g>14.19</carbohydrates_100g>
-    <proteins_100g>19.38</proteins_100g>
-  </row>
-  <row>
-    <index>6</index>
-    <product_name>Kinder Chocolat barrinhas</product_name>
-    <countries_en>Portugal</countries_en>
-    <nutriscore_grade>c</nutriscore_grade>
-    <energy-kcal_100g>235</energy-kcal_100g>
-    <fat_100g>20</fat_100g>
-    <carbohydrates_100g>3</carbohydrates_100g>
-    <proteins_100g>10</proteins_100g>
-  </row>
-  <row>
-    <index>7</index>
-    <product_name>Atúm ao natural - Ramirez</product_name>
-    <countries_en>Portugal</countries_en>
-    <nutriscore_grade>b</nutriscore_grade>
-    <energy-kcal_100g>94</energy-kcal_100g>
-    <fat_100g>0.4</fat_100g>
-    <carbohydrates_100g>0.0</carbohydrates_100g>
-    <proteins_100g>22.1</proteins_100g>
-  </row>
-  <row>
-    <index>8</index>
-    <product_name>Bacalhau com Natas - ultracongelado - Coviran</product_name>
-    <countries_en>Portugal</countries_en>
-    <nutriscore_grade>c</nutriscore_grade>
-    <energy-kcal_100g>547</energy-kcal_100g>
-    <fat_100g>55</fat_100g>
-    <carbohydrates_100g>5</carbohydrates_100g>
+    <energy_kcal_100g>190</energy_kcal_100g>
+    <fat_100g>16</fat_100g>
+    <carbohydrates_100g>8</carbohydrates_100g>
     <proteins_100g>7</proteins_100g>
   </row>
   <row>
-    <index>9</index>
-    <product_name>Banzai noodles - Cigala</product_name>
+    <index>4</index>
+    <product_name>Maple syrip</product_name>
     <countries_en>Portugal</countries_en>
     <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>448</energy-kcal_100g>
-    <fat_100g>20.3</fat_100g>
-    <carbohydrates_100g>54.5</carbohydrates_100g>
-    <proteins_100g>9.4</proteins_100g>
-  </row>
-  <row>
-    <index>10</index>
-    <product_name>Barra Whey Protein e Oats - Prozis</product_name>
-    <countries_en>Portugal</countries_en>
-    <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>306</energy-kcal_100g>
-    <fat_100g>1.17</fat_100g>
-    <carbohydrates_100g>42.3</carbohydrates_100g>
-    <proteins_100g>24.1</proteins_100g>
-  </row>
-  <row>
-    <index>11</index>
-    <product_name>Big Mac (McDonalds)</product_name>
-    <countries_en>Portugal</countries_en>
-    <nutriscore_grade>c</nutriscore_grade>
-    <energy-kcal_100g>509</energy-kcal_100g>
-    <fat_100g>11.5</fat_100g>
-    <carbohydrates_100g>4.9</carbohydrates_100g>
-    <proteins_100g>26.0</proteins_100g>
-  </row>
-  <row>
-    <index>12</index>
-    <product_name>Burguer King Menu Whopper</product_name>
-    <countries_en>Portugal</countries_en>
-    <nutriscore_grade>c</nutriscore_grade>
-    <energy-kcal_100g>680</energy-kcal_100g>
-    <fat_100g>35.0</fat_100g>
-    <carbohydrates_100g>52.8</carbohydrates_100g>
-    <proteins_100g>37.0</proteins_100g>
-  </row>
-  <row>
-    <index>13</index>
-    <product_name>Burguer King Menu Whopper Vegetal</product_name>
-    <countries_en>Portugal</countries_en>
-    <nutriscore_grade>c</nutriscore_grade>
-    <energy-kcal_100g>605</energy-kcal_100g>
-    <fat_100g>32.0</fat_100g>
-    <carbohydrates_100g>51.4</carbohydrates_100g>
-    <proteins_100g>22.2</proteins_100g>
-  </row>
-  <row>
-    <index>14</index>
-    <product_name>Psyllium</product_name>
-    <countries_en>Portugal</countries_en>
-    <nutriscore_grade>c</nutriscore_grade>
-    <energy-kcal_100g>377</energy-kcal_100g>
+    <energy_kcal_100g>350</energy_kcal_100g>
     <fat_100g>0</fat_100g>
-    <carbohydrates_100g>88.800003051758</carbohydrates_100g>
+    <carbohydrates_100g>88</carbohydrates_100g>
     <proteins_100g>0</proteins_100g>
   </row>
   <row>
-    <index>15</index>
-    <product_name>Crackies de arroz - Caçarola</product_name>
+    <index>5</index>
+    <product_name>St dalfour</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy_kcal_100g>208</energy_kcal_100g>
+    <fat_100g>0.5</fat_100g>
+    <carbohydrates_100g>52</carbohydrates_100g>
+    <proteins_100g>0.5</proteins_100g>
+  </row>
+  <row>
+    <index>6</index>
+    <product_name>Iogurte Grego para Chefs</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy_kcal_100g>97</energy_kcal_100g>
+    <fat_100g>7</fat_100g>
+    <carbohydrates_100g>4.4</carbohydrates_100g>
+    <proteins_100g>3.4</proteins_100g>
+  </row>
+  <row>
+    <index>7</index>
+    <product_name>Farinha Aveia Integral</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy_kcal_100g>367</energy_kcal_100g>
+    <fat_100g>7.2</fat_100g>
+    <carbohydrates_100g>59</carbohydrates_100g>
+    <proteins_100g>11.9</proteins_100g>
+  </row>
+  <row>
+    <index>8</index>
+    <product_name>Chocolate Zesty</product_name>
     <countries_en>Portugal</countries_en>
     <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>297.5</energy-kcal_100g>
-    <fat_100g>2.66</fat_100g>
-    <carbohydrates_100g>61.28</carbohydrates_100g>
-    <proteins_100g>6.38</proteins_100g>
+    <energy_kcal_100g>513</energy_kcal_100g>
+    <fat_100g>40</fat_100g>
+    <carbohydrates_100g>36</carbohydrates_100g>
+    <proteins_100g>8.1</proteins_100g>
+  </row>
+  <row>
+    <index>9</index>
+    <product_name>Toffee Nut Syrup</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>e</nutriscore_grade>
+    <energy_kcal_100g>250</energy_kcal_100g>
+    <fat_100g>0</fat_100g>
+    <carbohydrates_100g>57</carbohydrates_100g>
+    <proteins_100g>0</proteins_100g>
+  </row>
+  <row>
+    <index>10</index>
+    <product_name>biscuit avec garniture goût chocolat</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>e</nutriscore_grade>
+    <energy_kcal_100g>482</energy_kcal_100g>
+    <fat_100g>19</fat_100g>
+    <carbohydrates_100g>70</carbohydrates_100g>
+    <proteins_100g>6</proteins_100g>
+  </row>
+  <row>
+    <index>11</index>
+    <product_name>Lördagsgodis</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>d</nutriscore_grade>
+    <energy_kcal_100g>362</energy_kcal_100g>
+    <fat_100g>0</fat_100g>
+    <carbohydrates_100g>89</carbohydrates_100g>
+    <proteins_100g>0</proteins_100g>
+  </row>
+  <row>
+    <index>12</index>
+    <product_name>Granola crunchy</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy_kcal_100g>430</energy_kcal_100g>
+    <fat_100g>17</fat_100g>
+    <carbohydrates_100g>54</carbohydrates_100g>
+    <proteins_100g>13</proteins_100g>
+  </row>
+  <row>
+    <index>13</index>
+    <product_name>Manteiga de soja</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>e</nutriscore_grade>
+    <energy_kcal_100g>443</energy_kcal_100g>
+    <fat_100g>50</fat_100g>
+    <carbohydrates_100g>0</carbohydrates_100g>
+    <proteins_100g>0.5</proteins_100g>
+  </row>
+  <row>
+    <index>14</index>
+    <product_name>Mythos Iogurte Estilo Grego Ligeiro Natural</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy_kcal_100g>55</energy_kcal_100g>
+    <fat_100g>2</fat_100g>
+    <carbohydrates_100g>3.9</carbohydrates_100g>
+    <proteins_100g>5.3</proteins_100g>
+  </row>
+  <row>
+    <index>15</index>
+    <product_name>Choco DUO - bolachas de manteiga com chocolate preto</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>e</nutriscore_grade>
+    <energy_kcal_100g>514</energy_kcal_100g>
+    <fat_100g>27.1</fat_100g>
+    <carbohydrates_100g>57.1</carbohydrates_100g>
+    <proteins_100g>6.43</proteins_100g>
   </row>
   <row>
     <index>16</index>
-    <product_name>Crunchy Muesli - Pingo-Doce</product_name>
+    <product_name>Fruta kids tuttifrutti</product_name>
     <countries_en>Portugal</countries_en>
-    <nutriscore_grade>b</nutriscore_grade>
-    <energy-kcal_100g>74</energy-kcal_100g>
-    <fat_100g>0.5</fat_100g>
-    <carbohydrates_100g>0</carbohydrates_100g>
-    <proteins_100g>1</proteins_100g>
+    <nutriscore_grade>d</nutriscore_grade>
+    <energy_kcal_100g>20</energy_kcal_100g>
+    <fat_100g>0</fat_100g>
+    <carbohydrates_100g>5</carbohydrates_100g>
+    <proteins_100g>0</proteins_100g>
   </row>
   <row>
     <index>17</index>
-    <product_name>Danone Iogurte Natural</product_name>
+    <product_name>GRANOLA DE AVEIA CROCANTE BIO</product_name>
     <countries_en>Portugal</countries_en>
     <nutriscore_grade>b</nutriscore_grade>
-    <energy-kcal_100g>69</energy-kcal_100g>
-    <fat_100g>0.5</fat_100g>
-    <carbohydrates_100g>0</carbohydrates_100g>
-    <proteins_100g>17.6</proteins_100g>
+    <energy_kcal_100g>450</energy_kcal_100g>
+    <fat_100g>15</fat_100g>
+    <carbohydrates_100g>65</carbohydrates_100g>
+    <proteins_100g>9</proteins_100g>
   </row>
   <row>
     <index>18</index>
-    <product_name>Filetes de salmão</product_name>
+    <product_name>CRUNCHY OAT GRANOLA RAISIN AND ALMOND</product_name>
     <countries_en>Portugal</countries_en>
-    <nutriscore_grade>a</nutriscore_grade>
-    <energy-kcal_100g>97</energy-kcal_100g>
-    <fat_100g>1.5</fat_100g>
-    <carbohydrates_100g>0</carbohydrates_100g>
-    <proteins_100g>20.8</proteins_100g>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy_kcal_100g>412</energy_kcal_100g>
+    <fat_100g>12.6</fat_100g>
+    <carbohydrates_100g>61.6</carbohydrates_100g>
+    <proteins_100g>9.9</proteins_100g>
   </row>
   <row>
     <index>19</index>
-    <product_name>Dots - Continente</product_name>
+    <product_name>Granola Fig &amp; Walnut</product_name>
     <countries_en>Portugal</countries_en>
-    <nutriscore_grade>e</nutriscore_grade>
-    <energy-kcal_100g>385</energy-kcal_100g>
-    <fat_100g>1.5</fat_100g>
-    <carbohydrates_100g>60.0</carbohydrates_100g>
-    <proteins_100g>20.8</proteins_100g>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy_kcal_100g>487</energy_kcal_100g>
+    <fat_100g>29.2</fat_100g>
+    <carbohydrates_100g>38.2</carbohydrates_100g>
+    <proteins_100g>14.5</proteins_100g>
   </row>
   <row>
     <index>20</index>
-    <product_name>Fiambre da perna extra - Nobre</product_name>
+    <product_name>Granola Crunchy de Frutos do Bosque</product_name>
     <countries_en>Portugal</countries_en>
-    <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>91</energy-kcal_100g>
-    <fat_100g>1.5</fat_100g>
-    <carbohydrates_100g>1.0</carbohydrates_100g>
-    <proteins_100g>20.799999237061</proteins_100g>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy_kcal_100g>441</energy_kcal_100g>
+    <fat_100g>17</fat_100g>
+    <carbohydrates_100g>60</carbohydrates_100g>
+    <proteins_100g>8.5</proteins_100g>
   </row>
   <row>
     <index>21</index>
-    <product_name>Filipinos chocolate negro - Artiach</product_name>
+    <product_name>Granola da Maria de Amêndoas e Sementes de Abóbora</product_name>
     <countries_en>Portugal</countries_en>
-    <nutriscore_grade>e</nutriscore_grade>
-    <energy-kcal_100g>509</energy-kcal_100g>
-    <fat_100g>26.7</fat_100g>
-    <carbohydrates_100g>60.1</carbohydrates_100g>
-    <proteins_100g>5.1</proteins_100g>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy_kcal_100g>487</energy_kcal_100g>
+    <fat_100g>27</fat_100g>
+    <carbohydrates_100g>50</carbohydrates_100g>
+    <proteins_100g>15.4</proteins_100g>
   </row>
   <row>
     <index>22</index>
-    <product_name>Filetes de bacalhau</product_name>
+    <product_name>Granola sporty bio | low carb | keto | paleo</product_name>
     <countries_en>Portugal</countries_en>
-    <nutriscore_grade>c</nutriscore_grade>
-    <energy-kcal_100g>40</energy-kcal_100g>
-    <fat_100g>0.5</fat_100g>
-    <carbohydrates_100g>0</carbohydrates_100g>
-    <proteins_100g>8.9</proteins_100g>
+    <nutriscore_grade>b</nutriscore_grade>
+    <energy_kcal_100g>534</energy_kcal_100g>
+    <fat_100g>46</fat_100g>
+    <carbohydrates_100g>14</carbohydrates_100g>
+    <proteins_100g>21</proteins_100g>
   </row>
   <row>
     <index>23</index>
-    <product_name>Filetes de peixe gato riscado - Guimarpeixe</product_name>
+    <product_name>Banana da Madeira</product_name>
     <countries_en>Portugal</countries_en>
-    <nutriscore_grade>b</nutriscore_grade>
-    <energy-kcal_100g>226</energy-kcal_100g>
-    <fat_100g>0.5</fat_100g>
-    <carbohydrates_100g>0.05</carbohydrates_100g>
-    <proteins_100g>17.6</proteins_100g>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy_kcal_100g>89</energy_kcal_100g>
+    <fat_100g>0</fat_100g>
+    <carbohydrates_100g>23</carbohydrates_100g>
+    <proteins_100g>1</proteins_100g>
   </row>
   <row>
     <index>24</index>
-    <product_name>Flamengo Light - Campainha</product_name>
+    <product_name>High protein Pudding</product_name>
     <countries_en>Portugal</countries_en>
-    <nutriscore_grade>c</nutriscore_grade>
-    <energy-kcal_100g>256</energy-kcal_100g>
-    <fat_100g>1.1</fat_100g>
-    <carbohydrates_100g>0</carbohydrates_100g>
-    <proteins_100g>28.8</proteins_100g>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy_kcal_100g>80</energy_kcal_100g>
+    <fat_100g>1.6</fat_100g>
+    <carbohydrates_100g>6.5</carbohydrates_100g>
+    <proteins_100g>10</proteins_100g>
   </row>
   <row>
     <index>25</index>
-    <product_name>Framboesas Congeladas - Contienente</product_name>
+    <product_name>Wrap de frango</product_name>
     <countries_en>Portugal</countries_en>
     <nutriscore_grade>b</nutriscore_grade>
-    <energy-kcal_100g>74</energy-kcal_100g>
+    <energy_kcal_100g>226</energy_kcal_100g>
+    <fat_100g>8.2</fat_100g>
+    <carbohydrates_100g>29</carbohydrates_100g>
+    <proteins_100g>7.8</proteins_100g>
+  </row>
+  <row>
+    <index>26</index>
+    <product_name>Leite português</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>d</nutriscore_grade>
+    <energy_kcal_100g>65</energy_kcal_100g>
+    <fat_100g>3.5999999046326</fat_100g>
+    <carbohydrates_100g>4.9000000953674</carbohydrates_100g>
+    <proteins_100g>4.9000000953674</proteins_100g>
+  </row>
+  <row>
+    <index>27</index>
+    <product_name>Filete de atum dos Açores ao natural</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>b</nutriscore_grade>
+    <energy_kcal_100g>81</energy_kcal_100g>
+    <fat_100g>0.7</fat_100g>
+    <carbohydrates_100g>0.5</carbohydrates_100g>
+    <proteins_100g>18.2</proteins_100g>
+  </row>
+  <row>
+    <index>28</index>
+    <product_name>Bolacha integral</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>d</nutriscore_grade>
+    <energy_kcal_100g>429</energy_kcal_100g>
+    <fat_100g>13.39999961853</fat_100g>
+    <carbohydrates_100g>62.900001525879</carbohydrates_100g>
+    <proteins_100g>9.6999998092651</proteins_100g>
+  </row>
+  <row>
+    <index>29</index>
+    <product_name>White Chocolate</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>e</nutriscore_grade>
+    <energy_kcal_100g>573</energy_kcal_100g>
+    <fat_100g>36.3</fat_100g>
+    <carbohydrates_100g>55</carbohydrates_100g>
+    <proteins_100g>6.4</proteins_100g>
+  </row>
+  <row>
+    <index>30</index>
+    <product_name>Azeitonas verdes recheadas com pimento</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>d</nutriscore_grade>
+    <energy_kcal_100g>154</energy_kcal_100g>
+    <fat_100g>16</fat_100g>
+    <carbohydrates_100g>0.01</carbohydrates_100g>
+    <proteins_100g>1</proteins_100g>
+  </row>
+  <row>
+    <index>31</index>
+    <product_name>Feijão-frade</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy_kcal_100g>99</energy_kcal_100g>
+    <fat_100g>0.9</fat_100g>
+    <carbohydrates_100g>14.2</carbohydrates_100g>
+    <proteins_100g>6.8</proteins_100g>
+  </row>
+  <row>
+    <index>32</index>
+    <product_name>Paõ de forma</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>b</nutriscore_grade>
+    <energy_kcal_100g>242</energy_kcal_100g>
+    <fat_100g>2.7</fat_100g>
+    <carbohydrates_100g>43.6</carbohydrates_100g>
+    <proteins_100g>9.5</proteins_100g>
+  </row>
+  <row>
+    <index>33</index>
+    <product_name>Pain pour Hot Dog</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy_kcal_100g>289</energy_kcal_100g>
+    <fat_100g>4.1</fat_100g>
+    <carbohydrates_100g>52.8</carbohydrates_100g>
+    <proteins_100g>9</proteins_100g>
+  </row>
+  <row>
+    <index>34</index>
+    <product_name>Leite Sem Lactose meio gordo</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>b</nutriscore_grade>
+    <energy_kcal_100g>45</energy_kcal_100g>
+    <fat_100g>1.6</fat_100g>
+    <carbohydrates_100g>4.5</carbohydrates_100g>
+    <proteins_100g>3.1</proteins_100g>
+  </row>
+  <row>
+    <index>35</index>
+    <product_name>Bio Hafer Natur</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>b</nutriscore_grade>
+    <energy_kcal_100g>79</energy_kcal_100g>
+    <fat_100g>3.1</fat_100g>
+    <carbohydrates_100g>12</carbohydrates_100g>
+    <proteins_100g>0.8</proteins_100g>
+  </row>
+  <row>
+    <index>36</index>
+    <product_name>Layered ice cream dessert</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>d</nutriscore_grade>
+    <energy_kcal_100g>123</energy_kcal_100g>
+    <fat_100g>7.1999998092651</fat_100g>
+    <carbohydrates_100g>12.300000190735</carbohydrates_100g>
+    <proteins_100g>1.7000000476837</proteins_100g>
+  </row>
+  <row>
+    <index>37</index>
+    <product_name>Chocolate</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>e</nutriscore_grade>
+    <energy_kcal_100g>512</energy_kcal_100g>
+    <fat_100g>27.60000038147</fat_100g>
+    <carbohydrates_100g>56.799999237061</carbohydrates_100g>
+    <proteins_100g>0.090000003576279</proteins_100g>
+  </row>
+  <row>
+    <index>38</index>
+    <product_name>Yogur líquido desnatado edulcorado con fresa</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy_kcal_100g>31</energy_kcal_100g>
+    <fat_100g>0.1</fat_100g>
+    <carbohydrates_100g>4.1</carbohydrates_100g>
+    <proteins_100g>2.9</proteins_100g>
+  </row>
+  <row>
+    <index>39</index>
+    <product_name>Cocktail de marisco</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>b</nutriscore_grade>
+    <energy_kcal_100g>77</energy_kcal_100g>
+    <fat_100g>2.2</fat_100g>
+    <carbohydrates_100g>4.1</carbohydrates_100g>
+    <proteins_100g>10</proteins_100g>
+  </row>
+  <row>
+    <index>40</index>
+    <product_name>Soja chocolate suave</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>b</nutriscore_grade>
+    <energy_kcal_100g>67</energy_kcal_100g>
+    <fat_100g>1.8</fat_100g>
+    <carbohydrates_100g>9.4</carbohydrates_100g>
+    <proteins_100g>3</proteins_100g>
+  </row>
+  <row>
+    <index>41</index>
+    <product_name>Choco multicolore</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>e</nutriscore_grade>
+    <energy_kcal_100g>471</energy_kcal_100g>
+    <fat_100g>17.4</fat_100g>
+    <carbohydrates_100g>73.5</carbohydrates_100g>
+    <proteins_100g>3.5</proteins_100g>
+  </row>
+  <row>
+    <index>42</index>
+    <product_name>Gelatina sabor Piña</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>d</nutriscore_grade>
+    <energy_kcal_100g>330</energy_kcal_100g>
     <fat_100g>0.5</fat_100g>
+    <carbohydrates_100g>23</carbohydrates_100g>
+    <proteins_100g>64</proteins_100g>
+  </row>
+  <row>
+    <index>43</index>
+    <product_name>Gelatina, sabor a melancia</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy_kcal_100g>469</energy_kcal_100g>
+    <fat_100g>0</fat_100g>
+    <carbohydrates_100g>0.8</carbohydrates_100g>
+    <proteins_100g>1.8</proteins_100g>
+  </row>
+  <row>
+    <index>44</index>
+    <product_name>ovos frescos</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>b</nutriscore_grade>
+    <energy_kcal_100g>160</energy_kcal_100g>
+    <fat_100g>12</fat_100g>
     <carbohydrates_100g>0</carbohydrates_100g>
-    <proteins_100g>0.9</proteins_100g>
+    <proteins_100g>12</proteins_100g>
+  </row>
+  <row>
+    <index>45</index>
+    <product_name>Queijo manchego</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>d</nutriscore_grade>
+    <energy_kcal_100g>456</energy_kcal_100g>
+    <fat_100g>39.3</fat_100g>
+    <carbohydrates_100g>1.6</carbohydrates_100g>
+    <proteins_100g>24</proteins_100g>
+  </row>
+  <row>
+    <index>46</index>
+    <product_name>Bolo rainha</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy_kcal_100g>34</energy_kcal_100g>
+    <fat_100g>15.3</fat_100g>
+    <carbohydrates_100g>45</carbohydrates_100g>
+    <proteins_100g>5.4</proteins_100g>
+  </row>
+  <row>
+    <index>47</index>
+    <product_name>Raccard</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>d</nutriscore_grade>
+    <energy_kcal_100g>343</energy_kcal_100g>
+    <fat_100g>27</fat_100g>
+    <carbohydrates_100g>0</carbohydrates_100g>
+    <proteins_100g>35</proteins_100g>
+  </row>
+  <row>
+    <index>48</index>
+    <product_name>Manteiga comsal</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>e</nutriscore_grade>
+    <energy_kcal_100g>743</energy_kcal_100g>
+    <fat_100g>82</fat_100g>
+    <carbohydrates_100g>0.7</carbohydrates_100g>
+    <proteins_100g>0.6</proteins_100g>
+  </row>
+  <row>
+    <index>49</index>
+    <product_name>Azeite virgem extra</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy_kcal_100g>821</energy_kcal_100g>
+    <fat_100g>91.2</fat_100g>
+    <carbohydrates_100g>0</carbohydrates_100g>
+    <proteins_100g>0</proteins_100g>
+  </row>
+  <row>
+    <index>50</index>
+    <product_name>Arroz</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>b</nutriscore_grade>
+    <energy_kcal_100g>349</energy_kcal_100g>
+    <fat_100g>1.3</fat_100g>
+    <carbohydrates_100g>76</carbohydrates_100g>
+    <proteins_100g>7.9</proteins_100g>
+  </row>
+  <row>
+    <index>51</index>
+    <product_name>Molho com coco</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>d</nutriscore_grade>
+    <energy_kcal_100g>115</energy_kcal_100g>
+    <fat_100g>7</fat_100g>
+    <carbohydrates_100g>12</carbohydrates_100g>
+    <proteins_100g>0.8</proteins_100g>
+  </row>
+  <row>
+    <index>52</index>
+    <product_name>Bebida de soja</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy_kcal_100g>0</energy_kcal_100g>
+    <fat_100g>1.7000000476837</fat_100g>
+    <carbohydrates_100g>2.5999999046326</carbohydrates_100g>
+    <proteins_100g>3</proteins_100g>
+  </row>
+  <row>
+    <index>53</index>
+    <product_name>Bebida de amendoas</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>b</nutriscore_grade>
+    <energy_kcal_100g>25</energy_kcal_100g>
+    <fat_100g>1.1000000238419</fat_100g>
+    <carbohydrates_100g>3.0999999046326</carbohydrates_100g>
+    <proteins_100g>0.5</proteins_100g>
+  </row>
+  <row>
+    <index>54</index>
+    <product_name>Chá Erva Príncipe e Gengibre</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy_kcal_100g>1</energy_kcal_100g>
+    <fat_100g>0</fat_100g>
+    <carbohydrates_100g>0.5</carbohydrates_100g>
+    <proteins_100g>0</proteins_100g>
+  </row>
+  <row>
+    <index>55</index>
+    <product_name>Amendoins torrados com casca</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>d</nutriscore_grade>
+    <energy_kcal_100g>616</energy_kcal_100g>
+    <fat_100g>50</fat_100g>
+    <carbohydrates_100g>9.6</carbohydrates_100g>
+    <proteins_100g>27</proteins_100g>
+  </row>
+  <row>
+    <index>56</index>
+    <product_name>Haricots bruns</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>b</nutriscore_grade>
+    <energy_kcal_100g>81</energy_kcal_100g>
+    <fat_100g>0.7</fat_100g>
+    <carbohydrates_100g>8.5</carbohydrates_100g>
+    <proteins_100g>6.4</proteins_100g>
+  </row>
+  <row>
+    <index>57</index>
+    <product_name>Esparguete Integral Bio</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy_kcal_100g>361</energy_kcal_100g>
+    <fat_100g>2.3</fat_100g>
+    <carbohydrates_100g>68.5</carbohydrates_100g>
+    <proteins_100g>12.3</proteins_100g>
+  </row>
+  <row>
+    <index>58</index>
+    <product_name>Milho painço</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy_kcal_100g>378</energy_kcal_100g>
+    <fat_100g>4.2</fat_100g>
+    <carbohydrates_100g>64</carbohydrates_100g>
+    <proteins_100g>11.2</proteins_100g>
+  </row>
+  <row>
+    <index>59</index>
+    <product_name>Super Frutos</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>d</nutriscore_grade>
+    <energy_kcal_100g>52</energy_kcal_100g>
+    <fat_100g>0.5</fat_100g>
+    <carbohydrates_100g>13</carbohydrates_100g>
+    <proteins_100g>0.5</proteins_100g>
+  </row>
+  <row>
+    <index>60</index>
+    <product_name>Bagel Clássico</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>d</nutriscore_grade>
+    <energy_kcal_100g>307</energy_kcal_100g>
+    <fat_100g>4</fat_100g>
+    <carbohydrates_100g>57</carbohydrates_100g>
+    <proteins_100g>9.6</proteins_100g>
+  </row>
+  <row>
+    <index>61</index>
+    <product_name>Aparas serrano reserva</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>d</nutriscore_grade>
+    <energy_kcal_100g>247</energy_kcal_100g>
+    <fat_100g>12.2</fat_100g>
+    <carbohydrates_100g>1</carbohydrates_100g>
+    <proteins_100g>33.5</proteins_100g>
+  </row>
+  <row>
+    <index>62</index>
+    <product_name>Presunto reserva</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>e</nutriscore_grade>
+    <energy_kcal_100g>299.5</energy_kcal_100g>
+    <fat_100g>18.7</fat_100g>
+    <carbohydrates_100g>1</carbohydrates_100g>
+    <proteins_100g>31.8</proteins_100g>
+  </row>
+  <row>
+    <index>63</index>
+    <product_name>Pizza masa fina</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>e</nutriscore_grade>
+    <energy_kcal_100g>242</energy_kcal_100g>
+    <fat_100g>9.4</fat_100g>
+    <carbohydrates_100g>30</carbohydrates_100g>
+    <proteins_100g>8.8</proteins_100g>
+  </row>
+  <row>
+    <index>64</index>
+    <product_name>Capricho de chocolate</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy_kcal_100g>138</energy_kcal_100g>
+    <fat_100g>1.88</fat_100g>
+    <carbohydrates_100g>26.8</carbohydrates_100g>
+    <proteins_100g>3</proteins_100g>
+  </row>
+  <row>
+    <index>65</index>
+    <product_name>Salvado de trigo</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy_kcal_100g>338</energy_kcal_100g>
+    <fat_100g>4.4</fat_100g>
+    <carbohydrates_100g>46.6</carbohydrates_100g>
+    <proteins_100g>13.6</proteins_100g>
+  </row>
+  <row>
+    <index>66</index>
+    <product_name>A granola aveia integral</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy_kcal_100g>399</energy_kcal_100g>
+    <fat_100g>10.9</fat_100g>
+    <carbohydrates_100g>54.1</carbohydrates_100g>
+    <proteins_100g>10.1</proteins_100g>
+  </row>
+  <row>
+    <index>67</index>
+    <product_name>Queijo curado amanteigado</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>d</nutriscore_grade>
+    <energy_kcal_100g>386</energy_kcal_100g>
+    <fat_100g>32</fat_100g>
+    <carbohydrates_100g>1.4</carbohydrates_100g>
+    <proteins_100g>22.2</proteins_100g>
+  </row>
+  <row>
+    <index>68</index>
+    <product_name>Gogo squeez</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy_kcal_100g>67</energy_kcal_100g>
+    <fat_100g>0.5</fat_100g>
+    <carbohydrates_100g>14</carbohydrates_100g>
+    <proteins_100g>0.5</proteins_100g>
+  </row>
+  <row>
+    <index>69</index>
+    <product_name>Kvarg blueberry &amp; vanilla</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy_kcal_100g>54</energy_kcal_100g>
+    <fat_100g>0.2</fat_100g>
+    <carbohydrates_100g>3.1</carbohydrates_100g>
+    <proteins_100g>10</proteins_100g>
+  </row>
+  <row>
+    <index>70</index>
+    <product_name>LINDAHLs KVARG</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy_kcal_100g>220</energy_kcal_100g>
+    <fat_100g>0.8</fat_100g>
+    <carbohydrates_100g>3.7</carbohydrates_100g>
+    <proteins_100g>6.8</proteins_100g>
+  </row>
+  <row>
+    <index>71</index>
+    <product_name>Nestlé yoggi Smoodi morango é ananás</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>b</nutriscore_grade>
+    <energy_kcal_100g>78</energy_kcal_100g>
+    <fat_100g>1.1</fat_100g>
+    <carbohydrates_100g>14.2</carbohydrates_100g>
+    <proteins_100g>2.6</proteins_100g>
+  </row>
+  <row>
+    <index>72</index>
+    <product_name>LINDAHLs</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy_kcal_100g>60</energy_kcal_100g>
+    <fat_100g>0.2</fat_100g>
+    <carbohydrates_100g>3.5</carbohydrates_100g>
+    <proteins_100g>11</proteins_100g>
+  </row>
+  <row>
+    <index>73</index>
+    <product_name>Yaos estiko grego</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>a</nutriscore_grade>
+    <energy_kcal_100g>46</energy_kcal_100g>
+    <fat_100g>0.1</fat_100g>
+    <carbohydrates_100g>4.5</carbohydrates_100g>
+    <proteins_100g>6.8</proteins_100g>
+  </row>
+  <row>
+    <index>74</index>
+    <product_name>Yaos Granola &amp; Chocolate</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>b</nutriscore_grade>
+    <energy_kcal_100g>144</energy_kcal_100g>
+    <fat_100g>9.4</fat_100g>
+    <carbohydrates_100g>9.5</carbohydrates_100g>
+    <proteins_100g>4.8</proteins_100g>
+  </row>
+  <row>
+    <index>75</index>
+    <product_name>Laranja natural</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy_kcal_100g>49</energy_kcal_100g>
+    <fat_100g>0.1</fat_100g>
+    <carbohydrates_100g>11</carbohydrates_100g>
+    <proteins_100g>0.7</proteins_100g>
+  </row>
+  <row>
+    <index>76</index>
+    <product_name>Toranja rosa natural</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy_kcal_100g>48</energy_kcal_100g>
+    <fat_100g>0.1</fat_100g>
+    <carbohydrates_100g>11</carbohydrates_100g>
+    <proteins_100g>0.6</proteins_100g>
+  </row>
+  <row>
+    <index>77</index>
+    <product_name>Petite creme al queso azul</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>d</nutriscore_grade>
+    <energy_kcal_100g>247</energy_kcal_100g>
+    <fat_100g>21</fat_100g>
+    <carbohydrates_100g>1.5</carbohydrates_100g>
+    <proteins_100g>13</proteins_100g>
+  </row>
+  <row>
+    <index>78</index>
+    <product_name>Cacao puro soluvel 100%</product_name>
+    <countries_en>Portugal</countries_en>
+    <nutriscore_grade>c</nutriscore_grade>
+    <energy_kcal_100g>385</energy_kcal_100g>
+    <fat_100g>21</fat_100g>
+    <carbohydrates_100g>10</carbohydrates_100g>
+    <proteins_100g>22</proteins_100g>
   </row>
 </data>

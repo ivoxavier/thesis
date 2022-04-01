@@ -5,7 +5,7 @@
     <product_name>Salade de carottes râpées</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>b</nutriscore_grade>
-    <energy-kcal_100g>32</energy-kcal_100g>
+    <energy_kcal_100g>32</energy_kcal_100g>
     <fat_100g>0.3</fat_100g>
     <carbohydrates_100g>5.3</carbohydrates_100g>
     <proteins_100g>0.9</proteins_100g>
@@ -15,7 +15,7 @@
     <product_name>Tarte noix de coco</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>381</energy-kcal_100g>
+    <energy_kcal_100g>381</energy_kcal_100g>
     <fat_100g>22</fat_100g>
     <carbohydrates_100g>27.3</carbohydrates_100g>
     <proteins_100g>4.6</proteins_100g>
@@ -25,7 +25,7 @@
     <product_name>Compote de poire</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>a</nutriscore_grade>
-    <energy-kcal_100g>157</energy-kcal_100g>
+    <energy_kcal_100g>157</energy_kcal_100g>
     <fat_100g>0</fat_100g>
     <carbohydrates_100g>36</carbohydrates_100g>
     <proteins_100g>0.6</proteins_100g>
@@ -35,7 +35,7 @@
     <product_name>Salade de macedoine de légumes</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>b</nutriscore_grade>
-    <energy-kcal_100g>143</energy-kcal_100g>
+    <energy_kcal_100g>143</energy_kcal_100g>
     <fat_100g>12.7</fat_100g>
     <carbohydrates_100g>3.9</carbohydrates_100g>
     <proteins_100g>1.9</proteins_100g>
@@ -45,7 +45,7 @@
     <product_name>Abondance</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>397</energy-kcal_100g>
+    <energy_kcal_100g>397</energy_kcal_100g>
     <fat_100g>33</fat_100g>
     <carbohydrates_100g>0.1</carbohydrates_100g>
     <proteins_100g>25</proteins_100g>
@@ -55,7 +55,7 @@
     <product_name>cuisse de poulet direct au four curry</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>c</nutriscore_grade>
-    <energy-kcal_100g>197</energy-kcal_100g>
+    <energy_kcal_100g>197</energy_kcal_100g>
     <fat_100g>13</fat_100g>
     <carbohydrates_100g>3</carbohydrates_100g>
     <proteins_100g>17</proteins_100g>
@@ -65,7 +65,7 @@
     <product_name>Bagel</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>b</nutriscore_grade>
-    <energy-kcal_100g>197</energy-kcal_100g>
+    <energy_kcal_100g>197</energy_kcal_100g>
     <fat_100g>5</fat_100g>
     <carbohydrates_100g>28.7</carbohydrates_100g>
     <proteins_100g>8.4</proteins_100g>
@@ -75,7 +75,7 @@
     <product_name>BAguette bressan</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>a</nutriscore_grade>
-    <energy-kcal_100g>160</energy-kcal_100g>
+    <energy_kcal_100g>160</energy_kcal_100g>
     <fat_100g>2.2</fat_100g>
     <carbohydrates_100g>25.2</carbohydrates_100g>
     <proteins_100g>9.5</proteins_100g>
@@ -85,7 +85,7 @@
     <product_name>Pavé de saumon fumé à la ficelle</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>253</energy-kcal_100g>
+    <energy_kcal_100g>253</energy_kcal_100g>
     <fat_100g>17</fat_100g>
     <carbohydrates_100g>0.5</carbohydrates_100g>
     <proteins_100g>23</proteins_100g>
@@ -95,7 +95,7 @@
     <product_name>CORNED BEEF</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>235</energy-kcal_100g>
+    <energy_kcal_100g>235</energy_kcal_100g>
     <fat_100g>15</fat_100g>
     <carbohydrates_100g>1</carbohydrates_100g>
     <proteins_100g>24</proteins_100g>
@@ -105,7 +105,7 @@
     <product_name>Salade Grecque</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>b</nutriscore_grade>
-    <energy-kcal_100g>64</energy-kcal_100g>
+    <energy_kcal_100g>64</energy_kcal_100g>
     <fat_100g>2.3</fat_100g>
     <carbohydrates_100g>1.8</carbohydrates_100g>
     <proteins_100g>3.7</proteins_100g>
@@ -115,7 +115,7 @@
     <product_name>Rillettes de sanglier au Chouchen</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>e</nutriscore_grade>
-    <energy-kcal_100g>325</energy-kcal_100g>
+    <energy_kcal_100g>325</energy_kcal_100g>
     <fat_100g>29</fat_100g>
     <carbohydrates_100g>0</carbohydrates_100g>
     <proteins_100g>16</proteins_100g>
@@ -125,7 +125,7 @@
     <product_name>Pur jus de pomme</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>b</nutriscore_grade>
-    <energy-kcal_100g>221</energy-kcal_100g>
+    <energy_kcal_100g>221</energy_kcal_100g>
     <fat_100g>0.5</fat_100g>
     <carbohydrates_100g>0.01</carbohydrates_100g>
     <proteins_100g>0.5</proteins_100g>
@@ -135,7 +135,7 @@
     <product_name>Rillettes de canard au foie gras</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>25</energy-kcal_100g>
+    <energy_kcal_100g>25</energy_kcal_100g>
     <fat_100g>42.75</fat_100g>
     <carbohydrates_100g>0.475</carbohydrates_100g>
     <proteins_100g>13.05</proteins_100g>
@@ -145,7 +145,7 @@
     <product_name>Pâte a tartiner</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>b</nutriscore_grade>
-    <energy-kcal_100g>5</energy-kcal_100g>
+    <energy_kcal_100g>5</energy_kcal_100g>
     <fat_100g>39.6</fat_100g>
     <carbohydrates_100g>42.8</carbohydrates_100g>
     <proteins_100g>8.7</proteins_100g>
@@ -155,7 +155,7 @@
     <product_name>Stylo glaçage gris</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>e</nutriscore_grade>
-    <energy-kcal_100g>580</energy-kcal_100g>
+    <energy_kcal_100g>580</energy_kcal_100g>
     <fat_100g>38</fat_100g>
     <carbohydrates_100g>58</carbohydrates_100g>
     <proteins_100g>3</proteins_100g>
@@ -165,7 +165,7 @@
     <product_name>Huile d'olive de Nîmes vierge extra</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>c</nutriscore_grade>
-    <energy-kcal_100g>823</energy-kcal_100g>
+    <energy_kcal_100g>823</energy_kcal_100g>
     <fat_100g>91.5</fat_100g>
     <carbohydrates_100g>0</carbohydrates_100g>
     <proteins_100g>0</proteins_100g>
@@ -175,7 +175,7 @@
     <product_name>Broyé de la grande Aquitaine aux noix du sud-ouest</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>e</nutriscore_grade>
-    <energy-kcal_100g>541</energy-kcal_100g>
+    <energy_kcal_100g>541</energy_kcal_100g>
     <fat_100g>31</fat_100g>
     <carbohydrates_100g>59</carbohydrates_100g>
     <proteins_100g>6.4</proteins_100g>
@@ -185,7 +185,7 @@
     <product_name>Huile d'olive vierge extra cuve magali</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>c</nutriscore_grade>
-    <energy-kcal_100g>823</energy-kcal_100g>
+    <energy_kcal_100g>823</energy_kcal_100g>
     <fat_100g>92</fat_100g>
     <carbohydrates_100g>0</carbohydrates_100g>
     <proteins_100g>0</proteins_100g>
@@ -195,7 +195,7 @@
     <product_name>Riz au lait</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>c</nutriscore_grade>
-    <energy-kcal_100g>150</energy-kcal_100g>
+    <energy_kcal_100g>150</energy_kcal_100g>
     <fat_100g>5.3</fat_100g>
     <carbohydrates_100g>22</carbohydrates_100g>
     <proteins_100g>3.3</proteins_100g>
@@ -205,7 +205,7 @@
     <product_name>Confiture extra de pêche blanche</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>226</energy-kcal_100g>
+    <energy_kcal_100g>226</energy_kcal_100g>
     <fat_100g>0</fat_100g>
     <carbohydrates_100g>56.8</carbohydrates_100g>
     <proteins_100g>1</proteins_100g>
@@ -215,7 +215,7 @@
     <product_name>Pizza prosciutto</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>c</nutriscore_grade>
-    <energy-kcal_100g>197</energy-kcal_100g>
+    <energy_kcal_100g>197</energy_kcal_100g>
     <fat_100g>4.7</fat_100g>
     <carbohydrates_100g>25</carbohydrates_100g>
     <proteins_100g>11</proteins_100g>
@@ -225,7 +225,7 @@
     <product_name>Organic pesto alla genovese</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>e</nutriscore_grade>
-    <energy-kcal_100g>655</energy-kcal_100g>
+    <energy_kcal_100g>655</energy_kcal_100g>
     <fat_100g>64.5</fat_100g>
     <carbohydrates_100g>11.8</carbohydrates_100g>
     <proteins_100g>5.9</proteins_100g>
@@ -235,7 +235,7 @@
     <product_name>Pesto Rosso</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>e</nutriscore_grade>
-    <energy-kcal_100g>451</energy-kcal_100g>
+    <energy_kcal_100g>451</energy_kcal_100g>
     <fat_100g>38.8</fat_100g>
     <carbohydrates_100g>17.9</carbohydrates_100g>
     <proteins_100g>5.2</proteins_100g>
@@ -245,7 +245,7 @@
     <product_name>Pain de mie sans gluten</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>c</nutriscore_grade>
-    <energy-kcal_100g>214</energy-kcal_100g>
+    <energy_kcal_100g>214</energy_kcal_100g>
     <fat_100g>4.4</fat_100g>
     <carbohydrates_100g>35.9</carbohydrates_100g>
     <proteins_100g>3.7</proteins_100g>
@@ -255,7 +255,7 @@
     <product_name>A&amp;w - Root Beer - 355ml</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>e</nutriscore_grade>
-    <energy-kcal_100g>48</energy-kcal_100g>
+    <energy_kcal_100g>48</energy_kcal_100g>
     <fat_100g>0</fat_100g>
     <carbohydrates_100g>13.3</carbohydrates_100g>
     <proteins_100g>0</proteins_100g>
@@ -265,7 +265,7 @@
     <product_name>Compote de Pomme</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>b</nutriscore_grade>
-    <energy-kcal_100g>377</energy-kcal_100g>
+    <energy_kcal_100g>377</energy_kcal_100g>
     <fat_100g>0.5</fat_100g>
     <carbohydrates_100g>93</carbohydrates_100g>
     <proteins_100g>1.5</proteins_100g>
@@ -275,7 +275,7 @@
     <product_name>Bonbons acidulés Raisin Fraise</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>400</energy-kcal_100g>
+    <energy_kcal_100g>400</energy_kcal_100g>
     <fat_100g>0</fat_100g>
     <carbohydrates_100g>93.3</carbohydrates_100g>
     <proteins_100g>0</proteins_100g>
@@ -285,7 +285,7 @@
     <product_name>Thé noir aromatisé violette et fleurs</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>c</nutriscore_grade>
-    <energy-kcal_100g>4</energy-kcal_100g>
+    <energy_kcal_100g>4</energy_kcal_100g>
     <fat_100g>0.1</fat_100g>
     <carbohydrates_100g>0.1</carbohydrates_100g>
     <proteins_100g>0.1</proteins_100g>
@@ -295,7 +295,7 @@
     <product_name>Pate d'amandes</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>418</energy-kcal_100g>
+    <energy_kcal_100g>418</energy_kcal_100g>
     <fat_100g>10.41</fat_100g>
     <carbohydrates_100g>77.68</carbohydrates_100g>
     <proteins_100g>4.29</proteins_100g>
@@ -305,7 +305,7 @@
     <product_name>Pâte d'Amandes</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>414</energy-kcal_100g>
+    <energy_kcal_100g>414</energy_kcal_100g>
     <fat_100g>10.29</fat_100g>
     <carbohydrates_100g>77.02</carbohydrates_100g>
     <proteins_100g>4.2</proteins_100g>
@@ -315,7 +315,7 @@
     <product_name>Pâte à Sucre</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>411</energy-kcal_100g>
+    <energy_kcal_100g>411</energy_kcal_100g>
     <fat_100g>6.42</fat_100g>
     <carbohydrates_100g>87.86</carbohydrates_100g>
     <proteins_100g>0.03</proteins_100g>
@@ -325,7 +325,7 @@
     <product_name>Pate a sucre</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>393</energy-kcal_100g>
+    <energy_kcal_100g>393</energy_kcal_100g>
     <fat_100g>4.8</fat_100g>
     <carbohydrates_100g>87.1</carbohydrates_100g>
     <proteins_100g>0</proteins_100g>
@@ -335,7 +335,7 @@
     <product_name>Pâte à sucre</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>393</energy-kcal_100g>
+    <energy_kcal_100g>393</energy_kcal_100g>
     <fat_100g>4.8</fat_100g>
     <carbohydrates_100g>87.1</carbohydrates_100g>
     <proteins_100g>0</proteins_100g>
@@ -345,7 +345,7 @@
     <product_name>Confiture de fraise mara des bois</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>c</nutriscore_grade>
-    <energy-kcal_100g>0</energy-kcal_100g>
+    <energy_kcal_100g>0</energy_kcal_100g>
     <fat_100g>0</fat_100g>
     <carbohydrates_100g>58</carbohydrates_100g>
     <proteins_100g>0</proteins_100g>
@@ -355,7 +355,7 @@
     <product_name>Pan</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>b</nutriscore_grade>
-    <energy-kcal_100g>240</energy-kcal_100g>
+    <energy_kcal_100g>240</energy_kcal_100g>
     <fat_100g>1.6</fat_100g>
     <carbohydrates_100g>47</carbohydrates_100g>
     <proteins_100g>8.3</proteins_100g>
@@ -365,7 +365,7 @@
     <product_name>Tripoux</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>402</energy-kcal_100g>
+    <energy_kcal_100g>402</energy_kcal_100g>
     <fat_100g>5.2</fat_100g>
     <carbohydrates_100g>2.4</carbohydrates_100g>
     <proteins_100g>4.3</proteins_100g>
@@ -375,7 +375,7 @@
     <product_name>Foie gras de canard entier du sud-ouest</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>e</nutriscore_grade>
-    <energy-kcal_100g>485</energy-kcal_100g>
+    <energy_kcal_100g>485</energy_kcal_100g>
     <fat_100g>48.2</fat_100g>
     <carbohydrates_100g>4.4</carbohydrates_100g>
     <proteins_100g>9.2</proteins_100g>
@@ -385,7 +385,7 @@
     <product_name>Donuts fourrage vanille</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>e</nutriscore_grade>
-    <energy-kcal_100g>341</energy-kcal_100g>
+    <energy_kcal_100g>341</energy_kcal_100g>
     <fat_100g>17</fat_100g>
     <carbohydrates_100g>43</carbohydrates_100g>
     <proteins_100g>4.3</proteins_100g>
@@ -395,7 +395,7 @@
     <product_name>Donut's nature sucre</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>e</nutriscore_grade>
-    <energy-kcal_100g>417</energy-kcal_100g>
+    <energy_kcal_100g>417</energy_kcal_100g>
     <fat_100g>24</fat_100g>
     <carbohydrates_100g>44</carbohydrates_100g>
     <proteins_100g>6.1</proteins_100g>
@@ -405,7 +405,7 @@
     <product_name>Plain bagels</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>b</nutriscore_grade>
-    <energy-kcal_100g>275</energy-kcal_100g>
+    <energy_kcal_100g>275</energy_kcal_100g>
     <fat_100g>1.5</fat_100g>
     <carbohydrates_100g>55</carbohydrates_100g>
     <proteins_100g>9.4</proteins_100g>
@@ -415,7 +415,7 @@
     <product_name>Mendiants - Studentenhaver</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>437</energy-kcal_100g>
+    <energy_kcal_100g>437</energy_kcal_100g>
     <fat_100g>19.7</fat_100g>
     <carbohydrates_100g>55.2</carbohydrates_100g>
     <proteins_100g>8</proteins_100g>
@@ -425,7 +425,7 @@
     <product_name>Pastille Vichy</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>c</nutriscore_grade>
-    <energy-kcal_100g>250</energy-kcal_100g>
+    <energy_kcal_100g>250</energy_kcal_100g>
     <fat_100g>0</fat_100g>
     <carbohydrates_100g>95</carbohydrates_100g>
     <proteins_100g>0</proteins_100g>
@@ -435,7 +435,7 @@
     <product_name>Kitkat White Wafers</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>220</energy-kcal_100g>
+    <energy_kcal_100g>220</energy_kcal_100g>
     <fat_100g>12</fat_100g>
     <carbohydrates_100g>27</carbohydrates_100g>
     <proteins_100g>2</proteins_100g>
@@ -445,7 +445,7 @@
     <product_name>Céleri Rémoulade</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>c</nutriscore_grade>
-    <energy-kcal_100g>145</energy-kcal_100g>
+    <energy_kcal_100g>145</energy_kcal_100g>
     <fat_100g>13</fat_100g>
     <carbohydrates_100g>3.5</carbohydrates_100g>
     <proteins_100g>2</proteins_100g>
@@ -455,7 +455,7 @@
     <product_name>M&amp;M's Peanut Butter</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>e</nutriscore_grade>
-    <energy-kcal_100g>563</energy-kcal_100g>
+    <energy_kcal_100g>563</energy_kcal_100g>
     <fat_100g>30.5</fat_100g>
     <carbohydrates_100g>51.6</carbohydrates_100g>
     <proteins_100g>0</proteins_100g>
@@ -465,7 +465,7 @@
     <product_name>Heinz Squeeze Sauce Salade Cream</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>293</energy-kcal_100g>
+    <energy_kcal_100g>293</energy_kcal_100g>
     <fat_100g>23.8</fat_100g>
     <carbohydrates_100g>18.5</carbohydrates_100g>
     <proteins_100g>1.3</proteins_100g>
@@ -475,7 +475,7 @@
     <product_name>Heinz Burger Sauce 220Ml</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>e</nutriscore_grade>
-    <energy-kcal_100g>408</energy-kcal_100g>
+    <energy_kcal_100g>408</energy_kcal_100g>
     <fat_100g>37</fat_100g>
     <carbohydrates_100g>17</carbohydrates_100g>
     <proteins_100g>1.7</proteins_100g>
@@ -485,7 +485,7 @@
     <product_name>Blle Pet 50CL Coca Cola Cherry</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>e</nutriscore_grade>
-    <energy-kcal_100g>43</energy-kcal_100g>
+    <energy_kcal_100g>43</energy_kcal_100g>
     <fat_100g>0.1</fat_100g>
     <carbohydrates_100g>10.7</carbohydrates_100g>
     <proteins_100g>0</proteins_100g>
@@ -495,7 +495,7 @@
     <product_name>Pavés de saumon, nature</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>a</nutriscore_grade>
-    <energy-kcal_100g>168</energy-kcal_100g>
+    <energy_kcal_100g>168</energy_kcal_100g>
     <fat_100g>10.3</fat_100g>
     <carbohydrates_100g>0</carbohydrates_100g>
     <proteins_100g>18.9</proteins_100g>
@@ -505,7 +505,7 @@
     <product_name>Galette de Pommes de Terre</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>c</nutriscore_grade>
-    <energy-kcal_100g>137</energy-kcal_100g>
+    <energy_kcal_100g>137</energy_kcal_100g>
     <fat_100g>3.1</fat_100g>
     <carbohydrates_100g>24</carbohydrates_100g>
     <proteins_100g>2.2</proteins_100g>
@@ -515,7 +515,7 @@
     <product_name>Chicken Chips</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>c</nutriscore_grade>
-    <energy-kcal_100g>198</energy-kcal_100g>
+    <energy_kcal_100g>198</energy_kcal_100g>
     <fat_100g>7.2</fat_100g>
     <carbohydrates_100g>17.6</carbohydrates_100g>
     <proteins_100g>15.3</proteins_100g>
@@ -525,7 +525,7 @@
     <product_name>Lasagnes aux saumon et aux épinards</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>b</nutriscore_grade>
-    <energy-kcal_100g>126</energy-kcal_100g>
+    <energy_kcal_100g>126</energy_kcal_100g>
     <fat_100g>6.3</fat_100g>
     <carbohydrates_100g>10.5</carbohydrates_100g>
     <proteins_100g>6.5</proteins_100g>
@@ -535,7 +535,7 @@
     <product_name>Gaufres de Bruxelles</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>b</nutriscore_grade>
-    <energy-kcal_100g>305</energy-kcal_100g>
+    <energy_kcal_100g>305</energy_kcal_100g>
     <fat_100g>16.3</fat_100g>
     <carbohydrates_100g>32.5</carbohydrates_100g>
     <proteins_100g>6.5</proteins_100g>
@@ -545,7 +545,7 @@
     <product_name>Pâte feuilletée</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>382</energy-kcal_100g>
+    <energy_kcal_100g>382</energy_kcal_100g>
     <fat_100g>24.1</fat_100g>
     <carbohydrates_100g>33</carbohydrates_100g>
     <proteins_100g>7.2</proteins_100g>
@@ -555,7 +555,7 @@
     <product_name>Crêpes jambon fromage</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>b</nutriscore_grade>
-    <energy-kcal_100g>162</energy-kcal_100g>
+    <energy_kcal_100g>162</energy_kcal_100g>
     <fat_100g>6.6</fat_100g>
     <carbohydrates_100g>17</carbohydrates_100g>
     <proteins_100g>8.2</proteins_100g>
@@ -565,7 +565,7 @@
     <product_name>Nems de poulet</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>c</nutriscore_grade>
-    <energy-kcal_100g>194</energy-kcal_100g>
+    <energy_kcal_100g>194</energy_kcal_100g>
     <fat_100g>8.1</fat_100g>
     <carbohydrates_100g>21.2</carbohydrates_100g>
     <proteins_100g>8.3</proteins_100g>
@@ -575,7 +575,7 @@
     <product_name>Foie de veau coupe bouchère</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>a</nutriscore_grade>
-    <energy-kcal_100g>109</energy-kcal_100g>
+    <energy_kcal_100g>109</energy_kcal_100g>
     <fat_100g>3.3</fat_100g>
     <carbohydrates_100g>2</carbohydrates_100g>
     <proteins_100g>17.7</proteins_100g>
@@ -585,7 +585,7 @@
     <product_name>Aiguillettes de poulet marinées</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>b</nutriscore_grade>
-    <energy-kcal_100g>103</energy-kcal_100g>
+    <energy_kcal_100g>103</energy_kcal_100g>
     <fat_100g>4</fat_100g>
     <carbohydrates_100g>0.3</carbohydrates_100g>
     <proteins_100g>20</proteins_100g>
@@ -595,7 +595,7 @@
     <product_name>Pomme dauphine</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>278</energy-kcal_100g>
+    <energy_kcal_100g>278</energy_kcal_100g>
     <fat_100g>17</fat_100g>
     <carbohydrates_100g>24</carbohydrates_100g>
     <proteins_100g>5.9</proteins_100g>
@@ -605,7 +605,7 @@
     <product_name>Gratin Dauphinois</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>591</energy-kcal_100g>
+    <energy_kcal_100g>591</energy_kcal_100g>
     <fat_100g>8.9</fat_100g>
     <carbohydrates_100g>12</carbohydrates_100g>
     <proteins_100g>2.8</proteins_100g>
@@ -615,7 +615,7 @@
     <product_name>Babas au rhum</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>270</energy-kcal_100g>
+    <energy_kcal_100g>270</energy_kcal_100g>
     <fat_100g>10.5</fat_100g>
     <carbohydrates_100g>35.1</carbohydrates_100g>
     <proteins_100g>2.1</proteins_100g>
@@ -625,7 +625,7 @@
     <product_name>Bûche roulée Élégance</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>e</nutriscore_grade>
-    <energy-kcal_100g>403</energy-kcal_100g>
+    <energy_kcal_100g>403</energy_kcal_100g>
     <fat_100g>28.2</fat_100g>
     <carbohydrates_100g>29.4</carbohydrates_100g>
     <proteins_100g>6.1</proteins_100g>
@@ -635,7 +635,7 @@
     <product_name>Beignet légumes d'aubergines</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>c</nutriscore_grade>
-    <energy-kcal_100g>243</energy-kcal_100g>
+    <energy_kcal_100g>243</energy_kcal_100g>
     <fat_100g>18</fat_100g>
     <carbohydrates_100g>16</carbohydrates_100g>
     <proteins_100g>2.9</proteins_100g>
@@ -645,7 +645,7 @@
     <product_name>Nacho nuss-nougat</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>e</nutriscore_grade>
-    <energy-kcal_100g>375</energy-kcal_100g>
+    <energy_kcal_100g>375</energy_kcal_100g>
     <fat_100g>22.6</fat_100g>
     <carbohydrates_100g>37.2</carbohydrates_100g>
     <proteins_100g>4.6</proteins_100g>
@@ -655,7 +655,7 @@
     <product_name>Big Choco Framboise</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>e</nutriscore_grade>
-    <energy-kcal_100g>326</energy-kcal_100g>
+    <energy_kcal_100g>326</energy_kcal_100g>
     <fat_100g>20.3</fat_100g>
     <carbohydrates_100g>31</carbohydrates_100g>
     <proteins_100g>3.5</proteins_100g>
@@ -665,7 +665,7 @@
     <product_name>Coquilles Saint-Jacques Nantaises</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>c</nutriscore_grade>
-    <energy-kcal_100g>151</energy-kcal_100g>
+    <energy_kcal_100g>151</energy_kcal_100g>
     <fat_100g>9.4</fat_100g>
     <carbohydrates_100g>5.3</carbohydrates_100g>
     <proteins_100g>10.6</proteins_100g>
@@ -675,7 +675,7 @@
     <product_name>Cannellonis a la bolognaise</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>c</nutriscore_grade>
-    <energy-kcal_100g>169</energy-kcal_100g>
+    <energy_kcal_100g>169</energy_kcal_100g>
     <fat_100g>11</fat_100g>
     <carbohydrates_100g>10.3</carbohydrates_100g>
     <proteins_100g>6.8</proteins_100g>
@@ -685,7 +685,7 @@
     <product_name>Quenelles de brochet sauce Nantua</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>140</energy-kcal_100g>
+    <energy_kcal_100g>140</energy_kcal_100g>
     <fat_100g>11</fat_100g>
     <carbohydrates_100g>5.1</carbohydrates_100g>
     <proteins_100g>4.6</proteins_100g>
@@ -695,7 +695,7 @@
     <product_name>Cuisses de poulet</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>c</nutriscore_grade>
-    <energy-kcal_100g>206</energy-kcal_100g>
+    <energy_kcal_100g>206</energy_kcal_100g>
     <fat_100g>15</fat_100g>
     <carbohydrates_100g>1.7</carbohydrates_100g>
     <proteins_100g>16</proteins_100g>
@@ -705,7 +705,7 @@
     <product_name>Tarte aux abricots</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>246</energy-kcal_100g>
+    <energy_kcal_100g>246</energy_kcal_100g>
     <fat_100g>8</fat_100g>
     <carbohydrates_100g>40</carbohydrates_100g>
     <proteins_100g>3.3</proteins_100g>
@@ -715,7 +715,7 @@
     <product_name>Pasteis de nata</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>275</energy-kcal_100g>
+    <energy_kcal_100g>275</energy_kcal_100g>
     <fat_100g>10.9</fat_100g>
     <carbohydrates_100g>39.1</carbohydrates_100g>
     <proteins_100g>4.6</proteins_100g>
@@ -725,7 +725,7 @@
     <product_name>Chicken Nachos</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>c</nutriscore_grade>
-    <energy-kcal_100g>245</energy-kcal_100g>
+    <energy_kcal_100g>245</energy_kcal_100g>
     <fat_100g>10.9</fat_100g>
     <carbohydrates_100g>22.4</carbohydrates_100g>
     <proteins_100g>13.9</proteins_100g>
@@ -735,7 +735,7 @@
     <product_name>Cordon bleu de volaille bio</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>c</nutriscore_grade>
-    <energy-kcal_100g>234</energy-kcal_100g>
+    <energy_kcal_100g>234</energy_kcal_100g>
     <fat_100g>12</fat_100g>
     <carbohydrates_100g>18</carbohydrates_100g>
     <proteins_100g>13</proteins_100g>
@@ -745,7 +745,7 @@
     <product_name>Huile d'olive vierge extra</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>c</nutriscore_grade>
-    <energy-kcal_100g>828</energy-kcal_100g>
+    <energy_kcal_100g>828</energy_kcal_100g>
     <fat_100g>92</fat_100g>
     <carbohydrates_100g>0</carbohydrates_100g>
     <proteins_100g>0</proteins_100g>
@@ -755,7 +755,7 @@
     <product_name>Marmite Original Pate A Tartiner 125G</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>c</nutriscore_grade>
-    <energy-kcal_100g>260</energy-kcal_100g>
+    <energy_kcal_100g>260</energy_kcal_100g>
     <fat_100g>0.5</fat_100g>
     <carbohydrates_100g>30</carbohydrates_100g>
     <proteins_100g>34</proteins_100g>
@@ -765,7 +765,7 @@
     <product_name>Tomato Ketchup Heinz Ouverture En Bas</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>102</energy-kcal_100g>
+    <energy_kcal_100g>102</energy_kcal_100g>
     <fat_100g>0.1</fat_100g>
     <carbohydrates_100g>23.2</carbohydrates_100g>
     <proteins_100g>1.2</proteins_100g>
@@ -775,7 +775,7 @@
     <product_name>Tomato Ketchup</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>102</energy-kcal_100g>
+    <energy_kcal_100g>102</energy_kcal_100g>
     <fat_100g>0.1</fat_100g>
     <carbohydrates_100g>23.2</carbohydrates_100g>
     <proteins_100g>1.2</proteins_100g>
@@ -785,7 +785,7 @@
     <product_name>Bûche la forêt noire</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>317</energy-kcal_100g>
+    <energy_kcal_100g>317</energy_kcal_100g>
     <fat_100g>21.8</fat_100g>
     <carbohydrates_100g>24.8</carbohydrates_100g>
     <proteins_100g>4.6</proteins_100g>
@@ -795,7 +795,7 @@
     <product_name>Madeleines nature</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>c</nutriscore_grade>
-    <energy-kcal_100g>1852</energy-kcal_100g>
+    <energy_kcal_100g>1852</energy_kcal_100g>
     <fat_100g>22</fat_100g>
     <carbohydrates_100g>54</carbohydrates_100g>
     <proteins_100g>6.4</proteins_100g>
@@ -805,7 +805,7 @@
     <product_name>Donut Milka</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>e</nutriscore_grade>
-    <energy-kcal_100g>465</energy-kcal_100g>
+    <energy_kcal_100g>465</energy_kcal_100g>
     <fat_100g>28</fat_100g>
     <carbohydrates_100g>46.5</carbohydrates_100g>
     <proteins_100g>6</proteins_100g>
@@ -815,7 +815,7 @@
     <product_name>Véritable pâte à tartiner noisettes chocolat noir</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>e</nutriscore_grade>
-    <energy-kcal_100g>617</energy-kcal_100g>
+    <energy_kcal_100g>617</energy_kcal_100g>
     <fat_100g>48</fat_100g>
     <carbohydrates_100g>36</carbohydrates_100g>
     <proteins_100g>8</proteins_100g>
@@ -825,7 +825,7 @@
     <product_name>Pain au chocolat pur beurre x10</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>e</nutriscore_grade>
-    <energy-kcal_100g>422</energy-kcal_100g>
+    <energy_kcal_100g>422</energy_kcal_100g>
     <fat_100g>23.7</fat_100g>
     <carbohydrates_100g>23.7</carbohydrates_100g>
     <proteins_100g>7.3</proteins_100g>
@@ -835,7 +835,7 @@
     <product_name>Pain au chocolat pur beurre</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>e</nutriscore_grade>
-    <energy-kcal_100g>415</energy-kcal_100g>
+    <energy_kcal_100g>415</energy_kcal_100g>
     <fat_100g>23</fat_100g>
     <carbohydrates_100g>41.7</carbohydrates_100g>
     <proteins_100g>8.6</proteins_100g>
@@ -845,7 +845,7 @@
     <product_name>Beignet chocolat</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>385</energy-kcal_100g>
+    <energy_kcal_100g>385</energy_kcal_100g>
     <fat_100g>18</fat_100g>
     <carbohydrates_100g>47</carbohydrates_100g>
     <proteins_100g>6.5</proteins_100g>
@@ -855,7 +855,7 @@
     <product_name>Madeleines ChocoLait</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>460</energy-kcal_100g>
+    <energy_kcal_100g>460</energy_kcal_100g>
     <fat_100g>24</fat_100g>
     <carbohydrates_100g>54</carbohydrates_100g>
     <proteins_100g>6.4</proteins_100g>
@@ -865,7 +865,7 @@
     <product_name>Mini chaussons à la compote de pomme</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>343</energy-kcal_100g>
+    <energy_kcal_100g>343</energy_kcal_100g>
     <fat_100g>15.78</fat_100g>
     <carbohydrates_100g>41.05</carbohydrates_100g>
     <proteins_100g>3.69</proteins_100g>
@@ -875,7 +875,7 @@
     <product_name>Pruneau d'agen</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>c</nutriscore_grade>
-    <energy-kcal_100g>234</energy-kcal_100g>
+    <energy_kcal_100g>234</energy_kcal_100g>
     <fat_100g>0.3</fat_100g>
     <carbohydrates_100g>54</carbohydrates_100g>
     <proteins_100g>2</proteins_100g>
@@ -885,7 +885,7 @@
     <product_name>P'tits beignets parfum choco-noisette</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>c</nutriscore_grade>
-    <energy-kcal_100g>101</energy-kcal_100g>
+    <energy_kcal_100g>101</energy_kcal_100g>
     <fat_100g>5.4</fat_100g>
     <carbohydrates_100g>48</carbohydrates_100g>
     <proteins_100g>1.3</proteins_100g>
@@ -895,7 +895,7 @@
     <product_name>Ketchup Amora</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>110</energy-kcal_100g>
+    <energy_kcal_100g>110</energy_kcal_100g>
     <fat_100g>0.5</fat_100g>
     <carbohydrates_100g>24</carbohydrates_100g>
     <proteins_100g>11</proteins_100g>
@@ -905,7 +905,7 @@
     <product_name>4 Beignets parfum chocolat-noisette *4</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>394</energy-kcal_100g>
+    <energy_kcal_100g>394</energy_kcal_100g>
     <fat_100g>19</fat_100g>
     <carbohydrates_100g>48</carbohydrates_100g>
     <proteins_100g>6.7</proteins_100g>
@@ -915,7 +915,7 @@
     <product_name>4 beignets à la pomme</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>310</energy-kcal_100g>
+    <energy_kcal_100g>310</energy_kcal_100g>
     <fat_100g>9.6</fat_100g>
     <carbohydrates_100g>49</carbohydrates_100g>
     <proteins_100g>6.6</proteins_100g>
@@ -925,7 +925,7 @@
     <product_name>Beignets chocolats noisettes decongelé</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>394</energy-kcal_100g>
+    <energy_kcal_100g>394</energy_kcal_100g>
     <fat_100g>19</fat_100g>
     <carbohydrates_100g>48</carbohydrates_100g>
     <proteins_100g>6.7</proteins_100g>
@@ -935,7 +935,7 @@
     <product_name>Beignets à la pomme</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>c</nutriscore_grade>
-    <energy-kcal_100g>301</energy-kcal_100g>
+    <energy_kcal_100g>301</energy_kcal_100g>
     <fat_100g>10</fat_100g>
     <carbohydrates_100g>46</carbohydrates_100g>
     <proteins_100g>6.2</proteins_100g>
@@ -945,7 +945,7 @@
     <product_name>Madeleines Choco Noir</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>458</energy-kcal_100g>
+    <energy_kcal_100g>458</energy_kcal_100g>
     <fat_100g>24</fat_100g>
     <carbohydrates_100g>53</carbohydrates_100g>
     <proteins_100g>6.3</proteins_100g>
@@ -955,7 +955,7 @@
     <product_name>Mousse au chocolat noir</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>e</nutriscore_grade>
-    <energy-kcal_100g>322</energy-kcal_100g>
+    <energy_kcal_100g>322</energy_kcal_100g>
     <fat_100g>19.8</fat_100g>
     <carbohydrates_100g>25</carbohydrates_100g>
     <proteins_100g>6.6</proteins_100g>
@@ -965,7 +965,7 @@
     <product_name>The simpsons donuts</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>e</nutriscore_grade>
-    <energy-kcal_100g>470</energy-kcal_100g>
+    <energy_kcal_100g>470</energy_kcal_100g>
     <fat_100g>28.9</fat_100g>
     <carbohydrates_100g>46.3</carbohydrates_100g>
     <proteins_100g>5</proteins_100g>
@@ -975,7 +975,7 @@
     <product_name>Croissants pur beurre</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>e</nutriscore_grade>
-    <energy-kcal_100g>414</energy-kcal_100g>
+    <energy_kcal_100g>414</energy_kcal_100g>
     <fat_100g>22.2</fat_100g>
     <carbohydrates_100g>45</carbohydrates_100g>
     <proteins_100g>8.6</proteins_100g>
@@ -985,7 +985,7 @@
     <product_name>Eclairs Campagniere</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>d</nutriscore_grade>
-    <energy-kcal_100g>237</energy-kcal_100g>
+    <energy_kcal_100g>237</energy_kcal_100g>
     <fat_100g>9.5</fat_100g>
     <carbohydrates_100g>32</carbohydrates_100g>
     <proteins_100g>4.6</proteins_100g>
@@ -995,7 +995,7 @@
     <product_name>Beignets gourmands parfum choco-noisettes</product_name>
     <countries_en>France</countries_en>
     <nutriscore_grade>c</nutriscore_grade>
-    <energy-kcal_100g>406</energy-kcal_100g>
+    <energy_kcal_100g>406</energy_kcal_100g>
     <fat_100g>20</fat_100g>
     <carbohydrates_100g>50</carbohydrates_100g>
     <proteins_100g>0</proteins_100g>

@@ -16,23 +16,42 @@
 
 import QtQuick 2.9
 import Ubuntu.Components 1.3
+//import QtQuick.Controls 2.2 as QC
+import QtQuick.Layouts 1.3
 import Qt.labs.settings 1.0
+import Ubuntu.Components.ListItems 1.3 
+import Ubuntu.Components.Popups 1.3
+import QtQuick.Controls.Suru 2.2
+import Ubuntu.Components.Pickers 1.3
 
-Settings {
-    //stores the login for in db
-    property int id_login
 
-    //stores the app configuration
-    property bool is_clean_install : true
-    property bool is_page_headers_enabled : false
-    property bool is_xml_openfoodsfacts_enabled: true
-    
-    //stores the user starts using date
-    property string using_app_date
+AbstractButton {
+	id: button
 
-    //stores plan type
-    property string plan_type
-    
-    //stores recommended calories
-    property int rec_cal
+    //public api
+	property alias icon_name: icon.name
+    property alias icon_source: icon.source
+
+	width: units.gu(6)
+	height: units.gu(6)
+	opacity: 0.7//button.pressed ? 0.5 : (enabled ? 1 : 0.2)
+    z: 100
+	Behavior on opacity {
+		UbuntuNumberAnimation { }
+	}
+
+	Rectangle {
+		id: shape		
+        anchors.centerIn: parent
+        height: units.gu(7.5)
+        width:  height
+		color: "#f1f1f1"
+		radius: height*0.5
+	}
+
+	Icon {
+		id: icon
+		anchors.fill: parent
+		z: 1
+	}
 }

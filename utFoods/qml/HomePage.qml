@@ -33,9 +33,13 @@ Page{
     header: PageHeader {visible:false}
     
     // stores the query output
-    property int query_total_consumed 
-    property int query_total_remaining
-    property int query_total_foods
+    property int query_total_cal_consumed 
+    property int query_total_cal_remaining
+    property int query_total_cal_breakfast
+    property int query_total_cal_lunch
+    property int query_total_cal_dinner
+    property int query_total_cal_snacks
+    property int query_total_foods_consumed
     
     //this component is need to initializate the db. It's linked to main view so it runs everytime the iniDB signal is emitted
     //without it the dashboard will not update untill a close and opening the app again
@@ -44,6 +48,10 @@ Page{
         onInitDB:{
             GetData.getTotalCalConsumed()
             GetData.getTotalCalRemaining()
+            GetData.getBreakfastCalories()
+            GetData.getLunchCalories()
+            GetData.getDinnerCalories()
+            GetData.getSnacksCalories()
             GetData.getTotalFoodsConsumed()
         }
     }
@@ -98,7 +106,7 @@ Page{
                 SlotDashboardIndicators{
                     Layout.preferredWidth: units.gu(13)
                     Layout.preferredHeight: units.gu(5)
-                    slot_indicatior: query_total_foods
+                    slot_indicatior: query_total_foods_consumed
                     slot_icon_label: i18n.tr("FOODS")
                 }
 
@@ -112,14 +120,12 @@ Page{
                 SlotDashboardIndicators{
                     Layout.preferredWidth: units.gu(13)
                     Layout.preferredHeight: units.gu(5)
-                    slot_indicatior: query_total_consumed
+                    slot_indicatior: query_total_cal_consumed
                     slot_icon_label: i18n.tr("CONSUMED")
                 }
                 
             }
             
-           
-
             BlankSpace{height:units.gu(2)}
 
             RowLayout{
@@ -150,6 +156,51 @@ Page{
                     }
                 }
             }
+            
+            BlankSpace{}
+
+            SlotAddMeal{
+                Layout.alignment: Qt.AlignCenter
+                Layout.preferredWidth: root.width - units.gu(9)
+                Layout.preferredHeight: units.gu(7)
+                title.text: i18n.tr("Breakfast")
+                meal_category: 1
+                subtitle.text: i18n.tr("%1 calories").arg(home_page.query_total_cal_breakfast)
+                img_path:"../assets/logo.svg"
+            }  
+
+            SlotAddMeal{
+                Layout.alignment: Qt.AlignCenter
+                Layout.preferredWidth: root.width - units.gu(9)
+                Layout.preferredHeight: units.gu(7)
+                title.text: i18n.tr("Lunch")
+                meal_category: 2
+                subtitle.text: i18n.tr("%1 calories").arg(home_page.query_total_cal_lunch)
+                img_path:"../assets/logo.svg"
+            } 
+
+            SlotAddMeal{
+                Layout.alignment: Qt.AlignCenter
+                Layout.preferredWidth: root.width - units.gu(9)
+                Layout.preferredHeight: units.gu(7)
+                title.text: i18n.tr("Dinner")
+                meal_category: 3
+                subtitle.text: i18n.tr("%1 calories").arg(home_page.query_total_cal_dinner)
+                img_path:"../assets/logo.svg"
+            }
+
+            SlotAddMeal{
+                Layout.alignment: Qt.AlignCenter
+                Layout.preferredWidth: root.width - units.gu(9)
+                Layout.preferredHeight: units.gu(7)
+                title.text: i18n.tr("Snacks")
+                meal_category: 4
+                subtitle.text: i18n.tr("%1 calories").arg(home_page.query_total_cal_snacks)
+                img_path:"../assets/logo.svg"
+            }
+
+
+
         }  
     }
 
@@ -158,6 +209,10 @@ Page{
     Component.onCompleted:{
         GetData.getTotalCalConsumed()
         GetData.getTotalCalRemaining()
+        GetData.getBreakfastCalories()
+        GetData.getLunchCalories()
+        GetData.getDinnerCalories()
+        GetData.getSnacksCalories()
         GetData.getTotalFoodsConsumed()
     }        
 }

@@ -16,23 +16,27 @@
 
 import QtQuick 2.9
 import Ubuntu.Components 1.3
+import QtQuick.Controls 2.2 as QQC2
+import QtQuick.Layouts 1.3
 import Qt.labs.settings 1.0
+import Ubuntu.Components.ListItems 1.3 
+import Ubuntu.Components.Popups 1.3
+import QtQuick.Controls.Suru 2.2
+import Ubuntu.Components.Pickers 1.3
 
-Settings {
-    //stores the login for in db
-    property int id_login
+Picker {
+    width: units.gu(10)
+    height: units.gu(5)
+    circular: false
+    selectedIndex: 0
+    model: [ "1/1", "1/2", "1/3", "1/4", "1/5", "1/6"] 
+    delegate: PickerDelegate { 
+        Label {
+            text: modelData                    
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.verticalCenter: parent.verticalCenter
+        }
+    }
+} 
 
-    //stores the app configuration
-    property bool is_clean_install : true
-    property bool is_page_headers_enabled : false
-    property bool is_xml_openfoodsfacts_enabled: true
-    
-    //stores the user starts using date
-    property string using_app_date
 
-    //stores plan type
-    property string plan_type
-    
-    //stores recommended calories
-    property int rec_cal
-}

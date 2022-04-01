@@ -136,6 +136,18 @@ MainView {
         HomePage{}
     }
 
+    //QuickListFoodsPage gives users a list of foods
+    Component{
+        id: quick_list_foods_page
+        QuickListFoodsPage{}
+    }
+
+    //SetFoodPage, let uses set the ingestions
+    Component{
+        id: set_food_page
+        SetFoodPage{}
+    }
+
     //ExportDataPage, where users can export the data produced
     Component{
         id: export_data_page

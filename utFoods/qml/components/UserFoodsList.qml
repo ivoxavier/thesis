@@ -32,8 +32,5 @@ ListModel {
     
         dynamicRoles: true
 
-        Component.onCompleted: UserFoodsListTable.getFoods()
-        
+        Component.onCompleted: UserFoodsListTable.getFoods()     
 }
-    
-    

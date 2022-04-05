@@ -142,6 +142,12 @@ MainView {
         QuickListFoodsPage{}
     }
 
+    //QuickListFoodsPage gives users a list of foods
+    Component{
+        id: quick_addition_page
+        QuickAdditionPage{}
+    }
+
     //SetFoodPage, let uses set the ingestions
     Component{
         id: set_food_page

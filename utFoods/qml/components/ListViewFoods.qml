@@ -22,7 +22,6 @@ import Qt.labs.settings 1.0
 import Ubuntu.Components.ListItems 1.3 
 import Ubuntu.Components.Popups 1.3
 import QtQuick.Controls.Suru 2.2
-import Ubuntu.Components.ListItems 1.3 as ListHeader
 import "../../js/ControlFoodsNutriscore.js" as ControlFoodsNutriscore
 
 
@@ -53,7 +52,7 @@ ListView{
                     
                     height: units.gu(6)
                     width: height
-                    color: ControlFoodsNutriscore.nutriscoreGrade(score_label.text)
+                    color: ControlFoodsNutriscore.backgroundColor(score_label.text)
                     radius: "large"
                     aspect: UbuntuShape.Inset
                     Label{
@@ -75,8 +74,6 @@ ListView{
                 protein_set_food_page: proteins_100g,
                 nutriscore_set_food_page: nutriscore_grade,
                 meal_set_food_page: meal_quick_list_foods_page})
-                
             }  
         }
     }
-

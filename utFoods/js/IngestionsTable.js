@@ -39,9 +39,7 @@ function connectDB() {
     protein,
     meal){          
     var db = connectDB();
-    console.log("DataBase.saveNewIngestion : connected to SQL_CONTAINER");
     var validationMessage = "";
-    console.log(root.stringDate)
   
     
     db.transaction(function(tx) {
@@ -55,9 +53,9 @@ function connectDB() {
           meal,
           root.stringDate]);
         if (rs.rowsAffected > 0) {
-          validationMessage = "DataBase.saveNewIngestion : OK";
+          validationMessage = "Ingestion : OK";
         } else {
-          validationMessage = "DataBase.saveNewIngestion : Failed ";
+          validationMessage = "Ingestion : Failed ";
         }
     }
     );

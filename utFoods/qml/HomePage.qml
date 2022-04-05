@@ -40,6 +40,9 @@ Page{
     property int query_total_cal_dinner
     property int query_total_cal_snacks
     property int query_total_foods_consumed
+
+    //WaterCups
+    property int total_water_cups
     
     //this component is need to initializate the db. It's linked to main view so it runs everytime the iniDB signal is emitted
     //without it the dashboard will not update untill a close and opening the app again
@@ -53,6 +56,7 @@ Page{
             GetData.getDinnerCalories()
             GetData.getSnacksCalories()
             GetData.getTotalFoodsConsumed()
+            GetData.getCups()
         }
     }
 
@@ -199,6 +203,17 @@ Page{
                 img_path:"../assets/logo.svg"
             }
 
+            BlankSpace{}
+
+            SlotWaterTracker{
+                id: slot_water
+                
+                Layout.alignment: Qt.AlignCenter
+                Layout.preferredWidth: root.width - units.gu(9)
+                Layout.preferredHeight: units.gu(7)
+                img_path:"../assets/logo.svg"
+                water_cups_drinked : (home_page.total_water_cups * 0.1)
+            }
 
 
         }  
@@ -214,5 +229,6 @@ Page{
         GetData.getDinnerCalories()
         GetData.getSnacksCalories()
         GetData.getTotalFoodsConsumed()
+        GetData.getCups()
     }        
 }

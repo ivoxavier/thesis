@@ -160,3 +160,23 @@ function getBreakfastCalories(){
       }
   })
   }
+
+  function getCups(){
+    var water_cups = 'SELECT COUNT(cups) AS cups \
+    FROM water_tracker \
+    WHERE date == "which_date"'.replace("which_date", root.stringDate);
+    var db = connectDB();
+    var rsToQML
+    db.transaction(function (tx) {
+      var results = tx.executeSql(water_cups)
+      for (var i = 0; i < results.rows.length; i++) {
+        rsToQML = results.rows.item(i).cups
+        if(rsToQML == 0 || rsToQML == null ){
+          home_page.total_water_cups = 0
+        } else{
+          home_page.total_water_cups = rsToQML
+        }
+        
+      }
+})
+}

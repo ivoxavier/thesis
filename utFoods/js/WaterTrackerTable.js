@@ -14,28 +14,27 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import QtQuick 2.9
-import Ubuntu.Components 1.3
-import Qt.labs.settings 1.0
 
-Settings {
-    //stores the login for in db
-    property int id_login
+function connectDB() {
+  return LocalStorage.openDatabaseSync("utFoods_db", "0.1", "utFoods_data", 2000000);
+}
 
-    //stores the app configuration
-    property bool is_clean_install : true
-    property bool is_page_headers_enabled : false
-    property bool is_xml_openfoodsfacts_enabled: true
+  var new_glass_of_water = 'INSERT INTO water_tracker (\
+    id_user, cups, date)\
+    VALUES (?,?,?)';
+  
+  function saveCup(){          
+    var db = connectDB();
     
-    //stores 
-    property double water_weight_calc
-    
-    //stores the user starts using date
-    property string using_app_date
-
-    //stores plan type
-    property string plan_type
-    
-    //stores recommended calories
-    property int rec_cal
+    db.transaction(function(tx) {
+      var results = tx.executeSql(new_glass_of_water, [app_settings.id_login,
+      1,
+      root.stringDate]);
+      if (results.rowsAffected > 0) {
+        console.log("Water: OK")
+      } else {
+        console.log("Water: Failed");
+      }
+    }
+  )
 }

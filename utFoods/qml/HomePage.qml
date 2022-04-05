@@ -145,7 +145,7 @@ Page{
                     Layout.alignment: Qt.AlignVCenter
                     property bool is_clicked : false
                     name: "go-up"
-                    height: units.gu(2.5)
+                    height: units.gu(4)
                     rotation: icon_down.is_clicked ? 180 : 0
                     Behavior on rotation {
                         UbuntuNumberAnimation {}

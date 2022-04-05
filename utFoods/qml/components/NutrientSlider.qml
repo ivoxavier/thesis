@@ -16,26 +16,27 @@
 
 import QtQuick 2.9
 import Ubuntu.Components 1.3
-//import QtQuick.Controls 2.2 as QC
+import QtQuick.Controls 2.2 as QQC2
 import QtQuick.Layouts 1.3
 import Qt.labs.settings 1.0
 import Ubuntu.Components.ListItems 1.3 
 import Ubuntu.Components.Popups 1.3
 import QtQuick.Controls.Suru 2.2
-import Ubuntu.Components.Pickers 1.3
 
 
-Row{
-	width: root.width
-    layoutDirection: Qt.RightToLeft 
-    rightPadding: units.gu(2)
-    bottomPadding: units.gu(3)
-
-    IconButton{
-        icon_source: "../../assets/quick_addition.svg"
-        MouseArea{
-            anchors.fill: parent
-            onClicked: page_stack.push(quick_addition_page,{meal_quick_addition_page : meal_quick_list_foods_page})
-        }
-    }
+Slider{
+    width: (parent.width / 2) - units.gu(2)
+    height: units.gu(10)
+    //value: 0
+    minimumValue: 0
+    maximumValue: 100
+    live: true
+    
+   function formatValue(v) { return Number(v.toFixed(1)).toLocaleString(Qt.locale()) }
 }
+
+   
+
+    
+
+

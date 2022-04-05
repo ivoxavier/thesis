@@ -35,7 +35,6 @@ function connectDB() {
     carbo,
     protein){          
     var db = connectDB();
-    console.log("DataBase.saveNewIngestion : connected to SQL_CONTAINER");
     var validationMessage = "";
     
     db.transaction(function(tx) {
@@ -47,9 +46,9 @@ function connectDB() {
           carbo,
           protein]);
         if (rs.rowsAffected > 0) {
-          validationMessage = "DataBase.saveNewIngestion : OK";
+          validationMessage = "Ingestion : OK";
         } else {
-          validationMessage = "DataBase.saveNewIngestion : Failed ";
+          validationMessage = "Ingestion : Failed ";
         }
     }
     );

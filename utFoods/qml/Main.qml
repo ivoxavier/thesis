@@ -24,7 +24,7 @@ MainView {
     id: root
     objectName: 'mainView'
     applicationName: 'utfoods.ivofernandes'
-    property string app_version : "0.5.0"
+    property string app_version : "0.6.0"
     automaticOrientation: true
     anchorToKeyboard: true
     width: units.gu(45)
@@ -65,6 +65,34 @@ MainView {
 
     /*properties for calculating calories target --end--*/
     
+    //Recipes properties
+    property var recipe_name //strMeal
+    property var recipe_img_url // strMealThumb
+    property var recipe_instructions //strInstructions
+    property var recipe_youtbe_url
+
+    property var recipe_ingredient1 : " " //strIngredient1
+    property var recipe_ingredient2 : " "//strIngredient2
+    property var recipe_ingredient3 : " "//strIngredient3
+    property var recipe_ingredient4 : " "//strIngredient4
+    property var recipe_ingredient5 : " "//strIngredient5
+    property var recipe_ingredient6 : " "//strIngredient6
+    property var recipe_ingredient7 : " "//strIngredient7
+    property var recipe_ingredient8 : " "//strIngredient8
+    property var recipe_ingredient9 : " "//strIngredient9
+    property var recipe_ingredient10 : " "//strIngredient10
+
+    property var recipe_measure1 : " "//strMeasure1
+    property var recipe_measure2 : " "//strMeasure2
+    property var recipe_measure3 : " "//strMeasure3
+    property var recipe_measure4 : " "//strMeasure4
+    property var recipe_measure5 : " "//strMeasure5
+    property var recipe_measure6 : " "//strMeasure6
+    property var recipe_measure7 : " "//strMeasure7
+    property var recipe_measure8 : " "//strMeasure8
+    property var recipe_measure9 : " "//strMeasure9
+    property var recipe_measure10: " " //strMeasure10
+
 
     /* custom signals --start--*/
     signal initDB()
@@ -194,6 +222,12 @@ MainView {
     Component{
         id: swimming_page
         SwimmingPage{}
+    }
+
+    //SwimmingPage, let uses from a list of running activities
+    Component{
+        id: recipe_page
+        RecipePage{}
     }
 
     //ExportDataPage, where users can export the data produced

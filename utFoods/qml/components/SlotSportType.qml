@@ -33,7 +33,7 @@ UbuntuShape{
     radius: "large"
     aspect: UbuntuShape.Inset
     
-    Image {
+    Icon {
         id: img;
         anchors.centerIn: parent
         width: parent.width * 0.5;

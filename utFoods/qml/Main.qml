@@ -154,6 +154,48 @@ MainView {
         SetFoodPage{}
     }
 
+    //SportsTypePage, let uses select the sports type
+    Component{
+        id: sports_page
+        SportsTypePage{}
+    }
+
+    //RunningPage, let uses from a list of running activities
+    Component{
+        id: running_page
+        RunningPage{}
+    }
+
+    //WalkingPage, let uses from a list of running activities
+    Component{
+        id: walking_page
+        WalkingPage{}
+    }
+
+    //CyclingPage, let uses from a list of running activities
+    Component{
+        id: cycling_page
+        CyclingPage{}
+    }
+
+    //GymPage, let uses from a list of running activities
+    Component{
+        id: gym_page
+        GymPage{}
+    }
+
+    //GymPage, let uses from a list of running activities
+    Component{
+        id: group_sports_page
+        GroupSportsPage{}
+    }
+
+    //SwimmingPage, let uses from a list of running activities
+    Component{
+        id: swimming_page
+        SwimmingPage{}
+    }
+
     //ExportDataPage, where users can export the data produced
     Component{
         id: export_data_page

@@ -26,6 +26,7 @@ import "components"
 import "../js/ControlIconUpAnimation.js" as ControlIconUpAnimation
 import "../js/GetData.js" as GetData
 import "../js/ControlSlotDashboardPlan.js" as ControlSlotDashboardPlan
+import "../js/ControlTheMealDB.js" as ControlTheMealDB
 
 Page{
     id: home_page
@@ -42,6 +43,13 @@ Page{
     property int query_total_foods_consumed
     property int query_total_water_cups
     property int query_total_activity_made
+
+    JSONListModel {
+        id: theMealDB
+        source: app_settings.is_api_themealdb_enabled ? "https://www.themealdb.com/api/json/v1/1/random.php" : " "
+        query: "$[*]"
+        onJsonChanged: ControlTheMealDB.getRecipe()          
+    }
     
     //this component is need to initializate the db. It's linked to main view so it runs everytime the iniDB signal is emitted
     //without it the dashboard will not update untill a close and opening the app again
@@ -222,6 +230,16 @@ Page{
                 Layout.preferredHeight: units.gu(7)
                 img_path:"../assets/logo.svg"
             }
+
+            BlankSpace{}
+
+            SlotRecipe{
+                Layout.alignment: Qt.AlignCenter
+                Layout.preferredWidth: root.width - units.gu(9)
+                Layout.preferredHeight: units.gu(23)
+                img_url: root.recipe_img_url
+                visible: app_settings.is_api_themealdb_enabled
+            }    
 
 
         }  

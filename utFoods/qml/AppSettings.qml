@@ -26,6 +26,7 @@ Settings {
     property bool is_clean_install : true
     property bool is_page_headers_enabled : false
     property bool is_xml_openfoodsfacts_enabled: true
+    property bool is_api_themealdb_enabled: false
     
     //stores 
     property double water_weight_calc

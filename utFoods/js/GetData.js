@@ -172,11 +172,30 @@ function getBreakfastCalories(){
       for (var i = 0; i < results.rows.length; i++) {
         rsToQML = results.rows.item(i).cups
         if(rsToQML == 0 || rsToQML == null ){
-          home_page.total_water_cups = 0
+          home_page.query_total_water_cups = 0
         } else{
-          home_page.total_water_cups = rsToQML
+          home_page.query_total_water_cups = rsToQML
         }
         
       }
 })
+}
+
+function getSportsDone(){
+  var total_sports_remaining = 'SELECT SUM(duration) as done\
+  FROM sports s \
+  JOIN user ON s.id_user = user.id \
+  WHERE s.date == "which_date"'.replace("which_date",root.stringDate);
+  var db = connectDB();
+  db.transaction(function (tx) {
+    var results = tx.executeSql(total_sports_remaining)
+    for (var i = 0; i < results.rows.length; i++) {
+      var rsToQML = results.rows.item(i).done
+      if (rsToQML === null || rsToQML == 0){
+        home_page.query_total_activity_made = 0
+      } else {
+      home_page.query_total_activity_made = rsToQML
+      }
+    }
+  }) 
 }

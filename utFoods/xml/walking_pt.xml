@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data>
+  <row>
+    <index>0</index>
+    <name>Caminhada com muletas</name>
+    <duration>15</duration>
+  </row>
+  <row>
+    <index>1</index>
+    <name>Caminhada com muletas</name>
+    <duration>30</duration>
+  </row>
+  <row>
+    <index>2</index>
+    <name>Caminhada lenta a 4,5 km/h</name>
+    <duration>15</duration>
+  </row>
+  <row>
+    <index>3</index>
+    <name>Caminhada lenta a 4,5 km/h</name>
+    <duration>30</duration>
+  </row>
+  <row>
+    <index>4</index>
+    <name>Caminhada na natureza</name>
+    <duration>15</duration>
+  </row>
+  <row>
+    <index>5</index>
+    <name>Caminhada na natureza</name>
+    <duration>30</duration>
+  </row>
+  <row>
+    <index>6</index>
+    <name>Caminhada rápida a 6,5 km/h</name>
+    <duration>15</duration>
+  </row>
+  <row>
+    <index>7</index>
+    <name>Caminhada rápida a 6,5 km/h</name>
+    <duration>30</duration>
+  </row>
+  <row>
+    <index>8</index>
+    <name>Caminhada nórdica</name>
+    <duration>15</duration>
+  </row>
+  <row>
+    <index>9</index>
+    <name>Caminhada nórdica</name>
+    <duration>30</duration>
+  </row>
+</data>

@@ -85,7 +85,7 @@ Page{
                         aspect: UbuntuShape.Inset
                         source: Image{
                             id: img
-                            source: "../assets/gym.png"
+                            source: "../assets/gym-svgrepo-com.svg"
                         }
                     } 
             }

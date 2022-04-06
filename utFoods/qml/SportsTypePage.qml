@@ -74,7 +74,7 @@ Page{
                     Layout.preferredHeight: container.slot_size;
                     //color:
                     sport_description: i18n.tr("Running")
-                    img_path: "../assets/running.png"
+                    img_path: "../assets/running-svgrepo-com.svg"
                     MouseArea{
                         anchors.fill: parent
                         onPressed:{
@@ -96,7 +96,7 @@ Page{
                     Layout.preferredHeight: container.slot_size;
                     //color:
                     sport_description: i18n.tr("Cycling")
-                    img_path: "../assets/cycling.png"
+                    img_path: "../assets/cycling-svgrepo-com.svg"
                     MouseArea{
                         anchors.fill: parent
                         onPressed:{
@@ -119,7 +119,7 @@ Page{
                     Layout.preferredHeight: container.slot_size;
                     //color:
                     sport_description: i18n.tr("Walking")
-                    img_path: "../assets/walking.png"
+                    img_path: "../assets/walking-svgrepo-com.svg"
                     MouseArea{
                         anchors.fill: parent
                         onPressed:{
@@ -140,7 +140,7 @@ Page{
                     Layout.preferredHeight: container.slot_size;
                     //color:
                     sport_description: i18n.tr("Gym")
-                    img_path: "../assets/gym.png"
+                    img_path: "../assets/gym-svgrepo-com.svg"
                     MouseArea{
                         anchors.fill: parent
                         onPressed:{
@@ -161,7 +161,7 @@ Page{
                     Layout.preferredHeight: container.slot_size;
                     //color:
                     sport_description: i18n.tr("Group")
-                    img_path: "../assets/people.png"
+                    img_path: "../assets/people-svgrepo-com.svg"
                     MouseArea{
                         anchors.fill: parent
                         onPressed:{
@@ -182,7 +182,7 @@ Page{
                     Layout.preferredHeight: container.slot_size;
                     //color:
                     sport_description: i18n.tr("Swimming")
-                    img_path: "../assets/swimming.png"
+                    img_path: "../assets/swimming-svgrepo-com.svg"
                     MouseArea{
                         anchors.fill: parent
                         onPressed:{

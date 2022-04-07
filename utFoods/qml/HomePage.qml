@@ -80,7 +80,7 @@ Page{
             top: parent.top
             left: parent.left
             right: parent.right
-            bottom: footer_shape.top
+            bottom: parent.bottom
         }
         contentWidth: parent.width
         contentHeight: main_column.height
@@ -97,9 +97,9 @@ Page{
                 SlotDashboardPlan{
                     id: male_slot
                     Layout.alignment: Qt.AlignCenter
-                    Layout.preferredWidth: units.gu(22)
+                    Layout.preferredWidth: root.width - units.gu(9)
                     Layout.preferredHeight: units.gu(7)
-                    text: ControlSlotDashboardPlan.planType(app_settings.plan_type)
+                    title.text: ControlSlotDashboardPlan.planType(app_settings.plan_type)
                     img_path:"../assets/logo.svg"
                 }
             }
@@ -244,8 +244,6 @@ Page{
 
         }  
     }
-
-    FooterBar{id: footer_shape}
         
     Component.onCompleted:{
         GetData.getTotalCalConsumed()

@@ -230,6 +230,24 @@ MainView {
         RecipePage{}
     }
 
+    //MenuPage, menu 
+    Component{
+        id: menu_page
+        MenuPage{}
+    }
+
+    //ImportPage, let users import a profile pic 
+    Component{
+        id: import_page
+        ImportPage{}
+    }
+
+    //UpdateUserValuesPage, let users import a profile pic 
+    Component{
+        id: update_user_values_page
+        UpdateUserValuesPage{}
+    }
+
     //ExportDataPage, where users can export the data produced
     Component{
         id: export_data_page

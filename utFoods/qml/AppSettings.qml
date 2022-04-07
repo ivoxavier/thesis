@@ -27,6 +27,7 @@ Settings {
     property bool is_page_headers_enabled : false
     property bool is_xml_openfoodsfacts_enabled: true
     property bool is_api_themealdb_enabled: false
+    property bool is_weight_tracker_chart_enabled: false
     
     //stores 
     property double water_weight_calc
@@ -39,4 +40,7 @@ Settings {
     
     //stores recommended calories
     property int rec_cal
+
+    //path for imported pic
+    property var account_picture_path : "../assets/logo.svg"
 }

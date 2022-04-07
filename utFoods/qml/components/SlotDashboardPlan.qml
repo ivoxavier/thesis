@@ -30,8 +30,8 @@ UbuntuShape{
     // make public API's
     property alias img_path: slot_img_credentials.img_path
     property alias color : slot_shape.backgroundColor
-    property alias text : plan_label.text
-    property alias text_color : plan_label.color
+    property alias title : slot_layout.title
+    //property alias text_color : plan_label.color
 
     aspect: UbuntuShape.Flat
     
@@ -40,8 +40,15 @@ UbuntuShape{
         divider.visible: false
         ListItemLayout{
             id: slot_layout
-
-            Text{id: plan_label}
+       
+            Icon{
+                name : "navigation-menu"
+                height: units.gu(2.5)
+                MouseArea{
+                    anchors.fill: parent
+                    onClicked: page_stack.push(menu_page)
+                }
+            }
 
             UbuntuShape{
                 id: slot_img_credentials

@@ -27,7 +27,7 @@ function connectDB() {
     var db = connectDB();
     
     db.transaction(function(tx) {
-      var results = tx.executeSql(new_weight_tracking, [1,
+      var results = tx.executeSql(new_weight_tracking, [app_settings.id_login,
       weight,
       root.stringDate]);
       if (results.rowsAffected > 0) {

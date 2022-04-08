@@ -149,6 +149,7 @@ Page{
 
             RowLayout{
                 Layout.alignment: Qt.AlignCenter
+                spacing: units.gu(1.5)
 
                 SlotNutrientProgress{
                     Layout.preferredWidth: units.gu(13)

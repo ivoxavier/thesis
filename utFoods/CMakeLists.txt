@@ -63,6 +63,7 @@ install(DIRECTORY "qml" DESTINATION .)
 install(DIRECTORY "qml/components" DESTINATION /qml)
 install(DIRECTORY "js" DESTINATION .)
 install(DIRECTORY "xml" DESTINATION .)
+install(DIRECTORY "py" DESTINATION .)
 
 
 # Translations

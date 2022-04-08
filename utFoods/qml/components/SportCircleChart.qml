@@ -42,7 +42,7 @@ Canvas {
 
     property real minimumValue: 0
     property real maximumValue: 100
-    property real currentValue: (home_page.query_total_activity_made / 60) * 100
+    property real currentValue: (home_page.query_total_activity_made / app_settings.target_time) * 100
 
     // this is the angle that splits the circle in two arcs
     // first arc is drawn from 0 radians to angle radians

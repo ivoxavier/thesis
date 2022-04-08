@@ -34,6 +34,9 @@ Settings {
     //stores 
     property double water_weight_calc
     
+    //stores the target time for sport activity
+    property int target_time : 60
+
     //stores the user starts using date
     property string using_app_date
 

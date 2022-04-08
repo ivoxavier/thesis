@@ -134,6 +134,22 @@ Page{
 
             ListItem{
                 width: root.width
+                ListItemLayout{
+                    title.text : i18n.tr("Trackers settings")
+
+                    Icon{
+                        SlotsLayout.position: SlotsLayout.Leading
+                        name : "stopwatch"
+                        height : units.gu(3.5)
+                    }
+
+                    ProgressionSlot{}
+                }
+                onClicked: page_stack.push(trackers_settings_page)
+            }
+
+            ListItem{
+                width: root.width
                 divider.visible: false
                 ListItemLayout{
                     subtitle.text: i18n.tr("Storage")

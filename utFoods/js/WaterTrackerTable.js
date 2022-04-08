@@ -38,3 +38,15 @@ function connectDB() {
     }
   )
 }
+
+var remove_all_water_tracker = 'DELETE FROM water_tracker'
+
+  function deleteAllWaterTracker(){
+   var db = connectDB();
+   var rs;
+   db.transaction(function(tx) {
+     rs = tx.executeSql(remove_all_water_tracker);
+    }
+  );
+  return console.log("water_tracker removed from option remove_all_water_tracker")
+ }

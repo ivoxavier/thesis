@@ -248,6 +248,39 @@ MainView {
         UpdateUserValuesPage{}
     }
 
+    //AppLayoutPage, let users define appearance settings
+    Component{
+        id: app_layout_page
+        AppLayoutPage{}
+    }
+
+    //OnlineSourcesPage, let enable online sources
+    Component{
+        id: online_sources_page
+        OnlineSourcesPage{}
+    }
+
+    //ManageDataPage, let enable online sources
+    Component{
+        id: manage_data_page
+        ManageDataPage{}
+    }
+
+
+    //ManageUserFoodsListPage, let enable online sources
+    Component{
+        id: manager_user_foods_list_page
+        ManageUserFoodsListPage{}
+    }
+
+    //DeleteTodayIngestionPage, let user delete each ingestion of dat by swipping from a list
+    Component{
+        id: delete_today_ingestion_page
+        DeleteTodayIngestionPage{}
+    }
+
+
+
     //ExportDataPage, where users can export the data produced
     Component{
         id: export_data_page

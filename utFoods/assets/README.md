@@ -17,6 +17,8 @@ The following icons were downloaded from <a href="https://www.svgrepo.com/">svgr
 
 <a target="_blank" href="https://www.svgrepo.com/svg/335242/people">apple-fruit-svgrepo-com</a> icon by <a target="_blank" href="https://www.svgrepo.com/">svgrepo</a>
 
+<a target="_blank" href="https://www.svgrepo.com/svg/161399/meal">meal-svgrepo-com</a> icon by <a target="_blank" href="https://www.svgrepo.com/">svgrepo</a>
+
 <style>
 .divImage {
   width: 180px

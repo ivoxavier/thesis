@@ -38,3 +38,15 @@ function connectDB() {
     }
   )
 }
+
+var remove_all_sports_tracker = 'DELETE FROM sports'
+
+  function deleteAllSports(){
+   var db = connectDB();
+   var rs;
+   db.transaction(function(tx) {
+     rs = tx.executeSql(remove_all_sports_tracker);
+    }
+  );
+  return console.log("weight_tracker removed from option remove_all_sports")
+ }

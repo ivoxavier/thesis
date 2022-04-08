@@ -113,14 +113,14 @@ Page{
 
                     ProgressionSlot{}
                 }
-                onClicked: console.log(" ")
+                onClicked: page_stack.push(app_layout_page)
             }
 
             ListItem{
                 width: root.width
                 ListItemLayout{
                     title.text : i18n.tr("Online sources")
-                    subtitle.text: i18n.tr("Application Programming Interface")
+
                     Icon{
                         SlotsLayout.position: SlotsLayout.Leading
                         name : "stock_website"
@@ -129,7 +129,7 @@ Page{
 
                     ProgressionSlot{}
                 }
-                onClicked: console.log(" ")
+                onClicked: page_stack.push(online_sources_page)
             }
 
             ListItem{
@@ -153,7 +153,7 @@ Page{
 
                     ProgressionSlot{}
                 }
-                onClicked: console.log(" ")
+                onClicked: page_stack.push(manage_data_page)
             }
 
             ListItem{

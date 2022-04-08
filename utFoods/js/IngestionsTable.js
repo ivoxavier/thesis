@@ -62,3 +62,83 @@ function connectDB() {
     console.log(validationMessage)
     return validationMessage;
   }
+
+  var remove_all_ingestions = 'DELETE FROM ingestions'
+
+  function deleteAllIngestions(){
+   var db = connectDB();
+   var rs;
+   db.transaction(function(tx) {
+     rs = tx.executeSql(remove_all_ingestions);
+    }
+  );
+  return console.log("Ingestions removed from option remove_all_ingestions")
+ }
+
+ var remove_today_ingestions = 'DELETE FROM ingestions \
+ WHERE ingestions.date == date("now")'
+
+ function deleteTodayIngestions(){
+  var db = connectDB();
+  var rs;
+  db.transaction(function(tx) {
+    rs = tx.executeSql(remove_today_ingestions);
+   }
+ );
+ return console.log("Ingestions removed from option today_ingestions")
+}
+
+function deleteMonthYearIngestion(month, year){
+  var statement = 'DELETE FROM ingestions \
+  WHERE strftime("%m", date) == "which_month" AND strftime("%Y", date) == "which_year"'.replace("which_month", month).replace("which_year", year)
+  var db = connectDB();
+  var rs;
+   db.transaction(function(tx) {
+    rs = tx.executeSql(statement);
+   }
+ );
+ return console.log("Ingestions removed from option month_year")
+}
+
+var check_old_ingestions = 'SELECT COUNT(*) AS oldest \
+FROM ingestions \
+WHERE ingestions.date < strftime("%Y", date())'
+
+function checkOldest(){
+  var db = connectDB();
+  var rsToQML;
+  db.transaction(function(tx) {
+   var results = tx.executeSql(check_old_ingestions);
+    for (var i = 0; i < results.rows.length; i++) {
+      rsToQML = results.rows.item(i).oldest
+    }
+   }
+ );
+ return rsToQML
+ }
+
+var auto_clean = 'DELETE FROM ingestions \
+WHERE ingestions.date < strftime("%Y", date())'
+
+function autoClean(){
+ var db = connectDB();
+ var rs;
+ db.transaction(function(tx) {
+   rs = tx.executeSql(auto_clean);
+  }
+);
+return console.log('auto_clean_removed:' + rs.rowsAffected)
+}
+
+
+function deleteSpecificTodayIngestion(id){
+  var remove_today_speficic_ingestion = 'DELETE FROM ingestions \
+  WHERE ingestions.id = which_id'.replace("which_id",id)
+   var db = connectDB();
+   var rs;
+   db.transaction(function(tx) {
+    rs = tx.executeSql(remove_today_speficic_ingestion);
+   }
+ );
+ return console.log(rs.rowsAffected)
+}

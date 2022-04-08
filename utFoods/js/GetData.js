@@ -199,3 +199,24 @@ function getSportsDone(){
     }
   }) 
 }
+
+  //resumePage log book view
+  var today_ingestions = 'SELECT i.id AS id, \
+  i.date AS date, \
+  i.name AS name, \
+  i.cal AS cal \
+  FROM ingestions i \
+  WHERE i.date == date("now")';
+  
+  function getTodayIngestions(){
+    var db = connectDB();
+    db.transaction(function (tx) {
+      var results = tx.executeSql(today_ingestions)
+      for (var i = 0; i < results.rows.length; i++) { 
+        (function(){
+          var j = i;
+          all_today_ingestions.append({"id": results.rows.item(j).id,"cal": results.rows.item(j).cal, "name": results.rows.item(j).name, "date": results.rows.item(j).date})
+        })()
+      }
+   }) 
+  }

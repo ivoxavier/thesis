@@ -100,3 +100,15 @@ function isUnique(product_name){
       }
   }) 
 }
+
+function deleteFoods(id){
+  var remove_statement = 'DELETE FROM user_foods_list \
+  WHERE user_foods_list.id = which_id'.replace("which_id",id)
+   var db = connectDB();
+   var rs;
+   db.transaction(function(tx) {
+    rs = tx.executeSql(remove_statement);
+   }
+ );
+ return console.log(rs.rowsAffected)
+}

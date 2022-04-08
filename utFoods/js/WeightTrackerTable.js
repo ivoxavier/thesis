@@ -38,3 +38,15 @@ function connectDB() {
     }
   )
 }
+
+var remove_all_weight_tracker = 'DELETE FROM weight_tracker'
+
+  function deleteAllWeightTracker(){
+   var db = connectDB();
+   var rs;
+   db.transaction(function(tx) {
+     rs = tx.executeSql(remove_all_weight_tracker);
+    }
+  );
+  return console.log("weight_tracker removed from option remove_all_weight_tracker")
+ }

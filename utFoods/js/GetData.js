@@ -220,3 +220,65 @@ function getSportsDone(){
       }
    }) 
   }
+
+function getCarboConsumed(){
+    var total_carbo_consumed = 'SELECT SUM(carbo) as carbo \
+    FROM ingestions i \
+    JOIN user ON i.id_user = user.id \
+    WHERE i.date == "which_date"'.replace("which_date",root.stringDate);
+    var db = connectDB();
+    db.transaction(function (tx) {
+      var results = tx.executeSql(total_carbo_consumed)
+      for (var i = 0; i < results.rows.length; i++) {
+        var rsToQML = results.rows.item(i).carbo
+        console.log("oiasjdijs",rsToQML)
+        if (rsToQML === null || rsToQML == 0.0){
+          console.log("DEU NULLL")
+          home_page.query_total_carbo_consumed = 0
+        } else {
+          console.log("NUM NULLL")
+        home_page.query_total_carbo_consumed = rsToQML
+        }
+      }
+    }) 
+  }
+
+  function getFatConsumed(){
+    var total_fat_consumed = 'SELECT SUM(fat) as fat \
+    FROM ingestions i \
+    JOIN user ON i.id_user = user.id \
+    WHERE i.date == "which_date"'.replace("which_date",root.stringDate);
+    var db = connectDB();
+    db.transaction(function (tx) {
+      var results = tx.executeSql(total_carbo_consumed)
+      for (var i = 0; i < results.rows.length; i++) {
+        var rsToQML = results.rows.item(i).fat
+        console.log("oiasjdijs",rsToQML)
+        if (rsToQML === null || rsToQML == 0.0){
+          home_page.query_total_fat_consumed = 0
+        } else {
+        home_page.query_total_fat_consumed = rsToQML
+        }
+      }
+    }) 
+  }
+
+  function getProteinConsumed(){
+    var total_protein_consumed = 'SELECT SUM(protein) as protein \
+    FROM ingestions i \
+    JOIN user ON i.id_user = user.id \
+    WHERE i.date == "which_date"'.replace("which_date",root.stringDate);
+    var db = connectDB();
+    db.transaction(function (tx) {
+      var results = tx.executeSql(total_carbo_consumed)
+      for (var i = 0; i < results.rows.length; i++) {
+        var rsToQML = results.rows.item(i).protein
+        console.log("oiasjdijs",rsToQML)
+        if (rsToQML === null || rsToQML == 0.0){
+          home_page.query_total_protein_consumed = 0
+        } else {
+        home_page.query_total_protein_consumed = rsToQML
+        }
+      }
+    }) 
+  }

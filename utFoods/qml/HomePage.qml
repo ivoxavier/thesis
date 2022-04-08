@@ -27,6 +27,7 @@ import "../js/ControlIconUpAnimation.js" as ControlIconUpAnimation
 import "../js/GetData.js" as GetData
 import "../js/ControlSlotDashboardPlan.js" as ControlSlotDashboardPlan
 import "../js/ControlTheMealDB.js" as ControlTheMealDB
+import "../js/DefineMacroNutriensPerDay.js" as DefineMacroNutriensPerDay
 
 Page{
     id: home_page
@@ -43,6 +44,9 @@ Page{
     property int query_total_foods_consumed
     property int query_total_water_cups
     property int query_total_activity_made
+    property double query_total_carbo_consumed
+    property double query_total_fat_consumed
+    property double query_total_protein_consumed
 
     JSONListModel {
         id: theMealDB
@@ -65,6 +69,9 @@ Page{
             GetData.getTotalFoodsConsumed()
             GetData.getCups()
             GetData.getSportsDone()
+            GetData.getCarboConsumed()
+            GetData.getFatConsumed()
+            GetData.getProteinConsumed()
         }
     }
 
@@ -136,6 +143,37 @@ Page{
                     slot_icon_label: i18n.tr("CONSUMED")
                 }
                 
+            }
+
+            BlankSpace{}
+
+            RowLayout{
+                Layout.alignment: Qt.AlignCenter
+
+                SlotNutrientProgress{
+                    Layout.preferredWidth: units.gu(13)
+                    Layout.preferredHeight: units.gu(5)
+                    slot_icon_label: i18n.tr("FAT")
+                    bar_color: UbuntuColors.red
+                    nutrient_value:  (home_page.query_total_fat_consumed / DefineMacroNutriensPerDay.fat(app_settings.plan_type) * 100.0) * 0.01
+                }
+
+                SlotNutrientProgress{
+                    Layout.preferredWidth: units.gu(13)
+                    Layout.preferredHeight: units.gu(5)
+                    slot_icon_label: i18n.tr("CARBO")
+                    bar_color: UbuntuColors.blue
+                    nutrient_value: (home_page.query_total_carbo_consumed / DefineMacroNutriensPerDay.carbo(app_settings.plan_type) * 100.0) * 0.01
+                }
+
+
+                SlotNutrientProgress{
+                    Layout.preferredWidth: units.gu(13)
+                    Layout.preferredHeight: units.gu(5)
+                    slot_icon_label: i18n.tr("PROTEIN")
+                    bar_color: UbuntuColors.green
+                    nutrient_value: (home_page.query_total_protein_consumed / DefineMacroNutriensPerDay.protein(app_settings.plan_type) * 100.0) * 0.01
+                }
             }
             
             BlankSpace{height:units.gu(2)}
@@ -255,5 +293,8 @@ Page{
         GetData.getTotalFoodsConsumed()
         GetData.getCups()
         GetData.getSportsDone()
+        GetData.getCarboConsumed()
+        GetData.getFatConsumed()
+        GetData.getProteinConsumed()
     }        
 }

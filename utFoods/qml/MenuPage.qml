@@ -89,7 +89,7 @@ Page{
 
                     ProgressionSlot{}
                 }
-               // onClicked: page_stack.push(update_user_values_page)
+                onClicked: page_stack.push(update_user_values_page)
             }
 
             ListItem{

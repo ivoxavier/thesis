@@ -185,7 +185,7 @@ Page{
 
                     ProgressionSlot{}
                 }
-                onClicked: console.log(" ")
+                onClicked: page_stack.push(export_data_page)
             }
 
             ListItem{

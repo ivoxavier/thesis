@@ -200,7 +200,6 @@ function getSportsDone(){
   }) 
 }
 
-  //resumePage log book view
   var today_ingestions = 'SELECT i.id AS id, \
   i.date AS date, \
   i.name AS name, \
@@ -231,12 +230,9 @@ function getCarboConsumed(){
       var results = tx.executeSql(total_carbo_consumed)
       for (var i = 0; i < results.rows.length; i++) {
         var rsToQML = results.rows.item(i).carbo
-        console.log("oiasjdijs",rsToQML)
         if (rsToQML === null || rsToQML == 0.0){
-          console.log("DEU NULLL")
           home_page.query_total_carbo_consumed = 0
         } else {
-          console.log("NUM NULLL")
         home_page.query_total_carbo_consumed = rsToQML
         }
       }
@@ -250,10 +246,9 @@ function getCarboConsumed(){
     WHERE i.date == "which_date"'.replace("which_date",root.stringDate);
     var db = connectDB();
     db.transaction(function (tx) {
-      var results = tx.executeSql(total_carbo_consumed)
+      var results = tx.executeSql(total_fat_consumed)
       for (var i = 0; i < results.rows.length; i++) {
         var rsToQML = results.rows.item(i).fat
-        console.log("oiasjdijs",rsToQML)
         if (rsToQML === null || rsToQML == 0.0){
           home_page.query_total_fat_consumed = 0
         } else {
@@ -270,10 +265,9 @@ function getCarboConsumed(){
     WHERE i.date == "which_date"'.replace("which_date",root.stringDate);
     var db = connectDB();
     db.transaction(function (tx) {
-      var results = tx.executeSql(total_carbo_consumed)
+      var results = tx.executeSql(total_protein_consumed)
       for (var i = 0; i < results.rows.length; i++) {
         var rsToQML = results.rows.item(i).protein
-        console.log("oiasjdijs",rsToQML)
         if (rsToQML === null || rsToQML == 0.0){
           home_page.query_total_protein_consumed = 0
         } else {

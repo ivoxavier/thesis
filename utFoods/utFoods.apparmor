@@ -2,5 +2,7 @@
     "policy_groups": [ "networking",
     "content_exchange",
     "content_exchange_source", "camera"],
+    "read_path": ["@{HOME}/Documents/"],
+    "write_path": ["@{HOME}/Documents/"],
     "policy_version": 16.04
 }

@@ -75,12 +75,19 @@ Page{
                 }
             }
 
-            BlankSpace{}
+            ListItem{
+                width: root.width
+                divider.visible: false
+                ListItemLayout{
+                    subtitle.text: i18n.tr("User")
+                }
+            }
+
 
             ListItem{
                 width: root.width
                 ListItemLayout{
-                    title.text : i18n.tr("Update your values")
+                    title.text : i18n.tr("Update your information")
                     Icon{
                         SlotsLayout.position: SlotsLayout.Leading
                         name : "account"
@@ -90,6 +97,21 @@ Page{
                     ProgressionSlot{}
                 }
                 onClicked: page_stack.push(update_user_values_page)
+            }
+
+            ListItem{
+                width: root.width
+                ListItemLayout{
+                    title.text : i18n.tr("Data analysis")
+                    Icon{
+                        SlotsLayout.position: SlotsLayout.Leading
+                        name : "x-office-presentation-symbolic"
+                        height : units.gu(3.5)
+                    }
+
+                    ProgressionSlot{}
+                }
+                onClicked: page_stack.push(data_analysis_page)
             }
 
             ListItem{
@@ -104,7 +126,7 @@ Page{
                 width: root.width
         
                 ListItemLayout{
-                    title.text : i18n.tr("Change app layout & quick foods list")
+                    title.text : i18n.tr("Change App Layout & Behaviours")
                     Icon{
                         SlotsLayout.position: SlotsLayout.Leading
                         name : "preferences-desktop-wallpaper-symbolic"

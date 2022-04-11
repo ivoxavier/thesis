@@ -119,6 +119,25 @@ Page{
                         }
                 }
             }
+
+            ListItem {
+                divider.visible: false
+                ListItemLayout{
+                    subtitle.text: i18n.tr("Graphs Settings")
+                }  
+            }
+
+            ListItem {
+                divider.visible: false
+                ListItemLayout{
+                    title.text: i18n.tr("Graph Animation")
+                    Switch{
+                        checked: app_settings.is_graphs_animation_enabled
+                        onClicked: app_settings.is_graphs_animation_enabled = !app_settings.is_graphs_animation_enabled
+                    }
+                }  
+            }
+
         }  
     }
     NavigationBar{id:navigation_shape}   

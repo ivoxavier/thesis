@@ -276,3 +276,145 @@ function getCarboConsumed(){
       }
     }) 
   }
+
+  var average_calories_month = 'SELECT strftime("%m", i.date) AS month,\
+AVG(i.cal) AS average \
+FROM ingestions i \
+WHERE strftime("%Y", i.date) == strftime("%Y", date()) \
+GROUP BY month \
+ORDER BY month DESC'
+
+
+function getAverageCalories(){
+  var db = connectDB();
+  db.transaction(function (tx) {
+    var results = tx.executeSql(average_calories_month)
+    for (var i = 0; i < results.rows.length; i++) { 
+      (function(){
+        var j = i;
+        avg_month_calories.append({"month": results.rows.item(j).month, "average": results.rows.item(j).average})
+      })()
+    }
+ }) 
+}
+
+function getAllFoodsMonth(month_requested){
+  
+  var month_ingestions = 'SELECT i.date AS date,\
+  i.name AS name,\
+  i.cal AS cal \
+  FROM ingestions i \
+  WHERE strftime("%m", date) == "which_month"'.replace("which_month", month_requested)
+    
+    var db = connectDB();
+    db.transaction(function (tx) {
+      var results = tx.executeSql(month_ingestions)
+      for (var i = 0; i < results.rows.length; i++) { 
+        (function(){
+          var j = i;
+          all_month_ingestions.append({"date": results.rows.item(j).date,"name": results.rows.item(j).name, "cal": results.rows.item(j).cal})
+        })()
+      }
+   }) 
+  }
+
+  /*Charts*/
+
+  /*Axis: for Weight Tracker  --start--*/
+
+function getYWeightTracker(date_from, date_to){
+  var get_y_weight_table = 'SELECT weight FROM weight_tracker wt \
+  WHERE date(wt.date) <= date("which_date_to") AND date(wt.date) >= date("which_date_from") \
+  ORDER BY wt.date ASC'.replace("which_date_to", date_to).replace("which_date_from", date_from)
+  var db = connectDB();
+  var rs = "";
+  db.transaction(function(tx) {
+    rs = tx.executeSql(get_y_weight_table);
+  });
+  
+  var weight_values = [];
+  for(var i =0;i < rs.rows.length;i++) {
+    weight_values.push(rs.rows.item(i).weight);
+  }
+  
+  return weight_values;
+}
+
+
+  /*X axis: measurement dates*/
+function getXWeightTracker(date_from, date_to){
+  var get_x_weight_table = 'SELECT date FROM weight_tracker wt \
+  WHERE date(wt.date) <= date("which_date_to") AND date(wt.date) >= date("which_date_from") \
+  ORDER BY wt.date ASC'.replace("which_date_to", date_to).replace("which_date_from", date_from)
+  var db = connectDB();
+  
+  var rs = "";
+  db.transaction(function(tx) {
+    rs = tx.executeSql(get_x_weight_table);
+  });
+
+  /* build the array */
+  var date_registered = [];
+  for(var i =0;i < rs.rows.length;i++) {
+    date_registered.push(rs.rows.item(i).date);
+  }
+return date_registered;
+}
+/* Axis: for Weight Tracker  --end--*/
+
+//populate chartLine
+function getChartLineData(date_from, date_to){  
+
+var ChartLineData = {
+  labels: getXWeightTracker(date_from, date_to),
+datasets: [{
+    fillColor : "rgba(220,220,220,0.2)",
+    strokeColor : "rgba(220,220,220,1)",
+    pointColor : "rgba(220,220,220,1)",
+    pointStrokeColor : "#fff",
+    pointHighlightFill : "#fff",
+    pointHighlightStroke : "rgba(220,220,220,1)",
+    data : getYWeightTracker(date_from, date_to)
+}]
+}
+return ChartLineData;
+}
+
+ /*Axis: for Weight Tracker  --start--*/
+
+ function getYNutriscore(){
+  var get_y_nutriscores_values = 'SELECT COUNT(nutriscore) AS nutriscore \
+   FROM ingestions \
+   GROUP BY nutriscore \
+   ORDER BY 1 ASC'
+  var db = connectDB();
+  var rs = "";
+  db.transaction(function(tx) {
+    rs = tx.executeSql(get_y_nutriscores_values);
+  });
+  
+  var nutriscore_count = [];
+  for(var i =0;i < rs.rows.length;i++) {
+    nutriscore_count.push(rs.rows.item(i).nutriscore);
+  }
+  return nutriscore_count;
+}
+
+/* Axis: for Weight Tracker  --end--*/
+
+function getChartBarData(){  
+
+  var ChartBarData = {
+    labels: ["a","b","c","d","e"],
+  datasets: [{
+      fillColor : "rgba(220,220,220,0.2)",
+      strokeColor : "rgba(220,220,220,1)",
+      pointColor : "rgba(220,220,220,1)",
+      pointStrokeColor : "#fff",
+      pointHighlightFill : "#fff",
+      pointHighlightStroke : "rgba(220,220,220,1)",
+      data : getYNutriscore()
+  }]
+  }
+  return ChartBarData;
+  }

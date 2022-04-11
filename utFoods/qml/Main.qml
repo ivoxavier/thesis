@@ -284,13 +284,36 @@ MainView {
         TrackersSettingsPage{}
     }
 
-
-
     //ExportDataPage, where users can export the data produced
     Component{
         id: export_data_page
         ExportDataPage{}
     }
+
+    //DataAnalysisPage, where users can check theirs consunption habits
+    Component{
+        id: data_analysis_page
+        DataAnalysisPage{}
+    }
+
+    //AverageCaloriesPage, average calories page
+    Component{
+        id: average_calories_page
+        AverageCaloriesPage{}
+    }
+
+    //ListFoodsIngestedMonthPage, list with the respective foods ingested by month
+    Component{
+        id: list_foods_ingested_month_page
+        ListFoodsIngestedMonthPage{}
+    }
+
+    //GraphsPage, page containig data visualization
+    Component{
+        id: graphs_page
+        GraphsPage{}
+    }
+
 
     Component.onCompleted:{
         ControlUserExperienceTime.isValid()

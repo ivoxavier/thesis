@@ -24,7 +24,7 @@ MainView {
     id: root
     objectName: 'mainView'
     applicationName: 'utfoods.ivofernandes'
-    property string app_version : "0.6.0"
+    property string app_version : "0.7.0"
     automaticOrientation: true
     anchorToKeyboard: true
     width: units.gu(45)
@@ -312,6 +312,12 @@ MainView {
     Component{
         id: graphs_page
         GraphsPage{}
+    }
+
+    //BodyMeasuresPage, page containig body measurements
+    Component{
+        id: body_measures_page
+        BodyMeasuresPage{}
     }
 
 

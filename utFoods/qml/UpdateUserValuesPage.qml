@@ -40,6 +40,8 @@ Page{
         }
 
     property bool is_values_view: true
+    property bool is_blood_pressure_view : false
+    property bool is_goal_view : false
 
     property bool is_maintain : true 
     property double update_weight
@@ -51,9 +53,17 @@ Page{
     property string update_type_goal
     property int update_recommended_calories
 
+    property int update_ap_hi //systolic
+    property int update_ap_lo //diastolic
+
     Component{
         id: state_updating_dialog
         UpdateUserTableDialog{}
+    }
+
+    Component{
+        id: state_updating_blood_pressure_dialog
+        UpdateUserBloodPressureDialog{}
     }
 
     
@@ -87,7 +97,7 @@ Page{
                 width: parent.width
                 visible: app_settings.is_page_headers_enabled ? false : true
                 UbuntuShape{
-                    Layout.preferredWidth: units.gu(10)
+                    Layout.preferredWidth: units.gu(14)
                     Layout.preferredHeight: units.gu(5)
                     radius: "large"
                     aspect: is_values_view ? UbuntuShape.DropShadow : UbuntuShape.Flat
@@ -95,20 +105,22 @@ Page{
                     Text{
                         anchors.centerIn: parent
                         text: i18n.tr("VALUES")
-                        }
+                    }
                     MouseArea{
                         anchors.fill: parent
                         onClicked :{
                             is_values_view = true
+                            is_blood_pressure_view = false
+                            is_goal_view = false
                         }
                     }
                 }
 
                 UbuntuShape{
-                    Layout.preferredWidth: units.gu(10)
+                    Layout.preferredWidth: units.gu(14)
                     Layout.preferredHeight: units.gu(5)
                     radius: "large"
-                    aspect: is_values_view ? UbuntuShape.Flat : UbuntuShape.DropShadow
+                    aspect: is_goal_view ? UbuntuShape.DropShadow : UbuntuShape.Flat
 
                     Text{
                         anchors.centerIn: parent
@@ -118,11 +130,34 @@ Page{
                         anchors.fill: parent
                         onClicked:{
                             is_values_view = false
+                            is_blood_pressure_view = false
+                            is_goal_view = true
+                        }
+                    }
+                } 
+
+                UbuntuShape{
+                    Layout.preferredWidth: units.gu(14)
+                    Layout.preferredHeight: units.gu(5)
+                    radius: "large"
+                    aspect: is_blood_pressure_view ? UbuntuShape.DropShadow : UbuntuShape.Flat
+
+                    Text{
+                        anchors.centerIn: parent
+                        text: i18n.tr("TENSION")
+                    }
+                    MouseArea{
+                        anchors.fill: parent
+                        onClicked:{
+                            is_values_view = false
+                            is_blood_pressure_view = true
+                            is_goal_view = false
                         }
                     }
                 }   
             }
 
+            /*VALUES TAB */
 
             Text{
                 Layout.alignment: Qt.AlignCenter
@@ -198,7 +233,7 @@ Page{
             Text{
                 Layout.alignment: Qt.AlignCenter
                 text: i18n.tr("Activity level")
-                visible: is_values_view ? false: true
+                visible: is_goal_view ? true : false
             }
 
             OptionSelector {
@@ -206,19 +241,19 @@ Page{
                 Layout.preferredWidth: root.width - units.gu(28)
                 model: [i18n.tr("Very Light"),i18n.tr("Light"),i18n.tr("Moderate"), i18n.tr("High")]
                 selectedIndex: -1
-                visible: is_values_view ? false: true
+                visible: is_goal_view ? true : false
                 onSelectedIndexChanged: {
                     update_user_values_page.update_activity_level = selectedIndex
                     
                 }
             }
 
-            BlankSpace{}
+           
 
             Text{
                 Layout.alignment: Qt.AlignCenter
                 text: i18n.tr("Goal")
-                visible: is_values_view ? false: true
+                visible: is_goal_view ? true : false
             }
 
             OptionSelector {
@@ -226,7 +261,7 @@ Page{
                 Layout.preferredWidth: root.width - units.gu(26)
                 model: [i18n.tr("Loose weight"),i18n.tr("Maintain weight"), i18n.tr("Gain weight")]
                 selectedIndex: -1
-                visible: is_values_view ? false: true
+                visible: is_goal_view ? true : false
                 onSelectedIndexChanged: {
                     if(selectedIndex == -1){
                         update_user_values_page.is_maintain = true
@@ -241,12 +276,12 @@ Page{
                 }
             }
             
-            BlankSpace{}
+           
 
             Text{
                 Layout.alignment: Qt.AlignCenter
                 text: i18n.tr("Goal definition")
-                visible: is_values_view ? false: true
+                visible: is_goal_view ? true : false
             }
 
             OptionSelector {
@@ -255,13 +290,61 @@ Page{
                 enabled: update_user_values_page.is_maintain ? false : true
                 model: [i18n.tr("0,5kg by week"),i18n.tr("1kg by week"),i18n.tr("3kg by week"), i18n.tr("4kg by week")]
                 selectedIndex: -1
-                visible: is_values_view ? false: true
+                visible: is_goal_view ? true : false
                 onSelectedIndexChanged: {
                     update_user_values_page.update_user_goal = selectedIndex == 0 ?
                     DefinePeriod.periodOne() : selectedIndex == 1 ?
                     DefinePeriod.periodTwo() : selectedIndex == 2 ?
                     DefinePeriod.periodThree() : DefinePeriod.periodFour()
 
+                }
+            }
+
+            /*BLOOD PRESSURE TAB*/
+
+            Text{
+                Layout.alignment: Qt.AlignCenter
+                text: i18n.tr("Your Systolic Presure (High Pressure)")
+                visible: is_blood_pressure_view ? true: false
+            }
+
+            UbuntuShape{  
+                Layout.alignment: Qt.AlignCenter
+                Layout.preferredWidth: root.width - units.gu(2)
+                Layout.preferredHeight: units.gu(4)
+                radius: "large"
+                aspect: UbuntuShape.Inset
+                visible: is_blood_pressure_view ? true: false
+                TextInput{
+                    anchors.fill: parent
+                    overwriteMode: true
+                    horizontalAlignment: TextInput.AlignHCenter
+                    verticalAlignment: TextInput.AlignVCenter
+                    inputMethodHints: Qt.ImhDigitsOnly
+                    onTextChanged: update_user_values_page.update_ap_hi = text 
+                }
+            }
+
+            Text{
+                Layout.alignment: Qt.AlignCenter
+                text: i18n.tr("Your Diastolic Presure (Low Pressure)")
+                visible: is_blood_pressure_view ? true: false
+            }
+
+            UbuntuShape{  
+                Layout.alignment: Qt.AlignCenter
+                Layout.preferredWidth: root.width - units.gu(2)
+                Layout.preferredHeight: units.gu(4)
+                radius: "large"
+                aspect: UbuntuShape.Inset
+                visible: is_blood_pressure_view ? true: false
+                TextInput{
+                    anchors.fill: parent
+                    overwriteMode: true
+                    horizontalAlignment: TextInput.AlignHCenter
+                    verticalAlignment: TextInput.AlignVCenter
+                    inputMethodHints: Qt.ImhDigitsOnly
+                    onTextChanged: update_user_values_page.update_ap_lo = text 
                 }
             }
             
@@ -271,7 +354,13 @@ Page{
     RowAbstractUpdateButton{
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.bottom: app_settings.is_page_headers_enabled ? parent.bottom : navigation_shape.top
-        visible: is_values_view ? false: true
+        visible: is_goal_view ? true : false
+    }
+
+    RowAbstractUpdateBloodPressureButton{
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.bottom: app_settings.is_page_headers_enabled ? parent.bottom : navigation_shape.top
+        visible: is_blood_pressure_view ? true : false
     }
 
 

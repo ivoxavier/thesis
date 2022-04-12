@@ -96,6 +96,26 @@ Page{
                 }
                 onClicked : page_stack.push(graphs_page)
             }
+
+            ListItem{
+                divider.visible : false
+                ListItemLayout{
+                    subtitle.text: i18n.tr("Body Measurements")
+                }
+            }
+
+            ListItem{
+                ListItemLayout{
+                    title.text: i18n.tr("Indexes")
+                    Icon{
+                        SlotsLayout.position: SlotsLayout.Leading
+                        source : "../assets/body_icon.svg"
+                        height : units.gu(3.5)
+                    }
+                    ProgressionSlot{}
+                }
+                onClicked : page_stack.push(body_measures_page)
+            }
         }
     }  
     NavigationBar{id: navigation_shape} 

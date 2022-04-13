@@ -23,6 +23,7 @@ import Ubuntu.Components.ListItems 1.3
 import Ubuntu.Components.Popups 1.3
 import QtQuick.Controls.Suru 2.2
 import QtQuick.LocalStorage 2.12
+import io.thp.pyotherside 1.5
 import "components"
 
 
@@ -63,6 +64,11 @@ Page{
         DeleteAllWeightTrackerDialog{}
     }
 
+    Component{
+        id: delete_cache
+        DeleteCacheDialog{}
+    }
+
    /* Component{
         id: delete_all_notes_dialog
         DeleteAllNotesDialog{}
@@ -72,6 +78,19 @@ Page{
         id: operation_result_popover
         OperationResultPopOver{}
     }
+
+    Python{
+        id: py
+        Component.onCompleted:{
+            addImportPath(Qt.resolvedUrl('../py/'))
+            importModule('clean_cache', function() {})
+        }
+        onError: {
+            console.log('Python error: ' + traceback);
+        }
+
+    }
+
 
     Flickable {
 
@@ -215,9 +234,6 @@ Page{
                 onClicked: page_stack.push(manager_user_foods_list_page)
             }
 
-
-
-
             ListItem {
                 divider.visible: false
                 ListItemLayout{
@@ -310,10 +326,32 @@ Page{
                 }
             }
 
+            ListItem {
+                divider.visible: false
+                ListItemLayout{
+                    subtitle.text: i18n.tr("System")
+                }  
+            }
 
-
-
-
+            ListItem{
+                divider.visible: false
+                ListItemLayout{
+                        title.text : i18n.tr("Delete App Cache")
+                        subtitle.text: i18n.tr("BE CAREFULL WITH THIS!")
+                        Icon{
+                            SlotsLayout.position: SlotsLayout.Leading
+                            name : "application-x-archive-symbolic"
+                            height : units.gu(3.5)
+                        }
+                        Button{
+                        text:i18n.tr("Delete")
+                        color:UbuntuColors.red
+                        onClicked:{
+                            PopupUtils.open(delete_cache)
+                        }   
+                    }
+                }
+            } 
         }  
     }
     NavigationBar{id:navigation_shape}   

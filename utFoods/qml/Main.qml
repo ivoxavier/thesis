@@ -176,6 +176,12 @@ MainView {
         QuickAdditionPage{}
     }
 
+    //CreateFoodsRequestPage, opens a webview form to allow users resquesting a food || meal to be shared with the community
+    Component{
+        id: create_request_page
+        CreateFoodsRequestPage{}
+    }
+
     //SetFoodPage, let uses set the ingestions
     Component{
         id: set_food_page

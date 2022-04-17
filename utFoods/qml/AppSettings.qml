@@ -26,8 +26,10 @@ Settings {
     property bool is_clean_install : true
     property bool is_page_headers_enabled : false
     property bool is_xml_openfoodsfacts_enabled: true
+    property bool is_user_created_foods_list_enabled : false
     property bool is_api_openfoodsfacts_enabled : true
     property bool is_api_themealdb_enabled: false
+    property bool is_api_utFoods_community_foods_list_enabled : false
     property bool is_weight_tracker_chart_enabled: false
     property bool is_auto_cleaning : false
     property bool is_graphs_animation_enabled : true

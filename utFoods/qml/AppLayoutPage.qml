@@ -99,7 +99,11 @@ Page{
                         }
                         QQC2.RadioButton{
                             checked: app_settings.is_xml_openfoodsfacts_enabled ? true : false
-                            onClicked: {app_settings.is_xml_openfoodsfacts_enabled = !app_settings.is_xml_openfoodsfacts_enabled}
+                            onClicked: {
+                                 app_settings.is_xml_openfoodsfacts_enabled = !app_settings.is_xml_openfoodsfacts_enabled
+                                 app_settings.is_api_utFoods_community_foods_list_enabled = false
+                                 app_settings.is_user_created_foods_list_enabled = false
+                                }
                         }
                 }
             }
@@ -114,8 +118,32 @@ Page{
                             height : units.gu(3.5)
                         }
                         QQC2.RadioButton{
-                            checked: app_settings.is_xml_openfoodsfacts_enabled ? false : true
-                            onClicked: {app_settings.is_xml_openfoodsfacts_enabled = !app_settings.is_xml_openfoodsfacts_enabled}
+                            checked: app_settings.is_user_created_foods_list_enabled ? true : false
+                            onClicked: {
+                                app_settings.is_user_created_foods_list_enabled = !app_settings.is_user_created_foods_list_enabled
+                                app_settings.is_api_utFoods_community_foods_list_enabled = false
+                                app_settings.is_xml_openfoodsfacts_enabled = false
+                            }
+                        }
+                }
+            }
+
+            ListItem{
+                divider.visible: false
+                ListItemLayout{
+                        title.text : i18n.tr("utFoods Community Foods List")
+                        Icon{
+                            SlotsLayout.position: SlotsLayout.Leading
+                            name : "x-office-document-symbolic"
+                            height : units.gu(3.5)
+                        }
+                        QQC2.RadioButton{
+                            checked: app_settings.is_api_utFoods_community_foods_list_enabled ? true : false
+                            onClicked: {
+                                app_settings.is_api_utFoods_community_foods_list_enabled = !app_settings.is_api_utFoods_community_foods_list_enabled
+                                app_settings.is_user_created_foods_list_enabled = false
+                                app_settings.is_xml_openfoodsfacts_enabled = false
+                            }
                         }
                 }
             }

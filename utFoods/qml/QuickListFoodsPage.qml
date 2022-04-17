@@ -23,6 +23,7 @@ import Ubuntu.Components.ListItems 1.3
 import Ubuntu.Components.Popups 1.3
 import QtQuick.LocalStorage 2.12
 import "components"
+import "../js/utFoodsCommunityFoodsList.js"  as UtFoodsCommunityFoodsList
 
 
 Page{
@@ -36,14 +37,23 @@ Page{
     //receives meal category from HomePage.slotAddMeal
     property int meal_quick_list_foods_page
 
-    //xml Lists
+    //Foods Lists
     property QtObject open_foods_facts_xml : OpenFoodsFactsList{}
     property QtObject user_created_list : UserFoodsList{}
+    property QtObject utFoods_community_list :  ListModel{id: utFoods_community_foods_model;dynamicRoles : true}
+
+    JSONListModel {
+        id: utFoods_community_foods_json
+        source: app_settings.is_api_utFoods_community_foods_list_enabled ? "https://ivoxavier.github.io/thesis/utFoods_community_foods_list.json" : " "
+        query: "$[*]"
+        onJsonChanged: UtFoodsCommunityFoodsList.getFoods()
+    }
+
 
     SortFilterModel{
         id: sorted_model
 
-        model: app_settings.is_xml_openfoodsfacts_enabled ? open_foods_facts_xml : user_created_list
+        model: app_settings.is_xml_openfoodsfacts_enabled ? open_foods_facts_xml : app_settings.is_user_created_foods_list_enabled ? user_created_list : utFoods_community_list
         sort.property: "product_name"
         sort.order: Qt.DescendingOrder
         // case insensitive sorting

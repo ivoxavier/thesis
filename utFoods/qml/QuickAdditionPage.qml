@@ -226,6 +226,25 @@ Page{
                 onCheckedChanged: is_fruits_vegetables_nuts = !is_fruits_vegetables_nuts
             }
 
+            BlankSpace{}
+
+            ListItem{
+                divider.visible : false
+                visible: is_details_view ? true: false
+                ListItemLayout{
+                    title.text : i18n.tr("Create An Addition Request")
+                    subtitle.text : i18n.tr("utFoods Community Foods")
+                    Icon{
+                        SlotsLayout.position: SlotsLayout.Leading
+                        name : "webbrowser-app-symbolic" 
+                        height : units.gu(3.5)
+                    }
+                    ProgressionSlot{}
+                }
+                onClicked: page_stack.push(create_request_page)
+            }
+
+
           
             /*MACROS TAB*/
 

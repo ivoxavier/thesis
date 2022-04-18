@@ -326,6 +326,12 @@ MainView {
         BodyMeasuresPage{}
     }
 
+    //NotesPage, page for view registed notes
+    Component{
+        id: notes_page
+        NotesPage{}
+    }
+
 
     Component.onCompleted:{
         ControlUserExperienceTime.isValid()

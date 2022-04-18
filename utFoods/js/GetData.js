@@ -318,6 +318,27 @@ function getAllFoodsMonth(month_requested){
    }) 
   }
 
+  function getNotes(){
+
+    var all_notes = 'SELECT id AS id,note AS note, date AS date \
+    FROM notes \
+    ORDER BY id DESC'
+  
+    var db = connectDB();
+    var rsToQML
+  
+    db.transaction(function (tx) {
+      var results = tx.executeSql(all_notes)
+      for (var i = 0; i < results.rows.length; i++) {
+        notes_list_model.append({
+          "id": results.rows.item(i).id,
+          "note": results.rows.item(i).note,
+          "date": results.rows.item(i).date})
+      }
+  })
+   //return rsToQML
+  }
+
   /*Charts*/
 
   /*Axis: for Weight Tracker  --start--*/

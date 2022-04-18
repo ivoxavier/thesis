@@ -69,10 +69,10 @@ Page{
         DeleteCacheDialog{}
     }
 
-   /* Component{
+    Component{
         id: delete_all_notes_dialog
         DeleteAllNotesDialog{}
-    }*/
+    }
 
     Component{
         id: operation_result_popover

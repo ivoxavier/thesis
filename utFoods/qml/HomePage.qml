@@ -82,6 +82,12 @@ Page{
         DateNavigation{}
     }
 
+    //popus a dialog for adding note
+    Component{
+        id: add_note_dialog
+        AddNoteDialog{}
+    }
+
     Flickable {
         anchors{
             top: parent.top
@@ -134,6 +140,10 @@ Page{
                     Layout.preferredWidth: units.gu(13)
                     Layout.preferredHeight: units.gu(5)
                     slot_icon : "attachment"
+                    MouseArea{
+                        anchors.fill: parent
+                        onClicked: PopupUtils.open(add_note_dialog)
+                    }
                 }
 
                 SlotDashboardIndicators{

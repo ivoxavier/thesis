@@ -247,16 +247,10 @@ Page{
 
                     ProgressionSlot{}
                 }
-                onClicked: console.log(" ")
+                onClicked:  page_stack.push(third_party_software_page)
             }
-
-
         }
-
-        
     }
-    
-
     NavigationBar{id: navigation_shape}
 }
 

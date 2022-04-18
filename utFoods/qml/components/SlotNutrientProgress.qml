@@ -43,8 +43,9 @@ UbuntuShape{
             Layout.alignment: Qt.AlignCenter
         }
 
-        Rectangle{   
-            width: root.width - units.gu(32.1)
+        Rectangle{  
+            Layout.alignment: Qt.AlignCenter
+            width: parent.width
             height : units.gu(1)
             color: "transparent"
             QQC2.ProgressBar {

@@ -332,6 +332,12 @@ MainView {
         NotesPage{}
     }
 
+    //CreditsPage, page with app info
+    Component{
+        id: credits_page
+        CreditsPage{}
+    }
+
 
     Component.onCompleted:{
         ControlUserExperienceTime.isValid()

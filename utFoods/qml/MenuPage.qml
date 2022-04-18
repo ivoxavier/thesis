@@ -231,7 +231,7 @@ Page{
 
                     ProgressionSlot{}
                 }
-                onClicked: console.log(" ")
+                onClicked: page_stack.push(credits_page)
             }
 
             ListItem{

@@ -24,6 +24,39 @@ Dialog {
     id: meal_filter_dialog
     title: i18n.tr("Show Ingestions From")
 
+    Row{
+        width: parent.width
+        anchors.horizontalCenter: parent.horizontalCenter
+        spacing: units.gu(1)
+
+        Label{
+            anchors.verticalCenter: parent.verticalCenter
+            text: i18n.tr("How Many Days Ago:")
+        }
+
+        UbuntuShape{
+            width: units.gu(4)
+            height : width
+            radius : "large"
+            aspect : UbuntuShape.Inset
+
+            TextInput{
+                anchors.verticalCenter: parent.verticalCenter
+                width : parent.width
+                overwriteMode: true
+                horizontalAlignment: TextInput.AlignHCenter
+                verticalAlignment: TextInput.AlignVCenter
+                inputMethodHints: Qt.ImhDigitsOnly
+                onTextChanged : {
+                    home_page.amount_of_days_back = text
+                    var yesterday_date = new Date()
+                    yesterday_date.setDate(yesterday_date.getDate() - home_page.amount_of_days_back)
+                    bottom_edge.yesterday_formated_date = yesterday_date.toLocaleDateString(root.locale, 'yyyy-MM-dd')  
+                }
+            }
+        }
+    }
+
     OptionSelector{
         expanded : true
         model : [i18n.tr("Breakfast"), i18n.tr("Lunch"), i18n.tr("Dinner"), i18n.tr("Snacks")]

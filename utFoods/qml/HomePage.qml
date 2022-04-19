@@ -50,6 +50,9 @@ Page{
     property double query_total_fat_consumed
     property double query_total_protein_consumed
 
+    //stores the amount of days user wants to getback to (re)ingest
+    property int amount_of_days_back : 1
+
     JSONListModel {
         id: theMealDB
         source: app_settings.is_api_themealdb_enabled ? "https://www.themealdb.com/api/json/v1/1/random.php" : " "
@@ -111,7 +114,6 @@ Page{
         }
         contentWidth: parent.width
         contentHeight: main_column.height
-
         ColumnLayout{
             id: main_column
             width: root.width
@@ -313,7 +315,7 @@ Page{
 
         //holds the date for query db
         property var yesterday_formated_date 
-
+        onYesterday_formated_dateChanged : console.log("Yesterdar_formated_date",yesterday_formated_date )
         //holds the meal index for query db
         property int meal_filter
 
@@ -355,7 +357,7 @@ Page{
                 }
             }
             header: PageHeader{
-                title : i18n.tr("Your Yesterday Ingestions")
+                title : i18n.tr("Your Previous Ingestions")
                 ActionBar{
                     anchors.right: parent.right
                     anchors.verticalCenter: parent.verticalCenter
@@ -427,22 +429,8 @@ Page{
                                 protein, bottom_edge.meal_filter)
                                 PopupUtils.open(operation_sucess)
                                 root.initDB()
-                                /*page_stack.push(set_food_page,{product_name_set_food_page: name,
-                                cal_set_food_page: cal,
-                                carbo_set_food_page: carbo,
-                                fat_set_food_page: fat,
-                                protein_set_food_page: protein,
-                                nutriscore_set_food_page: nutriscore,
-                                meal_set_food_page: bottom_edge.meal_filter})*/
                             }
                         }
-
-            }
-
-            Component.onCompleted : {
-                var yesterday_date = new Date()
-                yesterday_date.setDate(yesterday_date.getDate() - 1)
-                bottom_edge.yesterday_formated_date = yesterday_date.toLocaleDateString(root.locale, 'yyyy-MM-dd')
             }
         }
     }

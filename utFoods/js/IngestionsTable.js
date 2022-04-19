@@ -100,6 +100,19 @@ function deleteMonthYearIngestion(month, year){
  return console.log("Ingestions removed from option month_year")
 }
 
+function deleteIngestion(id){
+  var statement = 'DELETE FROM ingestions \
+  WHERE id == "which_id"'.replace("which_id", id)
+  var db = connectDB();
+  var rs;
+   db.transaction(function(tx) {
+    rs = tx.executeSql(statement);
+   }
+ );
+ return console.log("Ingestion removed from by ID")
+}
+
+
 var check_old_ingestions = 'SELECT COUNT(*) AS oldest \
 FROM ingestions \
 WHERE ingestions.date < strftime("%Y", date())'

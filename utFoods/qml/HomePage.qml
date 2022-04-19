@@ -28,6 +28,8 @@ import "../js/GetData.js" as GetData
 import "../js/ControlSlotDashboardPlan.js" as ControlSlotDashboardPlan
 import "../js/ControlTheMealDB.js" as ControlTheMealDB
 import "../js/DefineMacroNutriensPerDay.js" as DefineMacroNutriensPerDay
+import "../js/ControlFoodsNutriscore.js" as ControlFoodsNutriscore
+import "../js/IngestionsTable.js" as IngestionsTable
 
 Page{
     id: home_page
@@ -54,6 +56,8 @@ Page{
         query: "$[*]"
         onJsonChanged: ControlTheMealDB.getRecipe()          
     }
+
+     ListModel{id: filtered_meal_model}
     
     //this component is need to initializate the db. It's linked to main view so it runs everytime the iniDB signal is emitted
     //without it the dashboard will not update untill a close and opening the app again
@@ -88,7 +92,17 @@ Page{
         AddNoteDialog{}
     }
 
+    //message confirming the ingestion on bottom 
+    Component{
+        id: operation_sucess
+        MessageDialog{
+            msg: i18n.tr("Ingestion Saved!")
+        }
+    }
+    
+
     Flickable {
+        id: flickable
         anchors{
             top: parent.top
             left: parent.left
@@ -97,7 +111,7 @@ Page{
         }
         contentWidth: parent.width
         contentHeight: main_column.height
-            
+
         ColumnLayout{
             id: main_column
             width: root.width
@@ -288,10 +302,149 @@ Page{
                 Layout.preferredHeight: units.gu(23)
                 img_url: root.recipe_img_url
                 visible: app_settings.is_api_themealdb_enabled
-            }    
-
-
+            } 
+            BlankSpace{}  
         }  
+    }
+
+    BottomEdge{
+        id: bottom_edge
+        parent : home_page
+
+        //holds the date for query db
+        property var yesterday_formated_date 
+
+        //holds the meal index for query db
+        property int meal_filter
+
+        //filter handler
+        onMeal_filterChanged : meal_filter == 0 ?
+        GetData.getYesterdayBreakfast() : meal_filter == 1 ? 
+        GetData.getYesterdayLunch() : meal_filter == 2 ? 
+        GetData.getYesterdayDinner() : meal_filter == 3 ?
+        GetData.getYesterdaySnacks() : {}
+
+        Component{
+            id: meal_filter_dialog
+            MealFilterDialog{}
+        }
+
+        contentComponent: Page{
+            id: bottom_edge_page
+        
+            height: bottom_edge.height
+    
+            Item{
+                visible: yesterday_foods_list.visible ? false : true
+                anchors.centerIn: parent
+                height: parent.height / 2
+                width: parent.width / 2
+
+                Icon {
+                    id: empty_icon
+                    anchors.fill: parent
+                    name: "empty-symbolic"
+                    opacity: 0.75
+                }
+
+                Label{
+                    anchors.top: empty_icon.bottom
+                    anchors.horizontalCenter: empty_icon.horizontalCenter
+                    text: i18n.tr("Empty List, Register Ingestions First Or Choose A Filter.")
+                    opacity: 0.75
+                }
+            }
+            header: PageHeader{
+                title : i18n.tr("Your Yesterday Ingestions")
+                ActionBar{
+                    anchors.right: parent.right
+                    anchors.verticalCenter: parent.verticalCenter
+                    numberOfSlots : 1
+                    actions : [
+                        Action{
+                            iconName : "filters"
+                            onTriggered : PopupUtils.open(meal_filter_dialog)
+                        }
+                    ]
+                }
+            }
+
+        
+            ListView{
+                id: yesterday_foods_list
+
+                anchors{
+                    top: parent.header.bottom
+                    left : parent.left
+                    right : parent.right
+                    bottom : parent.bottom
+                }
+
+                highlightRangeMode: ListView.ApplyRange
+                highlightMoveDuration: UbuntuAnimation.SnapDuration
+                model : filtered_meal_model
+                visible: filtered_meal_model.count == 0 ? false : true
+                delegate: ListItem{
+                            divider.visible: false
+                            ListItemLayout{
+                                title.text: name
+                                subtitle.text: cal 
+                                UbuntuShape{
+                                    SlotsLayout.position: SlotsLayout.Leading
+                    
+                                    height: units.gu(6)
+                                    width: height
+                                    color: ControlFoodsNutriscore.backgroundColor(score_label.text)
+                                    radius: "large"
+                                    aspect: UbuntuShape.Inset
+                                    Label{
+                                        id: score_label
+                                        anchors.centerIn: parent
+                                        text: nutriscore
+                                        textSize: Label.Large
+                                        font.capitalization: Font.AllUppercase
+                                        color: "white"
+                                    }
+                                }
+                            }
+
+                            leadingActions: ListItemActions{
+                                    actions:[
+                                        Action{
+                                           iconName : "delete" 
+                                           onTriggered:{
+                                               IngestionsTable.deleteIngestion(id)
+                                               filtered_meal_model.remove(index)
+                                           }
+                                        }
+                                    ]
+                                }
+
+                            onClicked:{
+                                IngestionsTable.saveIngestion(name,
+                                nutriscore, cal,
+                                fat, carbo,
+                                protein, bottom_edge.meal_filter)
+                                PopupUtils.open(operation_sucess)
+                                root.initDB()
+                                /*page_stack.push(set_food_page,{product_name_set_food_page: name,
+                                cal_set_food_page: cal,
+                                carbo_set_food_page: carbo,
+                                fat_set_food_page: fat,
+                                protein_set_food_page: protein,
+                                nutriscore_set_food_page: nutriscore,
+                                meal_set_food_page: bottom_edge.meal_filter})*/
+                            }
+                        }
+
+            }
+
+            Component.onCompleted : {
+                var yesterday_date = new Date()
+                yesterday_date.setDate(yesterday_date.getDate() - 1)
+                bottom_edge.yesterday_formated_date = yesterday_date.toLocaleDateString(root.locale, 'yyyy-MM-dd')
+            }
+        }
     }
         
     Component.onCompleted:{

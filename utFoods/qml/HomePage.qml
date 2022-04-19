@@ -315,7 +315,6 @@ Page{
 
         //holds the date for query db
         property var yesterday_formated_date 
-        onYesterday_formated_dateChanged : console.log("Yesterdar_formated_date",yesterday_formated_date )
         //holds the meal index for query db
         property int meal_filter
 

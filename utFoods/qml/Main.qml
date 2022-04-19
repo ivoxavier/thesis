@@ -338,6 +338,11 @@ MainView {
         CreditsPage{}
     }
 
+    //ThirdPartySoftwarePage, page with used software from third parties
+    Component{
+        id: third_party_software_page
+        ThirdPartySoftwarePage{}
+    }
 
     Component.onCompleted:{
         ControlUserExperienceTime.isValid()

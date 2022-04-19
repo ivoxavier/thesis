@@ -102,6 +102,28 @@ function getBreakfastCalories(){
   })
   }
 
+  function getYesterdayBreakfast(){
+    filtered_meal_model.clear()
+    var yesterday_breakfast = 'SELECT id AS id, name AS name, nutriscore AS nutriscore, cal AS cal, fat AS fat, carbo AS carbo, protein AS protein \
+    FROM ingestions i \
+    WHERE i.date == "which_date" AND i.meal = 1'.replace("which_date", bottom_edge.yesterday_formated_date);
+    var db = connectDB();  
+    db.transaction(function (tx) {
+      var results = tx.executeSql(yesterday_breakfast)
+      for (var i = 0; i < results.rows.length; i++) {
+        filtered_meal_model.append({
+          "id" : results.rows.item(i).id,
+          "name" : results.rows.item(i).name,
+          "nutriscore" : results.rows.item(i).nutriscore,
+          "cal" : results.rows.item(i).cal,
+          "fat" : results.rows.item(i).fat,
+          "carbo" : results.rows.item(i).carbo,
+          "protein" : results.rows.item(i).protein
+        })
+      }
+    })
+    }
+
   //assign to homepage property the amount calories ingested in lunch
   function getLunchCalories(){
     var total_cal_consumed_lunch = 'SELECT SUM(i.cal) AS totalcal \
@@ -121,6 +143,28 @@ function getBreakfastCalories(){
       }
     })
   }
+
+  function getYesterdayLunch(){
+    filtered_meal_model.clear()
+    var yesterday_lunch = 'SELECT id AS id, name AS name, nutriscore AS nutriscore, cal AS cal, fat AS fat, carbo AS carbo, protein AS protein \
+    FROM ingestions i \
+    WHERE i.date == "which_date" AND i.meal = 2'.replace("which_date", bottom_edge.yesterday_formated_date);
+    var db = connectDB();  
+    db.transaction(function (tx) {
+      var results = tx.executeSql(yesterday_lunch)
+      for (var i = 0; i < results.rows.length; i++) {
+        filtered_meal_model.append({
+          "id" : results.rows.item(i).id,
+          "name" : results.rows.item(i).name,
+          "nutriscore" : results.rows.item(i).nutriscore,
+          "cal" : results.rows.item(i).cal,
+          "fat" : results.rows.item(i).fat,
+          "carbo" : results.rows.item(i).carbo,
+          "protein" : results.rows.item(i).protein
+        })
+      }
+    })
+    }
 
   //assign to homepage property the amount calories ingested in dinner
   function getDinnerCalories(){
@@ -142,6 +186,29 @@ function getBreakfastCalories(){
   })
   }
 
+  function getYesterdayDinner(){
+    filtered_meal_model.clear()
+    var yesterday_dinner = 'SELECT id AS id, name AS name, nutriscore AS nutriscore, cal AS cal, fat AS fat, carbo AS carbo, protein AS protein \
+    FROM ingestions i \
+    WHERE i.date == "which_date" AND i.meal = 3'.replace("which_date", bottom_edge.yesterday_formated_date);
+    var db = connectDB();  
+    db.transaction(function (tx) {
+      var results = tx.executeSql(yesterday_dinner)
+      for (var i = 0; i < results.rows.length; i++) {
+        filtered_meal_model.append({
+          "id" : results.rows.item(i).id,
+          "name" : results.rows.item(i).name,
+          "nutriscore" : results.rows.item(i).nutriscore,
+          "cal" : results.rows.item(i).cal,
+          "fat" : results.rows.item(i).fat,
+          "carbo" : results.rows.item(i).carbo,
+          "protein" : results.rows.item(i).protein
+        })
+      }
+    })
+    }
+
+  //assign to homepage property the amount calories ingested in snacks
   function getSnacksCalories(){
     var total_cal_consumed_snacks = 'SELECT SUM(i.cal) AS totalcal \
     FROM ingestions i \
@@ -161,6 +228,29 @@ function getBreakfastCalories(){
   })
   }
 
+  function getYesterdaySnacks(){
+    filtered_meal_model.clear()
+    var yesterday_snacks = 'SELECT id AS id, name AS name, nutriscore AS nutriscore, cal AS cal, fat AS fat, carbo AS carbo, protein AS protein \
+    FROM ingestions i \
+    WHERE i.date == "which_date" AND i.meal = 4'.replace("which_date", bottom_edge.yesterday_formated_date);
+    var db = connectDB();  
+    db.transaction(function (tx) {
+      var results = tx.executeSql(yesterday_snacks)
+      for (var i = 0; i < results.rows.length; i++) {
+        filtered_meal_model.append({
+          "id" : results.rows.item(i).id,
+          "name" : results.rows.item(i).name,
+          "nutriscore" : results.rows.item(i).nutriscore,
+          "cal" : results.rows.item(i).cal,
+          "fat" : results.rows.item(i).fat,
+          "carbo" : results.rows.item(i).carbo,
+          "protein" : results.rows.item(i).protein
+        })
+      }
+    })
+    }
+
+  //get cups
   function getCups(){
     var water_cups = 'SELECT COUNT(cups) AS cups \
     FROM water_tracker \

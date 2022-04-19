@@ -26,6 +26,8 @@ import QtQuick.LocalStorage 2.12
 import Ubuntu.Content 1.3
 import Ubuntu.Components.Pickers 1.3
 import "components"
+import "../js/Chart.js" as Charts
+import "../js/QChartJsTypes.js" as ChartTypes
 import "../js/UserTable.js" as UserTable
 import "../js/IngestionsTable.js" as IngestionsTable
 
@@ -57,7 +59,29 @@ Page{
     property double fat_ingested : Math.round((fat_set_food_page * quantity_portions) * size_portions * 10) / 10
     property double protein_ingested : Math.round((protein_set_food_page * quantity_portions) * size_portions * 10) / 10
     
-
+    function getChartPieValues(){
+        var ChartPieData = [
+            {
+                value: fat_ingested,
+                color: "#F7464A",
+                highlight: "#FF5A5E",
+                label: i18n.tr("Fat/100g")
+            },
+            {
+                value: protein_ingested,
+                color: "#46BFBD",
+                highlight: "#5AD3D1",
+                label: i18n.tr("Protein/100g")
+            },
+            {
+                value: carbo_ingested,
+                color: "#949FB1",
+                highlight:"#A8B3C5",
+                label: i18n.tr("Carbo/100g")
+            }
+        ]
+        return ChartPieData
+    }
     
 
     Component{
@@ -97,52 +121,39 @@ Page{
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
             }
 
+            Text{
+                Layout.alignment: Qt.AlignCenter
+                Layout.preferredWidth: root.width
+                text: i18n.tr("Calories: %1").arg(cal_ingested)
+                font.pixelSize: units.gu(3)
+                horizontalAlignment: Text.AlignHCenter
+                wrapMode: Text.WrapAtWordBoundaryOrAnywhere
+            }
+
 
             BlankSpace{}
 
-            Label{
+            Grid {
+                id:chart_pie_wrapper
                 Layout.alignment: Qt.AlignCenter
-                text: i18n.tr("Fat/100gr")
+                Layout.preferredWidth: root.width - units.gu(6)
+                Layout.preferredHeight:  units.gu(17)
+                visible: true
+                columns:1
+                columnSpacing: units.gu(1)
+
+                QChartJs {
+                    id: chart_pie
+                    width: parent.width
+                    height: parent.height
+                    chartType: ChartTypes.QChartJSTypes.PIE
+                    chartData: getChartPieValues()
+                    animation: app_settings.is_graphs_animation_enabled
+                    chartAnimationEasing: Easing.InOutElastic;
+                    chartAnimationDuration: 2000;
+                }
+
             }
-
-            NutrientBar{
-                Layout.alignment: Qt.AlignCenter
-                Layout.preferredWidth: root.width - units.gu(24)
-                Layout.preferredHeight: units.gu(3)
-                bar_color : UbuntuColors.red
-                nutrient_value: (fat_ingested * 0.01)
-            }
-
-            BlankSpace{}
-
-             Label{
-                Layout.alignment: Qt.AlignCenter
-                text: i18n.tr("Protein/100gr")
-            }
-    
-            NutrientBar{
-                Layout.alignment: Qt.AlignCenter
-                Layout.preferredWidth: root.width - units.gu(24)
-                Layout.preferredHeight: units.gu(3)
-                bar_color : UbuntuColors.green
-                nutrient_value: (protein_ingested * 0.01)
-            }
-
-            BlankSpace{}
-
-            Label{
-                Layout.alignment: Qt.AlignCenter
-                text: i18n.tr("Carbohydrates/100gr")
-            }
-
-            NutrientBar{
-                Layout.alignment: Qt.AlignCenter
-                Layout.preferredWidth: root.width - units.gu(24)
-                Layout.preferredHeight: units.gu(3)
-                bar_color : UbuntuColors.blue
-                nutrient_value: (carbo_ingested * 0.01)
-            }
-
             BlankSpace{}
 
             ListItem{
@@ -160,12 +171,13 @@ Page{
             }
 
             ListItem{
-                divider.visible: true
+                divider.visible: false
+                Layout.preferredHeight: units.gu(9)
                 ListItemLayout{
                     title.text: i18n.tr("Size portion")
                     SizePicker{
                         Layout.preferredWidth: root.width - units.gu(9)
-                        height: units.gu(6)
+                        height: units.gu(8)
                         onSelectedIndexChanged: {
                            selectedIndex == 0 ?
                             size_portions = 1 : selectedIndex == 1 ?
@@ -178,21 +190,16 @@ Page{
                 }
             }
 
-            ListItemHeader{
-                title.text: i18n.tr("Amount of nutrients in your this ingestion")
-                divider.visible : false
-            }
             ListItem{
-                divider.anchors.leftMargin: units.gu(8)
-                divider.anchors.rightMargin: units.gu(8)
+                divider.visible : false
                 ListItemLayout{
-                    title.text: i18n.tr("Calories: %1").arg(cal_ingested)
-                    NutrientIcon{img_path: "../assets/logo.svg"} 
+                    subtitle.text : i18n.tr("Macros") 
                 }
             }
+            
             ListItem{
                 divider.anchors.leftMargin: units.gu(8)
-                divider.anchors.rightMargin: units.gu(8)
+                
                 ListItemLayout{
                     title.text: i18n.tr("Fat: %1gr").arg(fat_ingested)
                     NutrientIcon{img_path: "../assets/logo.svg"} 
@@ -200,7 +207,6 @@ Page{
             }
             ListItem{
                 divider.anchors.leftMargin: units.gu(8)
-                divider.anchors.rightMargin: units.gu(8)
                 ListItemLayout{
                     title.text: i18n.tr("Protein: %1gr").arg(protein_ingested)
                     NutrientIcon{img_path: "../assets/logo.svg"}      
@@ -208,7 +214,7 @@ Page{
             }
             ListItem{
                 divider.anchors.leftMargin: units.gu(8)
-                divider.anchors.rightMargin: units.gu(8)
+                
                 ListItemLayout{
                     title.text: i18n.tr("Carbohydrates: %1gr").arg(carbo_ingested)
                     NutrientIcon{img_path: "../assets/logo.svg"}    

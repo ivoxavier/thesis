@@ -86,7 +86,7 @@ function getTotalFoodsConsumed(){
 function getBreakfastCalories(){
   var total_cal_consumed_breakfast = 'SELECT SUM(i.cal) AS totalcal \
   FROM ingestions i \
-  WHERE i.date == "which_date" AND i.meal = 1'.replace("which_date", root.stringDate);
+  WHERE i.date == "which_date" AND i.meal = 0'.replace("which_date", root.stringDate);
   var db = connectDB();
   var rsToQML        
   db.transaction(function (tx) {
@@ -106,7 +106,7 @@ function getBreakfastCalories(){
     filtered_meal_model.clear()
     var yesterday_breakfast = 'SELECT id AS id, name AS name, nutriscore AS nutriscore, cal AS cal, fat AS fat, carbo AS carbo, protein AS protein \
     FROM ingestions i \
-    WHERE i.date == "which_date" AND i.meal = 1'.replace("which_date", bottom_edge.yesterday_formated_date);
+    WHERE i.date == "which_date" AND i.meal = 0'.replace("which_date", bottom_edge.yesterday_formated_date);
     var db = connectDB();  
     db.transaction(function (tx) {
       var results = tx.executeSql(yesterday_breakfast)
@@ -128,7 +128,7 @@ function getBreakfastCalories(){
   function getLunchCalories(){
     var total_cal_consumed_lunch = 'SELECT SUM(i.cal) AS totalcal \
     FROM ingestions i \
-    WHERE i.date == "which_date" AND i.meal = 2'.replace("which_date", root.stringDate);
+    WHERE i.date == "which_date" AND i.meal = 1'.replace("which_date", root.stringDate);
     var db = connectDB();
     var rsToQML          
     db.transaction(function (tx) {
@@ -148,7 +148,7 @@ function getBreakfastCalories(){
     filtered_meal_model.clear()
     var yesterday_lunch = 'SELECT id AS id, name AS name, nutriscore AS nutriscore, cal AS cal, fat AS fat, carbo AS carbo, protein AS protein \
     FROM ingestions i \
-    WHERE i.date == "which_date" AND i.meal = 2'.replace("which_date", bottom_edge.yesterday_formated_date);
+    WHERE i.date == "which_date" AND i.meal = 1'.replace("which_date", bottom_edge.yesterday_formated_date);
     var db = connectDB();  
     db.transaction(function (tx) {
       var results = tx.executeSql(yesterday_lunch)
@@ -170,7 +170,7 @@ function getBreakfastCalories(){
   function getDinnerCalories(){
     var total_cal_consumed_dinner = 'SELECT SUM(i.cal) AS totalcal \
     FROM ingestions i \
-    WHERE i.date == "which_date" AND i.meal = 3'.replace("which_date", root.stringDate);
+    WHERE i.date == "which_date" AND i.meal = 2'.replace("which_date", root.stringDate);
     var db = connectDB();
     var rsToQML
     db.transaction(function (tx) {
@@ -190,7 +190,7 @@ function getBreakfastCalories(){
     filtered_meal_model.clear()
     var yesterday_dinner = 'SELECT id AS id, name AS name, nutriscore AS nutriscore, cal AS cal, fat AS fat, carbo AS carbo, protein AS protein \
     FROM ingestions i \
-    WHERE i.date == "which_date" AND i.meal = 3'.replace("which_date", bottom_edge.yesterday_formated_date);
+    WHERE i.date == "which_date" AND i.meal = 2'.replace("which_date", bottom_edge.yesterday_formated_date);
     var db = connectDB();  
     db.transaction(function (tx) {
       var results = tx.executeSql(yesterday_dinner)
@@ -212,7 +212,7 @@ function getBreakfastCalories(){
   function getSnacksCalories(){
     var total_cal_consumed_snacks = 'SELECT SUM(i.cal) AS totalcal \
     FROM ingestions i \
-    WHERE i.date == "which_date" AND i.meal = 4'.replace("which_date", root.stringDate);
+    WHERE i.date == "which_date" AND i.meal = 3'.replace("which_date", root.stringDate);
     var db = connectDB();
     var rsToQML
     db.transaction(function (tx) {
@@ -232,7 +232,7 @@ function getBreakfastCalories(){
     filtered_meal_model.clear()
     var yesterday_snacks = 'SELECT id AS id, name AS name, nutriscore AS nutriscore, cal AS cal, fat AS fat, carbo AS carbo, protein AS protein \
     FROM ingestions i \
-    WHERE i.date == "which_date" AND i.meal = 4'.replace("which_date", bottom_edge.yesterday_formated_date);
+    WHERE i.date == "which_date" AND i.meal = 3'.replace("which_date", bottom_edge.yesterday_formated_date);
     var db = connectDB();  
     db.transaction(function (tx) {
       var results = tx.executeSql(yesterday_snacks)

@@ -241,7 +241,7 @@ Page{
                 Layout.preferredWidth: root.width - units.gu(9)
                 Layout.preferredHeight: units.gu(7)
                 title.text: i18n.tr("Breakfast")
-                meal_category: 1
+                meal_category: 0
                 subtitle.text: i18n.tr("%1 calories").arg(home_page.query_total_cal_breakfast)
                 img_path:"../assets/logo.svg"
             }  
@@ -251,7 +251,7 @@ Page{
                 Layout.preferredWidth: root.width - units.gu(9)
                 Layout.preferredHeight: units.gu(7)
                 title.text: i18n.tr("Lunch")
-                meal_category: 2
+                meal_category: 1
                 subtitle.text: i18n.tr("%1 calories").arg(home_page.query_total_cal_lunch)
                 img_path:"../assets/logo.svg"
             } 
@@ -261,7 +261,7 @@ Page{
                 Layout.preferredWidth: root.width - units.gu(9)
                 Layout.preferredHeight: units.gu(7)
                 title.text: i18n.tr("Dinner")
-                meal_category: 3
+                meal_category: 2
                 subtitle.text: i18n.tr("%1 calories").arg(home_page.query_total_cal_dinner)
                 img_path:"../assets/logo.svg"
             }
@@ -271,7 +271,7 @@ Page{
                 Layout.preferredWidth: root.width - units.gu(9)
                 Layout.preferredHeight: units.gu(7)
                 title.text: i18n.tr("Snacks")
-                meal_category: 4
+                meal_category: 3
                 subtitle.text: i18n.tr("%1 calories").arg(home_page.query_total_cal_snacks)
                 img_path:"../assets/logo.svg"
             }

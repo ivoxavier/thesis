@@ -1,3 +1,3 @@
-[submodule "qzxing"]
-	path = qzxing
+[submodule "utFoods/qzxing"]
+	path = utFoods/qzxing
 	url = https://github.com/ftylitak/qzxing.git

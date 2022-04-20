@@ -345,6 +345,12 @@ MainView {
         ThirdPartySoftwarePage{}
     }
 
+    //ScanPage, opens a video capture page where the images captured are analyzed to see exists a barcode
+    Component{
+        id: scan_page
+        ScanPage{}
+    }
+
     Component.onCompleted:{
         ControlUserExperienceTime.isValid()
     }

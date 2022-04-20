@@ -85,6 +85,7 @@ Page{
     RowAbstractBarcodeButton{
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.bottom: quick_addition_button.top
+        visible : app_settings.is_api_openfoodsfacts_enabled ? true : false
     }
 
     RowAbstractQuickAdditionButton{

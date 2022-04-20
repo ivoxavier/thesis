@@ -25,10 +25,8 @@ Dialog {
     id: add_note_dialog
 
     property string note
-
-    Label{
-        text: i18n.tr("Add Your Notes")
-    }
+    
+    title: i18n.tr("Add Your Notes")
 
     UbuntuShape{
         width : parent.width
@@ -41,6 +39,7 @@ Dialog {
             overwriteMode: true
             horizontalAlignment: TextInput.AlignHCenter
             verticalAlignment: TextInput.AlignVCenter
+            wrapMode: Text.WrapAtWordBoundaryOrAnywhere
             onTextChanged: note = text
         }
     }

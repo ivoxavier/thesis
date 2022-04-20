@@ -10,6 +10,7 @@ find_package(Qt5Core REQUIRED)
 find_package(Qt5Qml REQUIRED)
 find_package(Qt5Quick REQUIRED)
 find_package(Qt5QuickControls2 REQUIRED)
+find_package(Qt5Multimedia REQUIRED)
 
 execute_process(
     COMMAND dpkg-architecture -qDEB_HOST_MULTIARCH
@@ -42,6 +43,21 @@ else()
     )
 endif()
 
+set(QZXING_MULTIMEDIA ON)
+set(QZXING_USE_QML ON)
+
+add_definitions(
+  -DENABLE_ENCODER_GENERIC
+  -DQZXING_QML
+  -DQZXING_MULTIMEDIA
+  -DQZXING_LIBRARY
+  -DZXING_ICONV_CONST
+  -DDISABLE_LIBRARY_FEATURES
+  -DENABLE_DECODER_1D_BARCODES 
+)
+
+add_subdirectory(qzxing/src)
+include_directories(qzxing/src/zxing)
 
 set(SOURCES main.cpp)
 
@@ -54,7 +70,7 @@ add_executable(${PROJECT_NAME} ${SOURCES} ${QT_RESOURCES})
 
 set_target_properties(${PROJECT_NAME} PROPERTIES LINK_FLAGS_RELEASE -s)
 target_link_libraries(${PROJECT_NAME} Qt5::Gui Qt5::Qml Qt5::Quick Qt5::QuickControls2)
-
+target_link_libraries(${PROJECT_NAME} qzxing)
 install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION ${CMAKE_INSTALL_PREFIX})
 
 #set directories 

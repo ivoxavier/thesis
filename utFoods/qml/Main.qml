@@ -19,12 +19,13 @@ import QtQuick 2.9
 import Ubuntu.Components 1.3
 import Qt.labs.settings 1.0
 import "../js/ControlUserExperienceTime.js" as ControlUserExperienceTime
+import "../js/AppVersion.js" as AppVersion
 
 MainView {
     id: root
     objectName: 'mainView'
     applicationName: 'utfoods.ivofernandes'
-    property string app_version : "0.9.1"
+    property string app_version : AppVersion.app_version
     automaticOrientation: true
     anchorToKeyboard: true
     width: units.gu(45)

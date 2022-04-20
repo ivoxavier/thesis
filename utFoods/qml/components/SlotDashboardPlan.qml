@@ -43,7 +43,7 @@ UbuntuShape{
        
             Icon{
                 name : "navigation-menu"
-                height: units.gu(2.5)
+                height: units.gu(3.5)
                 MouseArea{
                     anchors.fill: parent
                     onClicked: page_stack.push(menu_page)

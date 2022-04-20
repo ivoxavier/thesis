@@ -19,11 +19,11 @@ function getData() {
 
   if (typeof _json !== "undefined" && typeof _json.product_name !== "undefined" ) {
       product_name = _json.product_name
-      nutriscore_grade =_json.nutriscore_grade
-      energy_kcal_100g = _json.nutriments.energy_value
-      fat_100g = _json.nutriments.fat_100g
-      protein_100g = _json.nutriments.proteins_100g
-      carbohydrates_100g = _json.nutriments.carbohydrates_100g
+      nutriscore_grade = (typeof _json.nutriscore_grade == "undefined") ? "a" :  _json.nutriscore_grade
+      energy_kcal_100g = (typeof _json.nutriments.energy_value == "undefined") ? 0 : _json.nutriments.energy_value
+      fat_100g = (typeof _json.nutriments.fat_100g == "undefined") ? 0.0 : _json.nutriments.fat_100g
+      protein_100g = (typeof _json.nutriments.proteins_100g == "undefined") ? 0.0 : _json.nutriments.proteins_100g
+      carbohydrates_100g = (typeof _json.nutriments.carbohydrates_100g == "undefined") ? 0.0 : _json.nutriments.carbohydrates_100g
       next_button.enabled = true
       loading_circle.running = false
       loading_circle.visible = false

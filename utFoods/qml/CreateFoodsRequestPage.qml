@@ -37,14 +37,7 @@ Page{
     WebEngineView {
         id: web_view
         visible : web_view.loading === "false" ? false : true
-
-        anchors{ 
-            top: app_settings.is_page_headers_enabled ? parent.header.bottom : parent.top
-            left: parent.left
-            right: parent.right
-            bottom: app_settings.is_page_headers_enabled ? parent.bottom : navigation_shape.top
-        }
-        
+        onLoadingChanged: zoomFactor = 1.5
         focus: true                 
         
         property var currentWebview: web_view
@@ -58,14 +51,14 @@ Page{
         }
 
         anchors {
-          fill:parent
-          centerIn: parent.verticalCenter
+          top: app_settings.is_page_headers_enabled ? parent.header.bottom : parent.top
+          left: parent.left
+          right: parent.right
+          bottom: app_settings.is_page_headers_enabled ? parent.bottom : navigation_shape.top
         }
 
         url: FoodsRequestFormUrl.url
 
-        zoomFactor: 1.5
-        
         onNewViewRequested: {
             request.action = WebEngineNavigationRequest.IgnoreRequest
             if(request.userInitiated) {

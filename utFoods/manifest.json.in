@@ -9,7 +9,7 @@
             "desktop":  "utFoods.desktop"
         }
     },
-    "version": "1.0.1",
+    "version": "1.0.2",
     "maintainer": "Ivo Fernandes <pg27165@alunos.uminho.pt>",
     "framework" : "@CLICK_FRAMEWORK@"
 }

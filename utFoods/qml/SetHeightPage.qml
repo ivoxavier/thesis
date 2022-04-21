@@ -55,6 +55,8 @@ Page{
 
         contentWidth: parent.width
         contentHeight: main_column.height  
+
+        interactive : root.height > root.width ? false : true
         
         ColumnLayout{
             id: main_column
@@ -67,7 +69,7 @@ Page{
                 value: 100
             }
 
-            BlankSpace{}
+            BlankSpace{height:units.gu(2)}
 
             Text{
                 Layout.alignment: Qt.AlignCenter  
@@ -76,7 +78,7 @@ Page{
                   
             }
 
-            BlankSpace{height: units.gu(2.5)}
+            BlankSpace{height: units.gu(2)}
 
             SlotHeight{
                 Layout.alignment: Qt.AlignCenter

@@ -32,11 +32,11 @@ Page{
                 title : i18n.tr("Foods Request")
             }
     
-    LoadingWebPage{id:loadIcon;visible: !web_view.loading ? false : true}
+    LoadingWebPage{id:loadIcon;visible: web_view.loading === "false" ? false : true}
 
     WebEngineView {
         id: web_view
-        visible : !web_view.loading ? false : true
+        visible : web_view.loading === "false" ? false : true
 
         anchors{ 
             top: app_settings.is_page_headers_enabled ? parent.header.bottom : parent.top

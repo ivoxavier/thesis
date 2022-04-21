@@ -14,4 +14,4 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-var app_version = "1.0.1"
+var app_version = "1.0.2"

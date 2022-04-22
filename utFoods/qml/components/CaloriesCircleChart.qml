@@ -82,7 +82,7 @@ Canvas {
         // From 0 to angle
 
         ctx.beginPath();
-        ctx.lineWidth = units.gu(0.5);
+        ctx.lineWidth = units.gu(1);
         ctx.strokeStyle = canvas.secondaryColor;
         ctx.arc(canvas.centerWidth,
         canvas.centerHeight,

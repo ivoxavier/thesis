@@ -47,6 +47,8 @@ Page{
 
         contentWidth: parent.width
         contentHeight: main_column.height  
+
+        interactive : root.height > root.width ? false : true
         
         ColumnLayout{
             id: main_column
@@ -58,7 +60,7 @@ Page{
                 value: 83
             }
 
-            BlankSpace{}
+            BlankSpace{height:units.gu(2)}
 
             Text{
                 text: i18n.tr("Your weight?")
@@ -66,7 +68,7 @@ Page{
                 Layout.alignment: Qt.AlignCenter    
             }
 
-            BlankSpace{height: units.gu(2.5)}
+            BlankSpace{height: units.gu(2)}
 
             SlotWeight{
                 Layout.alignment: Qt.AlignCenter

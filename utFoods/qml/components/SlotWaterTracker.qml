@@ -34,9 +34,7 @@ UbuntuShape{
     property alias img_path: add_meal_image_shape.img_path
     property alias water_cups_drinked : bar.value 
 
-    width: units.gu(29)
-    height: units.gu(7)
-    radius: "large"
+    radius: "small"
     aspect: UbuntuShape.DropShadow
     
     ListItem{
@@ -103,8 +101,8 @@ UbuntuShape{
                 SlotsLayout.position: SlotsLayout.Leading
                 width: units.gu(5)
                 height: units.gu(5)
-                radius: "small"
-                aspect: UbuntuShape.Flat
+                radius: "large"
+                aspect: UbuntuShape.DropShadow
                 source: Image{
                     id: img
                     source: add_meal_image_shape.img_path

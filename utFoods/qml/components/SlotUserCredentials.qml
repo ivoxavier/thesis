@@ -34,10 +34,8 @@ UbuntuShape{
     property alias inputMethodHints : field_text.inputMethodHints
     property alias is_passcode : field_text.is_passcode
 
-    width: units.gu(29)
-    height: units.gu(7)
     radius: "large"
-    aspect: UbuntuShape.DropShadow
+    aspect: UbuntuShape.Flat
     
     ListItem{
         height: slot_layout.height
@@ -70,7 +68,7 @@ UbuntuShape{
                 SlotsLayout.position: SlotsLayout.Leading
                 width: units.gu(5)
                 height: units.gu(5)
-                radius: "small"
+                radius: "large"
                 aspect: UbuntuShape.DropShadow
                 //backgroundColor:"black"
                 source: Image{

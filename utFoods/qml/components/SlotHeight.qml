@@ -31,10 +31,8 @@ UbuntuShape{
     property alias placeholderText: field_text.placeholderText
     
 
-    width: units.gu(29)
-    height: units.gu(7)
-    radius: "large"
-    aspect: UbuntuShape.DropShadow
+    radius: "small"
+    aspect: UbuntuShape.Flat
     
     ListItem{
         height: slot_layout.height

@@ -55,7 +55,7 @@ Page{
             SlotAccountImg{
                 id: slot_account_img
                 Layout.alignment: Qt.AlignCenter
-                Layout.preferredWidth: root.width - units.gu(28)
+                Layout.preferredWidth: root.width - units.gu(32)
                 Layout.preferredHeight: width
                 img_path: app_settings.account_picture_path == "../assets/logo.svg" ? "../assets/logo.svg" : app_settings.account_picture_path
             }
@@ -253,4 +253,3 @@ Page{
     }
     NavigationBar{id: navigation_shape}
 }
-

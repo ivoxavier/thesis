@@ -63,7 +63,7 @@ Page{
             Icon{
                 Layout.alignment: Qt.AlignCenter
                 name: "camera-app-symbolic"
-                height : units.gu(2.5)
+                height : units.gu(3.5)
                 MouseArea{
                     anchors.fill: parent
                     onClicked:{

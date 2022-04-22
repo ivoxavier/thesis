@@ -32,6 +32,6 @@ UbuntuShape{
     source: Image{
         id: img
         source: slot_shape.img_path
-        fillMode: Image.PreserveAspectCrop
+        fillMode: Image.Stretch
     }
 }  

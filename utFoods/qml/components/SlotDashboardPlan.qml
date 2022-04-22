@@ -59,8 +59,8 @@ UbuntuShape{
                 SlotsLayout.position: SlotsLayout.Leading
                 width: units.gu(5)
                 height: units.gu(5)
-                radius: "small"
-                aspect: UbuntuShape.Flat
+                radius: "large"
+                aspect: UbuntuShape.Inset
                 source: Image{
                     id: img
                     source: slot_img_credentials.img_path

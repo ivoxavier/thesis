@@ -33,9 +33,7 @@ UbuntuShape{
     property alias text : plan_label.text
     property alias text_color : plan_label.color
 
-    width: units.gu(29)
-    height: units.gu(7)
-    radius: "large"
+    radius: "small"
     aspect: UbuntuShape.DropShadow
     
     ListItem{
@@ -54,7 +52,7 @@ UbuntuShape{
                 SlotsLayout.position: SlotsLayout.Leading
                 width: units.gu(5)
                 height: units.gu(5)
-                radius: "small"
+                radius: "large"
                 aspect: UbuntuShape.DropShadow
                 //backgroundColor:"black"
                 source: Image{

@@ -79,7 +79,7 @@ Page{
                     Icon{
                         SlotsLayout.position: SlotsLayout.Leading
                         source : "../assets/average_icon.svg"
-                        height : units.gu(3.5)
+                        height : units.gu(3.8)
                     }
                     ProgressionSlot{}
                 }
@@ -92,7 +92,7 @@ Page{
                     Icon{
                         SlotsLayout.position: SlotsLayout.Leading
                         source : "../assets/graphs_icon.svg"
-                        height : units.gu(3.5)
+                        height : units.gu(3.8)
                     }
                     ProgressionSlot{}
                 }
@@ -112,7 +112,7 @@ Page{
                     Icon{
                         SlotsLayout.position: SlotsLayout.Leading
                         source : "../assets/body_icon.svg"
-                        height : units.gu(3.5)
+                        height : units.gu(3.8)
                     }
                     ProgressionSlot{}
                 }

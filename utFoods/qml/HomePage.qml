@@ -208,7 +208,7 @@ Page{
             RowLayout{
                 Layout.alignment: Qt.AlignCenter
                 spacing: units.gu(1)
-                Icon{id:calendar_icon;Layout.alignment: Qt.AlignVCenter;name:"calendar";height: units.gu(2.5)}
+                Icon{id:calendar_icon;Layout.alignment: Qt.AlignVCenter;name:"calendar-app-symbolic";height: units.gu(3.5)}
 
                 Label {
                     id: dateLabel

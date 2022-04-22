@@ -43,11 +43,7 @@ UbuntuShape{
         Icon{
             id: slot_icon_type
             Layout.alignment: Qt.AlignHCenter 
-            height: units.gu(3)
-            MouseArea{
-                anchors.fill: parent
-                onClicked: console.log("ICON CLICKED")
-            }
+            height: units.gu(3.5)
         }
     }
 }  

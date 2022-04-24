@@ -35,6 +35,11 @@ Page {
     header: PageHeader {
         title: i18n.tr("Import from...")
         visible: app_settings.is_page_headers_enabled ? true : false
+
+        StyleHints {
+            foregroundColor: "white"
+            backgroundColor:  Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_background : ThemeColors.utFoods_dark_theme_background 
+        }
     }
 
     
@@ -89,5 +94,8 @@ Page {
         ContentItem {}
 	}
 
-    NavigationBar{id: navigation_shape}
+    NavigationBar{
+        id: navigation_shape
+        backgroundColor : Suru.theme === 0 ? ThemeColors.utFoods_porcelain_theme_background : ThemeColors.utFoods_dark_theme_background 
+    } 
 }

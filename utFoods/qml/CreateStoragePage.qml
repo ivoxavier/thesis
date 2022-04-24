@@ -22,11 +22,13 @@ import Qt.labs.settings 1.0
 import Ubuntu.Components.ListItems 1.3 
 import Ubuntu.Components.Popups 1.3
 import QtQuick.LocalStorage 2.12
+import QtQuick.Controls.Suru 2.2
 import "components"
 import "../js/Storage.js" as Storage
 import "../js/UserTable.js" as UserTable
 import "../js/WeightTrackerTable.js" as WeightTrackerTable
 import "../js/ControlCreateStorage.js" as ControlCreateStorage
+import "../js/ThemeColors.js" as ThemeColors
 
 Page{
     id: create_storage_page
@@ -41,6 +43,16 @@ Page{
     Component{
         id: dummy_dialog
         MessageDialog{msg: "DB Created"}
+    }
+
+    Rectangle{
+        anchors{
+            top: parent.top
+            left : parent.left
+            right : parent.right
+            bottom : parent.bottom
+        }
+        color : Suru.theme === 0 ? ThemeColors.utFoods_porcelain_theme_background : ThemeColors.utFoods_dark_theme_background 
     }
 
     Timer{id: timer; repeat: false}
@@ -59,7 +71,7 @@ Page{
             anchors.horizontalCenter: parent.horizontalCenter
             width: units.gu(12)
             height: units.gu(12)
-            aspect: UbuntuShape.DropShadow
+            aspect: UbuntuShape.Flat
             source: Image{
                 source: "../assets/db_logo.svg"
                 fillMode: Image.PreserveAspectFit
@@ -71,6 +83,8 @@ Page{
          Text{
             anchors.horizontalCenter: parent.horizontalCenter
             text: i18n.tr("Creating database...")
+            color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
+            font.bold : true
         }
 
         BlankSpace{height: units.gu(12)}

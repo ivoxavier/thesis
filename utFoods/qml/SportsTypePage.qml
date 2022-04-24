@@ -22,8 +22,9 @@ import Qt.labs.settings 1.0
 import Ubuntu.Components.ListItems 1.3 
 import Ubuntu.Components.Popups 1.3
 import QtQuick.LocalStorage 2.12
+import QtQuick.Controls.Suru 2.2
 import "components"
-
+import "../js/ThemeColors.js" as ThemeColors
 
 
 Page{
@@ -32,8 +33,22 @@ Page{
     header: PageHeader {
         visible: app_settings.is_page_headers_enabled ? true : false
         title: i18n.tr("Sports")
+        StyleHints {
+                    foregroundColor: "white"
+                    backgroundColor:  Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_background : ThemeColors.utFoods_dark_theme_background 
+            }
         }
     
+    Rectangle{
+        anchors{
+            top: app_settings.is_page_headers_enabled ? parent.header.bottom : parent.top
+            left : parent.left
+            right : parent.right
+            bottom : parent.bottom
+        }
+        color : Suru.theme === 0 ? ThemeColors.utFoods_porcelain_theme_background : ThemeColors.utFoods_dark_theme_background 
+    }
+
     Flickable {
 
         anchors{
@@ -45,6 +60,7 @@ Page{
 
         contentWidth: parent.width
         contentHeight: (sports_grid.height - navigation_shape.height)
+        interactive : root.height > root.width ? false : true
         
             Item{
                 id: container 
@@ -72,7 +88,7 @@ Page{
                     Layout.topMargin: units.gu(1)
                     Layout.preferredWidth: container.slot_size;
                     Layout.preferredHeight: container.slot_size;
-                    //color:
+                    color: "#3eb34f"
                     sport_description: i18n.tr("Running")
                     img_path: "../assets/running-svgrepo-com.svg"
                     MouseArea{
@@ -94,7 +110,7 @@ Page{
                     Layout.topMargin: units.gu(1)
                     Layout.preferredWidth: container.slot_size;
                     Layout.preferredHeight: container.slot_size;
-                    //color:
+                    color: "#ed3146"
                     sport_description: i18n.tr("Cycling")
                     img_path: "../assets/cycling-svgrepo-com.svg"
                     MouseArea{
@@ -117,7 +133,7 @@ Page{
                     Layout.topMargin: units.gu(1)
                     Layout.preferredWidth: container.slot_size;
                     Layout.preferredHeight: container.slot_size;
-                    //color:
+                    color: "#e95420"
                     sport_description: i18n.tr("Walking")
                     img_path: "../assets/walking-svgrepo-com.svg"
                     MouseArea{
@@ -138,7 +154,7 @@ Page{
                     Layout.topMargin: units.gu(1)
                     Layout.preferredWidth: container.slot_size;
                     Layout.preferredHeight: container.slot_size;
-                    //color:
+                    color: "#19b6ee"
                     sport_description: i18n.tr("Gym")
                     img_path: "../assets/gym-svgrepo-com.svg"
                     MouseArea{
@@ -159,7 +175,7 @@ Page{
                     Layout.topMargin: units.gu(1)
                     Layout.preferredWidth: container.slot_size;
                     Layout.preferredHeight: container.slot_size;
-                    //color:
+                    color: "#ff6f7f"
                     sport_description: i18n.tr("Group")
                     img_path: "../assets/people-svgrepo-com.svg"
                     MouseArea{
@@ -180,7 +196,7 @@ Page{
                     Layout.topMargin: units.gu(1)
                     Layout.preferredWidth: container.slot_size;
                     Layout.preferredHeight: container.slot_size;
-                    //color:
+                    color: "#dec3ff"
                     sport_description: i18n.tr("Swimming")
                     img_path: "../assets/swimming-svgrepo-com.svg"
                     MouseArea{

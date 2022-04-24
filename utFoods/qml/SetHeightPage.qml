@@ -23,7 +23,7 @@ import Ubuntu.Components.ListItems 1.3
 import Ubuntu.Components.Popups 1.3
 import QtQuick.Controls.Suru 2.2
 import "components"
-
+import "../js/ThemeColors.js" as ThemeColors
 
 
 Page{
@@ -32,7 +32,12 @@ Page{
     header: PageHeader {
         visible: true
         title: i18n.tr("About You")
+
+        StyleHints {
+            foregroundColor: "white"
+            backgroundColor:  Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_background : ThemeColors.utFoods_dark_theme_background 
         }
+    }
 
     property bool is_height_inputed : false
 
@@ -42,7 +47,15 @@ Page{
         RecommendedCaloriesDialog{}
     }
 
-
+    Rectangle{
+        anchors{
+            top: parent.header.bottom
+            left : parent.left
+            right : parent.right
+            bottom : parent.bottom
+        }
+        color : Suru.theme === 0 ? ThemeColors.utFoods_porcelain_theme_background : ThemeColors.utFoods_dark_theme_background 
+    }
     
     Flickable {
 
@@ -75,7 +88,7 @@ Page{
                 Layout.alignment: Qt.AlignCenter  
                 text: i18n.tr("Your height?")
                 font.pixelSize: units.gu(4)
-                  
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text  
             }
 
             BlankSpace{height: units.gu(2)}
@@ -84,6 +97,7 @@ Page{
                 Layout.alignment: Qt.AlignCenter
                 Layout.preferredWidth: root.width - units.gu(9)
                 placeholderText: i18n.tr("Your height in cm: 171")
+                color: "transparent"
             }
           
             BlankSpace{height: units.gu(2.5)}
@@ -92,6 +106,7 @@ Page{
                 Layout.alignment: Qt.AlignCenter
                 text: i18n.tr("You can change it later") + " 😎."
                 font.pixelSize: units.gu(1.5)
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text
             }
 
             BlankSpace{height:units.gu(20)}
@@ -100,6 +115,7 @@ Page{
                 Layout.alignment: Qt.AlignCenter
                 text: i18n.tr("Next")
                 enabled: set_height_page.is_height_inputed
+                color : UbuntuColors.green
                 onClicked: PopupUtils.open(calculate_recommended_calories_dialog)      
             }
         }  

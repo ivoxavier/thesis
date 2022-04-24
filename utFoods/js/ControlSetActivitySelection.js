@@ -24,9 +24,9 @@ function selectActivity(activity){
   root.user_activity_level = activity == 0 ? 0 : activity == 1 ? 1 : activity == 2 ? 2 : 3
 
   //highlight Slots selection 
-  very_light_slot.text_color = activity == 0 ? "green" : "black"
-  light_slot.text_color = activity == 1 ? "green" : "black"
-  moderate_slot.text_color = activity == 2 ? "green" : "black"
-  heavy_slot.text_color = activity == 3 ? "green" : "black"
+  very_light_slot.text_color = activity == 0 ? UbuntuColors.green : "black"
+  light_slot.text_color = activity == 1 ? UbuntuColors.green : "black"
+  moderate_slot.text_color = activity == 2 ? UbuntuColors.green : "black"
+  heavy_slot.text_color = activity == 3 ? UbuntuColors.green : "black"
 
 }

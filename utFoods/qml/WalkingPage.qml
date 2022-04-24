@@ -83,10 +83,14 @@ Page{
                         height: width
                         radius: "large"
                         aspect: UbuntuShape.Inset
-                        source: Image{
-                            id: img
+                        backgroundColor : "#e95420"
+                        Icon{
+                            anchors.centerIn: parent
+                            height : units.gu(3.5)
                             source: "../assets/walking-svgrepo-com.svg"
+                            color: "white"
                         }
+                        
                     } 
             }
             onClicked: {

@@ -33,7 +33,22 @@ Page{
     header: PageHeader {
                 visible: app_settings.is_page_headers_enabled ? true : false
                 title : i18n.tr("Your Notes")
+
+                StyleHints {
+                    foregroundColor: "white"
+                    backgroundColor:  Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_background : ThemeColors.utFoods_dark_theme_background 
+            }
         }
+    
+    Rectangle{
+        anchors{
+            top: app_settings.is_page_headers_enabled ? parent.header.bottom : parent.top
+            left : parent.left
+            right : parent.right
+            bottom : parent.bottom
+        }
+        color : Suru.theme === 0 ? ThemeColors.utFoods_porcelain_theme_background : ThemeColors.utFoods_dark_theme_background 
+    }
 
     Item{
         visible: notes_page_list.visible ? false : true
@@ -76,6 +91,7 @@ Page{
         delegate: ListItem{
             ListItemLayout{
                 title.text: note
+                title.font.bold : true
                 subtitle.text: date
                 }
             leadingActions: ListItemActions{

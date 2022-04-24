@@ -35,6 +35,11 @@ Page{
     header: PageHeader {
                 visible: app_settings.is_page_headers_enabled ? true : false
                 title: root.recipe_name
+
+                StyleHints {
+                    foregroundColor: "white"
+                    backgroundColor:  Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_background : ThemeColors.utFoods_dark_theme_background 
+                }
             }
 
     property bool is_instructions_view : true

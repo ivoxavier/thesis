@@ -23,6 +23,7 @@ import Ubuntu.Components.ListItems 1.3
 import Ubuntu.Components.Popups 1.3
 import QtQuick.Controls.Suru 2.2
 import Ubuntu.Components.Pickers 1.3
+import "../../js/ThemeColors.js" as ThemeColors
 
 UbuntuShape{
     id: slot_shape
@@ -31,9 +32,9 @@ UbuntuShape{
     anchors.right: parent.right
     width: parent.width
     height: units.gu(6.5)
-    radius: "large"
-    aspect: UbuntuShape.Flat
-    backgroundColor: "white" 
+    radius: "small"
+    aspect: UbuntuShape.Flat 
+    backgroundColor : Suru.theme === 0 ? ThemeColors.utFoods_porcelain_theme_background : ThemeColors.utFoods_dark_theme_background
     visible:app_settings.is_page_headers_enabled ? false : true
                        
     Row{

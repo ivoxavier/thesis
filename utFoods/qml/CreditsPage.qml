@@ -25,7 +25,7 @@ import QtCharts 2.3
 import QtQuick.Controls.Suru 2.2
 import QtQuick.LocalStorage 2.12
 import "components"
-
+import "../js/ThemeColors.js" as ThemeColors
 
 Page{
     id: credits_page
@@ -33,8 +33,22 @@ Page{
     header: PageHeader {
                 visible: app_settings.is_page_headers_enabled ? true : false
                 title: i18n.tr("Credits & Licensing")
+
+                StyleHints {
+                    foregroundColor: "white"
+                    backgroundColor:  Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_background : ThemeColors.utFoods_dark_theme_background 
+                }
             }
 
+    Rectangle{
+        anchors{
+            top: app_settings.is_page_headers_enabled ? parent.header.bottom : parent.top
+            left : parent.left
+            right : parent.right
+            bottom : parent.bottom
+        }
+        color : Suru.theme === 0 ? ThemeColors.utFoods_porcelain_theme_background : ThemeColors.utFoods_dark_theme_background 
+    }
 
     Flickable {
 
@@ -52,14 +66,6 @@ Page{
             id: main_column
             width: root.width
 
-            Text{
-                Layout.alignment: Qt.AlignCenter
-                text: i18n.tr("About")
-                font.pixelSize: units.gu(4)
-                font.bold: false
-                visible: app_settings.is_page_headers_enabled ? false : true
-            }
-
             BlankSpace{}
 
             UbuntuShape{
@@ -76,7 +82,8 @@ Page{
             Label {
                 Layout.alignment: Qt.AlignCenter
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
-                text: i18n.tr("Version: %1").arg(root.app_version)
+                text: i18n.tr("Version: ") + root.app_version
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text
             }
 
             BlankSpace{}
@@ -84,13 +91,15 @@ Page{
             Label {
                 Layout.alignment: Qt.AlignCenter
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
-                text: i18n.tr("App License: %1").arg("GNU GPL V3")
+                text: i18n.tr("App License: GNU GPL v3")
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text
             }
 
             ListItem{
                 divider.visible: false
                 ListItemLayout{
                     subtitle.text: i18n.tr("Education Institution")
+                    subtitle.font.bold : true
                 }
             }
 
@@ -98,6 +107,7 @@ Page{
                 divider.visible: false
                 ListItemLayout{
                     title.text: i18n.tr("University Of Minho")
+                    title.font.bold : true
                     subtitle.text: i18n.tr("Information Systems Department, Guimarães.")
                 }
             }
@@ -106,6 +116,7 @@ Page{
                 divider.visible: false
                 ListItemLayout{
                     subtitle.text: i18n.tr("Developer")
+                    subtitle.font.bold : true
                 }
             }
 
@@ -113,6 +124,7 @@ Page{
                 divider.visible: false
                 ListItemLayout{
                     title.text: "Ivo Fernandes"
+                    title.font.bold : true
                     subtitle.text: i18n.tr("Student")
                 }
             }
@@ -121,6 +133,7 @@ Page{
                 divider.visible: false
                 ListItemLayout{
                     subtitle.text: i18n.tr("Advisor")
+                    subtitle.font.bold : true
                 }
             }
 
@@ -128,6 +141,7 @@ Page{
                 divider.visible: false
                 ListItemLayout{
                     title.text: "Professor Dr. José Luis Pereira"
+                    title.font.bold : true
                     subtitle.text : i18n.tr("Assistant Professor At Information Systems Department")
                 }
             }
@@ -136,6 +150,7 @@ Page{
                 divider.visible: false
                 ListItemLayout{
                     subtitle.text: i18n.tr("Support")
+                    subtitle.font.bold : true
                 }
             }
 
@@ -146,7 +161,10 @@ Page{
                 onClicked : Qt.openUrlExternally(github_url)
                 ListItemLayout{
                     title.text: i18n.tr("Source-Code")
+                    title.font.bold : true
                     subtitle.text : source_code_list_item.github_url
+
+                    ProgressionSlot{}
                 }
             }
 
@@ -157,10 +175,16 @@ Page{
                 onClicked : Qt.openUrlExternally(github_url)
                 ListItemLayout{
                     title.text: i18n.tr("Get Support For This Application")
+                    title.font.bold : true
                     subtitle.text : support_list_item.github_url
+
+                    ProgressionSlot{}
                 }
             }
         }  
     }
-    NavigationBar{id:navigation_shape}   
+    NavigationBar{
+        id: navigation_shape
+        backgroundColor : Suru.theme === 0 ? ThemeColors.utFoods_porcelain_theme_background : ThemeColors.utFoods_dark_theme_background 
+    }    
 }

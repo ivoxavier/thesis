@@ -24,6 +24,6 @@ function selectSex(sex){
   root.user_sex_at_birth = sex == 0 ? 0 : 1
 
   //highlight Slots selection 
-  male_slot.text_color = sex == 0 ? "green" : "black"
-  female_slot.text_color = sex == 1 ? "green" : "black"
+  male_slot.text_color = sex == 0 ? UbuntuColors.green : "black"
+  female_slot.text_color = sex == 1 ? UbuntuColors.green : "black"
 }

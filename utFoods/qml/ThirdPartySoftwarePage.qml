@@ -25,6 +25,7 @@ import QtCharts 2.3
 import QtQuick.Controls.Suru 2.2
 import QtQuick.LocalStorage 2.12
 import "components"
+import "../js/ThemeColors.js" as ThemeColors
 
 
 Page{
@@ -33,7 +34,21 @@ Page{
     header: PageHeader {
                 visible: app_settings.is_page_headers_enabled ? true : false
                 title: i18n.tr("Third Party Software")
+                StyleHints {
+                    foregroundColor: "white"
+                    backgroundColor:  Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_background : ThemeColors.utFoods_dark_theme_background 
+                }
             }
+
+    Rectangle{
+        anchors{
+            top: app_settings.is_page_headers_enabled ? parent.header.bottom : parent.top
+            left : parent.left
+            right : parent.right
+            bottom : parent.bottom
+        }
+        color : Suru.theme === 0 ? ThemeColors.utFoods_porcelain_theme_background : ThemeColors.utFoods_dark_theme_background 
+    }
 
 
     Flickable {
@@ -54,21 +69,12 @@ Page{
             id: main_column
             width: root.width
 
-            Text{
-                Layout.alignment: Qt.AlignCenter
-                text: i18n.tr("Third Party Software")
-                font.pixelSize: units.gu(4)
-                font.bold: false
-                visible: app_settings.is_page_headers_enabled ? false : true
-            }
-
-            BlankSpace{}
-
 
             ListItem{
                 divider.visible: false
                 ListItemLayout{
                     subtitle.text: i18n.tr("QML Modules")
+                    subtitle.font.bold : true
                 }
             }
 
@@ -79,6 +85,7 @@ Page{
                 onClicked : Qt.openUrlExternally(github_url)
                 ListItemLayout{
                     title.text: "QChartsJs"
+                    title.font.bold : true
                     subtitle.text: chart_list_item.github_url
                 }
             }
@@ -89,7 +96,8 @@ Page{
                 property string github_url : "https://github.com/kromain/qml-utils"
                 onClicked : Qt.openUrlExternally(github_url)
                 ListItemLayout{
-                    title.text: i18n.tr("%1. Licensed under the MIT licence").arg("JSONListModel")
+                    title.text: i18n.tr("JSONListModel. Licensed under the MIT licence")
+                    subtitle.font.bold : true
                     subtitle.text: json_list_model_list.github_url
                 }
             }
@@ -99,6 +107,7 @@ Page{
                 divider.visible: false
                 ListItemLayout{
                     subtitle.text: i18n.tr("JavaScript Libs")
+                    subtitle.font.bold : true
                 }
             }
 
@@ -108,7 +117,8 @@ Page{
                 property string url : "https://goessner.net/2007/09/jsonpath-xpath-for-json.html"
                 onClicked : Qt.openUrlExternally(url)
                 ListItemLayout{
-                    title.text: i18n.tr("%1. Licensed under the MIT licence").arg("jsonpath")
+                    title.text: i18n.tr("jsonpath. Licensed under the MIT licence")
+                    title.font.bold : true
                     subtitle.text: json_path_list.url
                 }
             }
@@ -118,6 +128,7 @@ Page{
                 divider.visible: false
                 ListItemLayout{
                     subtitle.text: i18n.tr("C++ Modules")
+                    subtitle.font.bold : true
                 }
             }
 
@@ -127,11 +138,15 @@ Page{
                 property string github_url : "https://github.com/ftylitak/qzxing"
                 onClicked : Qt.openUrlExternally(github_url)
                 ListItemLayout{
-                    title.text: i18n.tr("%1. Licensed under the Apache License 2.0").arg("qzxing")
+                    title.text: i18n.tr("qzxing. Licensed under the Apache License 2.0")
+                    title.font.bold : true
                     subtitle.text: qzxing_list.github_url
                 }
             } 
         }      
     }
-    NavigationBar{id:navigation_shape}   
+    NavigationBar{
+        id: navigation_shape
+        backgroundColor : Suru.theme === 0 ? ThemeColors.utFoods_porcelain_theme_background : ThemeColors.utFoods_dark_theme_background 
+    }     
 }

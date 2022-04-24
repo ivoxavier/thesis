@@ -30,6 +30,7 @@ import "../js/Chart.js" as Charts
 import "../js/QChartJsTypes.js" as ChartTypes
 import "../js/UserTable.js" as UserTable
 import "../js/IngestionsTable.js" as IngestionsTable
+import "../js/ThemeColors.js" as ThemeColors
 
 
 Page{
@@ -38,7 +39,11 @@ Page{
     header: PageHeader {
                 visible: app_settings.is_page_headers_enabled ? true : false
                 title: i18n.tr("Set Your Ingestion")
+                StyleHints {
+                    foregroundColor: "white"
+                    backgroundColor:  Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_background : ThemeColors.utFoods_dark_theme_background 
             }
+        }
 
     //receives values from foods from QuickFoodsList{}
     property string product_name_set_food_page
@@ -94,6 +99,16 @@ Page{
         MessageDialog{msg:i18n.tr("Something went wrong. Please, restart the app and try again.")}
     }
 
+    Rectangle{
+        anchors{
+            top: app_settings.is_page_headers_enabled ? parent.header.bottom : parent.top
+            left : parent.left
+            right : parent.right
+            bottom : parent.bottom
+        }
+        color : Suru.theme === 0 ? ThemeColors.utFoods_porcelain_theme_background : ThemeColors.utFoods_dark_theme_background 
+    }
+
     Flickable {
 
         anchors{
@@ -119,15 +134,17 @@ Page{
                 font.pixelSize: units.gu(4)
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
             }
 
             Text{
                 Layout.alignment: Qt.AlignCenter
                 Layout.preferredWidth: root.width
-                text: i18n.tr("Calories: %1").arg(cal_ingested)
+                text: i18n.tr("Calories: ") + cal_ingested
                 font.pixelSize: units.gu(3)
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text
             }
 
 
@@ -160,6 +177,7 @@ Page{
                 divider.visible: false
                 ListItemLayout{
                     title.text: i18n.tr("Quantity")
+                    title.font.bold : true
                     QuantitySpinner{
                         Layout.preferredWidth: root.width - units.gu(13)
                         height: units.gu(4)
@@ -175,6 +193,7 @@ Page{
                 Layout.preferredHeight: units.gu(9)
                 ListItemLayout{
                     title.text: i18n.tr("Size portion")
+                    title.font.bold : true
                     SizePicker{
                         Layout.preferredWidth: root.width - units.gu(9)
                         height: units.gu(8)
@@ -194,29 +213,32 @@ Page{
                 divider.visible : false
                 ListItemLayout{
                     subtitle.text : i18n.tr("Macros") 
+                    subtitle.font.bold : true
                 }
             }
             
             ListItem{
-                divider.anchors.leftMargin: units.gu(8)
-                
+                divider.visible : false
                 ListItemLayout{
                     title.text: i18n.tr("Fat: %1gr").arg(fat_ingested)
+                    title.font.bold : true
                     NutrientIcon{img_path: "../assets/logo.svg"} 
                 }
             }
             ListItem{
-                divider.anchors.leftMargin: units.gu(8)
+                divider.visible : false
                 ListItemLayout{
                     title.text: i18n.tr("Protein: %1gr").arg(protein_ingested)
+                    title.font.bold : true
                     NutrientIcon{img_path: "../assets/logo.svg"}      
                 }
             }
             ListItem{
-                divider.anchors.leftMargin: units.gu(8)
+                divider.visible : false
                 
                 ListItemLayout{
                     title.text: i18n.tr("Carbohydrates: %1gr").arg(carbo_ingested)
+                    title.font.bold : true
                     NutrientIcon{img_path: "../assets/logo.svg"}    
                 }
             }

@@ -21,9 +21,11 @@ import QtQuick.Layouts 1.3
 import Qt.labs.settings 1.0
 import Ubuntu.Components.ListItems 1.3 
 import Ubuntu.Components.Popups 1.3
+import QtQuick.Controls.Suru 2.2
 import "components"
 import "../js/ControlSetPlanSelection.js" as ControlSetPlanSelection
 import "../js/ControlSetPlanNextButton.js" as ControlSetPlanNextButton
+import "../js/ThemeColors.js" as ThemeColors
 
 
 
@@ -33,7 +35,24 @@ Page{
     header: PageHeader {
         visible: true
         title: i18n.tr("About You")
+
+        StyleHints {
+            foregroundColor: "white"
+            backgroundColor:  Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_background : ThemeColors.utFoods_dark_theme_background 
         }
+
+     }
+
+    Rectangle{
+        anchors{
+            top: parent.header.bottom
+            left : parent.left
+            right : parent.right
+            bottom : parent.bottom
+        }
+        color : Suru.theme === 0 ? ThemeColors.utFoods_porcelain_theme_background : ThemeColors.utFoods_dark_theme_background 
+    }
+     
 
     //when true this property triggers the dialog propomt user to select how we would like to loose or gain weight
     property bool is_loose_weight: false
@@ -80,6 +99,7 @@ Page{
                 Layout.alignment: Qt.AlignCenter 
                 text: i18n.tr("What's your goal?")
                 font.pixelSize: units.gu(4)  
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
             }
 
             BlankSpace{height:units.gu(2)}
@@ -91,6 +111,7 @@ Page{
                 Layout.preferredHeight: units.gu(7)
                 text: i18n.tr("LOOSE WEIGHT")
                 img_path:"../assets/logo.svg"
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
                 MouseArea{
                     anchors.fill: parent
                     onClicked: ControlSetPlanSelection.selectPlan(1)
@@ -106,6 +127,7 @@ Page{
                 Layout.preferredHeight: units.gu(7)
                 text: i18n.tr("MAINTAIN WEIGHT")
                 img_path:"../assets/logo.svg"
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
                 MouseArea{
                     anchors.fill: parent
                     onClicked: ControlSetPlanSelection.selectPlan(0) 
@@ -121,6 +143,7 @@ Page{
                 Layout.preferredHeight: units.gu(7)
                 text: i18n.tr("GAIN WEIGHT")
                 img_path:"../assets/logo.svg"
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
                 MouseArea{
                     anchors.fill: parent
                     onClicked: ControlSetPlanSelection.selectPlan(2)   
@@ -133,6 +156,7 @@ Page{
                 Layout.alignment: Qt.AlignCenter  
                 text: i18n.tr("You can change it later") + " 😎."
                 font.pixelSize: units.gu(1.5)
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
             }
 
             BlankSpace{height:units.gu(5)}
@@ -142,6 +166,7 @@ Page{
                 Layout.alignment: Qt.AlignCenter 
                 text: i18n.tr("Next")
                 enabled: set_plan_page.is_plan_choosed
+                color : UbuntuColors.green
                 onClicked: ControlSetPlanNextButton.next()
             }  
         }  

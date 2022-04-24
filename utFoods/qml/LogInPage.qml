@@ -21,9 +21,10 @@ import QtQuick.Layouts 1.3
 import Qt.labs.settings 1.0
 import Ubuntu.Components.ListItems 1.3 
 import Ubuntu.Components.Popups 1.3
+import QtQuick.Controls.Suru 2.2
 import "components"
 import "../js/ControlLogInMessages.js" as ControlMessages
-
+import "../js/ThemeColors.js" as ThemeColors
 
 
 Page{
@@ -34,6 +35,15 @@ Page{
     //to check is fields aren't empty
     property int user_id : -1
     property string user_passcode : " "
+
+
+    Rectangle{
+    anchors.fill: parent
+    gradient: Gradient {
+        GradientStop { position: 0.0; color: Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_background : ThemeColors.utFoods_dark_theme_background }
+    }
+}
+
 
     /*Messages --start--*/
     Component{
@@ -91,19 +101,23 @@ Page{
         ColumnLayout{
             id: main_column
             width: root.width
-        
+
+            BlankSpace{height: units.gu(4)}
+
             Text{
+                Layout.alignment: Qt.AlignCenter 
                 text: i18n.tr("Welcome")
                 font.pixelSize: units.gu(4)
-                Layout.alignment: Qt.AlignCenter    
+                color : "white"   
             }
 
-            BlankSpace{}
+            BlankSpace{height: units.gu(3)}
 
             Text{
+                Layout.alignment: Qt.AlignCenter
                 text: i18n.tr("Sign in to continue")
                 font.pixelSize: units.gu(2)
-                Layout.alignment: Qt.AlignCenter
+                color : "white" 
             }
 
             BlankSpace{}
@@ -119,13 +133,13 @@ Page{
                 }
             }
 
-            BlankSpace{height:units.gu(2)}
+            BlankSpace{height:units.gu(4)}
 
             SlotUserCredentials{
                 Layout.alignment: Qt.AlignCenter
                 Layout.preferredWidth: root.width - units.gu(9)
                 Layout.preferredHeight: units.gu(7)
-                color: root.backgroundColor
+                color: "transparent"
                 placeholder : i18n.tr("ID...")
                 img_path:"../assets/logo.svg"
                 is_passcode: false
@@ -138,7 +152,7 @@ Page{
                 Layout.alignment: Qt.AlignCenter
                 Layout.preferredWidth: root.width - units.gu(9)
                 Layout.preferredHeight: units.gu(7)
-                color: root.backgroundColor
+                color: "transparent"
                 placeholder : i18n.tr("Passcode...")
                 img_path:"../assets/logo.svg"
                 is_passcode: true
@@ -149,7 +163,7 @@ Page{
             Text{ 
                 text: i18n.tr("Forgot my ID or Passcode.")
                 font.pixelSize: units.gu(1.3)
-                color: "blue"
+                color: "white"
                 Layout.alignment: Qt.AlignCenter
                 font.underline : true
                 MouseArea{
@@ -167,6 +181,7 @@ Page{
                 id: next_button
                 Layout.alignment: Qt.AlignCenter
                 text: i18n.tr("LOGIN")
+                color : UbuntuColors.green
                 onClicked:{
                     ControlMessages.state()
                 }

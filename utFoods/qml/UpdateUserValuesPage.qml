@@ -29,6 +29,7 @@ import "../js/UserTable.js" as UserTable
 import "../js/UpdateUserTable.js" as UpdateUserTable
 import "../js/RecommendedCalories.js" as RecommendedCalories
 import "../js/DefineGoalCalories.js" as DefinePeriod
+import "../js/ThemeColors.js" as ThemeColors
 
 
 Page{
@@ -37,7 +38,11 @@ Page{
     header: PageHeader {
         visible: app_settings.is_page_headers_enabled ? true : false
         title: i18n.tr("Enter new values")
+        StyleHints {
+            foregroundColor: "white"
+            backgroundColor:  Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_background : ThemeColors.utFoods_dark_theme_background 
         }
+    }
 
     property bool is_values_view: true
     property bool is_blood_pressure_view : false
@@ -66,6 +71,15 @@ Page{
         UpdateUserBloodPressureDialog{}
     }
 
+    Rectangle{
+        anchors{
+            top: app_settings.is_page_headers_enabled ? parent.header.bottom : parent.top
+            left : parent.left
+            right : parent.right
+            bottom : parent.bottom
+        }
+        color : Suru.theme === 0 ? ThemeColors.utFoods_porcelain_theme_background : ThemeColors.utFoods_dark_theme_background 
+    }
     
     Flickable {
 
@@ -78,6 +92,8 @@ Page{
 
         contentWidth: parent.width
         contentHeight: main_column.height  
+
+        interactive : root.height > root.width ? false : true
         
         ColumnLayout{
             id: main_column
@@ -85,12 +101,6 @@ Page{
             
             spacing: units.gu(2)
 
-            Text{
-                text: i18n.tr("Enter new values")
-                font.pixelSize: units.gu(4)
-                Layout.alignment: Qt.AlignCenter 
-                visible: app_settings.is_page_headers_enabled ? false : true   
-            }
 
             RowLayout{
                 Layout.alignment: Qt.AlignCenter
@@ -101,10 +111,10 @@ Page{
                     Layout.preferredHeight: units.gu(5)
                     radius: "large"
                     aspect: is_values_view ? UbuntuShape.DropShadow : UbuntuShape.Flat
-
                     Text{
                         anchors.centerIn: parent
                         text: i18n.tr("VALUES")
+                        color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
                     }
                     MouseArea{
                         anchors.fill: parent
@@ -121,10 +131,10 @@ Page{
                     Layout.preferredHeight: units.gu(5)
                     radius: "large"
                     aspect: is_goal_view ? UbuntuShape.DropShadow : UbuntuShape.Flat
-
                     Text{
                         anchors.centerIn: parent
                         text: i18n.tr("GOALS")
+                        color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
                     }
                     MouseArea{
                         anchors.fill: parent
@@ -141,10 +151,10 @@ Page{
                     Layout.preferredHeight: units.gu(5)
                     radius: "large"
                     aspect: is_blood_pressure_view ? UbuntuShape.DropShadow : UbuntuShape.Flat
-
                     Text{
                         anchors.centerIn: parent
                         text: i18n.tr("TENSION")
+                        color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
                     }
                     MouseArea{
                         anchors.fill: parent
@@ -163,6 +173,8 @@ Page{
                 Layout.alignment: Qt.AlignCenter
                 text: i18n.tr("Your new height")
                 visible: is_values_view ? true: false
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
+                font.bold : true
             }
 
             UbuntuShape{  
@@ -172,6 +184,7 @@ Page{
                 radius: "large"
                 aspect: UbuntuShape.Inset
                 visible: is_values_view ? true: false
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
                 TextInput{
                     anchors.fill: parent
                     overwriteMode: true
@@ -186,6 +199,8 @@ Page{
                 Layout.alignment: Qt.AlignCenter
                 text: i18n.tr("Your new weight")
                 visible: is_values_view ? true: false
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
+                font.bold : true
             }
 
             UbuntuShape{  
@@ -195,12 +210,14 @@ Page{
                 radius: "large"
                 aspect: UbuntuShape.Inset
                 visible: is_values_view ? true: false
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
                 TextInput{
                     anchors.fill: parent
                     overwriteMode: true
                     horizontalAlignment: TextInput.AlignHCenter
                     verticalAlignment: TextInput.AlignVCenter
                     inputMethodHints: Qt.ImhDigitsOnly
+                    color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
                     onTextChanged: update_user_values_page.update_weight = text 
                 }
             }
@@ -209,6 +226,8 @@ Page{
                 Layout.alignment: Qt.AlignCenter
                 text: i18n.tr("Your new age")
                 visible: is_values_view ? true: false
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
+                font.bold : true
             }
 
             UbuntuShape{  
@@ -218,12 +237,14 @@ Page{
                 radius: "large"
                 aspect: UbuntuShape.Inset
                 visible: is_values_view ? true: false
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
                 TextInput{
                     anchors.fill: parent
                     overwriteMode: true
                     horizontalAlignment: TextInput.AlignHCenter
                     verticalAlignment: TextInput.AlignVCenter
                     inputMethodHints: Qt.ImhDigitsOnly
+                    color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
                     onTextChanged: update_user_values_page.update_age = text 
                 }
             }
@@ -234,6 +255,8 @@ Page{
                 Layout.alignment: Qt.AlignCenter
                 text: i18n.tr("Activity level")
                 visible: is_goal_view ? true : false
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
+                font.bold : true
             }
 
             OptionSelector {
@@ -254,6 +277,8 @@ Page{
                 Layout.alignment: Qt.AlignCenter
                 text: i18n.tr("Goal")
                 visible: is_goal_view ? true : false
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
+                font.bold : true
             }
 
             OptionSelector {
@@ -282,6 +307,8 @@ Page{
                 Layout.alignment: Qt.AlignCenter
                 text: i18n.tr("Goal definition")
                 visible: is_goal_view ? true : false
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
+                font.bold : true
             }
 
             OptionSelector {
@@ -306,6 +333,8 @@ Page{
                 Layout.alignment: Qt.AlignCenter
                 text: i18n.tr("Your Systolic Presure (High Pressure)")
                 visible: is_blood_pressure_view ? true: false
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
+                font.bold : true
             }
 
             UbuntuShape{  
@@ -315,12 +344,14 @@ Page{
                 radius: "large"
                 aspect: UbuntuShape.Inset
                 visible: is_blood_pressure_view ? true: false
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
                 TextInput{
                     anchors.fill: parent
                     overwriteMode: true
                     horizontalAlignment: TextInput.AlignHCenter
                     verticalAlignment: TextInput.AlignVCenter
                     inputMethodHints: Qt.ImhDigitsOnly
+                    color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
                     onTextChanged: update_user_values_page.update_ap_hi = text 
                 }
             }
@@ -329,6 +360,8 @@ Page{
                 Layout.alignment: Qt.AlignCenter
                 text: i18n.tr("Your Diastolic Presure (Low Pressure)")
                 visible: is_blood_pressure_view ? true: false
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
+                font.bold : true
             }
 
             UbuntuShape{  
@@ -338,12 +371,14 @@ Page{
                 radius: "large"
                 aspect: UbuntuShape.Inset
                 visible: is_blood_pressure_view ? true: false
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
                 TextInput{
                     anchors.fill: parent
                     overwriteMode: true
                     horizontalAlignment: TextInput.AlignHCenter
                     verticalAlignment: TextInput.AlignVCenter
                     inputMethodHints: Qt.ImhDigitsOnly
+                    color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
                     onTextChanged: update_user_values_page.update_ap_lo = text 
                 }
             }
@@ -364,5 +399,8 @@ Page{
     }
 
 
-    NavigationBar{id: navigation_shape}
+    NavigationBar{
+        id: navigation_shape
+        backgroundColor : Suru.theme === 0 ? ThemeColors.utFoods_porcelain_theme_background : ThemeColors.utFoods_dark_theme_background 
+    }
 }

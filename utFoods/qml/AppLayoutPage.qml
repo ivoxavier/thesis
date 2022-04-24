@@ -24,6 +24,7 @@ import Ubuntu.Components.Popups 1.3
 import QtQuick.Controls.Suru 2.2
 import QtQuick.LocalStorage 2.12
 import "components"
+import "../js/ThemeColors.js" as ThemeColors
 
 
 
@@ -33,7 +34,21 @@ Page{
     header: PageHeader {
                 visible: app_settings.is_page_headers_enabled ? true : false
                 title: i18n.tr("App Layout")
-            }
+                StyleHints {
+                    foregroundColor: "white"
+                    backgroundColor:  Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_background : ThemeColors.utFoods_dark_theme_background 
+                }
+        }
+
+    Rectangle{
+        anchors{
+            top: app_settings.is_page_headers_enabled ? parent.header.bottom : parent.top
+            left : parent.left
+            right : parent.right
+            bottom : parent.bottom
+        }
+        color : Suru.theme === 0 ? ThemeColors.utFoods_porcelain_theme_background : ThemeColors.utFoods_dark_theme_background 
+    }
 
     Flickable {
 
@@ -51,18 +66,11 @@ Page{
             id: main_column
             width: root.width
 
-            Text{
-                Layout.alignment: Qt.AlignCenter
-                text: i18n.tr("App Layout")
-                font.pixelSize: units.gu(4)
-                font.bold: false
-                visible: app_settings.is_page_headers_enabled ? false : true
-            }
-
             ListItem {
                 divider.visible: false
                 ListItemLayout{
                     subtitle.text: i18n.tr("Appearance")
+                    subtitle.font.bold : true
                 }  
             }       
 
@@ -71,6 +79,7 @@ Page{
                 divider.visible: false
                 ListItemLayout{
                     title.text: i18n.tr("Enable Page Headers")
+                    title.font.bold : true
                     subtitle.text: i18n.tr("If Enabled It Will Remove Footer Navigation Bar")
                     Switch{
                         checked: app_settings.is_page_headers_enabled
@@ -84,6 +93,7 @@ Page{
                 divider.visible: false
                 ListItemLayout{
                     subtitle.text: i18n.tr("Foods List")
+                    subtitle.font.bold : true
                 }  
             } 
 
@@ -91,6 +101,7 @@ Page{
                 divider.visible: false
                 ListItemLayout{
                         title.text : i18n.tr("%1 List").arg("OpenFoodsFacts")
+                        title.font.bold : true
                         subtitle.text : i18n.tr("Modified From %1").arg("world.openfoodfacts.org")
                         Icon{
                             SlotsLayout.position: SlotsLayout.Leading
@@ -112,6 +123,7 @@ Page{
                 divider.visible: false
                 ListItemLayout{
                         title.text : i18n.tr("User Created Foods List")
+                        title.font.bold : true
                         Icon{
                             SlotsLayout.position: SlotsLayout.Leading
                             name : "x-office-document-symbolic"
@@ -132,6 +144,7 @@ Page{
                 divider.visible: false
                 ListItemLayout{
                         title.text : i18n.tr("utFoods Community Foods List")
+                        title.font.bold : true
                         Icon{
                             SlotsLayout.position: SlotsLayout.Leading
                             name : "x-office-document-symbolic"
@@ -152,6 +165,7 @@ Page{
                 divider.visible: false
                 ListItemLayout{
                     subtitle.text: i18n.tr("Graphs Settings")
+                    subtitle.font.bold : true
                 }  
             }
 
@@ -159,6 +173,7 @@ Page{
                 divider.visible: false
                 ListItemLayout{
                     title.text: i18n.tr("Graph Animation")
+                    title.font.bold : true
                     Switch{
                         checked: app_settings.is_graphs_animation_enabled
                         onClicked: app_settings.is_graphs_animation_enabled = !app_settings.is_graphs_animation_enabled
@@ -168,5 +183,5 @@ Page{
 
         }  
     }
-    NavigationBar{id:navigation_shape}   
+    NavigationBar{id: navigation_shape}  
 }

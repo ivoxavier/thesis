@@ -40,10 +40,16 @@ UbuntuShape{
         divider.visible: false
         ListItemLayout{
             id: slot_layout
-       
-            Icon{
-                name : "navigation-menu"
+
+            Rectangle{ 
                 height: units.gu(3.5)
+                width:  height
+                color: "#f1f1f1"
+                radius: height*0.5
+                Icon{
+                    name : "navigation-menu"
+                    height: units.gu(3.5)
+                }
                 MouseArea{
                     anchors.fill: parent
                     onClicked: page_stack.push(menu_page)

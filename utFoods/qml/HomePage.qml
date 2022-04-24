@@ -105,6 +105,12 @@ Page{
         }
     }
 
+    //popUPs a dialog to notify user that app is cleaning old ingestions
+    Component{
+        id: notification_pop
+        NotifyAutoCleanPop{}
+    }
+
     Rectangle{
         anchors{
             top: parent.top
@@ -489,5 +495,15 @@ Page{
         GetData.getCarboConsumed()
         GetData.getFatConsumed()
         GetData.getProteinConsumed()
+        if(app_settings.is_auto_cleaning){
+            var app_installed_date = new Date(app_settings.using_app_date)
+            var year_dif = root.currentDate.getYear() - app_installed_date.getYear()
+            if(year_dif >= 1){
+                PopupUtils.open(notification_pop)
+                IngestionsTable.autoClean()
+            }
+        } else{
+            //first if
+        }
     }        
 }

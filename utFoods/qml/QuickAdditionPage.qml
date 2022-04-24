@@ -22,12 +22,13 @@ import Qt.labs.settings 1.0
 import Ubuntu.Components.ListItems 1.3 
 import Ubuntu.Components.Popups 1.3
 import QtQuick.LocalStorage 2.12
+import QtQuick.Controls.Suru 2.2
 import "components"
 import "../js/UserTable.js" as UserTable
 import "../js/IngestionsTable.js" as IngestionsTable
 import "../js/UserFoodsListTable.js" as UserFoodsListTable
 import "../js/ControlFoodsNutriscore.js" as ControlFoodsNutriscore
-
+import "../js/ThemeColors.js" as ThemeColors
 
 Page{
     id: quick_addition_page
@@ -35,7 +36,12 @@ Page{
     header: PageHeader {
                 visible: app_settings.is_page_headers_enabled ? true : false
                 title : i18n.tr("Quick Addition")
+
+                StyleHints {
+                    foregroundColor: "white"
+                    backgroundColor:  Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_background : ThemeColors.utFoods_dark_theme_background 
             }
+        }
 
     //receives meal category from HomePage.slotAddMeal
     property int meal_quick_addition_page
@@ -89,6 +95,16 @@ Page{
 
     Timer{id: timer;repeat: false}
 
+    Rectangle{
+        anchors{
+            top: app_settings.is_page_headers_enabled ? parent.header.bottom : parent.top
+            left : parent.left
+            right : parent.right
+            bottom : parent.bottom
+        }
+        color : Suru.theme === 0 ? ThemeColors.utFoods_porcelain_theme_background : ThemeColors.utFoods_dark_theme_background 
+    }
+
     Flickable {
         id: flickable
         anchors{
@@ -107,18 +123,9 @@ Page{
             
             spacing: units.gu(1)
 
-            Text{
-                Layout.alignment: Qt.AlignCenter
-                text: i18n.tr("Quick Addition")
-                font.pixelSize: units.gu(4)
-                font.bold: false  
-                visible: app_settings.is_page_headers_enabled ? false : true
-            }
-
             RowLayout{
                 Layout.alignment: Qt.AlignCenter
                 width: parent.width
-                visible: app_settings.is_page_headers_enabled ? false : true
                 UbuntuShape{
                     Layout.preferredWidth: units.gu(10)
                     Layout.preferredHeight: units.gu(5)
@@ -162,6 +169,7 @@ Page{
                 Layout.alignment: Qt.AlignCenter
                 text: i18n.tr("Product name")
                 visible: is_details_view ? true: false
+                font.bold : true
             }
 
             UbuntuShape{  
@@ -186,6 +194,7 @@ Page{
                 Layout.alignment: Qt.AlignCenter
                 text: i18n.tr("Calories")
                 visible: is_details_view ? true: false
+                font.bold : true
             }
             
             UbuntuShape{  
@@ -217,6 +226,7 @@ Page{
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                 visible: is_details_view ? true: false
+                font.bold : true
             }
 
             CheckBox{
@@ -233,6 +243,7 @@ Page{
                 visible: is_details_view ? true: false
                 ListItemLayout{
                     title.text : i18n.tr("Create An Addition Request")
+                    title.font.bold : true
                     subtitle.text : i18n.tr("utFoods Community Foods")
                     Icon{
                         SlotsLayout.position: SlotsLayout.Leading
@@ -252,6 +263,7 @@ Page{
                 Layout.alignment: Qt.AlignCenter
                 text: i18n.tr("Fat/100g")
                 visible: is_details_view ? false: true
+                font.bold : true
             }
 
             Text{
@@ -267,6 +279,7 @@ Page{
                 radius: "large"
                 aspect: UbuntuShape.DropShadow
                 visible: is_details_view ? false: true
+                backgroundColor : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background
                 NutrientSlider{
                         id: fat_slider
                         anchors.centerIn: parent
@@ -281,6 +294,7 @@ Page{
                 Layout.alignment: Qt.AlignCenter
                 text: i18n.tr("Protein/100g")
                 visible: is_details_view ? false: true
+                font.bold : true
             }
 
             Text{
@@ -296,6 +310,7 @@ Page{
                 radius: "large"
                 aspect: UbuntuShape.DropShadow
                 visible: is_details_view ? false: true
+                backgroundColor : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background
                 NutrientSlider{
                         anchors.centerIn: parent
                         width: parent.width
@@ -312,6 +327,7 @@ Page{
                 Layout.alignment: Qt.AlignCenter
                 text: i18n.tr("Carbo/100g")
                 visible: is_details_view ? false: true
+                font.bold : true
             }
 
             Text{
@@ -327,6 +343,7 @@ Page{
                 radius: "large"
                 aspect: UbuntuShape.DropShadow
                 visible: is_details_view ? false: true
+                backgroundColor : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background
                 NutrientSlider{
                         anchors.centerIn: parent
                         width: parent.width
@@ -340,6 +357,7 @@ Page{
                 Layout.alignment: Qt.AlignCenter
                 text: i18n.tr("Saturated/100g")
                 visible: is_details_view ? false: true
+                font.bold : true
             }
 
             Text{
@@ -355,6 +373,7 @@ Page{
                 radius: "large"
                 aspect: UbuntuShape.DropShadow
                 visible: is_details_view ? false: true
+                backgroundColor : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background
                 NutrientSlider{
                         anchors.centerIn: parent
                         width: parent.width
@@ -371,6 +390,7 @@ Page{
                 Layout.alignment: Qt.AlignCenter
                 text: i18n.tr("Sugars/100g")
                 visible: is_details_view ? false: true
+                font.bold : true
             }
 
             Text{
@@ -386,6 +406,7 @@ Page{
                 radius: "large"
                 aspect: UbuntuShape.DropShadow
                 visible: is_details_view ? false: true
+                backgroundColor : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background
                 NutrientSlider{
                         anchors.centerIn: parent
                         width: parent.width
@@ -402,6 +423,7 @@ Page{
                 Layout.alignment: Qt.AlignCenter
                 text: i18n.tr("Salt/100g")
                 visible: is_details_view ? false: true
+                font.bold : true
             }
 
             Text{
@@ -417,6 +439,7 @@ Page{
                 radius: "large"
                 aspect: UbuntuShape.DropShadow
                 visible: is_details_view ? false: true
+                backgroundColor : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background
                 NutrientSlider{
                         anchors.centerIn: parent
                         width: parent.width     
@@ -433,6 +456,7 @@ Page{
                 Layout.alignment: Qt.AlignCenter
                 text: i18n.tr("Fibre/100g")
                 visible: is_details_view ? false: true
+                font.bold : true
             }
 
             Text{
@@ -448,6 +472,7 @@ Page{
                 radius: "large"
                 aspect: UbuntuShape.DropShadow
                 visible: is_details_view ? false: true
+                backgroundColor : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background
                 NutrientSlider{
                         anchors.centerIn: parent
                         width: parent.width
@@ -458,9 +483,11 @@ Page{
                     }
             }
 
-            ListItemHeader{
-                title.text: i18n.tr("Nutriscore")
-                visible: is_details_view ? false: true
+            ListItem{
+                ListItemLayout{
+                    subtitle.text : i18n.tr("Aproximated Nutriscore")
+                    subtitle.font.bold : true
+                }
             }
 
             UbuntuShape{

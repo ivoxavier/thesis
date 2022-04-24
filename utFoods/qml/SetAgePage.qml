@@ -25,7 +25,7 @@ import QtCharts 2.3
 import QtQuick.Controls.Suru 2.2
 import QtQuick.LocalStorage 2.12
 import "components"
-
+import "../js/ThemeColors.js" as ThemeColors
 
 
 Page{
@@ -34,10 +34,25 @@ Page{
     header: PageHeader {
         visible: true
         title: i18n.tr("About You")
+
+        StyleHints {
+            foregroundColor: "white"
+            backgroundColor:  Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_background : ThemeColors.utFoods_dark_theme_background 
+        }
     }
     
     //enables the next button after user clicking in one slotAge
     property bool is_age_inputed : false
+
+    Rectangle{
+        anchors{
+            top: parent.header.bottom
+            left : parent.left
+            right : parent.right
+            bottom : parent.bottom
+        }
+        color : Suru.theme === 0 ? ThemeColors.utFoods_porcelain_theme_background : ThemeColors.utFoods_dark_theme_background 
+    }
 
     Flickable {
 
@@ -69,7 +84,7 @@ Page{
                 Layout.alignment: Qt.AlignCenter   
                 text: i18n.tr("What's your age?")
                 font.pixelSize: units.gu(4)
-                color: "black" 
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
             }
 
             BlankSpace{height:units.gu(2)}
@@ -78,6 +93,7 @@ Page{
                 Layout.alignment: Qt.AlignCenter
                 Layout.preferredWidth: root.width - units.gu(9)
                 placeholderText: i18n.tr("Enter you age in years")
+                color : "transparent"
             }
 
             BlankSpace{height:units.gu(8)}
@@ -86,6 +102,7 @@ Page{
                 Layout.alignment: Qt.AlignCenter    
                 text: i18n.tr("You can change it later") + " 😎."
                 font.pixelSize: units.gu(1.5)
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
             }
 
             BlankSpace{height:units.gu(20)}
@@ -94,6 +111,7 @@ Page{
                 Layout.alignment: Qt.AlignCenter 
                 text: i18n.tr("Next")
                 enabled: set_age_page.is_age_inputed
+                color : UbuntuColors.green
                 onClicked:{
                     page_stack.push(set_weight_page)
                 }    

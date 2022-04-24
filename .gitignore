@@ -1,6 +1,7 @@
 utFoods/build
 utFoods/.clickable
 utFoods/js/LogInJsonURL.js
+utFoods/js/CommunityURL.js
 utFoods/js/FoodsRequestFormUrl.js
 data_src/landing_zone
 data_src/cleaned_zone

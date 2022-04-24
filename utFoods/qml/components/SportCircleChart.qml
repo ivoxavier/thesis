@@ -22,7 +22,8 @@ import Qt.labs.settings 1.0
 import Ubuntu.Components.ListItems 1.3 
 import Ubuntu.Components.Popups 1.3
 import QtQuick.Controls.Suru 2.2
-import QtCharts 2.3
+import QtQuick.Controls.Suru 2.2
+import "../../js/ThemeColors.js" as ThemeColors
   
 Canvas {
     id: canvas
@@ -33,7 +34,7 @@ Canvas {
     
 
     property color primaryColor: "#aea79f"
-    property color secondaryColor: "#009e73"
+    property color secondaryColor: Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_circle_chart : ThemeColors.utFoods_dark_theme_circle_chart 
 
     property real centerWidth: width / 2
     property real centerHeight: height / 2
@@ -101,12 +102,14 @@ Canvas {
             anchors.horizontalCenter: parent.horizontalCenter
             text: home_page.query_total_activity_made
             font.pointSize: units.gu(1.3)
+            color:Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
         }
         
         Text{
             anchors.horizontalCenter: parent.horizontalCenter
             text: i18n.tr("min") 
             font.pointSize: units.gu(1)
+            color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
         }
     }
 } 

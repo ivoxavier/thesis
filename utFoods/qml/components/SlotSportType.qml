@@ -31,13 +31,14 @@ UbuntuShape{
     property alias sport_description: description_label.text
     
     radius: "large"
-    aspect: UbuntuShape.Inset
+    aspect: UbuntuShape.DropShadow
     
     Icon {
         id: img;
         anchors.centerIn: parent
         width: parent.width * 0.5;
         height: parent.height * 0.5;
+        color : "white"
     }
 
     Label {

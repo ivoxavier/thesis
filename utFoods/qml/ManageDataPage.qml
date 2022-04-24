@@ -25,7 +25,7 @@ import QtQuick.Controls.Suru 2.2
 import QtQuick.LocalStorage 2.12
 import io.thp.pyotherside 1.5
 import "components"
-
+import "../js/ThemeColors.js" as ThemeColors
 
 
 Page{
@@ -34,6 +34,10 @@ Page{
     header: PageHeader {
                 visible: app_settings.is_page_headers_enabled ? true : false
                 title: i18n.tr("Manage Data")
+                StyleHints {
+                    foregroundColor: "white"
+                    backgroundColor:  Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_background : ThemeColors.utFoods_dark_theme_background 
+                }
             }
 
     //to differentiate from deletion type
@@ -91,6 +95,15 @@ Page{
 
     }
 
+    Rectangle{
+        anchors{
+            top: app_settings.is_page_headers_enabled ? parent.header.bottom : parent.top
+            left : parent.left
+            right : parent.right
+            bottom : parent.bottom
+        }
+        color : Suru.theme === 0 ? ThemeColors.utFoods_porcelain_theme_background : ThemeColors.utFoods_dark_theme_background 
+    }
 
     Flickable {
 
@@ -108,18 +121,12 @@ Page{
             id: main_column
             width: root.width
 
-            Text{
-                Layout.alignment: Qt.AlignCenter
-                text: i18n.tr("Manage Data")
-                font.pixelSize: units.gu(4)
-                font.bold: false
-                visible: app_settings.is_page_headers_enabled ? false : true
-            }
 
             ListItem {
                 divider.visible: false
                 ListItemLayout{
                     subtitle.text: i18n.tr("Ingestions")
+                    subtitle.font.bold : true
                 }  
             }       
 
@@ -128,6 +135,7 @@ Page{
                 divider.visible: false
                 ListItemLayout{
                     title.text: i18n.tr("Auto Delete Ingestions")
+                    title.font.bold : true
                     subtitle.text: i18n.tr("Deletes All Previous Year Ingestions")
 
                     Icon{
@@ -147,6 +155,7 @@ Page{
                 divider.visible : false
                 ListItemLayout{
                     title.text: i18n.tr("From a Month & Year To Delete")
+                    title.font.bold : true
                     Icon{
                         SlotsLayout.position: SlotsLayout.Leading
                         name : "calendar-app-symbolic"
@@ -163,6 +172,7 @@ Page{
                 divider.visible : false
                 ListItemLayout{
                     title.text: i18n.tr("Specific Today's Ingestion")
+                    title.font.bold : true
 
                     Icon{
                         SlotsLayout.position: SlotsLayout.Leading
@@ -182,8 +192,7 @@ Page{
                 divider.visible : false
                 ListItemLayout{
                     title.text: i18n.tr("Only Today's Ingestions")
-
-
+                    title.font.bold : true
                 
                     Button{
                         text: i18n.tr("Delete")
@@ -200,6 +209,7 @@ Page{
                 divider.visible : false
                 ListItemLayout{
                     title.text: i18n.tr("All Ingestions")
+                    title.font.bold : true
 
                     Button{
                         text:i18n.tr("Delete")
@@ -216,6 +226,7 @@ Page{
                 divider.visible: false
                 ListItemLayout{
                     subtitle.text: i18n.tr("User Foods List")
+                    subtitle.font.bold : true
                 }  
             } 
 
@@ -223,6 +234,7 @@ Page{
                 divider.visible: false
                 ListItemLayout{
                         title.text : i18n.tr("User Created Foods List")
+                        title.font.bold : true
                         Icon{
                             SlotsLayout.position: SlotsLayout.Leading
                             name : "x-office-document-symbolic"
@@ -238,6 +250,7 @@ Page{
                 divider.visible: false
                 ListItemLayout{
                     subtitle.text: i18n.tr("Water")
+                    subtitle.font.bold : true
                 }  
             } 
 
@@ -246,7 +259,7 @@ Page{
                 divider.visible : false
                 ListItemLayout{
                     title.text: i18n.tr("All Water Records")
-
+                    title.font.bold : true
 
                     Button{
                         text:i18n.tr("Delete")
@@ -263,6 +276,7 @@ Page{
                 divider.visible: false
                 ListItemLayout{
                     subtitle.text: i18n.tr("Notes")
+                    subtitle.font.bold : true
                 }  
             } 
 
@@ -270,6 +284,7 @@ Page{
                 divider.visible : false
                 ListItemLayout{
                     title.text: i18n.tr("Delete All Notes")
+                    title.font.bold : true
 
                     Button{
                         text:i18n.tr("Delete")
@@ -286,6 +301,7 @@ Page{
                 divider.visible: false
                 ListItemLayout{
                     subtitle.text: i18n.tr("Weight Tracker")
+                    subtitle.font.bold : true
                 }  
             } 
 
@@ -293,6 +309,7 @@ Page{
                 divider.visible : false
                 ListItemLayout{
                     title.text: i18n.tr("All Records")
+                    title.font.bold : true
 
                     Button{
                         text:i18n.tr("Delete")
@@ -308,6 +325,7 @@ Page{
                 divider.visible: false
                 ListItemLayout{
                     subtitle.text: i18n.tr("Activity")
+                    subtitle.font.bold : true
                 }  
             } 
 
@@ -315,6 +333,7 @@ Page{
                 divider.visible : false
                 ListItemLayout{
                     title.text: i18n.tr("All Records")
+                    title.font.bold : true
 
                     Button{
                         text:i18n.tr("Delete")
@@ -330,6 +349,7 @@ Page{
                 divider.visible: false
                 ListItemLayout{
                     subtitle.text: i18n.tr("System")
+                    subtitle.font.bold : true
                 }  
             }
 
@@ -337,6 +357,7 @@ Page{
                 divider.visible: false
                 ListItemLayout{
                         title.text : i18n.tr("Delete App Cache")
+                        title.font.bold : true
                         subtitle.text: i18n.tr("BE CAREFULL WITH THIS!")
                         Icon{
                             SlotsLayout.position: SlotsLayout.Leading
@@ -354,5 +375,8 @@ Page{
             } 
         }  
     }
-    NavigationBar{id:navigation_shape}   
+    NavigationBar{
+        id: navigation_shape
+        backgroundColor : Suru.theme === 0 ? ThemeColors.utFoods_porcelain_theme_background : ThemeColors.utFoods_dark_theme_background 
+    }   
 }

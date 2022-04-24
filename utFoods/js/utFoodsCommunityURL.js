@@ -14,4 +14,4 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-var app_version = "1.2.0"
+var community_url = "https://ivoxavier.github.io/thesis/utFoods_community_foods_list.json"

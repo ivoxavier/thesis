@@ -24,6 +24,7 @@ import Ubuntu.Components.Popups 1.3
 import QtQuick.Controls.Suru 2.2
 import "components"
 import "../js/ControlSetActivitySelection.js" as ControlSetActivitySelection
+import "../js/ThemeColors.js" as ThemeColors
 
 Page{
     id: set_activity_page
@@ -31,9 +32,21 @@ Page{
     header: PageHeader {
                 visible: true
                 title: i18n.tr("About You")
+
+                StyleHints {
+                    foregroundColor: "white"
+                    backgroundColor:  Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_background : ThemeColors.utFoods_dark_theme_background 
+                }
+
                 ActionBar {
                     anchors.right: parent.right
                     anchors.verticalCenter: parent.verticalCenter
+
+                    StyleHints {
+                        foregroundColor: "white"
+                        backgroundColor:  Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_background : ThemeColors.utFoods_dark_theme_background 
+                    }
+
                     numberOfSlots: 1
                     actions:[  Action{
                             iconName: "help"
@@ -49,6 +62,16 @@ Page{
     Component{
         id: help_dialog
         MessageDialog{msg: i18n.tr("Very Light include: driving, typing, sewing, ironing, cooking.\n\nLight include: walking 5 km, house cleaning, golf.\n\nModerate include: walking 6 km, dancing, tennis, cycling.\n\nHeavy include: running, soccer, basketball, football.")}
+    }
+
+    Rectangle{
+        anchors{
+            top: parent.header.bottom
+            left : parent.left
+            right : parent.right
+            bottom : parent.bottom
+        }
+        color : Suru.theme === 0 ? ThemeColors.utFoods_porcelain_theme_background : ThemeColors.utFoods_dark_theme_background 
     }
     
     Flickable {
@@ -79,6 +102,7 @@ Page{
                 Layout.alignment: Qt.AlignCenter 
                 text: i18n.tr("Your level of activity?")
                 font.pixelSize: units.gu(4)  
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
             }
 
             BlankSpace{height:units.gu(2)}
@@ -90,6 +114,7 @@ Page{
                 Layout.preferredHeight: units.gu(7)
                 text: i18n.tr("VERY LIGHT")
                 img_path:"../assets/logo.svg"
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
                 MouseArea{
                     anchors.fill: parent
                     onClicked: ControlSetActivitySelection.selectActivity(0)   
@@ -105,6 +130,7 @@ Page{
                 Layout.preferredHeight: units.gu(7)
                 text: i18n.tr("LIGHT")
                 img_path:"../assets/logo.svg"
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
                 MouseArea{
                     anchors.fill: parent
                     onClicked: ControlSetActivitySelection.selectActivity(1)
@@ -120,6 +146,7 @@ Page{
                 Layout.preferredHeight: units.gu(7)
                 text: i18n.tr("MODERATE")
                 img_path:"../assets/logo.svg"
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
                 MouseArea{
                     anchors.fill: parent
                     onClicked: ControlSetActivitySelection.selectActivity(2)   
@@ -135,6 +162,7 @@ Page{
                 Layout.preferredHeight: units.gu(7)
                 text: i18n.tr("HEAVY")
                 img_path:"../assets/logo.svg"
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
                 MouseArea{
                     anchors.fill: parent
                     onClicked: ControlSetActivitySelection.selectActivity(3) 
@@ -147,6 +175,7 @@ Page{
                 Layout.alignment: Qt.AlignCenter  
                 text: i18n.tr("You can change it later") + " 😎."
                 font.pixelSize: units.gu(1.5)
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
             }
 
             BlankSpace{height:units.gu(2)}
@@ -156,6 +185,7 @@ Page{
                 Layout.alignment: Qt.AlignCenter  
                 text: i18n.tr("Next")
                 enabled: set_activity_page.is_activity_choosed
+                color : UbuntuColors.green
                 onClicked:{
                     page_stack.push(set_sex_at_birth_page)
                 }    

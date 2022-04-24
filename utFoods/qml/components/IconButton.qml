@@ -23,7 +23,7 @@ import Ubuntu.Components.ListItems 1.3
 import Ubuntu.Components.Popups 1.3
 import QtQuick.Controls.Suru 2.2
 import Ubuntu.Components.Pickers 1.3
-
+import "../../js/ThemeColors.js" as ThemeColors
 
 AbstractButton {
 	id: button
@@ -45,7 +45,7 @@ AbstractButton {
         anchors.centerIn: parent
         height: units.gu(7.5)
         width:  height
-		color: "#f1f1f1"
+		color: Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_background : "#f1f1f1"
 		radius: height*0.5
 	}
 
@@ -53,5 +53,6 @@ AbstractButton {
 		id: icon
 		anchors.fill: parent
 		z: 1
+		color: UbuntuColors.porcelain
 	}
 }

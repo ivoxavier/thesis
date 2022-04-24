@@ -29,6 +29,7 @@ import "../js/UserTable.js" as UserTable
 import "../js/BodyMassIndex.js" as BMI
 import "../js/IdealWeight.js" as IBW
 import "../js/BloodPressureIndex.js" as BloodPressureIndex
+import "../js/ThemeColors.js" as ThemeColors
 
 Page{
     id: body_measures_page
@@ -36,6 +37,11 @@ Page{
     header: PageHeader {
                 visible: app_settings.is_page_headers_enabled ? true : false
                 title: i18n.tr("Body Measures")
+
+                StyleHints {
+                    foregroundColor: "white"
+                    backgroundColor:  Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_background : ThemeColors.utFoods_dark_theme_background 
+                }
             }
 
 
@@ -50,6 +56,16 @@ Page{
     Component{
         id: info_bmi
         MessageDialog{msg: i18n.tr("utFoods is not taking in consideration your muscule weight. This is a reference")}
+    }
+
+    Rectangle{
+        anchors{
+            top: app_settings.is_page_headers_enabled ? parent.header.bottom : parent.top
+            left : parent.left
+            right : parent.right
+            bottom : parent.bottom
+        }
+        color : Suru.theme === 0 ? ThemeColors.utFoods_porcelain_theme_background : ThemeColors.utFoods_dark_theme_background 
     }
 
     
@@ -70,14 +86,6 @@ Page{
         ColumnLayout{
             id: main_column
             width: root.width
-
-            Text{
-                Layout.alignment: Qt.AlignCenter
-                text: i18n.tr("Body Measures")
-                font.pixelSize: units.gu(4)
-                font.bold: false 
-                visible: app_settings.is_page_headers_enabled ? false : true
-            }
 
             ListItem{
                 divider.visible : false
@@ -165,8 +173,5 @@ Page{
 
         }  
     }
-
-  
     NavigationBar{id: navigation_shape}
-   
 }

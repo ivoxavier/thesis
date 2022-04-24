@@ -14,4 +14,12 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-var app_version = "1.2.0"
+var utFoods_blue_theme_background = UbuntuColors.lightAubergine
+var utFoods_porcelain_theme_background = UbuntuColors.porcelain
+var utFoods_dark_theme_background = "#111111"
+var utFoods_blue_theme_text = "black"
+var utFoods_dark_theme_text = "white"
+var utFoods_blue_theme_slot_background = "white"
+var utFoods_dark_theme_slot_background = "#808080ff"//"#3EB34F"
+var utFoods_blue_theme_circle_chart = UbuntuColors.lightAubergine//"#90ee90"
+var utFoods_dark_theme_circle_chart = "#808080ff"

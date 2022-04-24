@@ -22,6 +22,7 @@ import Qt.labs.settings 1.0
 import Ubuntu.Components.ListItems 1.3 
 import Ubuntu.Components.Popups 1.3
 import QtQuick.LocalStorage 2.12
+import QtQuick.Controls.Suru 2.2
 import "components"
 import "../js/ControlIconUpAnimation.js" as ControlIconUpAnimation
 import "../js/GetData.js" as GetData
@@ -30,6 +31,7 @@ import "../js/ControlTheMealDB.js" as ControlTheMealDB
 import "../js/DefineMacroNutriensPerDay.js" as DefineMacroNutriensPerDay
 import "../js/ControlFoodsNutriscore.js" as ControlFoodsNutriscore
 import "../js/IngestionsTable.js" as IngestionsTable
+import "../js/ThemeColors.js" as ThemeColors
 
 Page{
     id: home_page
@@ -102,7 +104,16 @@ Page{
             msg: i18n.tr("Ingestion Saved!")
         }
     }
-    
+
+    Rectangle{
+        anchors{
+            top: parent.top
+            left : parent.left
+            right : parent.right
+            bottom : parent.bottom
+        }
+        color : Suru.theme === 0 ? ThemeColors.utFoods_porcelain_theme_background : ThemeColors.utFoods_dark_theme_background 
+    }
 
     Flickable {
         id: flickable
@@ -130,6 +141,7 @@ Page{
                     Layout.preferredHeight: units.gu(7)
                     title.text: ControlSlotDashboardPlan.planType(app_settings.plan_type)
                     img_path:"../assets/logo.svg"
+                    color : "transparent"
                 }
             }
 
@@ -181,7 +193,7 @@ Page{
                     Layout.preferredWidth: units.gu(13)
                     Layout.preferredHeight: units.gu(5)
                     slot_icon_label: i18n.tr("FAT")
-                    bar_color: UbuntuColors.red
+                    bar_color: "#ed3146"
                     nutrient_value:  (home_page.query_total_fat_consumed / DefineMacroNutriensPerDay.fat(app_settings.plan_type) * 100.0) * 0.01
                 }
 
@@ -189,7 +201,7 @@ Page{
                     Layout.preferredWidth: units.gu(13)
                     Layout.preferredHeight: units.gu(5)
                     slot_icon_label: i18n.tr("CARBO")
-                    bar_color: UbuntuColors.blue
+                    bar_color: "#19b6ee"
                     nutrient_value: (home_page.query_total_carbo_consumed / DefineMacroNutriensPerDay.carbo(app_settings.plan_type) * 100.0) * 0.01
                 }
 
@@ -198,7 +210,7 @@ Page{
                     Layout.preferredWidth: units.gu(13)
                     Layout.preferredHeight: units.gu(5)
                     slot_icon_label: i18n.tr("PROTEIN")
-                    bar_color: UbuntuColors.green
+                    bar_color: "#90ee90"
                     nutrient_value: (home_page.query_total_protein_consumed / DefineMacroNutriensPerDay.protein(app_settings.plan_type) * 100.0) * 0.01
                 }
             }
@@ -244,6 +256,7 @@ Page{
                 meal_category: 0
                 subtitle.text: i18n.tr("%1 calories").arg(home_page.query_total_cal_breakfast)
                 img_path:"../assets/logo.svg"
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
             }  
 
             SlotAddMeal{
@@ -254,6 +267,7 @@ Page{
                 meal_category: 1
                 subtitle.text: i18n.tr("%1 calories").arg(home_page.query_total_cal_lunch)
                 img_path:"../assets/logo.svg"
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
             } 
 
             SlotAddMeal{
@@ -264,6 +278,7 @@ Page{
                 meal_category: 2
                 subtitle.text: i18n.tr("%1 calories").arg(home_page.query_total_cal_dinner)
                 img_path:"../assets/logo.svg"
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
             }
 
             SlotAddMeal{
@@ -274,6 +289,7 @@ Page{
                 meal_category: 3
                 subtitle.text: i18n.tr("%1 calories").arg(home_page.query_total_cal_snacks)
                 img_path:"../assets/logo.svg"
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
             }
 
             BlankSpace{}
@@ -285,6 +301,7 @@ Page{
                 Layout.preferredHeight: units.gu(7)
                 img_path:"../assets/logo.svg"
                 water_cups_drinked : (home_page.query_total_water_cups * 0.1)
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
             }
 
             BlankSpace{}
@@ -294,6 +311,7 @@ Page{
                 Layout.preferredWidth: root.width - units.gu(9)
                 Layout.preferredHeight: units.gu(7)
                 img_path:"../assets/logo.svg"
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
             }
 
             BlankSpace{}
@@ -340,7 +358,7 @@ Page{
                 anchors.centerIn: parent
                 height: parent.height / 2
                 width: parent.width / 2
-
+                z:100
                 Icon {
                     id: empty_icon
                     anchors.fill: parent
@@ -355,12 +373,35 @@ Page{
                     opacity: 0.75
                 }
             }
+
+             Rectangle{
+             anchors{
+                top: app_settings.is_page_headers_enabled ? parent.header.bottom : parent.top
+                left : parent.left
+                right : parent.right
+                bottom : parent.bottom
+            }
+        color : Suru.theme === 0 ? ThemeColors.utFoods_porcelain_theme_background : ThemeColors.utFoods_dark_theme_background 
+    }
+
             header: PageHeader{
                 title : i18n.tr("Your Previous Ingestions")
+
+                StyleHints {
+                    foregroundColor: "white"
+                    backgroundColor:  Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_background : ThemeColors.utFoods_dark_theme_background 
+                }
+
                 ActionBar{
                     anchors.right: parent.right
                     anchors.verticalCenter: parent.verticalCenter
                     numberOfSlots : 1
+
+                    StyleHints {
+                    foregroundColor: "white"
+                    backgroundColor:  Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_background : ThemeColors.utFoods_dark_theme_background 
+                }
+
                     actions : [
                         Action{
                             iconName : "filters"
@@ -370,6 +411,7 @@ Page{
                 }
             }
 
+           
         
             ListView{
                 id: yesterday_foods_list

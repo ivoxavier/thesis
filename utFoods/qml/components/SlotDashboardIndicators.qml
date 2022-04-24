@@ -21,7 +21,8 @@ import QtQuick.Layouts 1.3
 import Qt.labs.settings 1.0
 import Ubuntu.Components.ListItems 1.3 
 import Ubuntu.Components.Popups 1.3
-
+import QtQuick.Controls.Suru 2.2
+import "../../js/ThemeColors.js" as ThemeColors
 
 UbuntuShape{
     id: slot_shape
@@ -41,11 +42,13 @@ UbuntuShape{
             id: slot_indicatior
             Layout.alignment: Qt.AlignCenter
             font.bold: true
+            color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
         }
 
         Text{
             id: slot_icon_label
             Layout.alignment: Qt.AlignCenter
+            color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
         }
     }
 }  

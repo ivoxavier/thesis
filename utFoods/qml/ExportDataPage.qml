@@ -27,7 +27,7 @@ import Ubuntu.Content 1.3
 import io.thp.pyotherside 1.5
 import "components"
 import "../js/UserTable.js" as UserTable
-
+import "../js/ThemeColors.js" as ThemeColors
 
 
 
@@ -37,7 +37,22 @@ Page{
     header: PageHeader {
                 visible: app_settings.is_page_headers_enabled ? true : false
                 title: i18n.tr("Export Data")
+
+                StyleHints {
+                    foregroundColor: "white"
+                    backgroundColor:  Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_background : ThemeColors.utFoods_dark_theme_background 
+                }
             }
+    
+    Rectangle{
+        anchors{
+            top: app_settings.is_page_headers_enabled ? parent.header.bottom : parent.top
+            left : parent.left
+            right : parent.right
+            bottom : parent.bottom
+        }
+        color : Suru.theme === 0 ? ThemeColors.utFoods_porcelain_theme_background : ThemeColors.utFoods_dark_theme_background 
+    }
 
     Python{
         id: py
@@ -123,18 +138,12 @@ Page{
             width: root.width
             spacing: units.gu(2)
 
-            Text{
-                Layout.alignment: Qt.AlignCenter
-                text: i18n.tr("Export Data")
-                font.pixelSize: units.gu(4)
-                font.bold: false 
-                visible: app_settings.is_page_headers_enabled ? false : true
-            }
 
             ListItem {
                 divider.visible: false
                 ListItemLayout{
                     subtitle.text: i18n.tr("Store Path: ~/Documents/utFoods_exports/")
+                    subtitle.font.bold : true
                 }
             }
 
@@ -145,7 +154,7 @@ Page{
 
                 spacing: units.gu(1)
                 
-                Label{text: i18n.tr("User Table")}
+                Label{text: i18n.tr("User Table"); font.bold: true}
                 Icon{
                     id: user_table_exported_icon
                     property bool exported : false
@@ -157,7 +166,7 @@ Page{
             RowLayout{
                 spacing: units.gu(1)
                 Layout.alignment: Qt.AlignCenter
-                Label{text: i18n.tr("Ingestions Table")}
+                Label{text: i18n.tr("Ingestions Table");font.bold: true }
                 Icon{
                     id: user_ingestions_exported_icon
                     property bool exported: false
@@ -169,7 +178,7 @@ Page{
             RowLayout{
                 spacing: units.gu(1)
                 Layout.alignment: Qt.AlignCenter
-                Label{text: i18n.tr("Water Table")}
+                Label{text: i18n.tr("Water Table"); font.bold: true}
                 Icon{
                     id: user_water_exported_icon
                     property bool exported : false
@@ -181,7 +190,7 @@ Page{
             RowLayout{
                 spacing: units.gu(1)
                 Layout.alignment: Qt.AlignCenter
-                Label{text: i18n.tr("Weight Table")}
+                Label{text: i18n.tr("Weight Table"); font.bold: true}
                 Icon{
                     id: user_weight_exported_icon
                     property bool exported : false
@@ -193,7 +202,7 @@ Page{
             RowLayout{
                 spacing: units.gu(1)
                 Layout.alignment: Qt.AlignCenter
-                Label{text: i18n.tr("Sports Table")}
+                Label{text: i18n.tr("Sports Table"); font.bold: true}
                 Icon{
                     id: user_sport_exported_icon
                     property bool exported : false
@@ -219,12 +228,14 @@ Page{
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                 text: i18n.tr("Please wait a few seconds...")
+                font.bold: true
             }
 
             Button{
                 id:export_button
                 Layout.alignment: Qt.AlignCenter
                 text: i18n.tr("Start Export Process")
+                color: UbuntuColors.green
                 onClicked:{
                     state_msg.visible = true
                     py.call('export_data.ExportData.createCSVFile', [] ,function(returnValue){
@@ -255,5 +266,8 @@ Page{
         }  
     }
   
-    NavigationBar{id: navigation_shape}
+    NavigationBar{
+        id: navigation_shape
+        backgroundColor : Suru.theme === 0 ? ThemeColors.utFoods_porcelain_theme_background : ThemeColors.utFoods_dark_theme_background 
+    }   
 }

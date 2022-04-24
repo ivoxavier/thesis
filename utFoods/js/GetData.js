@@ -479,11 +479,11 @@ function getChartLineData(date_from, date_to){
 var ChartLineData = {
   labels: getXWeightTracker(date_from, date_to),
 datasets: [{
-    fillColor : "rgba(220,220,220,0.2)",
-    strokeColor : "rgba(220,220,220,1)",
+    fillColor : graphs_page.theme_applied === 0 ? "rgba(119,33,11,0.2)"  : "rgba(144,238,144,0.2)",
+    strokeColor : graphs_page.theme_applied === 0 ? "rgba(119,33,11,1)"  : "rgba(144,238,144,1)",
     pointColor : "rgba(220,220,220,1)",
     pointStrokeColor : "#fff",
-    pointHighlightFill : "#fff",
+    pointHighlightFill : "#90ee90",
     pointHighlightStroke : "rgba(220,220,220,1)",
     data : getYWeightTracker(date_from, date_to)
 }]
@@ -518,12 +518,12 @@ function getChartBarData(){
   var ChartBarData = {
     labels: ["a","b","c","d","e"],
   datasets: [{
-      fillColor : "rgba(220,220,220,0.2)",
-      strokeColor : "rgba(220,220,220,1)",
+      fillColor : graphs_page.theme_applied === 0 ? "rgba(119,33,11,0.2)"  : "rgba(144,238,144,0.2)",
+      strokeColor : graphs_page.theme_applied === 0 ? "rgba(119,33,11,1)"  : "rgba(144,238,144,1)",
       pointColor : "rgba(220,220,220,1)",
-      pointStrokeColor : "#fff",
-      pointHighlightFill : "#fff",
-      pointHighlightStroke : "rgba(220,220,220,1)",
+      pointStrokeColor : "#90ee90",
+      pointHighlightFill : "#90ee90",
+      pointHighlightStroke : "rgba(144,238,144,0.2)",
       data : getYNutriscore()
   }]
   }

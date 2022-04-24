@@ -26,9 +26,9 @@ function selectPlan(plan){
   root.type_goal = plan == 0 ? "maintain" : plan == 1 ? "loose" : "gain"
 
   //highlight Slots selection 
-  maintain_weight_slot.text_color = plan == 0 ? "green" : "black"
-  loose_weight_slot.text_color = plan == 1 ? "green" : "black"
-  gain_weight_slot.text_color = plan == 2 ? "green" : "black"
+  maintain_weight_slot.text_color = plan == 0 ? UbuntuColors.green : "black"
+  loose_weight_slot.text_color = plan == 1 ? UbuntuColors.green : "black"
+  gain_weight_slot.text_color = plan == 2 ? UbuntuColors.green : "black"
 
   //when true this property triggers the dialog propomt user to select how we would like to loose or gain weight
   set_plan_page.is_loose_weight = plan == 1 ? true : false

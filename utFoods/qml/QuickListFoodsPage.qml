@@ -22,9 +22,11 @@ import Qt.labs.settings 1.0
 import Ubuntu.Components.ListItems 1.3 
 import Ubuntu.Components.Popups 1.3
 import QtQuick.LocalStorage 2.12
+import QtQuick.Controls.Suru 2.2
 import "components"
+import "../js/ThemeColors.js" as ThemeColors
 import "../js/utFoodsCommunityFoodsList.js"  as UtFoodsCommunityFoodsList
-
+import "../js/utFoodsCommunityURL.js" as UtFoodsCommunityURL
 
 Page{
     id: quick_list_foods_page
@@ -32,7 +34,12 @@ Page{
     header: PageHeader {
         visible: app_settings.is_page_headers_enabled ? true : false
         title: i18n.tr("Quick List Foods")
+
+        StyleHints {
+            foregroundColor: "white"
+            backgroundColor:  Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_background : ThemeColors.utFoods_dark_theme_background 
         }
+    }
 
     //receives meal category from HomePage.slotAddMeal
     property int meal_quick_list_foods_page
@@ -44,11 +51,20 @@ Page{
 
     JSONListModel {
         id: utFoods_community_foods_json
-        source: app_settings.is_api_utFoods_community_foods_list_enabled ? "https://ivoxavier.github.io/thesis/utFoods_community_foods_list.json" : " "
+        source: app_settings.is_api_utFoods_community_foods_list_enabled ? UtFoodsCommunityURL.community_url : " "
         query: "$[*]"
         onJsonChanged: UtFoodsCommunityFoodsList.getFoods()
     }
 
+    Rectangle{
+        anchors{
+            top: app_settings.is_page_headers_enabled ? parent.header.bottom : parent.top
+            left : parent.left
+            right : parent.right
+            bottom : parent.bottom
+        }
+        color : Suru.theme === 0 ? ThemeColors.utFoods_porcelain_theme_background : ThemeColors.utFoods_dark_theme_background 
+    }
 
     SortFilterModel{
         id: sorted_model

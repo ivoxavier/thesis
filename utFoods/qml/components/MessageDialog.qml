@@ -18,7 +18,8 @@ import QtQuick 2.9
 import Ubuntu.Components 1.3
 import Ubuntu.Components.Popups 1.3
 import QtQuick.Layouts 1.3
-
+import QtQuick.Controls.Suru 2.2
+import "../../js/ThemeColors.js" as ThemeColors
 
 Dialog {
     id: msg_dialog
@@ -33,6 +34,7 @@ Dialog {
         width: parent.width
         wrapMode: Text.Wrap;
         horizontalAlignment: Text.AlignJustify    
+        color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
     }
     
     Button {

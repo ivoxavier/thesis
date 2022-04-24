@@ -23,7 +23,7 @@ import Ubuntu.Components.ListItems 1.3
 import Ubuntu.Components.Popups 1.3
 import QtQuick.Controls.Suru 2.2
 import "../../js/ControlFoodsNutriscore.js" as ControlFoodsNutriscore
-
+import "../../js/ThemeColors.js" as ThemeColors
 
 ListView{
     highlightRangeMode: ListView.ApplyRange
@@ -46,7 +46,7 @@ ListView{
                 i18n.tr("Good nutritional quality") : score_label.text === "c" ?
                 i18n.tr("Average nutritional quality") : score_label.text === "d" ?
                 i18n.tr("Poor nutritional quality") : i18n.tr("Bad nutritional quality")
-
+                
                 UbuntuShape{
                     SlotsLayout.position: SlotsLayout.Leading
                     

@@ -19,6 +19,8 @@ import Ubuntu.Components 1.3
 import Ubuntu.Components.Popups 1.3
 import QtQuick.Layouts 1.3
 import QtQuick.LocalStorage 2.12
+import QtQuick.Controls.Suru 2.2
+import "../../js/ThemeColors.js" as ThemeColors
 
 Dialog {
     id: meal_filter_dialog
@@ -32,6 +34,7 @@ Dialog {
         Label{
             anchors.verticalCenter: parent.verticalCenter
             text: i18n.tr("How Many Days Ago:")
+            font.bold: true
         }
 
         UbuntuShape{
@@ -47,6 +50,7 @@ Dialog {
                 horizontalAlignment: TextInput.AlignHCenter
                 verticalAlignment: TextInput.AlignVCenter
                 inputMethodHints: Qt.ImhDigitsOnly
+                font.bold: true
                 onTextChanged : {
                     home_page.amount_of_days_back = text
                     var yesterday_date = new Date()

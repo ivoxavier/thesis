@@ -23,21 +23,46 @@ import Ubuntu.Components.Pickers 1.3
 //import QtCharts 2.3
 import Ubuntu.Components.ListItems 1.3
 import QtQuick.LocalStorage 2.12
+import QtQuick.Controls.Suru 2.2
 import "components"
 import "../js/Chart.js" as Charts
 import "../js/QChartJsTypes.js" as ChartTypes
 import "../js/GetData.js" as GetData
-
+import "../js/ThemeColors.js" as ThemeColors
 
 
 Page {
     id: graphs_page
     objectName: 'GraphsPage'
 
+    //stores the theme applied, for picking right theme color for charts
+    property int theme_applied : Suru.theme === 0 ? 0 : 1
+
     header: PageHeader {
         title: i18n.tr("Graphs")
         visible: app_settings.is_page_headers_enabled ? true : false
+
+        StyleHints {
+            foregroundColor: "white"
+            backgroundColor:  Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_background : ThemeColors.utFoods_dark_theme_background 
+        }
      }
+    
+
+    Canvas{
+        id: canvas
+        width : parent.width
+        height : parent.height
+        //z:100
+        onPaint:{ 
+        var ctx = getContext("2d");
+       // ctx.save();
+        ctx.globalCompositeOperation = 'destination-over'
+        // Now draw!
+        ctx.fillStyle = Suru.theme === 0 ? ThemeColors.utFoods_porcelain_theme_background : ThemeColors.utFoods_dark_theme_background;
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        }
+    }
 
     Flickable{
 
@@ -55,18 +80,11 @@ Page {
             id: main_column
             width: root.width
 
-            Text{
-                Layout.alignment: Qt.AlignCenter
-                text: i18n.tr("Graphs")
-                font.pixelSize: units.gu(4)
-                font.bold: false 
-                visible: app_settings.is_page_headers_enabled ? false : true
-            }
-
             ListItem{
                 divider.visible: false
                 ListItemLayout{
                     subtitle.text : i18n.tr("Weight Progress")
+                    subtitle.font.bold : true
                 }
             }
 
@@ -96,6 +114,7 @@ Page {
                 divider.visible: false
                 ListItemLayout{
                     subtitle.text : i18n.tr("Foods Distribution By Nutriscore")
+                    subtitle.font.bold : true
                 }
             }
 
@@ -125,5 +144,4 @@ Page {
 
     }
     NavigationBar{id: navigation_shape} 
-
 }

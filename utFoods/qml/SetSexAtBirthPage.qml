@@ -22,9 +22,10 @@ import QtQuick.Layouts 1.3
 import Qt.labs.settings 1.0
 import Ubuntu.Components.ListItems 1.3 
 import Ubuntu.Components.Popups 1.3
+import QtQuick.Controls.Suru 2.2
 import "components"
 import "../js/ControlSetSexSelection.js" as ControlSetSexSelection
-
+import "../js/ThemeColors.js" as ThemeColors
 
 Page{
     id: set_sex_at_birth_page
@@ -32,11 +33,25 @@ Page{
     header: PageHeader {
         visible: true
         title: i18n.tr("About You")
+
+        StyleHints {
+                    foregroundColor: "white"
+                    backgroundColor:  Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_background : ThemeColors.utFoods_dark_theme_background 
+                }
         }
 
     //enables the next button after user clicking in one slotActivity
     property bool is_sex_at_birth_selected : false
     
+    Rectangle{
+        anchors{
+            top: parent.header.bottom
+            left : parent.left
+            right : parent.right
+            bottom : parent.bottom
+        }
+        color : Suru.theme === 0 ? ThemeColors.utFoods_porcelain_theme_background : ThemeColors.utFoods_dark_theme_background 
+    }
     
     Flickable {
 
@@ -69,6 +84,7 @@ Page{
                 Layout.alignment: Qt.AlignCenter  
                 text: i18n.tr("Sex assigned at birth?")
                 font.pixelSize: units.gu(4)
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
             }
 
             BlankSpace{height:units.gu(2)}
@@ -80,6 +96,7 @@ Page{
                 Layout.preferredHeight: units.gu(7)
                 text: i18n.tr("MALE")
                 img_path:"../assets/logo.svg"
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
                 MouseArea{
                     anchors.fill: parent
                     onClicked: ControlSetSexSelection.selectSex(0)
@@ -95,6 +112,7 @@ Page{
                 Layout.preferredHeight: units.gu(7)
                 text: i18n.tr("FEMALE")
                 img_path:"../assets/logo.svg"
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
                 MouseArea{
                     anchors.fill: parent
                     onClicked: ControlSetSexSelection.selectSex(1)   
@@ -108,6 +126,7 @@ Page{
                 Layout.alignment: Qt.AlignCenter
                 text: i18n.tr("Next")
                 enabled: set_sex_at_birth_page.is_sex_at_birth_selected
+                color : UbuntuColors.green
                 onClicked:{
                     page_stack.push(set_age_page)
                 }    

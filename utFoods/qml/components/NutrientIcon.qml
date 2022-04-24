@@ -30,9 +30,9 @@ UbuntuShape{
     width: units.gu(5)
     height: units.gu(5)
     radius: "small"
-    aspect: UbuntuShape.Flat
+    aspect: UbuntuShape.Inset
     source: Image{
             id: img
             source: add_meal_image_shape.img_path
-            }
+        }
 }  

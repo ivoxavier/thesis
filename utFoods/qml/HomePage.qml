@@ -146,7 +146,7 @@ Page{
                     Layout.preferredWidth: root.width - units.gu(9)
                     Layout.preferredHeight: units.gu(7)
                     title.text: ControlSlotDashboardPlan.planType(app_settings.plan_type)
-                    img_path:"../assets/logo.svg"
+                    img_path:"../assets/goal-svgrepo-com.svg"
                     color : "transparent"
                 }
             }
@@ -261,7 +261,7 @@ Page{
                 title.text: i18n.tr("Breakfast")
                 meal_category: 0
                 subtitle.text: i18n.tr("%1 calories").arg(home_page.query_total_cal_breakfast)
-                img_path:"../assets/logo.svg"
+                img_path:"../assets/breakfast-svgrepo-com.svg"
                 color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
             }  
 
@@ -272,7 +272,7 @@ Page{
                 title.text: i18n.tr("Lunch")
                 meal_category: 1
                 subtitle.text: i18n.tr("%1 calories").arg(home_page.query_total_cal_lunch)
-                img_path:"../assets/logo.svg"
+                img_path:"../assets/fried-chicken-meal-svgrepo-com.svg"
                 color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
             } 
 
@@ -283,7 +283,7 @@ Page{
                 title.text: i18n.tr("Dinner")
                 meal_category: 2
                 subtitle.text: i18n.tr("%1 calories").arg(home_page.query_total_cal_dinner)
-                img_path:"../assets/logo.svg"
+                img_path:"../assets/dinner-svgrepo-com.svg"
                 color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
             }
 
@@ -294,7 +294,7 @@ Page{
                 title.text: i18n.tr("Snacks")
                 meal_category: 3
                 subtitle.text: i18n.tr("%1 calories").arg(home_page.query_total_cal_snacks)
-                img_path:"../assets/logo.svg"
+                img_path:"../assets/snack-snacks-svgrepo-com.svg"
                 color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
             }
 
@@ -305,7 +305,7 @@ Page{
                 Layout.alignment: Qt.AlignCenter
                 Layout.preferredWidth: root.width - units.gu(9)
                 Layout.preferredHeight: units.gu(7)
-                img_path:"../assets/logo.svg"
+                img_path:"../assets/glass-of-water-svgrepo-com.svg"
                 water_cups_drinked : (home_page.query_total_water_cups * 0.1)
                 color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
             }
@@ -316,7 +316,7 @@ Page{
                 Layout.alignment: Qt.AlignCenter
                 Layout.preferredWidth: root.width - units.gu(9)
                 Layout.preferredHeight: units.gu(7)
-                img_path:"../assets/logo.svg"
+                img_path:"../assets/shoe-svgrepo-com.svg"
                 color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
             }
 

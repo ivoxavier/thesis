@@ -66,7 +66,7 @@ UbuntuShape{
                 width: units.gu(5)
                 height: units.gu(5)
                 radius: "large"
-                aspect: UbuntuShape.Inset
+                aspect: UbuntuShape.DropShadow
                 source: Image{
                     id: img
                     source: slot_img_credentials.img_path

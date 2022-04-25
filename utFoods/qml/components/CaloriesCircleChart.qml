@@ -28,8 +28,8 @@ import "../../js/ThemeColors.js" as ThemeColors
 Canvas {
     id: canvas
         
-    width: units.gu(18)
-    height: units.gu(18)
+    width: units.gu(20)
+    height: units.gu(20)
     antialiasing: true
     
 

@@ -20,9 +20,11 @@ import Ubuntu.Components 1.3
 import Morph.Web 0.1
 import QtWebEngine 1.7
 import Ubuntu.Components.Popups 1.3
+import QtQuick.Controls.Suru 2.2
 import "components"
 import "../js/FoodsRequestFormUrl.js" as FoodsRequestFormUrl
 import "../js/UserAgent.js" as UserAgent
+import "../js/ThemeColors.js" as ThemeColors
 
 Page{
     id: create_request_page
@@ -30,7 +32,12 @@ Page{
     header: PageHeader {
                 visible: app_settings.is_page_headers_enabled ? true : false
                 title : i18n.tr("Foods Request")
-            }
+
+                StyleHints {
+                  foregroundColor: "white"
+                  backgroundColor:  Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_background : ThemeColors.utFoods_dark_theme_background 
+              }
+          }
     
     LoadingWebPage{id:loadIcon;visible: web_view.loading === "false" ? false : true}
 

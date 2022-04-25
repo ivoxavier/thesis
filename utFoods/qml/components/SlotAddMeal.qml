@@ -45,7 +45,7 @@ UbuntuShape{
             id: slot_layout
             title.font.bold: true
             title.color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
-            
+            subtitle.font.bold: true
             Rectangle{
                 height: units.gu(3.5)
                 width:  height

@@ -6,11 +6,10 @@
    width="512.4"
    version="1.1"
    id="svg35"
-   sodipodi:docname="logo.svg"
+   sodipodi:docname="splash.svg"
    inkscape:version="1.1.2 (08b2f3d93c, 2022-04-05)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
@@ -34,18 +33,6 @@
      inkscape:current-layer="svg35" />
   <defs
      id="defs7">
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient5969">
-      <stop
-         style="stop-color:#aa076b;stop-opacity:1;"
-         offset="0"
-         id="stop5965" />
-      <stop
-         style="stop-color:#aa076b;stop-opacity:0;"
-         offset="1"
-         id="stop5967" />
-    </linearGradient>
     <linearGradient
        id="a"
        y2="494"
@@ -80,16 +67,14 @@
          offset="1"
          id="stop4" />
     </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient5969"
-       id="linearGradient5971"
-       x1="-1.3350383"
-       y1="-0.11764706"
-       x2="863.49872"
-       y2="856.77753"
-       gradientUnits="userSpaceOnUse" />
   </defs>
+  <rect
+     style="fill:#77216f;fill-rule:evenodd;stroke-width:1;fill-opacity:1"
+     id="rect1018"
+     width="519.16113"
+     height="515.3504"
+     x="-5.0076828"
+     y="-4.26087" />
   <path
      d="m-208.3 605.6c-7.842 0-14.55 5.029-17.32 12.19-0.0612-0.00067-0.1208 0-0.1823 0-7.088 0-12.83 6.002-12.83 13.41 0 7.404 5.746 13.41 12.83 13.41h17.5 16.33c5.155 0 9.333-4.365 9.333-9.75 0-4.543-2.974-8.363-7-9.445 0.001-0.1029 0-0.2015 0-0.3047 0-10.77-8.357-19.5-18.67-19.5z"
      style="stroke-width:4;color:#000000;stroke:#ccc;enable-background:accumulate;display:none;fill:#fff"
@@ -98,13 +83,6 @@
      style="stroke-width:4;color:#000000;stroke:#ccc;enable-background:accumulate;display:none;fill:none"
      d="m288.9 828.1c-6.349 0-11.78 4.072-14.02 9.867-0.0496-0.00055-0.0978 0-0.1476 0-5.738 0-10.39 4.86-10.39 10.85 0 5.995 4.652 10.85 10.39 10.85h14.17 13.22c4.173 0 7.557-3.534 7.557-7.894 0-3.678-2.408-6.771-5.667-7.647 0.001-0.0833 0-0.1632 0-0.2467 0-8.719-6.766-15.79-15.11-15.79z"
      id="path21" />
-  <rect
-     style="fill:url(#linearGradient5971);fill-rule:evenodd;fill-opacity:1"
-     id="rect5653"
-     width="518.42969"
-     height="515.56525"
-     x="-1.3350383"
-     y="-0.11764706" />
   <g
      style="display:none"
      transform="translate(0 -558.4)"

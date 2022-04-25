@@ -484,6 +484,7 @@ Page{
             }
 
             ListItem{
+                visible: is_details_view ? false: true
                 ListItemLayout{
                     subtitle.text : i18n.tr("Aproximated Nutriscore")
                     subtitle.font.bold : true

@@ -41,7 +41,7 @@ Popover{
                 TextField{
                     id: search_text
                     height: units.gu(4.5)
-                    width: parent.width - units.gu(3.5)
+                    width: parent.width - units.gu(15.5)
                     placeholderText: i18n.tr("Search...")
                     validator: RegExpValidator { regExp: Regex.regex_char}
                     onTextChanged:{
@@ -50,6 +50,11 @@ Popover{
                             PopupUtils.close(operation_result_popover)
                             })
                     }
+                }
+
+                Button{
+                    text: i18n.tr("Close")
+                    onClicked: PopupUtils.close(operation_result_popover)
                 }
             }
         }

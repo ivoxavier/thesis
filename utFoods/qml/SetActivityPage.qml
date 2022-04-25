@@ -113,7 +113,7 @@ Page{
                 Layout.preferredWidth: root.width - units.gu(9)
                 Layout.preferredHeight: units.gu(7)
                 text: i18n.tr("VERY LIGHT")
-                img_path:"../assets/logo.svg"
+                img_path:"../assets/cooking-stew-svgrepo-com.svg"
                 color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
                 MouseArea{
                     anchors.fill: parent
@@ -129,7 +129,7 @@ Page{
                 Layout.preferredWidth: root.width - units.gu(9)
                 Layout.preferredHeight: units.gu(7)
                 text: i18n.tr("LIGHT")
-                img_path:"../assets/logo.svg"
+                img_path:"../assets/walking-the-dog-svgrepo-com.svg"
                 color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
                 MouseArea{
                     anchors.fill: parent
@@ -145,7 +145,7 @@ Page{
                 Layout.preferredWidth: root.width - units.gu(9)
                 Layout.preferredHeight: units.gu(7)
                 text: i18n.tr("MODERATE")
-                img_path:"../assets/logo.svg"
+                img_path:"../assets/cycling-color-svgrepo-com.svg"
                 color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
                 MouseArea{
                     anchors.fill: parent
@@ -161,7 +161,7 @@ Page{
                 Layout.preferredWidth: root.width - units.gu(9)
                 Layout.preferredHeight: units.gu(7)
                 text: i18n.tr("HEAVY")
-                img_path:"../assets/logo.svg"
+                img_path:"../assets/soccer-svgrepo-com.svg"
                 color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
                 MouseArea{
                     anchors.fill: parent

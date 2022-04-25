@@ -30,9 +30,12 @@ UbuntuShape{
     width: units.gu(5)
     height: units.gu(5)
     radius: "small"
-    aspect: UbuntuShape.Inset
-    source: Image{
-            id: img
-            source: add_meal_image_shape.img_path
-        }
+    aspect: UbuntuShape.DropShadow
+    Icon{
+        id : img
+        anchors.centerIn: parent
+        height: units.gu(3.5)
+        source: add_meal_image_shape.img_path
+    }
+
 }  

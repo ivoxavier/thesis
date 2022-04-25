@@ -24,7 +24,7 @@ Settings {
 
     //stores the app configuration
     property bool is_clean_install : true
-    property bool is_page_headers_enabled : false
+    property bool is_page_headers_enabled : true
     property bool is_xml_openfoodsfacts_enabled: true
     property bool is_user_created_foods_list_enabled : false
     property bool is_api_openfoodsfacts_enabled : true

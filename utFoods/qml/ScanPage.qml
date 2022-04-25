@@ -53,6 +53,26 @@ Page {
        IsProductFoundDialog{barcode: bar_code_founded; is_product_found_dialog_meal: meal_scan_page}
     }
 
+    Icon {
+        height: units.gu(6)
+        z:100
+        width: height
+        anchors {
+            right: parent.right
+            bottom: parent.bottom
+            margins: units.gu(2)
+        }
+        name: camera.flash.mode === Camera.FlashVideoLight ? "torch-off" : "torch-on"
+        color: "white"
+
+        MouseArea {
+            anchors.fill: parent
+            onClicked: {
+                camera.flash.mode = (camera.flash.mode === Camera.FlashVideoLight ? Camera.FlashOff : Camera.FlashVideoLight)
+                
+            }
+        }
+    }
 
    Camera {
         id: camera

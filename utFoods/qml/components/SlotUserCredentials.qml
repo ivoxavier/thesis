@@ -64,17 +64,21 @@ UbuntuShape{
 
             UbuntuShape{
                 id: slot_img_credentials
-                property alias img_path: img.source
+                property alias img_path: img.name
                 SlotsLayout.position: SlotsLayout.Leading
                 width: units.gu(5)
                 height: units.gu(5)
                 radius: "large"
                 aspect: UbuntuShape.DropShadow
                 //backgroundColor:"black"
-                source: Image{
+                Icon{
                     id: img
-                    source: slot_img_credentials.img_path
+                    anchors.centerIn: parent
+                    height: units.gu(3.5)
+                    name: slot_img_credentials.img_path
+                    color: "white"
                 }
+                
             }  
         }
     }

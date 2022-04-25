@@ -68,19 +68,19 @@ Page{
         var ChartPieData = [
             {
                 value: fat_ingested,
-                color: "#F7464A",
+                color: "#ed3146",
                 highlight: "#FF5A5E",
                 label: i18n.tr("Fat/100g")
             },
             {
                 value: protein_ingested,
-                color: "#46BFBD",
+                color: "#90ee90",
                 highlight: "#5AD3D1",
                 label: i18n.tr("Protein/100g")
             },
             {
                 value: carbo_ingested,
-                color: "#949FB1",
+                color: "#19b6ee",
                 highlight:"#A8B3C5",
                 label: i18n.tr("Carbo/100g")
             }
@@ -175,21 +175,6 @@ Page{
 
             ListItem{
                 divider.visible: false
-                ListItemLayout{
-                    title.text: i18n.tr("Quantity")
-                    title.font.bold : true
-                    QuantitySpinner{
-                        Layout.preferredWidth: root.width - units.gu(13)
-                        height: units.gu(4)
-                        value : 1
-                        onValueChanged: quantity_portions = value    
-                    }
-
-                }
-            }
-
-            ListItem{
-                divider.visible: false
                 Layout.preferredHeight: units.gu(9)
                 ListItemLayout{
                     title.text: i18n.tr("Size portion")
@@ -210,6 +195,21 @@ Page{
             }
 
             ListItem{
+                divider.visible: false
+                ListItemLayout{
+                    title.text: i18n.tr("Quantity")
+                    title.font.bold : true
+                    QuantitySpinner{
+                        Layout.preferredWidth: root.width - units.gu(13)
+                        height: units.gu(4)
+                        value : 1
+                        onValueChanged: quantity_portions = value    
+                    }
+
+                }
+            }
+
+            ListItem{
                 divider.visible : false
                 ListItemLayout{
                     subtitle.text : i18n.tr("Macros") 
@@ -222,7 +222,7 @@ Page{
                 ListItemLayout{
                     title.text: i18n.tr("Fat: %1gr").arg(fat_ingested)
                     title.font.bold : true
-                    NutrientIcon{img_path: "../assets/logo.svg"} 
+                    NutrientIcon{img_path: "../assets/olive-oil-svgrepo-com.svg"} 
                 }
             }
             ListItem{
@@ -230,7 +230,7 @@ Page{
                 ListItemLayout{
                     title.text: i18n.tr("Protein: %1gr").arg(protein_ingested)
                     title.font.bold : true
-                    NutrientIcon{img_path: "../assets/logo.svg"}      
+                    NutrientIcon{img_path: "../assets/cheese-svgrepo-com.svg"}      
                 }
             }
             ListItem{
@@ -239,7 +239,7 @@ Page{
                 ListItemLayout{
                     title.text: i18n.tr("Carbohydrates: %1gr").arg(carbo_ingested)
                     title.font.bold : true
-                    NutrientIcon{img_path: "../assets/logo.svg"}    
+                    NutrientIcon{img_path: "../assets/bread-svgrepo-com.svg"}    
                 }
             }
         }  

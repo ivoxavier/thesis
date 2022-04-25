@@ -60,7 +60,6 @@ Page{
     ListView{
         id: slot_shape_view
         
-        anchors.fill: parent
         
         anchors{
             top: app_settings.is_page_headers_enabled ? parent.header.bottom : parent.top

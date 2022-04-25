@@ -95,7 +95,7 @@ Page{
                 Layout.preferredWidth: root.width - units.gu(9)
                 Layout.preferredHeight: units.gu(7)
                 text: i18n.tr("MALE")
-                img_path:"../assets/logo.svg"
+                img_path:"../assets/male-svgrepo-com.svg"
                 color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
                 MouseArea{
                     anchors.fill: parent
@@ -111,7 +111,7 @@ Page{
                 Layout.preferredWidth: root.width - units.gu(9)
                 Layout.preferredHeight: units.gu(7)
                 text: i18n.tr("FEMALE")
-                img_path:"../assets/logo.svg"
+                img_path:"../assets/female-gender-svgrepo-com.svg"
                 color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
                 MouseArea{
                     anchors.fill: parent

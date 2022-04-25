@@ -141,7 +141,7 @@ Page{
                 Layout.preferredHeight: units.gu(7)
                 color: "transparent"
                 placeholder : i18n.tr("ID...")
-                img_path:"../assets/logo.svg"
+                img_path: "stock_contact"
                 is_passcode: false
                 inputMethodHints: Qt.ImhDigitsOnly
             }
@@ -154,7 +154,7 @@ Page{
                 Layout.preferredHeight: units.gu(7)
                 color: "transparent"
                 placeholder : i18n.tr("Passcode...")
-                img_path:"../assets/logo.svg"
+                img_path:"stock_lock"
                 is_passcode: true
             }
 

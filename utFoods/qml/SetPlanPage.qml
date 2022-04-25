@@ -110,7 +110,7 @@ Page{
                 Layout.preferredWidth: root.width - units.gu(9)
                 Layout.preferredHeight: units.gu(7)
                 text: i18n.tr("LOOSE WEIGHT")
-                img_path:"../assets/logo.svg"
+                img_path:"../assets/shoe-svgrepo-com.svg"
                 color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
                 MouseArea{
                     anchors.fill: parent
@@ -126,7 +126,7 @@ Page{
                 Layout.preferredWidth: root.width - units.gu(9)
                 Layout.preferredHeight: units.gu(7)
                 text: i18n.tr("MAINTAIN WEIGHT")
-                img_path:"../assets/logo.svg"
+                img_path:"../assets/kilograms-justice-svgrepo-com.svg"
                 color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
                 MouseArea{
                     anchors.fill: parent
@@ -142,7 +142,7 @@ Page{
                 Layout.preferredWidth: root.width - units.gu(9)
                 Layout.preferredHeight: units.gu(7)
                 text: i18n.tr("GAIN WEIGHT")
-                img_path:"../assets/logo.svg"
+                img_path:"../assets/dumbbell-gym-svgrepo-com.svg"
                 color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
                 MouseArea{
                     anchors.fill: parent

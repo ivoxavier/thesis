@@ -37,7 +37,7 @@ Page{
     objectName: 'UpdateUserValuesPage'
     header: PageHeader {
         visible: app_settings.is_page_headers_enabled ? true : false
-        title: i18n.tr("Enter new values")
+        title: i18n.tr("Enter New Nalues")
         StyleHints {
             foregroundColor: "white"
             backgroundColor:  Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_background : ThemeColors.utFoods_dark_theme_background 
@@ -105,7 +105,6 @@ Page{
             RowLayout{
                 Layout.alignment: Qt.AlignCenter
                 width: parent.width
-                visible: app_settings.is_page_headers_enabled ? false : true
                 UbuntuShape{
                     Layout.preferredWidth: units.gu(14)
                     Layout.preferredHeight: units.gu(5)
@@ -113,6 +112,7 @@ Page{
                     aspect: is_values_view ? UbuntuShape.DropShadow : UbuntuShape.Flat
                     Text{
                         anchors.centerIn: parent
+                        //TRANSLATORS Keep this translation short as possible
                         text: i18n.tr("VALUES")
                         color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
                     }
@@ -133,6 +133,7 @@ Page{
                     aspect: is_goal_view ? UbuntuShape.DropShadow : UbuntuShape.Flat
                     Text{
                         anchors.centerIn: parent
+                        //TRANSLATORS Keep this translation short as possible
                         text: i18n.tr("GOALS")
                         color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
                     }
@@ -153,6 +154,7 @@ Page{
                     aspect: is_blood_pressure_view ? UbuntuShape.DropShadow : UbuntuShape.Flat
                     Text{
                         anchors.centerIn: parent
+                        //TRANSLATORS  Keep this translation short as possible. Only One Word Please. This is Blood Pressure
                         text: i18n.tr("TENSION")
                         color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
                     }
@@ -171,7 +173,7 @@ Page{
 
             Text{
                 Layout.alignment: Qt.AlignCenter
-                text: i18n.tr("Your new height")
+                text: i18n.tr("Your New Height")
                 visible: is_values_view ? true: false
                 color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
                 font.bold : true
@@ -197,7 +199,7 @@ Page{
 
             Text{
                 Layout.alignment: Qt.AlignCenter
-                text: i18n.tr("Your new weight")
+                text: i18n.tr("Your New Weight")
                 visible: is_values_view ? true: false
                 color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
                 font.bold : true
@@ -224,7 +226,7 @@ Page{
 
             Text{
                 Layout.alignment: Qt.AlignCenter
-                text: i18n.tr("Your new age")
+                text: i18n.tr("Your New Age")
                 visible: is_values_view ? true: false
                 color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
                 font.bold : true
@@ -253,7 +255,7 @@ Page{
 
             Text{
                 Layout.alignment: Qt.AlignCenter
-                text: i18n.tr("Activity level")
+                text: i18n.tr("Activity Level")
                 visible: is_goal_view ? true : false
                 color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
                 font.bold : true
@@ -284,7 +286,7 @@ Page{
             OptionSelector {
                 Layout.alignment: Qt.AlignCenter
                 Layout.preferredWidth: root.width - units.gu(26)
-                model: [i18n.tr("Loose weight"),i18n.tr("Maintain weight"), i18n.tr("Gain weight")]
+                model: [i18n.tr("Loose Weight"),i18n.tr("Maintain Weight"), i18n.tr("Gain Weight")]
                 selectedIndex: -1
                 visible: is_goal_view ? true : false
                 onSelectedIndexChanged: {
@@ -305,7 +307,7 @@ Page{
 
             Text{
                 Layout.alignment: Qt.AlignCenter
-                text: i18n.tr("Goal definition")
+                text: i18n.tr("Goal Definition")
                 visible: is_goal_view ? true : false
                 color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
                 font.bold : true

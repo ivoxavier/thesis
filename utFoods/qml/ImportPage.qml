@@ -20,6 +20,7 @@ import Ubuntu.Components 1.3
 import Ubuntu.Content 1.3
 import QtQuick.Controls.Suru 2.2
 import "components"
+import "../js/ThemeColors.js" as ThemeColors
 
 Page {
   id: picker
@@ -33,13 +34,23 @@ Page {
     signal imported(string fileUrl)
 
     header: PageHeader {
-        title: i18n.tr("Import from...")
+        title: i18n.tr("Import From...")
         visible: app_settings.is_page_headers_enabled ? true : false
 
         StyleHints {
             foregroundColor: "white"
             backgroundColor:  Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_background : ThemeColors.utFoods_dark_theme_background 
         }
+    }
+
+    Rectangle{
+        anchors{
+            top: app_settings.is_page_headers_enabled ? parent.header.bottom : parent.top
+            left : parent.left
+            right : parent.right
+            bottom : parent.bottom
+        }
+        color : Suru.theme === 0 ? ThemeColors.utFoods_porcelain_theme_background : ThemeColors.utFoods_dark_theme_background 
     }
 
     
@@ -94,8 +105,5 @@ Page {
         ContentItem {}
 	}
 
-    NavigationBar{
-        id: navigation_shape
-        backgroundColor : Suru.theme === 0 ? ThemeColors.utFoods_porcelain_theme_background : ThemeColors.utFoods_dark_theme_background 
-    } 
+    NavigationBar{id: navigation_shape} 
 }

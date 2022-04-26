@@ -55,7 +55,7 @@ Page{
 
     Component{
         id: info_bmi
-        MessageDialog{msg: i18n.tr("utFoods is not taking in consideration your muscule weight. This is a reference")}
+        MessageDialog{msg: i18n.tr("utFoods is not taking in consideration your muscule weight. This is ONLY e a reference")}
     }
 
     Rectangle{

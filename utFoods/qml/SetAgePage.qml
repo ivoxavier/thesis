@@ -82,7 +82,7 @@ Page{
 
             Text{
                 Layout.alignment: Qt.AlignCenter   
-                text: i18n.tr("What's your age?")
+                text: i18n.tr("What's Your Age?")
                 font.pixelSize: units.gu(4)
                 color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
             }
@@ -92,7 +92,7 @@ Page{
             SlotAge{
                 Layout.alignment: Qt.AlignCenter
                 Layout.preferredWidth: root.width - units.gu(9)
-                placeholderText: i18n.tr("Enter you age in years")
+                placeholderText: i18n.tr("Enter Your Age In Years")
                 color : "transparent"
             }
 
@@ -100,7 +100,7 @@ Page{
           
             Text{
                 Layout.alignment: Qt.AlignCenter    
-                text: i18n.tr("You can change it later") + " 😎."
+                text: i18n.tr("You Can Change It Later") + " 😎."
                 font.pixelSize: units.gu(1.5)
                 color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
             }

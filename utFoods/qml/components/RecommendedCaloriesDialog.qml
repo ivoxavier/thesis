@@ -36,6 +36,15 @@ Dialog {
         color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
         width: parent.width
     }
+
+    Text{
+        text: i18n.tr("Calculated Using St. Mifflin Jeor Equation")
+        font.pixelSize: units.gu(2)
+        font.bold: true
+        color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
+        width: parent.width
+        wrapMode: Text.WrapAtWordBoundaryOrAnywhere
+    }
     
         
     Button{

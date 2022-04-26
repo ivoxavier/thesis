@@ -135,6 +135,7 @@ Page{
                     Text{
                         anchors.centerIn: parent
                         text: i18n.tr("DETAILS")
+                        color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
                         }
                     MouseArea{
                         anchors.fill: parent
@@ -153,6 +154,7 @@ Page{
                     Text{
                         anchors.centerIn: parent
                         text: i18n.tr("MACROS")
+                        color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
                     }
                     MouseArea{
                         anchors.fill: parent
@@ -170,6 +172,7 @@ Page{
                 text: i18n.tr("Product name")
                 visible: is_details_view ? true: false
                 font.bold : true
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
             }
 
             UbuntuShape{  
@@ -195,6 +198,7 @@ Page{
                 text: i18n.tr("Calories")
                 visible: is_details_view ? true: false
                 font.bold : true
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
             }
             
             UbuntuShape{  
@@ -227,6 +231,7 @@ Page{
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                 visible: is_details_view ? true: false
                 font.bold : true
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
             }
 
             CheckBox{
@@ -264,6 +269,7 @@ Page{
                 text: i18n.tr("Fat/100g")
                 visible: is_details_view ? false: true
                 font.bold : true
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
             }
 
             Text{
@@ -295,6 +301,7 @@ Page{
                 text: i18n.tr("Protein/100g")
                 visible: is_details_view ? false: true
                 font.bold : true
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
             }
 
             Text{
@@ -328,6 +335,7 @@ Page{
                 text: i18n.tr("Carbo/100g")
                 visible: is_details_view ? false: true
                 font.bold : true
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
             }
 
             Text{
@@ -358,6 +366,7 @@ Page{
                 text: i18n.tr("Saturated/100g")
                 visible: is_details_view ? false: true
                 font.bold : true
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
             }
 
             Text{
@@ -391,6 +400,7 @@ Page{
                 text: i18n.tr("Sugars/100g")
                 visible: is_details_view ? false: true
                 font.bold : true
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
             }
 
             Text{
@@ -424,6 +434,7 @@ Page{
                 text: i18n.tr("Salt/100g")
                 visible: is_details_view ? false: true
                 font.bold : true
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
             }
 
             Text{
@@ -457,6 +468,7 @@ Page{
                 text: i18n.tr("Fibre/100g")
                 visible: is_details_view ? false: true
                 font.bold : true
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
             }
 
             Text{

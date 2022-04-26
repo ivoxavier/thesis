@@ -154,7 +154,7 @@ Page{
             ListItem {
                 divider.visible : false
                 ListItemLayout{
-                    title.text: i18n.tr("From a Month & Year To Delete")
+                    title.text: i18n.tr("From a Month & To Year")
                     title.font.bold : true
                     Icon{
                         SlotsLayout.position: SlotsLayout.Leading
@@ -358,6 +358,7 @@ Page{
                 ListItemLayout{
                         title.text : i18n.tr("Delete App Cache")
                         title.font.bold : true
+                        //TRANSLATORS Please Keep This letters all Capital
                         subtitle.text: i18n.tr("BE CAREFULL WITH THIS!")
                         Icon{
                             SlotsLayout.position: SlotsLayout.Leading

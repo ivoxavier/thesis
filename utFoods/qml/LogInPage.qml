@@ -48,28 +48,28 @@ Page{
     /*Messages --start--*/
     Component{
         id: info_text_dialog
-        MessageDialog{msg:i18n.tr("Hi, thanks for participating.\n\nYou should have received an id and a passcode.\n\nEnter them in the respective fields. Make sure you have Wifi or Mobile Data enabled.")}
+        MessageDialog{msg:i18n.tr("Hi, Thanks For Participating.\n\nYou Should Have Received An ID And A Passcode.\n\nEnter Them. Make Sure You have WiFi Or Mobile Data Enabled.")}
     }
 
 
     Component{
         id: all_fields_empty_dialog
-        MessageDialog{msg:i18n.tr("ID and Passcode fields are empty!")}
+        MessageDialog{msg:i18n.tr("ID & Passcode Fields Are Empty!")}
     }
 
     Component{
         id: id_field_empty_dialog
-        MessageDialog{msg:i18n.tr("ID field is empty!")}
+        MessageDialog{msg:i18n.tr("ID Field Is Empty!")}
     }
 
     Component{
         id: passcode_field_empty_dialog
-        MessageDialog{msg:i18n.tr("Passcode field is empty!")}
+        MessageDialog{msg:i18n.tr("Passcode Field Is Empty!")}
     }
 
     Component{
         id: forgot_dialog
-        MessageDialog{msg:i18n.tr("Please send an email to %1.\n\nDescribing the situation and mentioning the app version.\n\nApp version: %2").arg("pg27165@alunos.uminho.pt").arg(root.app_version)}
+        MessageDialog{msg:i18n.tr("Please Send An Email To %1.\n\nDescribing The Situation And Mentioning The App Version.\n\nApp Version: %2").arg("pg27165@alunos.uminho.pt").arg(root.app_version)}
     }
 
     //Pops a slot warning that about 
@@ -115,7 +115,7 @@ Page{
 
             Text{
                 Layout.alignment: Qt.AlignCenter
-                text: i18n.tr("Sign in to continue")
+                text: i18n.tr("Sign In To Continue")
                 font.pixelSize: units.gu(2)
                 color : "white" 
             }

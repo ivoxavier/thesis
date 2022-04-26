@@ -145,7 +145,9 @@ Page{
                     Layout.alignment: Qt.AlignCenter
                     Layout.preferredWidth: root.width - units.gu(9)
                     Layout.preferredHeight: units.gu(7)
-                    title.text: ControlSlotDashboardPlan.planType(app_settings.plan_type)
+                    title.text: ControlSlotDashboardPlan.planType(app_settings.plan_type) == 0 ?
+                    i18n.tr("Loose Weight") : ControlSlotDashboardPlan.planType(app_settings.plan_type) == 1 ?
+                    i18n.tr("Gain Weight") : i18n.tr("Maintain Weight")
                     img_path:"../assets/goal-svgrepo-com.svg"
                     color : "transparent"
                 }
@@ -166,6 +168,7 @@ Page{
                     Layout.preferredWidth: units.gu(13)
                     Layout.preferredHeight: units.gu(5)
                     slot_indicatior: query_total_foods_consumed
+                    //TRANSLATORS Please Keep This Only One Word
                     slot_icon_label: i18n.tr("FOODS")
                 }
 
@@ -184,6 +187,7 @@ Page{
                     Layout.preferredWidth: units.gu(13)
                     Layout.preferredHeight: units.gu(5)
                     slot_indicatior: query_total_cal_consumed
+                    //TRANSLATORS Please Keep This Only One Word
                     slot_icon_label: i18n.tr("CONSUMED")
                 }
                 
@@ -198,6 +202,7 @@ Page{
                 SlotNutrientProgress{
                     Layout.preferredWidth: units.gu(13)
                     Layout.preferredHeight: units.gu(5)
+                    //TRANSLATORS Please Keep This Only One Word
                     slot_icon_label: i18n.tr("FAT")
                     bar_color: "#ed3146"
                     nutrient_value:  (home_page.query_total_fat_consumed / DefineMacroNutriensPerDay.fat(app_settings.plan_type) * 100.0) * 0.01
@@ -206,6 +211,7 @@ Page{
                 SlotNutrientProgress{
                     Layout.preferredWidth: units.gu(13)
                     Layout.preferredHeight: units.gu(5)
+                    //TRANSLATORS Please Keep This Only One Word
                     slot_icon_label: i18n.tr("CARBO")
                     bar_color: "#19b6ee"
                     nutrient_value: (home_page.query_total_carbo_consumed / DefineMacroNutriensPerDay.carbo(app_settings.plan_type) * 100.0) * 0.01
@@ -215,6 +221,7 @@ Page{
                 SlotNutrientProgress{
                     Layout.preferredWidth: units.gu(13)
                     Layout.preferredHeight: units.gu(5)
+                    //TRANSLATORS Please Keep This Only One Word
                     slot_icon_label: i18n.tr("PROTEIN")
                     bar_color: "#90ee90"
                     nutrient_value: (home_page.query_total_protein_consumed / DefineMacroNutriensPerDay.protein(app_settings.plan_type) * 100.0) * 0.01
@@ -260,6 +267,7 @@ Page{
                 Layout.preferredHeight: units.gu(7)
                 title.text: i18n.tr("Breakfast")
                 meal_category: 0
+                //TRANSLATORS %1 is a format parameter. When translating make sure you write %1
                 subtitle.text: i18n.tr("%1 calories").arg(home_page.query_total_cal_breakfast)
                 img_path:"../assets/breakfast-svgrepo-com.svg"
                 color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
@@ -271,6 +279,7 @@ Page{
                 Layout.preferredHeight: units.gu(7)
                 title.text: i18n.tr("Lunch")
                 meal_category: 1
+                //TRANSLATORS %1 is a format parameter. When translating make sure you write %1
                 subtitle.text: i18n.tr("%1 calories").arg(home_page.query_total_cal_lunch)
                 img_path:"../assets/fried-chicken-meal-svgrepo-com.svg"
                 color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
@@ -282,6 +291,7 @@ Page{
                 Layout.preferredHeight: units.gu(7)
                 title.text: i18n.tr("Dinner")
                 meal_category: 2
+                //TRANSLATORS %1 is a format parameter. When translating make sure you write %1
                 subtitle.text: i18n.tr("%1 calories").arg(home_page.query_total_cal_dinner)
                 img_path:"../assets/dinner-svgrepo-com.svg"
                 color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
@@ -293,6 +303,7 @@ Page{
                 Layout.preferredHeight: units.gu(7)
                 title.text: i18n.tr("Snacks")
                 meal_category: 3
+                //TRANSLATORS %1 is a format parameter. When translating make sure you write %1
                 subtitle.text: i18n.tr("%1 calories").arg(home_page.query_total_cal_snacks)
                 img_path:"../assets/snack-snacks-svgrepo-com.svg"
                 color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 

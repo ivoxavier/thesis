@@ -1,4 +1,5 @@
 /*
+ * 2015 Johan Guerreros
  * 2022  Ivo Fernandes <pg27165@alunos.uminho.pt>
  *
  * This program is free software: you can redistribute it and/or modify

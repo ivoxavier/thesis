@@ -16,7 +16,7 @@ Is an app that counts you calories ingestion. It can scan barcodes. It uses the 
 
 # Licenses
 
-2022  Ivo Fernandes pg27165_at_alunos.uminho.pt
+2022  Ivo Fernandes
  
  This program is licensed with GNU GPL v3.
 

@@ -11,5 +11,7 @@ This repository stores the code used for my thesis made at University of Minho f
 * Maintainer Email.
 <br></br>
 
+<b>2-</b> TheMealDB API is free for education purposes. If you pretend to submit this app in store you must pay, otherwise you must remove from app.
+<br></br>
 
-<div style="text-align:center"><p>Last Update: 29/03/2022</p></div>
+<div align="center"><p>Last Update: 26/04/2022</p></div>

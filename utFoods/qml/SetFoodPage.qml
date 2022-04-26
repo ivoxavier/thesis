@@ -140,7 +140,7 @@ Page{
             Text{
                 Layout.alignment: Qt.AlignCenter
                 Layout.preferredWidth: root.width
-                text: i18n.tr("Calories: ") + cal_ingested
+                text: i18n.tr("Calories: %1 ").arg(cal_ingested) 
                 font.pixelSize: units.gu(3)
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
@@ -177,7 +177,7 @@ Page{
                 divider.visible: false
                 Layout.preferredHeight: units.gu(9)
                 ListItemLayout{
-                    title.text: i18n.tr("Size portion")
+                    title.text: i18n.tr("Size Portion")
                     title.font.bold : true
                     SizePicker{
                         Layout.preferredWidth: root.width - units.gu(9)

@@ -5,8 +5,9 @@ Is an app that counts you calories ingestion. It can scan barcodes. It uses the 
 
 
 
-<div><img img height="100px;" width="100px" src="https://github.com/ivoxavier/thesis/blob/main/utFoods/assets/logo.svg" /></div>
-
+<div align="center"><img img height="150px;" width="150px" src="https://github.com/ivoxavier/thesis/blob/main/utFoods/assets/logo.svg" /></div>
+<br>
+<br>
 <div><span display= "inline;"><img height="400px;" width="200px";  src="https://github.com/ivoxavier/thesis/blob/main/images/img_8.png" /> <img height="400px;" width="200px" src="https://github.com/ivoxavier/thesis/blob/main/images/img_5.png" /> <img height="400px;" width="200px" src="https://github.com/ivoxavier/thesis/blob/main/images/img_3.png" /> <img height="400px;" width="200px" src="https://github.com/ivoxavier/thesis/blob/main/images/img_1.png" /> </span></div>
 
 

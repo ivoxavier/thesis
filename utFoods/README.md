@@ -3,15 +3,15 @@
 
 Is an app that counts you calories ingestion. It can scan barcodes. It uses the OpenFoodsFacts API.
 
-<div style="text-align:center; height:30px"><img src="https://github.com/ivoxavier/thesis/blob/main/utFoods/assets/logo.svg" /></div>
+<div style="height:30px"><img src="https://github.com/ivoxavier/thesis/blob/main/utFoods/assets/logo.svg" /></div>
 
-<div style="text-align:center; height:30px"><img src="https://github.com/ivoxavier/thesis/blob/main/images/img_8.png" /></div>
+<div style="height:30px"><img src="https://github.com/ivoxavier/thesis/blob/main/images/img_8.png" /></div>
 
-<div style="text-align:center; height:30px"><img src="https://github.com/ivoxavier/thesis/blob/main/images/img_5.png" /></div>
+<div style="height:30px"><img src="https://github.com/ivoxavier/thesis/blob/main/images/img_5.png" /></div>
 
- <div style="text-align:center; height:30px"><img src="https://github.com/ivoxavier/thesis/blob/main/images/img_3.png" /></div> 
+ <div style="height:30px"><img src="https://github.com/ivoxavier/thesis/blob/main/images/img_3.png" /></div> 
 
- <div style="text-align:center; height:30px"><img src="https://github.com/ivoxavier/thesis/blob/main/images/img_1.png" /></div> 
+ <div style="height:30px"><img src="https://github.com/ivoxavier/thesis/blob/main/images/img_1.png" /></div> 
 
 # License
 

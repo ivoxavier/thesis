@@ -6,7 +6,8 @@
     "hooks": {
         "utFoods": {
             "apparmor": "utFoods.apparmor",
-            "desktop":  "utFoods.desktop"
+            "desktop":  "utFoods.desktop",
+            "content-hub": "utFoods-content-hub.json" 
         }
     },
     "version": "1.4.0",

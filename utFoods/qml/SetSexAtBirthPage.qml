@@ -82,7 +82,7 @@ Page{
 
             Text{
                 Layout.alignment: Qt.AlignCenter  
-                text: i18n.tr("Sex assigned at birth?")
+                text: i18n.tr("Sex Assigned At Birth?")
                 font.pixelSize: units.gu(4)
                 color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
             }
@@ -94,6 +94,7 @@ Page{
                 Layout.alignment: Qt.AlignCenter
                 Layout.preferredWidth: root.width - units.gu(9)
                 Layout.preferredHeight: units.gu(7)
+                //TRANSLATORS PLease Keep This Letters All Capital
                 text: i18n.tr("MALE")
                 img_path:"../assets/male-svgrepo-com.svg"
                 color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
@@ -110,6 +111,7 @@ Page{
                 Layout.alignment: Qt.AlignCenter
                 Layout.preferredWidth: root.width - units.gu(9)
                 Layout.preferredHeight: units.gu(7)
+                //TRANSLATORS PLease Keep This Letters All Capital
                 text: i18n.tr("FEMALE")
                 img_path:"../assets/female-gender-svgrepo-com.svg"
                 color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 

@@ -16,6 +16,6 @@
 
 function planType(plan){
   return plan == "loose" ? 
-  i18n.tr("Loose weight") : plan == "gain" ?
-  i18n.tr("Gain weight") : i18n.tr("Maintain weight")
+   0 : plan == "gain" ?
+   1 : 2
 }

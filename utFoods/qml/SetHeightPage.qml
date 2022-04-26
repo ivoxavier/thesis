@@ -86,7 +86,7 @@ Page{
 
             Text{
                 Layout.alignment: Qt.AlignCenter  
-                text: i18n.tr("Your height?")
+                text: i18n.tr("Your Height?")
                 font.pixelSize: units.gu(4)
                 color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text  
             }
@@ -96,7 +96,7 @@ Page{
             SlotHeight{
                 Layout.alignment: Qt.AlignCenter
                 Layout.preferredWidth: root.width - units.gu(9)
-                placeholderText: i18n.tr("Your height in cm: 171")
+                placeholderText: i18n.tr("Your Height In cm: 171")
                 color: "transparent"
             }
           
@@ -104,7 +104,7 @@ Page{
 
             Text{
                 Layout.alignment: Qt.AlignCenter
-                text: i18n.tr("You can change it later") + " 😎."
+                text: i18n.tr("You Can Change It Later") + " 😎."
                 font.pixelSize: units.gu(1.5)
                 color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text
             }

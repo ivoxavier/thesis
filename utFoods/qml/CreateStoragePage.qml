@@ -82,7 +82,7 @@ Page{
 
          Text{
             anchors.horizontalCenter: parent.horizontalCenter
-            text: i18n.tr("Creating database...")
+            text: i18n.tr("Creating Database...")
             color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
             font.bold : true
         }

@@ -102,7 +102,7 @@ Page{
             ListItem{
                 width: root.width
                 ListItemLayout{
-                    title.text : i18n.tr("Update your information")
+                    title.text : i18n.tr("Your Profile")
                     title.font.bold : true
                     title.color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
                     Icon{
@@ -119,7 +119,7 @@ Page{
             ListItem{
                 width: root.width
                 ListItemLayout{
-                    title.text : i18n.tr("Data analysis")
+                    title.text : i18n.tr("Data Analysis")
                     title.font.bold : true
                     title.color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
                     Icon{
@@ -162,7 +162,7 @@ Page{
             ListItem{
                 width: root.width
                 ListItemLayout{
-                    title.text : i18n.tr("Online sources")
+                    title.text : i18n.tr("Online Sources")
                     title.font.bold : true
 
                     Icon{
@@ -179,7 +179,8 @@ Page{
             ListItem{
                 width: root.width
                 ListItemLayout{
-                    title.text : i18n.tr("Trackers settings")
+                    //TRANSLATORS this is an setting that allow users to change config e.g :how many min should have their daily activity. We have calorie tracker, sport tracker, water tracking
+                    title.text : i18n.tr("Trackers Settings")
                     title.font.bold : true
                     title.color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
 
@@ -206,7 +207,7 @@ Page{
             ListItem{
                 width: root.width
                 ListItemLayout{
-                    title.text : i18n.tr("Manage data")
+                    title.text : i18n.tr("Manage Data")
                     title.font.bold : true
                     title.color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
                     
@@ -224,7 +225,7 @@ Page{
             ListItem{
                 width: root.width
                 ListItemLayout{
-                    title.text : i18n.tr("Export data")
+                    title.text : i18n.tr("Export Data")
                     title.font.bold : true
                     title.color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
                     
@@ -251,7 +252,7 @@ Page{
             ListItem{
                 width: root.width
                 ListItemLayout{
-                    title.text : i18n.tr("Credits & licensing")
+                    title.text : i18n.tr("Credits & Licensing")
                     title.font.bold : true
                     title.color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
                     
@@ -269,7 +270,7 @@ Page{
             ListItem{
                 width: root.width
                 ListItemLayout{
-                    title.text : i18n.tr("Third party software")
+                    title.text : i18n.tr("Third Party Software")
                     title.font.bold : true
                     title.color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
                     

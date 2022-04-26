@@ -97,7 +97,7 @@ Page{
 
             Text{
                 Layout.alignment: Qt.AlignCenter 
-                text: i18n.tr("What's your goal?")
+                text: i18n.tr("What's Your Goal?")
                 font.pixelSize: units.gu(4)  
                 color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
             }
@@ -109,6 +109,7 @@ Page{
                 Layout.alignment: Qt.AlignCenter
                 Layout.preferredWidth: root.width - units.gu(9)
                 Layout.preferredHeight: units.gu(7)
+                //TRANSLATORS Please Keep All Letters Capital
                 text: i18n.tr("LOOSE WEIGHT")
                 img_path:"../assets/shoe-svgrepo-com.svg"
                 color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
@@ -125,6 +126,7 @@ Page{
                 Layout.alignment: Qt.AlignCenter
                 Layout.preferredWidth: root.width - units.gu(9)
                 Layout.preferredHeight: units.gu(7)
+                //TRANSLATORS Please Keep All Letters Capital
                 text: i18n.tr("MAINTAIN WEIGHT")
                 img_path:"../assets/kilograms-justice-svgrepo-com.svg"
                 color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
@@ -141,6 +143,7 @@ Page{
                 Layout.alignment: Qt.AlignCenter
                 Layout.preferredWidth: root.width - units.gu(9)
                 Layout.preferredHeight: units.gu(7)
+                //TRANSLATORS Please Keep All Letters Capital
                 text: i18n.tr("GAIN WEIGHT")
                 img_path:"../assets/dumbbell-gym-svgrepo-com.svg"
                 color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_slot_background : ThemeColors.utFoods_dark_theme_slot_background 
@@ -154,7 +157,7 @@ Page{
 
             Text{
                 Layout.alignment: Qt.AlignCenter  
-                text: i18n.tr("You can change it later") + " 😎."
+                text: i18n.tr("You Can Change It Later") + " 😎."
                 font.pixelSize: units.gu(1.5)
                 color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
             }

@@ -26,7 +26,7 @@ import QtQuick.Controls.Suru 2.2
 import QtQuick.LocalStorage 2.12
 import Ubuntu.Content 1.3
 import "components"
-
+import "../js/ThemeColors.js" as ThemeColors
 
 
 Page{
@@ -97,6 +97,7 @@ Page{
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                 font.pixelSize: units.gu(3.5)
                 font.bold: false 
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
                 visible: app_settings.is_page_headers_enabled ? false : true
             }
 
@@ -104,7 +105,6 @@ Page{
                 id: row_tabs
                 Layout.alignment: Qt.AlignCenter
                 width: parent.width
-                visible: app_settings.is_page_headers_enabled ? false : true
                 UbuntuShape{
                     Layout.preferredWidth: units.gu(12.5)
                     Layout.preferredHeight: units.gu(5)
@@ -114,6 +114,7 @@ Page{
                     Text{
                         anchors.centerIn: parent
                         text: i18n.tr("INSTRUCTIONS")
+                        color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
                         }
                     MouseArea{
                         anchors.fill: parent
@@ -132,6 +133,7 @@ Page{
                     Text{
                         anchors.centerIn: parent
                         text: i18n.tr("INGREDIENTS")
+                        color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
                     }
                     MouseArea{
                         anchors.fill: parent
@@ -151,6 +153,7 @@ Page{
                 font.pixelSize: units.gu(2)
                 font.bold: false 
                 visible: is_instructions_view ? true : false
+                color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text 
             }
 
             BlankSpace{visible: is_instructions_view ? true : false}
@@ -176,6 +179,7 @@ Page{
                 delegate: ListItem{
                     ListItemLayout{
                         title.text: ingredients[index]
+                        title.font.bold: true
                         subtitle.text : measures[index]
                     }
                 }

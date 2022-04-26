@@ -25,7 +25,7 @@ import QtQuick.Controls.Suru 2.2
 import QtQuick.LocalStorage 2.12
 import "components"
 import "../js/GetData.js" as GetData
-
+import "../js/ThemeColors.js" as ThemeColors
 
 
 
@@ -46,10 +46,25 @@ Page{
                 i18n.tr("September") : requested_month === '10' ?
                 i18n.tr("October") : requested_month === '11' ?
                 i18n.tr("November") : i18n.tr("December")
+
+                StyleHints {
+                    foregroundColor: "white"
+                    backgroundColor:  Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_background : ThemeColors.utFoods_dark_theme_background 
+            }
+
         }
 
     property string requested_month
 
+    Rectangle{
+        anchors{
+            top: app_settings.is_page_headers_enabled ? parent.header.bottom : parent.top
+            left : parent.left
+            right : parent.right
+            bottom : parent.bottom
+        }
+        color : Suru.theme === 0 ? ThemeColors.utFoods_porcelain_theme_background : ThemeColors.utFoods_dark_theme_background 
+    }
 
     ListModel{
         id: all_month_ingestions
@@ -69,6 +84,7 @@ Page{
         delegate: ListItem{
             ListItemLayout{
                 title.text : name
+                title.font.bold : true
                 subtitle.text: i18n.tr("%1 calories").arg(cal)
                 }
         }

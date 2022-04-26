@@ -227,7 +227,7 @@ Page{
                 visible: false
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
-                text: i18n.tr("Please wait a few seconds...")
+                text: i18n.tr("Please Wait A Few Seconds...")
                 font.bold: true
             }
 
@@ -266,8 +266,5 @@ Page{
         }  
     }
   
-    NavigationBar{
-        id: navigation_shape
-        backgroundColor : Suru.theme === 0 ? ThemeColors.utFoods_porcelain_theme_background : ThemeColors.utFoods_dark_theme_background 
-    }   
+    NavigationBar{id: navigation_shape}   
 }

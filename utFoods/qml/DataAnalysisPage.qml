@@ -97,7 +97,7 @@ Page{
 
             ListItem{
                 ListItemLayout{
-                    title.text: i18n.tr("Graphs")
+                    title.text: i18n.tr("Charts")
                     title.font.bold : true
                     Icon{
                         SlotsLayout.position: SlotsLayout.Leading

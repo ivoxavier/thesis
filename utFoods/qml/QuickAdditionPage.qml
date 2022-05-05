@@ -187,6 +187,7 @@ Page{
                     overwriteMode: true
                     horizontalAlignment: TextInput.AlignHCenter
                     verticalAlignment: TextInput.AlignVCenter
+                    color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text
                     onTextChanged: product_name_quick_addition_page = text
                 }
             }
@@ -215,6 +216,7 @@ Page{
                     horizontalAlignment: TextInput.AlignHCenter
                     verticalAlignment: TextInput.AlignVCenter
                     inputMethodHints: Qt.ImhDigitsOnly
+                    color : Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_text : ThemeColors.utFoods_dark_theme_text
                     onEditingFinished:{ 
                         cal_quick_addition_page = text
                         ControlFoodsNutriscore.negativePointsEnergy(cal_quick_addition_page)

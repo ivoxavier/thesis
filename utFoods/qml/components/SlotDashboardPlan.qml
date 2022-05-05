@@ -48,7 +48,8 @@ UbuntuShape{
                 radius: height*0.5
                 Icon{
                     name : "navigation-menu"
-                    height: units.gu(3.5)
+                    height: units.gu(2.5)
+                    anchors.centerIn: parent
                 }
                 MouseArea{
                     anchors.fill: parent

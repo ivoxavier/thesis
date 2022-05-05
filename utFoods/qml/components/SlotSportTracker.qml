@@ -62,7 +62,8 @@ UbuntuShape{
                 Icon {
                     SlotsLayout.position: SlotsLayout.Trailing
                     name: "add"
-                    anchors.fill: parent
+                    anchors.centerIn: parent
+                    height: units.gu(2.5)
                     MouseArea{
                         anchors.fill: parent
                         onClicked:{

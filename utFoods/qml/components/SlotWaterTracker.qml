@@ -77,7 +77,8 @@ UbuntuShape{
                     id: add_icon_yes
                     property int category
                     name: "add"
-                    anchors.fill: parent
+                    anchors.centerIn: parent
+                    height : units.gu(2.5)
                     MouseArea{
                         anchors.fill: parent
                         onPressed:{

@@ -87,7 +87,8 @@ Page{
                         radius: height*0.5    
                         Icon{
                             name: "add"
-                            anchors.fill: parent
+                            anchors.centerIn: parent
+                            height: units.gu(2.5)
                         }
                     }
 

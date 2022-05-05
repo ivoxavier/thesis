@@ -54,8 +54,9 @@ UbuntuShape{
                 Icon {
                     id: add_icon_yes
                     property int category
+                    anchors.centerIn: parent
                     name: "add"
-                    anchors.fill: parent
+                    height : units.gu(2.5)
                     MouseArea{
                         anchors.fill: parent
                         onClicked: page_stack.push(quick_list_foods_page,{meal_quick_list_foods_page: slot_shape.meal_category}) 

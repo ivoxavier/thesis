@@ -26,6 +26,7 @@ import QtQuick.LocalStorage 2.12
 import Ubuntu.Content 1.3
 import "components"
 import "../js/SportsTable.js" as SportsTable
+import "../js/ThemeColors.js" as ThemeColors
 
 
 Page{
@@ -34,11 +35,25 @@ Page{
     header: PageHeader {
         visible: app_settings.is_page_headers_enabled ? true : false
         title: i18n.tr("Walking")
+        StyleHints {
+                foregroundColor: "white"
+                backgroundColor:  Suru.theme === 0 ? ThemeColors.utFoods_blue_theme_background : ThemeColors.utFoods_dark_theme_background 
         }
+    }
 
     Component{
         id: operation_result
         MessageDialog{msg: i18n.tr("Registed")}
+    }
+
+    Rectangle{
+        anchors{
+            top: app_settings.is_page_headers_enabled ? parent.header.bottom : parent.top
+            left : parent.left
+            right : parent.right
+            bottom : parent.bottom
+        }
+        color : Suru.theme === 0 ? ThemeColors.utFoods_porcelain_theme_background : ThemeColors.utFoods_dark_theme_background 
     }
 
 
@@ -71,7 +86,8 @@ Page{
                         radius: height*0.5    
                         Icon{
                             name: "add"
-                            anchors.fill: parent
+                            anchors.centerIn: parent
+                            height: units.gu(2.5)
                         }
                     }
 

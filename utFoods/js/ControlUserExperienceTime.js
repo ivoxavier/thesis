@@ -16,7 +16,7 @@
 
 function isValid(){
   //set the date where the experiment must end
-  var end_date = new Date("2022-06-12")
+  var end_date = new Date("2022-05-16")
 
   //test if current date is superior than endate
   if(root.currentDate > end_date){

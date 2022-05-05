@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: utfoods.ivofernandes\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-05 19:13+0000\n"
+"POT-Creation-Date: 2022-05-05 19:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -229,6 +229,18 @@ msgstr ""
 
 #: ../qml/CreditsPage.qml:145
 msgid "Assistant Professor At Information Systems Department"
+msgstr ""
+
+#: ../qml/CreditsPage.qml:152
+msgid "Support"
+msgstr ""
+
+#: ../qml/CreditsPage.qml:163
+msgid "Source-Code"
+msgstr ""
+
+#: ../qml/CreditsPage.qml:177
+msgid "Get Support For This Application"
 msgstr ""
 
 #: ../qml/CyclingPage.qml:36 ../qml/SportsTypePage.qml:114
@@ -642,51 +654,51 @@ msgstr ""
 msgid "Product name"
 msgstr ""
 
-#: ../qml/QuickAdditionPage.qml:198
+#: ../qml/QuickAdditionPage.qml:199
 msgid "Calories"
 msgstr ""
 
-#: ../qml/QuickAdditionPage.qml:229
+#: ../qml/QuickAdditionPage.qml:231
 msgid "Is fruits, vegetables, pulses, nuts, walnut and olive oils?"
 msgstr ""
 
-#: ../qml/QuickAdditionPage.qml:250
+#: ../qml/QuickAdditionPage.qml:252
 msgid "Create An Addition Request"
 msgstr ""
 
-#: ../qml/QuickAdditionPage.qml:252
+#: ../qml/QuickAdditionPage.qml:254
 msgid "utFoods Community Foods"
 msgstr ""
 
-#: ../qml/QuickAdditionPage.qml:269 ../qml/SetFoodPage.qml:73
+#: ../qml/QuickAdditionPage.qml:271 ../qml/SetFoodPage.qml:73
 msgid "Fat/100g"
 msgstr ""
 
-#: ../qml/QuickAdditionPage.qml:301 ../qml/SetFoodPage.qml:79
+#: ../qml/QuickAdditionPage.qml:303 ../qml/SetFoodPage.qml:79
 msgid "Protein/100g"
 msgstr ""
 
-#: ../qml/QuickAdditionPage.qml:335 ../qml/SetFoodPage.qml:85
+#: ../qml/QuickAdditionPage.qml:337 ../qml/SetFoodPage.qml:85
 msgid "Carbo/100g"
 msgstr ""
 
-#: ../qml/QuickAdditionPage.qml:366
+#: ../qml/QuickAdditionPage.qml:368
 msgid "Saturated/100g"
 msgstr ""
 
-#: ../qml/QuickAdditionPage.qml:400
+#: ../qml/QuickAdditionPage.qml:402
 msgid "Sugars/100g"
 msgstr ""
 
-#: ../qml/QuickAdditionPage.qml:434
+#: ../qml/QuickAdditionPage.qml:436
 msgid "Salt/100g"
 msgstr ""
 
-#: ../qml/QuickAdditionPage.qml:468
+#: ../qml/QuickAdditionPage.qml:470
 msgid "Fibre/100g"
 msgstr ""
 
-#: ../qml/QuickAdditionPage.qml:501
+#: ../qml/QuickAdditionPage.qml:503
 msgid "Aproximated Nutriscore"
 msgstr ""
 

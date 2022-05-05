@@ -11,7 +11,7 @@ Is an app that counts you calories ingestion. It can scan barcodes. It uses the 
 <br>
 <br>
 
-<div><span display= "inline;"><img height="400px;" width="200px";  src="https://github.com/ivoxavier/thesis/blob/main/images/img_8.png" /> <img height="400px;" width="200px" src="https://github.com/ivoxavier/thesis/blob/main/images/img_3.png" /> <img height="400px;" width="200px" src="https://github.com/ivoxavier/thesis/blob/main/images/img_1.png" /> <img height="400px;" width="200px" src="https://github.com/ivoxavier/thesis/blob/main/images/img_7.png" /></span></div>
+<div align="center"><span display= "inline;"><img height="400px;" width="200px";  src="https://github.com/ivoxavier/thesis/blob/main/images/img_8.png" /> <img height="400px;" width="200px" src="https://github.com/ivoxavier/thesis/blob/main/images/img_3.png" /> <img height="400px;" width="200px" src="https://github.com/ivoxavier/thesis/blob/main/images/img_1.png" /> <img height="400px;" width="200px" src="https://github.com/ivoxavier/thesis/blob/main/images/img_7.png" /></span></div>
 
 
 ### Debug in Desktop Mode

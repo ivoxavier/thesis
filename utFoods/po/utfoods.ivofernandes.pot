@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: utfoods.ivofernandes\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-05 13:44+0000\n"
+"POT-Creation-Date: 2022-05-05 19:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -229,18 +229,6 @@ msgstr ""
 
 #: ../qml/CreditsPage.qml:145
 msgid "Assistant Professor At Information Systems Department"
-msgstr ""
-
-#: ../qml/CreditsPage.qml:152
-msgid "Support"
-msgstr ""
-
-#: ../qml/CreditsPage.qml:163
-msgid "Source-Code"
-msgstr ""
-
-#: ../qml/CreditsPage.qml:177
-msgid "Get Support For This Application"
 msgstr ""
 
 #: ../qml/CyclingPage.qml:36 ../qml/SportsTypePage.qml:114

@@ -96,7 +96,7 @@ Page{
         contentWidth: parent.width
         contentHeight: main_column.height  
 
-        interactive : root.height > root.width ? false : true
+        //interactive : root.height > root.width ? false : true
 
         ColumnLayout{
             id: main_column

@@ -1,0 +1,1338 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the utfoods.ivofernandes package.
+# Marta Martins <martamartins340@gmail.com>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: utfoods.ivofernandes\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-26 19:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Marta Martins <martamartins340@gmail.com>\n"
+"Language-Team: utFoods \n"
+"Language: pt \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../qml/AppLayoutPage.qml:36
+msgid "App Layout"
+msgstr "Layout da aplicação"
+
+#: ../qml/AppLayoutPage.qml:72
+msgid "Appearance"
+msgstr "Aparência"
+
+#: ../qml/AppLayoutPage.qml:81
+msgid "Enable Page Headers"
+msgstr "Ativar os cabeçalhos"
+
+#: ../qml/AppLayoutPage.qml:83
+msgid "If Enabled It Will Remove Footer Navigation Bar"
+msgstr "Se ativos vão remover a barra de navegação do rodapé"
+
+#: ../qml/AppLayoutPage.qml:95
+msgid "Foods List"
+msgstr "Lista de alimentos"
+
+#: ../qml/AppLayoutPage.qml:103
+msgid "%1 List"
+msgstr "Lista %1"
+
+#: ../qml/AppLayoutPage.qml:105
+msgid "Modified From %1"
+msgstr "Modificado de %1"
+
+#: ../qml/AppLayoutPage.qml:125 ../qml/ManageDataPage.qml:236
+msgid "User Created Foods List"
+msgstr "Lista De Alimentos Criada Pelo Utilizador"
+
+#: ../qml/AppLayoutPage.qml:146
+msgid "utFoods Community Foods List"
+msgstr "Lista de alimentos da comunidade utFoods"
+
+#: ../qml/AppLayoutPage.qml:167
+msgid "Graphs Settings"
+msgstr "Definições Dos Gráficos"
+
+#: ../qml/AppLayoutPage.qml:175
+msgid "Graph Animation"
+msgstr "Animação dos gráficos"
+
+#: ../qml/AverageCaloriesPage.qml:38 ../qml/DataAnalysisPage.qml:85
+msgid "Average Calories Consumption"
+msgstr "Média do consumo de calorias"
+
+#: ../qml/AverageCaloriesPage.qml:88 ../qml/ListFoodsIngestedMonthPage.qml:38
+msgid "January"
+msgstr "Janeiro"
+
+#: ../qml/AverageCaloriesPage.qml:89 ../qml/ListFoodsIngestedMonthPage.qml:39
+msgid "February"
+msgstr "Fevereiro"
+
+#: ../qml/AverageCaloriesPage.qml:90 ../qml/ListFoodsIngestedMonthPage.qml:40
+msgid "March"
+msgstr "Março"
+
+#: ../qml/AverageCaloriesPage.qml:91 ../qml/ListFoodsIngestedMonthPage.qml:41
+msgid "April"
+msgstr "Abril"
+
+#: ../qml/AverageCaloriesPage.qml:92 ../qml/ListFoodsIngestedMonthPage.qml:42
+msgid "May"
+msgstr "Maio"
+
+#: ../qml/AverageCaloriesPage.qml:93 ../qml/ListFoodsIngestedMonthPage.qml:43
+msgid "June"
+msgstr "Junho"
+
+#: ../qml/AverageCaloriesPage.qml:94 ../qml/ListFoodsIngestedMonthPage.qml:44
+msgid "July"
+msgstr "Julho"
+
+#: ../qml/AverageCaloriesPage.qml:95 ../qml/ListFoodsIngestedMonthPage.qml:45
+msgid "August"
+msgstr "Agosto"
+
+#: ../qml/AverageCaloriesPage.qml:96 ../qml/ListFoodsIngestedMonthPage.qml:46
+msgid "September"
+msgstr "Setembro"
+
+#: ../qml/AverageCaloriesPage.qml:97 ../qml/ListFoodsIngestedMonthPage.qml:47
+msgid "October"
+msgstr "Outubro"
+
+#: ../qml/AverageCaloriesPage.qml:98 ../qml/ListFoodsIngestedMonthPage.qml:48
+msgid "December"
+msgstr "Dezembro"
+
+#: ../qml/AverageCaloriesPage.qml:98 ../qml/ListFoodsIngestedMonthPage.qml:48
+msgid "November"
+msgstr "Novembro"
+
+#: ../qml/AverageCaloriesPage.qml:100
+msgid "%1 cal"
+msgstr "%1 calorias"
+
+#: ../qml/BodyMeasuresPage.qml:39
+msgid "Body Measures"
+msgstr "Medidas Corporais"
+
+#: ../qml/BodyMeasuresPage.qml:58
+msgid ""
+"utFoods is not taking in consideration your muscule weight. This is ONLY e a "
+"reference"
+msgstr "A utFoods não está considerar a massa muscular. Isto é APENAS uma referência"
+
+#: ../qml/BodyMeasuresPage.qml:93
+msgid "Body Mass Index"
+msgstr "Índice de Massa Corporal"
+
+#: ../qml/BodyMeasuresPage.qml:104
+msgid "Low Weigth"
+msgstr "Baixo Peso"
+
+#: ../qml/BodyMeasuresPage.qml:105
+msgid "Normal Weigth"
+msgstr "Peso Normal"
+
+#: ../qml/BodyMeasuresPage.qml:106
+msgid "Weigth Exceed"
+msgstr "Excesso de Peso"
+
+#: ../qml/BodyMeasuresPage.qml:107
+msgid "Obesity"
+msgstr "Obesidade"
+
+#: ../qml/BodyMeasuresPage.qml:107
+msgid "Pre-Obesity"
+msgstr "Pré-Obesidade"
+
+#: ../qml/BodyMeasuresPage.qml:124
+msgid "Ideal Weight"
+msgstr "Peso Ideal"
+
+#: ../qml/BodyMeasuresPage.qml:139
+msgid "KG"
+msgstr "KG"
+
+#: ../qml/BodyMeasuresPage.qml:146
+msgid "Blood Pressure"
+msgstr "Pressão Sanguíena"
+
+#: ../qml/BodyMeasuresPage.qml:164
+msgid "Normal"
+msgstr "Normal"
+
+#: ../qml/BodyMeasuresPage.qml:165
+msgid "Elevated"
+msgstr "Elevada"
+
+#: ../qml/BodyMeasuresPage.qml:166
+msgid "High Blood Pressure Stage I"
+msgstr "Pressão Sanguínea Alta Fase I"
+
+#: ../qml/BodyMeasuresPage.qml:167
+msgid "High Blood Pressure Stage II"
+msgstr "Pressão Sanguínea Alta Fase II"
+
+#: ../qml/BodyMeasuresPage.qml:167
+msgid "Hypertensive Crisis"
+msgstr "Crise de Hipertensão"
+
+#: ../qml/CreateFoodsRequestPage.qml:34
+msgid "Foods Request"
+msgstr "Pedido de Alimentos"
+
+#: ../qml/CreateStoragePage.qml:85
+msgid "Creating Database..."
+msgstr "A Criar Base de Dados..."
+
+#: ../qml/CreditsPage.qml:35 ../qml/MenuPage.qml:255
+msgid "Credits & Licensing"
+msgstr "Créditos e Licença"
+
+#: ../qml/CreditsPage.qml:85
+msgid "Version: "
+msgstr "Versão:"
+
+#: ../qml/CreditsPage.qml:94
+msgid "App License: GNU GPL v3"
+msgstr "Licença da Aplicação: GNU GPL v3"
+
+#: ../qml/CreditsPage.qml:101
+msgid "Education Institution"
+msgstr "Instituição de Ensino"
+
+#: ../qml/CreditsPage.qml:109
+msgid "University Of Minho"
+msgstr "Universidade do Minho"
+
+#: ../qml/CreditsPage.qml:111
+msgid "Information Systems Department, Guimarães."
+msgstr "Departamento de Sistemas de Informação, Guimarães"
+
+#: ../qml/CreditsPage.qml:118
+msgid "Developer"
+msgstr "Programador"
+
+#: ../qml/CreditsPage.qml:128
+msgid "Student"
+msgstr "Aluno"
+
+#: ../qml/CreditsPage.qml:135
+msgid "Advisor"
+msgstr "Orientador"
+
+#: ../qml/CreditsPage.qml:145
+msgid "Assistant Professor At Information Systems Department"
+msgstr "Professor Auxiliar no Departamento de Sistemas de Informação"
+
+#: ../qml/CreditsPage.qml:152
+msgid "Support"
+msgstr "Suporte"
+
+#: ../qml/CreditsPage.qml:163
+msgid "Source-Code"
+msgstr "Código-Fonte"
+
+#: ../qml/CreditsPage.qml:177
+msgid "Get Support For This Application"
+msgstr "Obter Suporte Para Esta Aplicação"
+
+#: ../qml/CyclingPage.qml:36 ../qml/SportsTypePage.qml:114
+msgid "Cycling"
+msgstr "Ciclismo"
+
+#: ../qml/CyclingPage.qml:46 ../qml/GroupSportsPage.qml:46
+#: ../qml/GymPage.qml:46 ../qml/RunningPage.qml:46 ../qml/SwimmingPage.qml:46
+#: ../qml/WalkingPage.qml:41
+msgid "Registed"
+msgstr "Registado"
+
+#: ../qml/DataAnalysisPage.qml:39 ../qml/MenuPage.qml:122
+msgid "Data Analysis"
+msgstr "Análise de Dados"
+
+#: ../qml/DataAnalysisPage.qml:77 ../qml/ManageDataPage.qml:128
+msgid "Ingestions"
+msgstr "Ingestões"
+
+#: ../qml/DataAnalysisPage.qml:87
+msgid "By Month"
+msgstr "Por Mês"
+
+#: ../qml/DataAnalysisPage.qml:100
+msgid "Charts"
+msgstr "Gráficos"
+
+#: ../qml/DataAnalysisPage.qml:115
+msgid "Body Measurements"
+msgstr "Medidas Corporais"
+
+#: ../qml/DataAnalysisPage.qml:122
+msgid "Indexes"
+msgstr "Índeces"
+
+#: ../qml/DeleteTodayIngestionPage.qml:38
+msgid "Select Ingestion To Delete"
+msgstr "Selecione Ingestão para Eliminar"
+
+#: ../qml/DeleteTodayIngestionPage.qml:59 ../qml/ManageUserFoodsListPage.qml:73
+msgid "Empty List, Please Register Ingestions First.."
+msgstr "Lista vazia, registe ingestões primeiro.."
+
+#: ../qml/ExportDataPage.qml:39 ../qml/MenuPage.qml:228
+msgid "Export Data"
+msgstr "Exportar Dados"
+
+#: ../qml/ExportDataPage.qml:145
+msgid "Store Path: ~/Documents/utFoods_exports/"
+msgstr "Localização: ~/Documents/utFoods_exports/ "
+
+#: ../qml/ExportDataPage.qml:157
+msgid "User Table"
+msgstr "Tabela do Utilizador"
+
+#: ../qml/ExportDataPage.qml:169
+msgid "Ingestions Table"
+msgstr "Tabela de Ingestões"
+
+#: ../qml/ExportDataPage.qml:181
+msgid "Water Table"
+msgstr "Tabela de Consumo de Água"
+
+#: ../qml/ExportDataPage.qml:193
+msgid "Weight Table"
+msgstr "Tabela de Progresso de Peso"
+
+#: ../qml/ExportDataPage.qml:205
+msgid "Sports Table"
+msgstr "Tabela de Atividade Desportiva"
+
+#: ../qml/ExportDataPage.qml:230
+msgid "Please Wait A Few Seconds..."
+msgstr "Por favor, espere uns segundos..."
+
+#: ../qml/ExportDataPage.qml:237
+msgid "Start Export Process"
+msgstr "Exportar..."
+
+#: ../qml/GraphsPage.qml:42
+msgid "Graphs"
+msgstr "Gráficos"
+
+#: ../qml/GraphsPage.qml:86
+msgid "Weight Progress"
+msgstr "Progresso do Peso"
+
+#: ../qml/GraphsPage.qml:116
+msgid "Foods Distribution By Nutriscore"
+msgstr "Distribuição dos Alimentos Por Nutriscore"
+
+#: ../qml/GroupSportsPage.qml:36
+msgid "Group Sports"
+msgstr "Desportos de Grupo"
+
+#: ../qml/GymPage.qml:36 ../qml/SportsTypePage.qml:158
+msgid "Gym"
+msgstr "Ginásio"
+
+#: ../qml/HomePage.qml:104
+msgid "Ingestion Saved!"
+msgstr "Ingestão Guardada!"
+
+#: ../qml/HomePage.qml:149 ../qml/UpdateUserValuesPage.qml:289
+msgid "Loose Weight"
+msgstr "Perder Peso"
+
+#: ../qml/HomePage.qml:150 ../qml/UpdateUserValuesPage.qml:289
+msgid "Gain Weight"
+msgstr "Ganhar Peso"
+
+#: ../qml/HomePage.qml:150 ../qml/UpdateUserValuesPage.qml:289
+msgid "Maintain Weight"
+msgstr "Manter Peso"
+
+#. TRANSLATORS Please Keep This Only One Word
+#: ../qml/HomePage.qml:172
+msgid "FOODS"
+msgstr "ALIMENTOS"
+
+#. TRANSLATORS Please Keep This Only One Word
+#: ../qml/HomePage.qml:191
+msgid "CONSUMED"
+msgstr "CONSUMIDAS"
+
+#. TRANSLATORS Please Keep This Only One Word
+#: ../qml/HomePage.qml:206
+msgid "FAT"
+msgstr "GORDURA"
+
+#. TRANSLATORS Please Keep This Only One Word
+#: ../qml/HomePage.qml:215
+msgid "CARBO"
+msgstr "CARBO"
+
+#. TRANSLATORS Please Keep This Only One Word
+#: ../qml/HomePage.qml:225
+msgid "PROTEIN"
+msgstr "PROTEÍNA"
+
+#: ../qml/HomePage.qml:268 ../qml/components/MealFilterDialog.qml:66
+msgid "Breakfast"
+msgstr "Pequeno-Almoço"
+
+#. TRANSLATORS %1 is a format parameter. When translating make sure you write %1
+#: ../qml/HomePage.qml:271 ../qml/HomePage.qml:283 ../qml/HomePage.qml:295
+#: ../qml/HomePage.qml:307 ../qml/ListFoodsIngestedMonthPage.qml:88
+msgid "%1 calories"
+msgstr "%1 calorias"
+
+#: ../qml/HomePage.qml:280 ../qml/components/MealFilterDialog.qml:66
+msgid "Lunch"
+msgstr "Almoço"
+
+#: ../qml/HomePage.qml:292 ../qml/components/MealFilterDialog.qml:66
+msgid "Dinner"
+msgstr "Jantar"
+
+#: ../qml/HomePage.qml:304 ../qml/components/MealFilterDialog.qml:66
+msgid "Snacks"
+msgstr "Lanches"
+
+#: ../qml/HomePage.qml:389
+msgid "Empty List, Register Ingestions First Or Choose A Filter."
+msgstr "Lista vazia, registe ingestões primeiro ou escolha um filtro."
+
+#: ../qml/HomePage.qml:405
+msgid "Your Previous Ingestions"
+msgstr "As suas ingestões anteriores"
+
+#: ../qml/ImportPage.qml:37
+msgid "Import From..."
+msgstr "Importar de..."
+
+#: ../qml/LogInPage.qml:51
+msgid ""
+"Hi, Thanks For Participating.\n"
+"\n"
+"You Should Have Received An ID And A Passcode.\n"
+"\n"
+"Enter Them. Make Sure You have WiFi Or Mobile Data Enabled."
+msgstr "Olá, obrigado por participares.\n"
+"\n"
+"Deves ter recebido um ID e um código.\n"
+"\n"
+"Introduza-as. Certifique-se que tem WiFi ou dados móveis ativos."
+
+#: ../qml/LogInPage.qml:57
+msgid "ID & Passcode Fields Are Empty!"
+msgstr "Campos de ID e Código estão vazios! "
+
+#: ../qml/LogInPage.qml:62
+msgid "ID Field Is Empty!"
+msgstr "Campo de ID está vazio!"
+
+#: ../qml/LogInPage.qml:67
+msgid "Passcode Field Is Empty!"
+msgstr "Campo de Código está vazio!"
+
+#: ../qml/LogInPage.qml:72
+msgid ""
+"Please Send An Email To %1.\n"
+"\n"
+"Describing The Situation And Mentioning The App Version.\n"
+"\n"
+"App Version: %2"
+msgstr "Por Favor, envie um email para %1.\n"
+"\n"
+"Descrevendo a situação e mencionando a versão da aplicação.\n"
+"\n"
+"Versão da Aplicação: %2"
+
+#: ../qml/LogInPage.qml:109
+msgid "Welcome"
+msgstr "Bem-Vindo"
+
+#: ../qml/LogInPage.qml:118
+msgid "Sign In To Continue"
+msgstr "Inicie Sessão Para Continuar"
+
+#: ../qml/LogInPage.qml:143
+msgid "ID..."
+msgstr "ID..."
+
+#: ../qml/LogInPage.qml:156
+msgid "Passcode..."
+msgstr "Código..."
+
+#: ../qml/LogInPage.qml:164
+msgid "Forgot my ID or Passcode."
+msgstr "Esqueci-me do Meu ID ou do Código"
+
+#: ../qml/LogInPage.qml:183
+msgid "LOGIN"
+msgstr "ENTRAR"
+
+#: ../qml/ManageDataPage.qml:36 ../qml/MenuPage.qml:210
+msgid "Manage Data"
+msgstr "Gerir Dados"
+
+#: ../qml/ManageDataPage.qml:137
+msgid "Auto Delete Ingestions"
+msgstr "Eliminar Ingestões Automaticamente"
+
+#: ../qml/ManageDataPage.qml:139
+msgid "Deletes All Previous Year Ingestions"
+msgstr "Elimina todas as ingestões dos anos anteriores"
+
+#: ../qml/ManageDataPage.qml:157
+msgid "From a Month & To Year"
+msgstr "De um Ano e Mês"
+
+#: ../qml/ManageDataPage.qml:174
+msgid "Specific Today's Ingestion"
+msgstr "Ingestões Específicas de Hoje"
+
+#: ../qml/ManageDataPage.qml:194
+msgid "Only Today's Ingestions"
+msgstr "Apenas as Ingestões de Hoje"
+
+#: ../qml/ManageDataPage.qml:198 ../qml/ManageDataPage.qml:215
+#: ../qml/ManageDataPage.qml:265 ../qml/ManageDataPage.qml:290
+#: ../qml/ManageDataPage.qml:315 ../qml/ManageDataPage.qml:339
+#: ../qml/ManageDataPage.qml:369 ../qml/components/DeleteAllNotesDialog.qml:47
+#: ../qml/components/DeleteAllSportsDialog.qml:47
+#: ../qml/components/DeleteAllWaterDialog.qml:47
+#: ../qml/components/DeleteAllWeightTrackerDialog.qml:46
+#: ../qml/components/DeleteByMonthPop.qml:77
+#: ../qml/components/DeleteCacheDialog.qml:58
+#: ../qml/components/RemoveRecordsDialog.qml:34
+#: ../qml/components/RemoveRecordsDialog.qml:54
+msgid "Delete"
+msgstr "Eliminar"
+
+#: ../qml/ManageDataPage.qml:211
+msgid "All Ingestions"
+msgstr "Todas as Ingestões"
+
+#: ../qml/ManageDataPage.qml:228
+msgid "User Foods List"
+msgstr "Lista de Alimentos do Utilizador"
+
+#: ../qml/ManageDataPage.qml:252
+msgid "Water"
+msgstr "Água"
+
+#: ../qml/ManageDataPage.qml:261
+msgid "All Water Records"
+msgstr "Todos os Registos de Água"
+
+#: ../qml/ManageDataPage.qml:278
+msgid "Notes"
+msgstr "Notas"
+
+#: ../qml/ManageDataPage.qml:286
+msgid "Delete All Notes"
+msgstr "Eliminar Todas as Notas"
+
+#: ../qml/ManageDataPage.qml:303
+msgid "Weight Tracker"
+msgstr "Seguidor de Peso"
+
+#: ../qml/ManageDataPage.qml:311 ../qml/ManageDataPage.qml:335
+msgid "All Records"
+msgstr "Todos os Registos"
+
+#: ../qml/ManageDataPage.qml:327
+msgid "Activity"
+msgstr "Atividade"
+
+#: ../qml/ManageDataPage.qml:351
+msgid "System"
+msgstr "Sistema"
+
+#: ../qml/ManageDataPage.qml:359 ../qml/components/DeleteCacheDialog.qml:30
+msgid "Delete App Cache"
+msgstr "Eliminar a Cache da Aplicação"
+
+#. TRANSLATORS Please Keep This letters all Capital
+#: ../qml/ManageDataPage.qml:362
+msgid "BE CAREFULL WITH THIS!"
+msgstr "CUIDADO COM ISTO!"
+
+#: ../qml/ManageUserFoodsListPage.qml:39
+msgid "Manage Your Foods"
+msgstr "Gerir os Seus Alimentos"
+
+#: ../qml/MenuPage.qml:35
+msgid "Menu"
+msgstr "Menu"
+
+#: ../qml/MenuPage.qml:96
+msgid "User"
+msgstr "Utilizador"
+
+#: ../qml/MenuPage.qml:105
+msgid "Your Profile"
+msgstr "O Seu Perfil"
+
+#: ../qml/MenuPage.qml:140
+msgid "Settings"
+msgstr "Definições"
+
+#: ../qml/MenuPage.qml:149
+msgid "Change App Layout & Behaviours"
+msgstr "Alterar o Layout da Aplicação"
+
+#: ../qml/MenuPage.qml:165
+msgid "Online Sources"
+msgstr "Fontes Online"
+
+#. TRANSLATORS this is an setting that allow users to change config e.g :how many min should have their daily activity. We have calorie tracker, sport tracker, water tracking
+#: ../qml/MenuPage.qml:183 ../qml/TrackersSettingsPage.qml:34
+msgid "Trackers Settings"
+msgstr "Definições de Seguidores"
+
+#: ../qml/MenuPage.qml:202
+msgid "Storage"
+msgstr "Armazenamento"
+
+#: ../qml/MenuPage.qml:247
+msgid "About"
+msgstr "Sobre"
+
+#: ../qml/MenuPage.qml:273 ../qml/ThirdPartySoftwarePage.qml:36
+msgid "Third Party Software"
+msgstr "Software de Terceiros"
+
+#: ../qml/NotesPage.qml:35
+msgid "Your Notes"
+msgstr "As Suas Notas"
+
+#: ../qml/NotesPage.qml:69
+msgid "Empty List, Please Register Notes First.."
+msgstr "Lista vazia, por favor registe Notas primeiro.."
+
+#: ../qml/OnlineSourcesPage.qml:34
+msgid "Aplication Programming Interface"
+msgstr "Interface de Programação de Aplicações"
+
+#: ../qml/OnlineSourcesPage.qml:75
+msgid "Application Programming Interface"
+msgstr "Interface de Programação de Aplicações"
+
+#: ../qml/OnlineSourcesPage.qml:83
+msgid "OpenFoodsFacts"
+msgstr "OpenFoodsFacts"
+
+#: ../qml/OnlineSourcesPage.qml:85
+msgid "Search For Barcode In %1"
+msgstr "Procurar por Códigos de Barras em %1"
+
+#: ../qml/OnlineSourcesPage.qml:104
+msgid "Gets Random Recipes"
+msgstr "Recebe receitas aleatórias"
+
+#: ../qml/QuickAdditionPage.qml:38
+msgid "Quick Addition"
+msgstr "Adição Rápida"
+
+#: ../qml/QuickAdditionPage.qml:88 ../qml/SetFoodPage.qml:94
+msgid "Stored!"
+msgstr "Guardado!"
+
+#: ../qml/QuickAdditionPage.qml:93 ../qml/SetFoodPage.qml:99
+msgid "Something went wrong. Please, restart the app and try again."
+msgstr "Algo correu mal. Por favor, reinicie a aplicação e tente novamente."
+
+#: ../qml/QuickAdditionPage.qml:137
+msgid "DETAILS"
+msgstr "DETALHES"
+
+#: ../qml/QuickAdditionPage.qml:156
+msgid "MACROS"
+msgstr "MACROS"
+
+#: ../qml/QuickAdditionPage.qml:172
+msgid "Product name"
+msgstr "Nome do produto"
+
+#: ../qml/QuickAdditionPage.qml:198
+msgid "Calories"
+msgstr "Calorias"
+
+#: ../qml/QuickAdditionPage.qml:229
+msgid "Is fruits, vegetables, pulses, nuts, walnut and olive oils?"
+msgstr "É fruta, vegetais,leguminosas, nozes e azeites? "
+
+#: ../qml/QuickAdditionPage.qml:250
+msgid "Create An Addition Request"
+msgstr "Criar Um Pedido de Adição"
+
+#: ../qml/QuickAdditionPage.qml:252
+msgid "utFoods Community Foods"
+msgstr "Alimentos da comunidade utFoods"
+
+#: ../qml/QuickAdditionPage.qml:269 ../qml/SetFoodPage.qml:73
+msgid "Fat/100g"
+msgstr "Gordura/100g"
+
+#: ../qml/QuickAdditionPage.qml:301 ../qml/SetFoodPage.qml:79
+msgid "Protein/100g"
+msgstr "Proteína/100g"
+
+#: ../qml/QuickAdditionPage.qml:335 ../qml/SetFoodPage.qml:85
+msgid "Carbo/100g"
+msgstr "Carbo/100g"
+
+#: ../qml/QuickAdditionPage.qml:366
+msgid "Saturated/100g"
+msgstr "Saturados/100g"
+
+#: ../qml/QuickAdditionPage.qml:400
+msgid "Sugars/100g"
+msgstr "Açucares/100g"
+
+#: ../qml/QuickAdditionPage.qml:434
+msgid "Salt/100g"
+msgstr "Sal/100g"
+
+#: ../qml/QuickAdditionPage.qml:468
+msgid "Fibre/100g"
+msgstr "Fibra/100g"
+
+#: ../qml/QuickAdditionPage.qml:501
+msgid "Aproximated Nutriscore"
+msgstr "Nutriscore Aproximado"
+
+#: ../qml/QuickListFoodsPage.qml:36
+msgid "Quick List Foods"
+msgstr "Lista Rápida de Alimentos"
+
+#: ../qml/RecipePage.qml:116
+msgid "INSTRUCTIONS"
+msgstr "INSTRUÇÕES"
+
+#: ../qml/RecipePage.qml:135
+msgid "INGREDIENTS"
+msgstr "INGREDIENTES"
+
+#: ../qml/RecipePage.qml:164
+msgid "See Video on <a href='%1'>YouTube</a>"
+msgstr "Ver vídeo no <a href='%1'>YouTube</a>"
+
+#: ../qml/RunningPage.qml:36 ../qml/SportsTypePage.qml:92
+msgid "Running"
+msgstr "Correr"
+
+#: ../qml/ScanPage.qml:37
+msgid "Scanning"
+msgstr "A digitalizar"
+
+#: ../qml/SetActivityPage.qml:34 ../qml/SetAgePage.qml:36
+#: ../qml/SetHeightPage.qml:34 ../qml/SetPlanPage.qml:37
+#: ../qml/SetSexAtBirthPage.qml:35 ../qml/SetWeightPage.qml:34
+msgid "About You"
+msgstr "Sobre ti"
+
+#: ../qml/SetActivityPage.qml:53
+msgid "Help"
+msgstr "Ajuda"
+
+#: ../qml/SetActivityPage.qml:64
+msgid ""
+"Very Light Include: Driving, Typing, Sewing, Ironing, Cooking.\n"
+"\n"
+"Light Include: Walking 5 km, House Cleaning, Golf.\n"
+"\n"
+"Moderate Include: Walking 6 km, Dancing, Tennis, Cycling.\n"
+"\n"
+"Heavy Include: Running, Soccer, Basketball, Football."
+msgstr ""
+"Muito Leve Incluí: Conduzir, Escrever, Cozinhar.\n"
+"\n"
+"Leve Incluí: Caminhar 5km, Limpar a Casa.\n"
+"\n"
+"Moderado Incluí: Caminhar 6km, Dançar, Ténis.\n"
+"\n"
+"Pesado Incluí: Correr, Futebol, Basquetebol"
+
+#: ../qml/SetActivityPage.qml:103
+msgid "Your Level Of Activity?"
+msgstr "O Teu Nível de Atividade?"
+
+#. TRANSLATORS Please Keep All Letters Capital
+#: ../qml/SetActivityPage.qml:116
+msgid "VERY LIGHT"
+msgstr "MUITO LEVE"
+
+#. TRANSLATORS Please Keep All Letters Capital
+#: ../qml/SetActivityPage.qml:133
+msgid "LIGHT"
+msgstr "LEVE"
+
+#. TRANSLATORS Please Keep All Letters Capital
+#: ../qml/SetActivityPage.qml:150
+msgid "MODERATE"
+msgstr "MODERADO"
+
+#. TRANSLATORS Please Keep All Letters Capital
+#: ../qml/SetActivityPage.qml:167
+msgid "HEAVY"
+msgstr "PESADO"
+
+#: ../qml/SetActivityPage.qml:180 ../qml/SetAgePage.qml:103
+#: ../qml/SetHeightPage.qml:107 ../qml/SetPlanPage.qml:160
+#: ../qml/SetWeightPage.qml:103
+msgid "You Can Change It Later"
+msgstr "Podes mudar isto mais tarde"
+
+#: ../qml/SetActivityPage.qml:190 ../qml/SetAgePage.qml:112
+#: ../qml/SetHeightPage.qml:116 ../qml/SetPlanPage.qml:170
+#: ../qml/SetSexAtBirthPage.qml:129 ../qml/SetWeightPage.qml:112
+#: ../qml/components/IsProductFoundDialog.qml:126
+msgid "Next"
+msgstr "Seguinte"
+
+#: ../qml/SetAgePage.qml:85
+msgid "What's Your Age?"
+msgstr "Qual é a Tua Idade?"
+
+#: ../qml/SetAgePage.qml:95
+msgid "Enter Your Age In Years"
+msgstr "Introduz a Tua Idade em Anos"
+
+#: ../qml/SetFoodPage.qml:41
+msgid "Set Your Ingestion"
+msgstr "Definir a Tua Ingestão"
+
+#: ../qml/SetFoodPage.qml:143
+msgid "Calories: %1 "
+msgstr "Calorias: %1"
+
+#: ../qml/SetFoodPage.qml:180
+msgid "Size Portion"
+msgstr "Tamanho da Porção"
+
+#: ../qml/SetFoodPage.qml:200
+msgid "Quantity"
+msgstr "Quantidade"
+
+#: ../qml/SetFoodPage.qml:215
+msgid "Macros"
+msgstr "Macros"
+
+#: ../qml/SetFoodPage.qml:223
+msgid "Fat: %1gr"
+msgstr "Gordura: %1gr"
+
+#: ../qml/SetFoodPage.qml:231
+msgid "Protein: %1gr"
+msgstr "Proteína: %1gr"
+
+#: ../qml/SetFoodPage.qml:240
+msgid "Carbohydrates: %1gr"
+msgstr "Carbo: %1gr"
+
+#: ../qml/SetHeightPage.qml:89
+msgid "Your Height?"
+msgstr "A Tua Altura?"
+
+#: ../qml/SetHeightPage.qml:99
+msgid "Your Height In cm: 171"
+msgstr "A Tua Altura Em cm: 171"
+
+#: ../qml/SetPlanPage.qml:66
+msgid "loose"
+msgstr "perder"
+
+#: ../qml/SetPlanPage.qml:71
+msgid "gain"
+msgstr "ganhar"
+
+#: ../qml/SetPlanPage.qml:100
+msgid "What's Your Goal?"
+msgstr "Qual é o Teu Objetivo?"
+
+#. TRANSLATORS Please Keep All Letters Capital
+#: ../qml/SetPlanPage.qml:113
+msgid "LOOSE WEIGHT"
+msgstr "PERDER PESO"
+
+#. TRANSLATORS Please Keep All Letters Capital
+#: ../qml/SetPlanPage.qml:130
+msgid "MAINTAIN WEIGHT"
+msgstr "MANTER PESO"
+
+#. TRANSLATORS Please Keep All Letters Capital
+#: ../qml/SetPlanPage.qml:147
+msgid "GAIN WEIGHT"
+msgstr "GANHAR PESO"
+
+#: ../qml/SetSexAtBirthPage.qml:85
+msgid "Sex Assigned At Birth?"
+msgstr "Sexo Atribuído à Nascença?"
+
+#. TRANSLATORS PLease Keep This Letters All Capital
+#: ../qml/SetSexAtBirthPage.qml:98
+msgid "MALE"
+msgstr "MASCULINO"
+
+#. TRANSLATORS PLease Keep This Letters All Capital
+#: ../qml/SetSexAtBirthPage.qml:115
+msgid "FEMALE"
+msgstr "FEMININO"
+
+#: ../qml/SetWeightPage.qml:84
+msgid "Your Weight?"
+msgstr "O Teu Peso?"
+
+#: ../qml/SetWeightPage.qml:94
+msgid "Your Weight In KG: 63.3"
+msgstr "O Seu Peso Em KG: 63.3"
+
+#: ../qml/SportsTypePage.qml:35
+msgid "Sports"
+msgstr "Desportos"
+
+#: ../qml/SportsTypePage.qml:137 ../qml/WalkingPage.qml:36
+msgid "Walking"
+msgstr "Caminhar"
+
+#: ../qml/SportsTypePage.qml:179
+msgid "Group"
+msgstr "Grupo"
+
+#: ../qml/SportsTypePage.qml:200 ../qml/SwimmingPage.qml:36
+msgid "Swimming"
+msgstr "Natação"
+
+#: ../qml/ThirdPartySoftwarePage.qml:75
+msgid "QML Modules"
+msgstr "Modulos QML"
+
+#: ../qml/ThirdPartySoftwarePage.qml:98 ../qml/ThirdPartySoftwarePage.qml:119
+msgid "%1. Licensed under the MIT licence"
+msgstr ""
+
+#: ../qml/ThirdPartySoftwarePage.qml:108
+msgid "JavaScript Libs"
+msgstr ""
+
+#: ../qml/ThirdPartySoftwarePage.qml:129
+msgid "C++ Modules"
+msgstr "Modulos C++"
+
+#: ../qml/ThirdPartySoftwarePage.qml:140
+msgid "%1. Licensed under the Apache License 2.0"
+msgstr ""
+
+#: ../qml/ThirdPartySoftwarePage.qml:149
+msgid "Icons"
+msgstr "Ícones"
+
+#: ../qml/TrackersSettingsPage.qml:72
+msgid "Sports Tracker"
+msgstr "Seguidor de Desporto"
+
+#: ../qml/TrackersSettingsPage.qml:79
+msgid "%1 min"
+msgstr "%1 min"
+
+#: ../qml/UpdateUserValuesPage.qml:40
+msgid "Enter New Nalues"
+msgstr "Introduza Novos Valores"
+
+#. TRANSLATORS Keep this translation short as possible
+#: ../qml/UpdateUserValuesPage.qml:116
+msgid "VALUES"
+msgstr "VALORES"
+
+#. TRANSLATORS Keep this translation short as possible
+#: ../qml/UpdateUserValuesPage.qml:137
+msgid "GOALS"
+msgstr "OBJETIVOS"
+
+#. TRANSLATORS  Keep this translation short as possible. Only One Word Please. This is Blood Pressure
+#: ../qml/UpdateUserValuesPage.qml:158
+msgid "TENSION"
+msgstr "TENSÃO"
+
+#: ../qml/UpdateUserValuesPage.qml:176
+msgid "Your New Height"
+msgstr "A Sua Nova Altura"
+
+#: ../qml/UpdateUserValuesPage.qml:202
+msgid "Your New Weight"
+msgstr "O Seu Novo Peso"
+
+#: ../qml/UpdateUserValuesPage.qml:229
+msgid "Your New Age"
+msgstr "A Sua Nova Idade"
+
+#: ../qml/UpdateUserValuesPage.qml:258
+msgid "Activity Level"
+msgstr "Nível de Atividade"
+
+#: ../qml/UpdateUserValuesPage.qml:267
+msgid "High"
+msgstr "Alta"
+
+#: ../qml/UpdateUserValuesPage.qml:267
+msgid "Light"
+msgstr "Leve"
+
+#: ../qml/UpdateUserValuesPage.qml:267
+msgid "Moderate"
+msgstr "Moderada"
+
+#: ../qml/UpdateUserValuesPage.qml:267
+msgid "Very Light"
+msgstr "Muito Leve"
+
+#: ../qml/UpdateUserValuesPage.qml:280
+#: ../qml/components/SlotDashboardCalories.qml:56
+msgid "Goal"
+msgstr "Objetivo"
+
+#: ../qml/UpdateUserValuesPage.qml:310
+msgid "Goal Definition"
+msgstr "Definição do Objetivo"
+
+#: ../qml/UpdateUserValuesPage.qml:320
+#: ../qml/components/GoalDefinitionDialog.qml:47
+msgid "0,5kg by week"
+msgstr "0,5kg por semana"
+
+#: ../qml/UpdateUserValuesPage.qml:320
+#: ../qml/components/GoalDefinitionDialog.qml:66
+msgid "1kg by week"
+msgstr "1kg por semana"
+
+#: ../qml/UpdateUserValuesPage.qml:320
+msgid "3kg by week"
+msgstr "3kg por semana"
+
+#: ../qml/UpdateUserValuesPage.qml:320
+msgid "4kg by week"
+msgstr "4kg por semana"
+
+#: ../qml/UpdateUserValuesPage.qml:336
+msgid "Your Systolic Presure (High Pressure)"
+msgstr "A Sua Pressão Sistólica (Pressão Alta)"
+
+#: ../qml/UpdateUserValuesPage.qml:363
+msgid "Your Diastolic Presure (Low Pressure)"
+msgstr "A Sua Pressão Diastólica (Pressão Baixa)"
+
+#: ../qml/components/AddNoteDialog.qml:31
+msgid "Add Your Notes"
+msgstr "Adicionar as Suas Notas"
+
+#: ../qml/components/AddNoteDialog.qml:51
+msgid "View Your Notes"
+msgstr "Ver as Suas Notas"
+
+#: ../qml/components/AddNoteDialog.qml:59
+msgid "Add"
+msgstr "Adicionar"
+
+#: ../qml/components/AddNoteDialog.qml:67
+#: ../qml/components/GoalDefinitionDialog.qml:123
+#: ../qml/components/MealFilterDialog.qml:72
+#: ../qml/components/MessageDialog.qml:41
+#: ../qml/components/RecommendedCaloriesDialog.qml:51
+msgid "Back"
+msgstr "Regressar"
+
+#: ../qml/components/AuthenticationDialog.qml:27
+msgid "Verifying credentials"
+msgstr "A Verificar Credenciais"
+
+#: ../qml/components/CaloriesCircleChart.qml:110
+msgid "EXCEED"
+msgstr "EXCEDEU"
+
+#: ../qml/components/CaloriesCircleChart.qml:110
+msgid "REMAINING"
+msgstr "RESTANTE"
+
+#: ../qml/components/ConfirmPicker.qml:31
+#: ../qml/components/DeleteCacheDialog.qml:43
+msgid "NO"
+msgstr "NÃO"
+
+#: ../qml/components/ConfirmPicker.qml:31
+#: ../qml/components/DeleteCacheDialog.qml:43
+msgid "STILL NO"
+msgstr "AINDA NÃO"
+
+#: ../qml/components/ConfirmPicker.qml:31
+#: ../qml/components/DeleteCacheDialog.qml:43
+msgid "YES"
+msgstr "SIM"
+
+#: ../qml/components/DeleteAllNotesDialog.qml:32
+msgid "Delete Notes"
+msgstr "Eliminar Notas"
+
+#: ../qml/components/DeleteAllNotesDialog.qml:37
+#: ../qml/components/DeleteAllSportsDialog.qml:37
+#: ../qml/components/DeleteAllWaterDialog.qml:37
+#: ../qml/components/DeleteAllWeightTrackerDialog.qml:36
+#: ../qml/components/DeleteByMonthPop.qml:38
+#: ../qml/components/DeleteCacheDialog.qml:35
+#: ../qml/components/RemoveRecordsDialog.qml:44
+msgid "Confirm Operation With: YES"
+msgstr "Confirmar Operação Com: SIM"
+
+#: ../qml/components/DeleteAllNotesDialog.qml:57
+#: ../qml/components/DeleteAllSportsDialog.qml:57
+#: ../qml/components/DeleteAllWaterDialog.qml:57
+#: ../qml/components/DeleteAllWeightTrackerDialog.qml:57
+#: ../qml/components/DeleteByMonthPop.qml:88
+#: ../qml/components/DeleteCacheDialog.qml:67
+#: ../qml/components/RemoveRecordsDialog.qml:77
+msgid "Wrong Answer, Try Again"
+msgstr "Resposta Errada, Tente Novamente"
+
+#: ../qml/components/DeleteAllNotesDialog.qml:63
+#: ../qml/components/DeleteAllSportsDialog.qml:63
+#: ../qml/components/DeleteAllWaterDialog.qml:63
+#: ../qml/components/DeleteAllWeightTrackerDialog.qml:63
+#: ../qml/components/DeleteByMonthPop.qml:94
+#: ../qml/components/DeleteCacheDialog.qml:73
+#: ../qml/components/RemoveRecordsDialog.qml:83
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: ../qml/components/DeleteAllSportsDialog.qml:32
+msgid "Delete Sports Records"
+msgstr "Eliminar Registos de Desporto"
+
+#: ../qml/components/DeleteAllWaterDialog.qml:32
+#: ../qml/components/DeleteAllWeightTrackerDialog.qml:31
+msgid "Delete Weight Tracker Records"
+msgstr "Eliminar Registos de Seguidor de Peso"
+
+#: ../qml/components/DeleteByMonthPop.qml:33
+msgid "Enter Month & Year"
+msgstr "Introduza Mês e Ano"
+
+#: ../qml/components/DeleteByMonthPop.qml:44
+msgid "Month From 1 to 12"
+msgstr "Do Mês 1 a 12 "
+
+#: ../qml/components/DeleteByMonthPop.qml:62
+msgid "Year"
+msgstr "Ano"
+
+#: ../qml/components/DeleteCacheDialog.qml:43
+msgid "I KNOW WHAT I'M DOING"
+msgstr "EU SEI O QUE ESTOU A FAZER"
+
+#: ../qml/components/DeleteCacheDialog.qml:43
+msgid "NO, TAKE ME TO MUMMY"
+msgstr "NÃO, LEVA-ME À MINHA MÃE"
+
+#: ../qml/components/GoalDefinitionDialog.qml:29
+msgid "Module your goal"
+msgstr "Configure o Seu Objetivo"
+
+#: ../qml/components/GoalDefinitionDialog.qml:36
+msgid "A healthy %1 weight must be distributed among a safe period."
+msgstr "Uma saudável %1 de peso, deve estar distribuído por um período seguro de tempo."
+
+#: ../qml/components/GoalDefinitionDialog.qml:86
+msgid "3kg by month"
+msgstr "3kg por mês"
+
+#: ../qml/components/GoalDefinitionDialog.qml:106
+msgid "4kg by month"
+msgstr "4kg por mês"
+
+#: ../qml/components/GoalDefinitionDialog.qml:136
+#: ../qml/components/RecommendedCaloriesDialog.qml:59
+msgid "Confirm"
+msgstr "Confirmar"
+
+#: ../qml/components/IsProductFoundDialog.qml:46
+msgid "BarCode Found"
+msgstr "Código de barras encontrado"
+
+#: ../qml/components/IsProductFoundDialog.qml:46
+msgid "BarCode Not Found"
+msgstr "Código de barras não encontrado"
+
+#: ../qml/components/IsProductFoundDialog.qml:55
+msgid ""
+"No product in DB, you may consider register the item on openfoodsfacts. Or "
+"enter the details manually"
+msgstr ""
+"Sem Pproduto na BD, pode considerar registar o item na OpenFoodsFacts. Ou"
+"introduzir os detalhes manualmente"
+
+#: ../qml/components/IsProductFoundDialog.qml:63
+msgid "Code:%1"
+msgstr "Código de barras:%1"
+
+#: ../qml/components/IsProductFoundDialog.qml:75
+msgid "Name: %1"
+msgstr "Nome: %1"
+
+#: ../qml/components/IsProductFoundDialog.qml:84
+msgid "Nutriscore: %1"
+msgstr ""
+
+#: ../qml/components/IsProductFoundDialog.qml:93
+msgid "Calories/100gr: %1"
+msgstr "Calorias/100gr %1"
+
+#: ../qml/components/IsProductFoundDialog.qml:102
+msgid "Fat/100gr: %1"
+msgstr "Gordura/100gr: %1"
+
+#: ../qml/components/IsProductFoundDialog.qml:111
+msgid "Protein/100gr: %1"
+msgstr "Proteína/100gr: %1"
+
+#: ../qml/components/IsProductFoundDialog.qml:120
+msgid "Carbohydrates/100gr: %1"
+msgstr "Carbo/100gr: %1"
+
+#: ../qml/components/IsProductFoundDialog.qml:143
+msgid "Scan Again"
+msgstr "Digitalizar Outra Vez"
+
+#: ../qml/components/IsProductFoundDialog.qml:152
+msgid "Enter Product Details Manually"
+msgstr "Introduz Manualmente os Detalhes do Produto"
+
+#: ../qml/components/ListViewFoods.qml:45
+msgid "Very good nutritional quality"
+msgstr "Qualidade nutricional muito boa"
+
+#: ../qml/components/ListViewFoods.qml:46
+msgid "Good nutritional quality"
+msgstr "Boa qualidade nutricional"
+
+#: ../qml/components/ListViewFoods.qml:47
+msgid "Average nutritional quality"
+msgstr "Qualidade nutricional média"
+
+#: ../qml/components/ListViewFoods.qml:48
+msgid "Bad nutritional quality"
+msgstr "Má qualidade nutricional"
+
+#: ../qml/components/ListViewFoods.qml:48
+msgid "Poor nutritional quality"
+msgstr "Pobre qualidade nutricional"
+
+#: ../qml/components/ListViewFoodsFilterPopOver.qml:45
+msgid "Search..."
+msgstr "Procurar..."
+
+#: ../qml/components/ListViewFoodsFilterPopOver.qml:56
+msgid "Close"
+msgstr "Fechar"
+
+#: ../qml/components/LoadingWebPage.qml:38
+msgid "Loading WebPage..."
+msgstr "A carregar WebPage..."
+
+#: ../qml/components/MealFilterDialog.qml:27
+msgid "Show Ingestions From"
+msgstr "Mostrar Ingestões De"
+
+#: ../qml/components/MealFilterDialog.qml:36
+msgid "How Many Days Ago:"
+msgstr "Quantos Dias Atrás:"
+
+#: ../qml/components/NotifyAutoCleanPop.qml:43
+msgid "Deleting Old Ingestions"
+msgstr "A Eliminar Ingestões Antigas"
+
+#: ../qml/components/NotifyAutoCleanPop.qml:45
+msgid "Please, wait this notify dissapears"
+msgstr "Por Favor, espere que esta notificação desapareca"
+
+#: ../qml/components/OperationResultPopOver.qml:40
+msgid "Operation Sucess"
+msgstr "Operação com Sucesso"
+
+#: ../qml/components/RecommendedCaloriesDialog.qml:29
+msgid "Recommended Calories"
+msgstr "Calorias Recomendadas"
+
+#: ../qml/components/RecommendedCaloriesDialog.qml:33
+msgid "%1 Calories"
+msgstr "%1 Calorias"
+
+#: ../qml/components/RecommendedCaloriesDialog.qml:41
+msgid "Calculated Using St. Mifflin Jeor Equation"
+msgstr "Calculado usando a equação do St.Mifflin Jeor"
+
+#: ../qml/components/RemoveRecordsDialog.qml:36
+msgid ""
+"Deletes your *%1* records.\n"
+"No recovery possible"
+msgstr "Elimina *%1* os registos.\n"
+"Sem Recuperação Possível"
+
+#: ../qml/components/RemoveRecordsDialog.qml:74
+msgid "Something Went Wrong"
+msgstr "Algo Correu Mal"
+
+#: ../qml/components/SlotDashboardCalories.qml:48
+msgid "Consumed"
+msgstr "Consumido"
+
+#: ../qml/components/SlotDashboardCalories.qml:83
+#: ../qml/components/SlotDashboardCalories.qml:91
+msgid "Gain weight"
+msgstr "Ganhar Peso"
+
+#: ../qml/components/SlotDashboardCalories.qml:83
+#: ../qml/components/SlotDashboardCalories.qml:91
+msgid "Loose weight"
+msgstr "Perder Peso"
+
+#: ../qml/components/SlotDashboardCalories.qml:83
+#: ../qml/components/SlotDashboardCalories.qml:91
+#: ../qml/components/SlotDashboardCalories.qml:98
+msgid "Maintain weight"
+msgstr "Manter Peso"
+
+#: ../qml/components/SlotRecipe.qml:59
+msgid "Loading recipe image..."
+msgstr "A Carregar Imagem da Refeição..."
+
+#: ../qml/components/SportCircleChart.qml:111
+msgid "min"
+msgstr "min"
+
+#: ../qml/components/StoreIngestionDialog.qml:40
+msgid "I'm not going eat more"
+msgstr "Eu Não Vou Comer Mais"
+
+#: ../qml/components/StoreIngestionDialog.qml:46
+msgid "Continue registering..."
+msgstr "Continuar a Registar..."
+
+#: ../qml/components/UpdateUserBloodPressureDialog.qml:27
+#: ../qml/components/UpdateUserTableDialog.qml:28
+msgid "Updating User Table"
+msgstr "A Atualizar Tabela do Utilizador"
+
+#: ../qml/components/WrongCredentialsPopOver.qml:40
+msgid "Wrong Credentials"
+msgstr "Credenciais Erradas"
+
+#: utFoods.desktop.in.h:1
+msgid "utFoods"
+msgstr "utFoods"

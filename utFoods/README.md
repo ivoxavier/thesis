@@ -30,6 +30,13 @@ Run debug build in Desktop Mode in specific language:
 
     clickable desktop --lang pt_PT
 
+<br>
+
+### Build clicks
+
+Create clicks for arm64 and armhf architecture:
+
+    ./click_build.sh
 
 # Licenses
 

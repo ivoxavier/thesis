@@ -1,0 +1,6 @@
+id,id_user,name,nutriscore,cal,fat,carbo,protein,date,meal
+1,1,Florida,e,29,0.1,6.7,0.1,2022-05-06,0
+3,1,Arroz Thai Negro Germinado,a,358,0.0,73.0,8.5,2022-05-06,1
+4,1,Merluza del cabo filletes,a,74,0.5,0.1,17.6,2022-05-07,1
+5,1,Chili con carne,c,85,1.0,11.0,6.5,2022-05-07,2
+6,1,Zumo de piña,b,27,0.0,6.3,0.3,2022-05-07,0
